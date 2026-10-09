@@ -41,7 +41,7 @@ export function createMap(
   story: DataBundle,
   store: Store,
   tracks: Track[],
-  opts: { debug?: boolean } = {},
+  opts: { debug?: boolean; eventTime?: (e: DataBundle['events'][number]) => number } = {},
 ): AtlasMap {
   injectPatterns();
   const map = L.map(el, {
@@ -105,7 +105,7 @@ export function createMap(
     const li = (ev.target as HTMLElement).closest<HTMLElement>('[data-event-id]');
     if (!li) return;
     const e = story.events.find((x) => x.id === li.dataset.eventId);
-    if (e) store.set({ eventId: e.id, t: toDayIndex(e.date) + 0.5 });
+    if (e) store.set({ eventId: e.id, t: opts.eventTime?.(e) ?? toDayIndex(e.date) + 0.5 });
   });
 
   const coords = new Map(places.map((p) => [p.id, p]));

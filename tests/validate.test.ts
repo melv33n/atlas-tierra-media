@@ -92,6 +92,16 @@ describe('validateBundle', () => {
     expect(codes(data)).toContain('leg-gap');
   });
 
+  it('afterGap permite un hueco y un cambio de lugar', () => {
+    const data = base();
+    leg(data, 2).start = d(10, 5);
+    leg(data, 2).from = 'rivendel';
+    leg(data, 2).to = 'rivendel';
+    leg(data, 2).afterGap = true;
+    expect(codes(data)).not.toContain('leg-gap');
+    expect(codes(data)).not.toContain('leg-teleport');
+  });
+
   it('detecta solapes', () => {
     const data = base();
     leg(data, 1).start = d(9, 27);

@@ -7,7 +7,9 @@
     "additionalProperties": false,
     "required": ["characterId", "legs"],
     "properties": {
-      "characterId": { "type": "string" },
+      "characterId": {
+        "type": "string"
+      },
       "legs": {
         "type": "array",
         "items": {
@@ -15,14 +17,41 @@
           "additionalProperties": false,
           "required": ["from", "to", "start", "end", "confidence"],
           "properties": {
-            "from": { "type": "string" },
-            "to": { "type": "string" },
-            "start": { "$ref": "date.schema.json" },
-            "end": { "$ref": "date.schema.json" },
-            "routeId": { "type": "string" },
-            "via": { "type": "array", "items": { "$ref": "xy.schema.json" } },
-            "confidence": { "enum": ["canon", "inferred"] },
-            "note": { "type": "string" }
+            "from": {
+              "type": "string"
+            },
+            "to": {
+              "type": "string"
+            },
+            "start": {
+              "$ref": "date.schema.json"
+            },
+            "end": {
+              "$ref": "date.schema.json"
+            },
+            "routeId": {
+              "type": "string"
+            },
+            "via": {
+              "type": "array",
+              "items": {
+                "$ref": "xy.schema.json"
+              }
+            },
+            "confidence": {
+              "enum": ["canon", "inferred"]
+            },
+            "note": {
+              "type": "string"
+            },
+            "mode": {
+              "enum": ["pie", "caballo", "barca", "aguila"],
+              "description": "Medio de viaje (por defecto, a pie)."
+            },
+            "afterGap": {
+              "type": "boolean",
+              "description": "Paradero desconocido entre el tramo anterior y este: no hay continuidad que comprobar ni posición que dibujar en ese hueco."
+            }
           }
         }
       }

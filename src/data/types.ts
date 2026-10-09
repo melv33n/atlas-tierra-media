@@ -95,7 +95,21 @@ export interface Leg {
   via?: XY[];
   confidence: Confidence;
   note?: string;
+  /** Medio de viaje; por defecto, a pie. */
+  mode?: TravelMode;
+  /** Paradero desconocido entre el tramo anterior y este (no se comprueba la continuidad). */
+  afterGap?: boolean;
 }
+
+export type TravelMode = 'pie' | 'caballo' | 'barca' | 'aguila';
+
+/** Millas por jornada razonables según el medio (Sombragrís y las águilas, aparte). */
+export const MAX_MILES_PER_DAY: Record<TravelMode, number> = {
+  pie: 70,
+  barca: 80,
+  caballo: 140,
+  aguila: Infinity,
+};
 
 export interface Journey {
   characterId: string;

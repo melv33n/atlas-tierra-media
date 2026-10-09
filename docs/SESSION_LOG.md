@@ -26,3 +26,10 @@
 - H3: línea temporal de calles con D3 (paradas/viajes por zona, encuentros automáticos, eventos), cursor de fecha sincronizado con fichas de personaje interpoladas en el mapa, rango que filtra, panel de evento con navegación.
 - Datos: Gollum sigue en Moria hasta el 15-ene (antes aparecía adelantando a la Compañía).
 - Siguiente: estilo temático del mapa (IDEAS) o H4 (la ruptura hasta los Puertos Grises), a elección del usuario.
+
+## 2026-10-09 · Sesión 1 (H4)
+
+- H3 mergeado (#4).
+- H4: rutas completas tras Amon Hen hasta los Puertos Grises (3021) y el regreso de Sam; 152 eventos; 7 lugares nuevos.
+- Modelo: `afterGap` (paradero desconocido) y `mode` (medio de viaje) con límites de velocidad; regla de encuentros revisada (sin falsos «encuentros» al cruzarse).
+- Siguiente: según el usuario, controles y rediseño temático (H5).

@@ -25,6 +25,7 @@ const store = createStore({
 const timeline = createTimeline(document.getElementById('timeline')!, story, store);
 const atlas = createMap(document.getElementById('map')!, geo, story, store, timeline.tracks, {
   debug,
+  eventTime: timeline.eventTime,
 });
 createEventCard(
   document.getElementById('event-card')!,

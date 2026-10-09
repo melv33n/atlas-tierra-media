@@ -54,6 +54,8 @@ properties (`erasableSyntaxOnly`).
   medias «de camino». Estancia = `from == to`. Los tramos de un personaje son contiguos
   (`next.start == prev.end`, `next.from == prev.to`).
 - Todo tramo `inferred` lleva `note` con el motivo.
+- `mode` (pie/caballo/barca/aguila) fija el límite de millas por jornada que comprueba un test.
+- `afterGap: true` = paradero desconocido entre el tramo anterior y este (sin posición en el hueco).
 - Los lugares de los eventos deben ser extremos de tramo: si algo pasa a mitad de camino
   (p.ej. Cima de los Vientos), se parte el tramo ahí.
 - `routes.json` guarda geometrías compartidas; quien comparte `routeId` en fechas solapadas «va

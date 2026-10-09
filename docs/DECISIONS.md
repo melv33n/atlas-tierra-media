@@ -179,3 +179,22 @@ Formato: contexto → decisión → consecuencias. Las nuevas al final.
 
 - **Descartado**: el paquete `d3` completo (no hacen falta ejes, formas ni tiempo gregoriano: el
   calendario es propio).
+
+## 021 · Paradero desconocido y medio de viaje — 2026-10-09
+
+- **Contexto**: entre 3019 y 3021 no consta dónde está Gandalf; y comprobar velocidades con un
+  único límite trataba igual a un hobbit a pie que a la hueste de Rohan a caballo.
+- **Decisión**: dos campos opcionales en los tramos. `afterGap: true` marca que se desconoce el
+  paradero entre el tramo anterior y este: el validador no exige continuidad y el modelo temporal no
+  dibuja posición en el hueco. `mode` ∈ pie / caballo / barca / águila; un test limita las millas por
+  jornada según el medio (`MAX_MILES_PER_DAY`), con Sombragrís como única excepción documentada.
+- **Consecuencias**: la ficha de Gandalf desaparece del mapa en 3020 y reaparece en los Puertos
+  Grises. El medio queda listo para la idea de «distancia y velocidad por tramo».
+
+## 022 · Encuentros: juntos justo después de llegar — 2026-10-09
+
+- **Contexto**: con H4 salían falsos encuentros (Gandalf y los hobbits «en Bree» el 30-sep-3018,
+  cuando en realidad se cruzaron) y faltaban otros (Aragorn y Gandalf el Blanco, la reunión en
+  Isengard).
+- **Decisión**: hay encuentro si, al llegar, los dos personajes siguen juntos un instante después
+  (en el lugar o saliendo a la vez por el mismo camino) y estaban separados al salir y el día anterior.

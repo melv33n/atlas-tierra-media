@@ -2,6 +2,7 @@ import { describe, expect, it } from 'vitest';
 import {
   buildTracks,
   convergences,
+  eventInstant,
   positionAt,
   trackSegments,
   ARRIVE,
@@ -100,6 +101,20 @@ describe('pistas temporales', () => {
   });
 });
 
+describe('paradero desconocido (afterGap)', () => {
+  const data = bundle();
+  data.journeys[1]!.legs = [
+    leg('c', 'c', d(1, 1), d(1, 3)),
+    { ...leg('a', 'a', d(1, 8), d(1, 10)), afterGap: true },
+  ];
+  const y = buildTracks(data).find((t) => t.characterId === 'y')!;
+  it('no hay posición en el hueco y se reanuda en el nuevo lugar', () => {
+    expect(positionAt(y, T(1, 2))?.placeId).toBe('c');
+    expect(positionAt(y, T(1, 5))).toBeNull();
+    expect(positionAt(y, T(1, 9))?.placeId).toBe('a');
+  });
+});
+
 describe('datos reales', () => {
   const { bundle: data } = loadRepo();
   const tracks = buildTracks(data);
@@ -118,6 +133,19 @@ describe('datos reales', () => {
     for (const id of ['frodo', 'aragorn', 'gandalf', 'boromir'])
       expect(at(id)?.placeId).toBe('sala-veintiuno');
     expect(at('gollum')?.placeId).toBe('moria'); // los sigue de cerca, sin adelantarlos
+  });
+
+  it('el instante de cada evento muestra a sus protagonistas en el lugar', () => {
+    const coords = new Map(data.places.map((p) => [p.id, p.coords]));
+    const doom = data.events.find((e) => e.id === 'monte-del-destino')!;
+    const t = eventInstant(doom, tracks, coords);
+    for (const id of ['frodo', 'sam', 'gollum'])
+      expect(
+        positionAt(
+          tracks.find((x) => x.characterId === id)!,
+          t,
+        )?.xy,
+      ).toEqual(coords.get('monte-del-destino'));
   });
 
   it('encuentros clave: Bree con Aragorn y Rivendel con Gandalf', () => {

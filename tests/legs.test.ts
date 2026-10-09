@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { assignLanes, legShapes, offsetPolyline } from '../src/data/legs.ts';
-import type { DataBundle, Leg, XY } from '../src/data/types.ts';
+import { MAX_MILES_PER_DAY, type DataBundle, type Leg, type XY } from '../src/data/types.ts';
 import { toDayIndex, type ShireDate } from '../src/lib/calendar.ts';
 import { loadRepo } from '../scripts/lib/repo.ts';
 import { distanceToPolyline } from '../src/lib/geometry.ts';
@@ -109,13 +109,21 @@ describe('datos de H2 (hasta Amon Hen)', () => {
     for (const c of main) expect(data.journeys.some((j) => j.characterId === c.id)).toBe(true);
   });
 
-  it('todas las rutas llegan hasta la ruptura de la Compañía (Gandalf, hasta Lórien)', () => {
-    for (const j of data.journeys) {
+  it('cada ruta termina donde y cuando debe', () => {
+    const endOf = (id: string) => {
+      const j = data.journeys.find((x) => x.characterId === id)!;
       const last = j.legs[j.legs.length - 1]!;
-      const end = toDayIndex(last.end);
-      if (j.characterId === 'gandalf') expect(end).toBe(toDayIndex(d(2, 17, 3019)));
-      else expect(end).toBe(amonHen);
-    }
+      return { place: last.to, day: toDayIndex(last.end) };
+    };
+    expect(endOf('frodo')).toEqual({ place: 'puertos-grises', day: toDayIndex(d(9, 29, 3021)) });
+    expect(endOf('gandalf')).toEqual({ place: 'puertos-grises', day: toDayIndex(d(9, 29, 3021)) });
+    expect(endOf('sam')).toEqual({ place: 'bolson-cerrado', day: toDayIndex(d(10, 6, 3021)) });
+    expect(endOf('boromir')).toEqual({ place: 'parth-galen', day: amonHen });
+    expect(endOf('gollum')).toEqual({
+      place: 'monte-del-destino',
+      day: toDayIndex(d(3, 25, 3019)),
+    });
+    expect(endOf('aragorn').place).toBe('minas-tirith');
   });
 
   it('la Compañía sale junta de Rivendel el 25 de diciembre de 3018', () => {
@@ -141,15 +149,18 @@ describe('datos de H2 (hasta Amon Hen)', () => {
     }
   });
 
-  it('a pie o en barca nadie supera 70 millas por jornada', () => {
-    const mounted = new Set(['gandalf']);
+  it('velocidades plausibles según el medio de viaje', () => {
     for (const s of legShapes(data)) {
-      if (mounted.has(s.characterId)) continue;
+      const mode = s.leg.mode ?? 'pie';
+      // Sombragrís cubre distancias fuera de lo común (ver DATA_SOURCES).
+      if (s.characterId === 'gandalf' && mode === 'caballo') continue;
       const miles = s.points
         .slice(1)
         .reduce((acc, p, i) => acc + Math.hypot(p[0] - s.points[i]![0], p[1] - s.points[i]![1]), 0);
       const days = Math.max(1, s.endDay - s.startDay);
-      expect(miles / days, `${s.characterId} ${s.leg.from}→${s.leg.to}`).toBeLessThan(70);
+      expect(miles / days, `${s.characterId} ${s.leg.from}→${s.leg.to} (${mode})`).toBeLessThan(
+        MAX_MILES_PER_DAY[mode],
+      );
     }
   });
 

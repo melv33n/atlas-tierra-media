@@ -13,6 +13,7 @@ import { shortNameOf } from '../data/types.ts';
 import {
   buildTracks,
   convergences,
+  eventInstant,
   trackSegments,
   type Convergence,
   type Segment,
@@ -40,8 +41,6 @@ export interface TimelineApi {
   tracks: Track[];
 }
 
-export const eventTime = (e: StoryEvent): number => toDayIndex(e.date) + 0.5;
-
 export function createTimeline(root: HTMLElement, data: DataBundle, store: Store): TimelineApi {
   const main = data.characters.filter((c) => c.role === 'main');
   const tracks = buildTracks(data);
@@ -54,6 +53,9 @@ export function createTimeline(root: HTMLElement, data: DataBundle, store: Store
   const placeName = new Map(data.places.map((p) => [p.id, p.name]));
   const chars = new Map(data.characters.map((c) => [c.id, c]));
   const laneOf = new Map(main.map((c, i) => [c.id, i]));
+  const coordsOf = new Map(data.places.map((p) => [p.id, p.coords]));
+  const instants = new Map(data.events.map((e) => [e.id, eventInstant(e, tracks, coordsOf)]));
+  const eventTime = (e: StoryEvent): number => instants.get(e.id)!;
   const orderedEvents = data.events.slice().sort((a, b) => eventTime(a) - eventTime(b));
 
   // Dominio completo (con margen) y ventana inicial: el viaje de 3018–3019.
