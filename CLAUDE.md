@@ -33,10 +33,16 @@ properties (`erasableSyntaxOnly`).
   Leaflet `CRS.Simple` usa `[lat, lng] = [y, x]`.
 - `src/data/validate.ts` — comprobaciones semánticas puras; `scripts/validate.ts` las ejecuta.
 - `src/data/legs.ts` — geometría de los tramos, carriles paralelos y desplazamiento de polilíneas.
+- `src/data/timeline.ts` — modelo temporal continuo: posición de cada personaje en cualquier
+  instante, segmentos para las calles y detección de encuentros. `zones.ts`: 8 zonas de color.
+- `src/state/store.ts` — estado compartido (fecha, rango, ocultos, evento abierto).
+- `src/timeline/` — línea temporal D3 (calles, eje, cursor, rango). `src/ui/eventCard.ts` — panel
+  de evento.
 - `src/map/` — Leaflet: `createMap.ts` (montaje y encuadre), `baseLayers.ts` (paneles y capas
   vectoriales), `shapes.ts` (rugosidad + suavizado), `glyphs.ts`/`relief.ts` (relieve por zoom),
   `labels.ts` (etiquetas con anticolisión), `places.ts` + `popup.ts` (marcadores y ficha con eventos),
-  `journeyLayer.ts` + `legend.ts` (rutas y leyenda), `debug.ts` (`?debug`).
+  `journeyLayer.ts` + `legend.ts` (rutas y leyenda), `markers.ts` (fichas de personaje en el
+  instante actual), `debug.ts` (`?debug`; expone `window.atlas` y `window.store`).
 - `src/styles/` — tokens de color (claro/oscuro) en `main.css`, estilo cartográfico en `map.css`.
 - `docs/` — memoria del proyecto.
 

@@ -15,7 +15,11 @@
       <h1 class="topbar__title">Atlas de la Tierra Media</h1>
       <span class="topbar__note">proyecto fan · en construcción</span>
     </header>
-    <main id="map" class="map" aria-label="Mapa de la Tierra Media"></main>
+    <div class="map-wrap">
+      <main id="map" class="map" aria-label="Mapa de la Tierra Media"></main>
+      <aside id="event-card" class="event-card" aria-live="polite" hidden></aside>
+    </div>
+    <section id="timeline" class="timeline" aria-label="Línea temporal"></section>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>

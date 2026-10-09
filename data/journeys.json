@@ -5052,10 +5052,10 @@
         "end": {
           "year": 3019,
           "month": 1,
-          "day": 13
+          "day": 15
         },
         "confidence": "inferred",
-        "note": "Atrapado en Moria sin dar con la salida del oeste."
+        "note": "Atrapado en Moria sin dar con la salida del oeste; desde el 13 de enero sigue de cerca a la Compañía por las galerías."
       },
       {
         "from": "moria",
@@ -5063,7 +5063,7 @@
         "start": {
           "year": 3019,
           "month": 1,
-          "day": 13
+          "day": 15
         },
         "end": {
           "year": 3019,
@@ -5072,7 +5072,7 @@
         },
         "routeId": "moria--nimrodel",
         "confidence": "inferred",
-        "note": "Sigue a la Compañía por Moria desde el 13 de enero (Apéndice B) hasta las lindes de Lórien."
+        "note": "Sale de Moria tras la Compañía el 15 de enero y la sigue hasta las lindes de Lórien (estimado)."
       },
       {
         "from": "nimrodel",

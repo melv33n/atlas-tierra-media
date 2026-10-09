@@ -46,4 +46,4 @@ Estado: ✅ hecho · 🚧 en curso · ⏳ pendiente
 - [ ] Búsqueda, filtros, «¿dónde estaba cada uno el día X?»
 - [ ] Estado en URL, móvil, accesibilidad
 - [ ] Build single-file y despliegue público
-- [ ] Estilo temático del mapa (pergamino, plumilla, brújula, escala en leguas…; ver IDEAS.md)
+- [ ] Estilo temático del mapa (propuesto tras H3) (pergamino, plumilla, brújula, escala en leguas…; ver IDEAS.md)

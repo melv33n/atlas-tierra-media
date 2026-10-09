@@ -4,6 +4,7 @@ import { isLine, isPoint, isPolygon } from '../data/geo.ts';
 import type { DataBundle, XY } from '../data/types.ts';
 import { centroid, pointAt } from '../lib/geometry.ts';
 import { toLatLng } from '../lib/coords.ts';
+import { toDayIndex } from '../lib/calendar.ts';
 import { addBaseLayers, createPanes } from './baseLayers.ts';
 import { enableDebug } from './debug.ts';
 import { LabelLayer, screenAngle, type LabelKind } from './labels.ts';
@@ -12,6 +13,9 @@ import { ReliefLayer } from './relief.ts';
 import { injectPatterns } from './patterns.ts';
 import { JourneyLayer } from './journeyLayer.ts';
 import { addLegend } from './legend.ts';
+import { CharacterMarkers } from './markers.ts';
+import type { Store } from '../state/store.ts';
+import type { Track } from '../data/timeline.ts';
 import { shapeOf } from './shapes.ts';
 
 /** Zona con contenido (el resto del lienzo es margen): encuadre inicial. */
@@ -26,6 +30,8 @@ const CORE: XY = [760, 860];
 export interface AtlasMap {
   map: L.Map;
   journeys: JourneyLayer;
+  /** Centra el mapa en un lugar (sin alejar si ya está más cerca). */
+  focusPlace(placeId: string): void;
 }
 
 /** Mapa no geográfico: 1 unidad = 1 milla; [lat, lng] = [y, x]. */
@@ -33,6 +39,8 @@ export function createMap(
   el: HTMLElement,
   geo: GeoData,
   story: DataBundle,
+  store: Store,
+  tracks: Track[],
   opts: { debug?: boolean } = {},
 ): AtlasMap {
   injectPatterns();
@@ -55,7 +63,9 @@ export function createMap(
   new ReliefLayer(map, geo.mountains, renderers.relief);
   const { places } = story;
   const journeys = new JourneyLayer(map, story, renderers.routes);
-  addLegend(map, story.characters, journeys);
+  addLegend(map, story.characters, store);
+  map.createPane('characters').style.zIndex = '660';
+  const markers = new CharacterMarkers(map, story, tracks, 'characters');
   const placeLayer = new PlaceLayer(map, places, renderers.places, story.events, story.characters);
 
   const labels = new LabelLayer(map, 'labels');
@@ -77,7 +87,39 @@ export function createMap(
   void document.fonts?.ready.then(() => labels.measure());
 
   if (opts.debug) enableDebug(map, renderers.grid);
-  return { map, journeys };
+
+  // Estado → mapa.
+  const sync = () => {
+    const { t, range, hidden } = store.get();
+    journeys.setHidden(hidden);
+    journeys.setTime(t, range);
+    markers.update(t, hidden);
+  };
+  store.subscribe((s, prev) => {
+    if (s.t !== prev.t || s.range !== prev.range || s.hidden !== prev.hidden) sync();
+  });
+  sync();
+
+  // Clic en un evento de la ficha de un lugar → abrir el panel del evento.
+  el.addEventListener('click', (ev) => {
+    const li = (ev.target as HTMLElement).closest<HTMLElement>('[data-event-id]');
+    if (!li) return;
+    const e = story.events.find((x) => x.id === li.dataset.eventId);
+    if (e) store.set({ eventId: e.id, t: toDayIndex(e.date) + 0.5 });
+  });
+
+  const coords = new Map(places.map((p) => [p.id, p]));
+  const focusPlace = (placeId: string) => {
+    const p = coords.get(placeId);
+    if (!p) return;
+    const zoom = Math.max(map.getZoom(), Math.min(2, p.zoomMin + 0.5));
+    // En pantallas estrechas el panel del evento ocupa la mitad inferior: el lugar
+    // se coloca en la mitad de arriba.
+    const shift = map.getSize().x < 600 ? map.getSize().y * 0.22 : 0;
+    const target = map.unproject(map.project(toLatLng(p.coords), zoom).add([0, shift]), zoom);
+    map.flyTo(target, zoom, { duration: 0.8 });
+  };
+  return { map, journeys, focusPlace };
 }
 
 /**
