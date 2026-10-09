@@ -5,6 +5,12 @@
 import { formatDate, toDayIndex, type ShireDate } from '../lib/calendar.ts';
 import type { DataBundle, Journey, Leg } from './types.ts';
 
+/**
+ * Distancia máxima (millas) entre dos lugares en los que puede aparecer el mismo día
+ * un personaje sin ruta propia: más que eso no se cubre ni a caballo.
+ */
+export const MAX_DAY_DISTANCE = 100;
+
 export interface Issue {
   level: 'error' | 'warning';
   code: string;
@@ -61,6 +67,12 @@ export function positionOn(journey: Journey, day: number): DayPosition {
     if (day > s && day < e) pos.inTransit.push(leg);
   }
   return pos;
+}
+
+function journeySpan(j: Journey): [number | undefined, number | undefined] {
+  const first = j.legs[0];
+  const last = j.legs[j.legs.length - 1];
+  return [first ? safeIndex(first.start) : undefined, last ? safeIndex(last.end) : undefined];
 }
 
 export function validateBundle(data: DataBundle): ValidationResult {
@@ -141,6 +153,11 @@ export function validateBundle(data: DataBundle): ValidationResult {
       }
       if (leg.routeId && leg.via)
         warn('route-and-via', `${where}: tiene routeId y via; se usa routeId`);
+      if (leg.confidence === 'inferred' && !leg.note?.trim())
+        err(
+          'inferred-without-note',
+          `${where}: tramo inferido sin nota que explique la inferencia`,
+        );
     });
   }
 
@@ -199,10 +216,13 @@ export function validateBundle(data: DataBundle): ValidationResult {
       if (!exact) continue;
       const pos = positionOn(j, day);
       if (pos.places.size === 0 && pos.inTransit.length === 0) {
-        warn(
-          'event-outside-journey',
-          `event ${ev.id}: ${cid} no tiene ruta el ${formatDate(ev.date)}`,
-        );
+        // Fuera del periodo que cubre la ruta (antes o después) no hay nada que comprobar.
+        const [first, last] = journeySpan(j);
+        if (first !== undefined && last !== undefined && day >= first && day <= last)
+          warn(
+            'event-outside-journey',
+            `event ${ev.id}: ${cid} sin posición el ${formatDate(ev.date)}`,
+          );
       } else if (!pos.places.has(ev.placeId)) {
         const where = pos.places.size
           ? `está en ${[...pos.places].join('/')}`
@@ -215,11 +235,22 @@ export function validateBundle(data: DataBundle): ValidationResult {
     }
   }
 
-  // Personajes sin ruta: no pueden estar en dos lugares distintos el mismo día.
+  // Personajes sin ruta: no pueden estar el mismo día en dos lugares más alejados de
+  // lo que se recorre en una jornada.
+  const coordsOf = new Map(data.places.map((p) => [p.id, p.coords]));
   for (const [cid, byDay] of secondaryPlacesByDay) {
     for (const [, places] of byDay) {
-      if (places.size > 1)
-        err('ubiquity', `${cid} aparece el mismo día en ${[...places].join(' y ')}`);
+      const list = [...places];
+      for (let i = 0; i < list.length; i++)
+        for (let k = i + 1; k < list.length; k++) {
+          const a = coordsOf.get(list[i]!);
+          const b = coordsOf.get(list[k]!);
+          if (a && b && Math.hypot(a[0] - b[0], a[1] - b[1]) > MAX_DAY_DISTANCE)
+            err(
+              'ubiquity',
+              `${cid} aparece el mismo día en ${list[i]} y ${list[k]}, demasiado lejos`,
+            );
+        }
     }
   }
 

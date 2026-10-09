@@ -7,14 +7,44 @@
     "additionalProperties": false,
     "required": ["id", "name", "race", "color", "initials", "role"],
     "properties": {
-      "id": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
-      "name": { "type": "string", "minLength": 1 },
-      "altNames": { "type": "array", "items": { "type": "string" } },
-      "race": { "type": "string" },
-      "color": { "type": "string", "pattern": "^#[0-9a-fA-F]{6}$" },
-      "initials": { "type": "string", "minLength": 1, "maxLength": 3 },
-      "group": { "type": "string" },
-      "role": { "enum": ["main", "secondary"] }
+      "id": {
+        "type": "string",
+        "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+      },
+      "name": {
+        "type": "string",
+        "minLength": 1
+      },
+      "altNames": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "race": {
+        "type": "string"
+      },
+      "color": {
+        "type": "string",
+        "pattern": "^#[0-9a-fA-F]{6}$"
+      },
+      "initials": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 3
+      },
+      "group": {
+        "type": "string"
+      },
+      "role": {
+        "enum": ["main", "secondary"]
+      },
+      "shortName": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 16,
+        "description": "Nombre corto para leyendas y tablas (Sam, Merry…)."
+      }
     }
   }
 }

@@ -12,3 +12,10 @@
 - H1: geografía propia completa (costa, 8 lagos, 34 elementos de relieve, 29 ríos, 15 bosques/marismas, 8 caminos, 36 regiones + frontera de la Comarca) y 107 lugares; render con estilo propio, modo oscuro, etiquetas con anticolisión y `?debug`.
 - Pendiente: cotejar la «toponimia por confirmar» (`DATA_SOURCES.md`); al zoom máximo las cordilleras se ven estrechas.
 - Siguiente: H2 (personajes, eventos y rutas hasta Amon Hen).
+
+## 2026-10-09 · Sesión 1 (H2)
+
+- H1 mergeado (#2) y desplegado en Pages.
+- H2: 34 personajes, 61 eventos y las rutas de los 10 principales hasta el 26-feb-3019 (Gandalf hasta su llegada a Lórien el 17-feb), sobre 54 trazados compartidos. Rutas en carriles paralelos, leyenda con interruptores y eventos en la ficha de cada lugar.
+- Validador: notas obligatorias en tramos inferidos, tabla de inferencias generada, ubicuidad de secundarios por distancia. Corrección de escala en Tierra de Bree.
+- Siguiente: H3 (timeline de swimlanes, scrubber y sincronización mapa ↔ timeline).

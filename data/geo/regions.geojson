@@ -21,7 +21,7 @@
     {"type":"Feature","properties":{"id":"nurn","kind":"region","name":"Nurn","rank":2,"labelZoom":-1},"geometry":{"type":"Point","coordinates":[1480,268]}},
     {"type":"Feature","properties":{"id":"umbar","kind":"region","name":"Umbar","rank":2,"labelZoom":-1},"geometry":{"type":"Point","coordinates":[935,28]}},
     {"type":"Feature","properties":{"id":"khand","kind":"region","name":"Khand","rank":2,"labelZoom":-1},"geometry":{"type":"Point","coordinates":[1620,140]}},
-    {"type":"Feature","properties":{"id":"tierra-de-bree","kind":"region","name":"Tierra de Bree","altNames":["Bree-land"],"rank":3,"labelZoom":1},"geometry":{"type":"Point","coordinates":[525,1100]}},
+    {"type":"Feature","properties":{"id":"tierra-de-bree","kind":"region","name":"Tierra de Bree","altNames":["Bree-land"],"rank":3,"labelZoom":1},"geometry":{"type":"Point","coordinates":[495.7,1100]}},
     {"type":"Feature","properties":{"id":"los-gamos","kind":"region","name":"Los Gamos","altNames":["Buckland"],"rank":3,"labelZoom":2},"geometry":{"type":"Point","coordinates":[422,1050]}},
     {"type":"Feature","properties":{"id":"dunland","kind":"region","name":"Dunland","altNames":["Tierra Brunia"],"rank":3,"labelZoom":0},"geometry":{"type":"Point","coordinates":[725,690]}},
     {"type":"Feature","properties":{"id":"landas-de-etten-region","kind":"region","name":"Rhudaur","rank":3,"labelZoom":0},"geometry":{"type":"Point","coordinates":[730,1170]}},

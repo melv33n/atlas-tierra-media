@@ -6,6 +6,10 @@ import { loadRepo } from './lib/repo.ts';
 import { validateBundle, type Issue } from '../src/data/validate.ts';
 import { fromDayIndex, formatDate } from '../src/lib/calendar.ts';
 import { checkGeo } from '../src/data/geo-checks.ts';
+import { readFileSync } from 'node:fs';
+import { join } from 'node:path';
+import { ROOT } from './lib/repo.ts';
+import { renderInferences, replaceBlock, sameTable } from './lib/inferences.ts';
 
 const { bundle, geo, schemaIssues } = loadRepo();
 const issues: Issue[] = [...schemaIssues];
@@ -14,6 +18,17 @@ const issues: Issue[] = [...schemaIssues];
 if (schemaIssues.length === 0) {
   const result = validateBundle(bundle);
   issues.push(...result.issues, ...checkGeo(bundle, geo));
+
+  // La tabla de inferencias de DATA_SOURCES.md debe reflejar los datos.
+  const docPath = join(ROOT, 'docs', 'DATA_SOURCES.md');
+  const doc = readFileSync(docPath, 'utf8');
+  if (!sameTable(replaceBlock(doc, renderInferences(bundle)), doc))
+    issues.push({
+      level: 'error',
+      code: 'docs-outdated',
+      message:
+        'La tabla de inferencias de docs/DATA_SOURCES.md no está al día: npm run docs:inferences',
+    });
 
   console.log('\nCobertura por personaje');
   if (result.coverage.byCharacter.length === 0) console.log('  (sin personajes todavía)');

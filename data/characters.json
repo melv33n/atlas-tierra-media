@@ -1,1 +1,341 @@
-[]
+[
+  {
+    "id": "frodo",
+    "name": "Frodo Bolsón",
+    "shortName": "Frodo",
+    "altNames": ["Frodo Baggins", "Señor Sotomonte"],
+    "race": "hobbit",
+    "color": "#2f6db5",
+    "initials": "F",
+    "group": "comunidad",
+    "role": "main"
+  },
+  {
+    "id": "sam",
+    "name": "Samsagaz Gamyi",
+    "shortName": "Sam",
+    "altNames": ["Sam", "Samwise Gamgee"],
+    "race": "hobbit",
+    "color": "#3d8b4a",
+    "initials": "S",
+    "group": "comunidad",
+    "role": "main"
+  },
+  {
+    "id": "merry",
+    "name": "Meriadoc Brandigamo",
+    "shortName": "Merry",
+    "altNames": ["Merry", "Meriadoc Brandybuck"],
+    "race": "hobbit",
+    "color": "#c98a1b",
+    "initials": "M",
+    "group": "comunidad",
+    "role": "main"
+  },
+  {
+    "id": "pippin",
+    "name": "Peregrin Tuk",
+    "shortName": "Pippin",
+    "altNames": ["Pippin", "Peregrin Took"],
+    "race": "hobbit",
+    "color": "#d9622b",
+    "initials": "P",
+    "group": "comunidad",
+    "role": "main"
+  },
+  {
+    "id": "aragorn",
+    "name": "Aragorn",
+    "shortName": "Aragorn",
+    "altNames": ["Trancos", "Strider", "Elessar"],
+    "race": "hombre (dúnadan)",
+    "color": "#7b3f93",
+    "initials": "A",
+    "group": "comunidad",
+    "role": "main"
+  },
+  {
+    "id": "legolas",
+    "name": "Legolas",
+    "shortName": "Legolas",
+    "race": "elfo",
+    "color": "#1f9a8a",
+    "initials": "L",
+    "group": "comunidad",
+    "role": "main"
+  },
+  {
+    "id": "gimli",
+    "name": "Gimli",
+    "shortName": "Gimli",
+    "race": "enano",
+    "color": "#8a5a2e",
+    "initials": "Gi",
+    "group": "comunidad",
+    "role": "main"
+  },
+  {
+    "id": "gandalf",
+    "name": "Gandalf",
+    "shortName": "Gandalf",
+    "altNames": ["Mithrandir", "Gandalf el Gris"],
+    "race": "maia (istar)",
+    "color": "#6d737d",
+    "initials": "Ga",
+    "group": "comunidad",
+    "role": "main"
+  },
+  {
+    "id": "boromir",
+    "name": "Boromir",
+    "shortName": "Boromir",
+    "race": "hombre (Gondor)",
+    "color": "#b8364a",
+    "initials": "B",
+    "group": "comunidad",
+    "role": "main"
+  },
+  {
+    "id": "gollum",
+    "name": "Gollum",
+    "shortName": "Gollum",
+    "altNames": ["Sméagol"],
+    "race": "hobbit (corrompido)",
+    "color": "#86963a",
+    "initials": "Go",
+    "group": "gollum",
+    "role": "main"
+  },
+  {
+    "id": "bilbo",
+    "name": "Bilbo Bolsón",
+    "shortName": "Bilbo",
+    "altNames": ["Bilbo Baggins"],
+    "race": "hobbit",
+    "color": "#5a7fb0",
+    "initials": "Bi",
+    "group": "comarca",
+    "role": "secondary"
+  },
+  {
+    "id": "tio-gamyi",
+    "name": "Hamfast Gamyi",
+    "shortName": "el Tío",
+    "altNames": ["el Tío", "Gaffer"],
+    "race": "hobbit",
+    "color": "#6f9a6f",
+    "initials": "H",
+    "group": "comarca",
+    "role": "secondary"
+  },
+  {
+    "id": "fredegar-bolger",
+    "name": "Fredegar Bolger",
+    "shortName": "Gordo",
+    "altNames": ["Gordo Bolger", "Fatty"],
+    "race": "hobbit",
+    "color": "#a88a52",
+    "initials": "Fr",
+    "group": "comarca",
+    "role": "secondary"
+  },
+  {
+    "id": "granjero-maggot",
+    "name": "Granjero Maggot",
+    "shortName": "Maggot",
+    "altNames": ["Farmer Maggot"],
+    "race": "hobbit",
+    "color": "#8f7a4a",
+    "initials": "Ma",
+    "group": "comarca",
+    "role": "secondary"
+  },
+  {
+    "id": "gildor",
+    "name": "Gildor Inglorion",
+    "race": "elfo",
+    "color": "#4f8fa0",
+    "initials": "Gl",
+    "group": "elfos",
+    "role": "secondary"
+  },
+  {
+    "id": "tom-bombadil",
+    "name": "Tom Bombadil",
+    "shortName": "Tom",
+    "race": "desconocida",
+    "color": "#c0a020",
+    "initials": "T",
+    "group": "bosque-viejo",
+    "role": "secondary"
+  },
+  {
+    "id": "baya-de-oro",
+    "name": "Baya de Oro",
+    "altNames": ["Goldberry"],
+    "race": "desconocida",
+    "color": "#d0b040",
+    "initials": "BO",
+    "group": "bosque-viejo",
+    "role": "secondary"
+  },
+  {
+    "id": "cebadilla-mantecona",
+    "name": "Cebadilla Mantecona",
+    "shortName": "Mantecona",
+    "altNames": ["Barliman Butterbur"],
+    "race": "hombre (Bree)",
+    "color": "#9a6a4a",
+    "initials": "C",
+    "group": "bree",
+    "role": "secondary"
+  },
+  {
+    "id": "glorfindel",
+    "name": "Glorfindel",
+    "race": "elfo",
+    "color": "#c7a64a",
+    "initials": "Gf",
+    "group": "elfos",
+    "role": "secondary"
+  },
+  {
+    "id": "elrond",
+    "name": "Elrond",
+    "race": "medio elfo",
+    "color": "#4a6fa0",
+    "initials": "E",
+    "group": "elfos",
+    "role": "secondary"
+  },
+  {
+    "id": "gloin",
+    "name": "Glóin",
+    "race": "enano",
+    "color": "#9a6a3a",
+    "initials": "Gn",
+    "group": "enanos",
+    "role": "secondary"
+  },
+  {
+    "id": "haldir",
+    "name": "Haldir",
+    "race": "elfo",
+    "color": "#5a9a6a",
+    "initials": "Ha",
+    "group": "elfos",
+    "role": "secondary"
+  },
+  {
+    "id": "galadriel",
+    "name": "Galadriel",
+    "race": "elfo",
+    "color": "#b8a24a",
+    "initials": "Gd",
+    "group": "elfos",
+    "role": "secondary"
+  },
+  {
+    "id": "celeborn",
+    "name": "Celeborn",
+    "race": "elfo",
+    "color": "#8a9ab0",
+    "initials": "Ce",
+    "group": "elfos",
+    "role": "secondary"
+  },
+  {
+    "id": "radagast",
+    "name": "Radagast",
+    "altNames": ["Radagast el Pardo"],
+    "race": "maia (istar)",
+    "color": "#7a6a3a",
+    "initials": "R",
+    "group": "istari",
+    "role": "secondary"
+  },
+  {
+    "id": "saruman",
+    "name": "Saruman",
+    "altNames": ["Saruman el Blanco", "Curunír"],
+    "race": "maia (istar)",
+    "color": "#9aa0a8",
+    "initials": "Sa",
+    "group": "istari",
+    "role": "secondary"
+  },
+  {
+    "id": "gwaihir",
+    "name": "Gwaihir",
+    "altNames": ["Señor de los Vientos", "Windlord"],
+    "race": "águila",
+    "color": "#a07a4a",
+    "initials": "Gw",
+    "group": "aguilas",
+    "role": "secondary"
+  },
+  {
+    "id": "theoden",
+    "name": "Théoden",
+    "race": "hombre (Rohan)",
+    "color": "#3f7a3a",
+    "initials": "Th",
+    "group": "rohan",
+    "role": "secondary"
+  },
+  {
+    "id": "theodred",
+    "name": "Théodred",
+    "race": "hombre (Rohan)",
+    "color": "#5a8a4a",
+    "initials": "Td",
+    "group": "rohan",
+    "role": "secondary"
+  },
+  {
+    "id": "eomer",
+    "name": "Éomer",
+    "race": "hombre (Rohan)",
+    "color": "#4a7a5a",
+    "initials": "Éo",
+    "group": "rohan",
+    "role": "secondary"
+  },
+  {
+    "id": "eowyn",
+    "name": "Éowyn",
+    "race": "mujer (Rohan)",
+    "color": "#7a9a5a",
+    "initials": "Éw",
+    "group": "rohan",
+    "role": "secondary"
+  },
+  {
+    "id": "denethor",
+    "name": "Denethor",
+    "race": "hombre (Gondor)",
+    "color": "#5a5a6a",
+    "initials": "D",
+    "group": "gondor",
+    "role": "secondary"
+  },
+  {
+    "id": "faramir",
+    "name": "Faramir",
+    "race": "hombre (Gondor)",
+    "color": "#6a7a9a",
+    "initials": "Fa",
+    "group": "gondor",
+    "role": "secondary"
+  },
+  {
+    "id": "barbol",
+    "name": "Bárbol",
+    "altNames": ["Fangorn", "Treebeard"],
+    "race": "ent",
+    "color": "#6a5a3a",
+    "initials": "Bá",
+    "group": "ents",
+    "role": "secondary"
+  }
+]

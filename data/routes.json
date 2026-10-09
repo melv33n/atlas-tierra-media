@@ -1,1 +1,493 @@
-[]
+[
+  {
+    "id": "bolson-cerrado--bosque-cerrado",
+    "from": "bolson-cerrado",
+    "to": "bosque-cerrado",
+    "via": [
+      [376, 1084],
+      [386, 1076]
+    ]
+  },
+  {
+    "id": "bosque-cerrado--granja-de-maggot",
+    "from": "bosque-cerrado",
+    "to": "granja-de-maggot",
+    "via": [[399, 1062]]
+  },
+  {
+    "id": "granja-de-maggot--balsadera-de-gamoburgo",
+    "from": "granja-de-maggot",
+    "to": "balsadera-de-gamoburgo",
+    "via": [[409, 1062]]
+  },
+  {
+    "id": "balsadera-de-gamoburgo--cricava",
+    "from": "balsadera-de-gamoburgo",
+    "to": "cricava",
+    "via": [[416, 1063]]
+  },
+  {
+    "id": "cricava--viejo-hombre-sauce",
+    "from": "cricava",
+    "to": "viejo-hombre-sauce",
+    "via": [
+      [426.1, 1061],
+      [433.6, 1058],
+      [439.4, 1054]
+    ]
+  },
+  {
+    "id": "viejo-hombre-sauce--casa-de-tom-bombadil",
+    "from": "viejo-hombre-sauce",
+    "to": "casa-de-tom-bombadil",
+    "via": [
+      [449.7, 1053],
+      [455.5, 1052]
+    ]
+  },
+  {
+    "id": "casa-de-tom-bombadil--tumulos",
+    "from": "casa-de-tom-bombadil",
+    "to": "tumulos",
+    "via": [[462.4, 1055]]
+  },
+  {
+    "id": "tumulos--bree",
+    "from": "tumulos",
+    "to": "bree",
+    "via": [
+      [466.4, 1068],
+      [468.1, 1076]
+    ]
+  },
+  {
+    "id": "bree--pantanos-de-moscagua",
+    "from": "bree",
+    "to": "pantanos-de-moscagua",
+    "via": [
+      [495.7, 1090],
+      [526.6, 1092],
+      [546.3, 1080]
+    ]
+  },
+  {
+    "id": "pantanos-de-moscagua--cima-de-los-vientos",
+    "from": "pantanos-de-moscagua",
+    "to": "cima-de-los-vientos",
+    "via": [
+      [582.1, 1086],
+      [603.1, 1083]
+    ]
+  },
+  {
+    "id": "cima-de-los-vientos--ultimo-puente",
+    "from": "cima-de-los-vientos",
+    "to": "ultimo-puente",
+    "via": [
+      [650, 1066],
+      [700, 1068],
+      [740, 1070]
+    ],
+    "roadId": "camino-del-este"
+  },
+  {
+    "id": "ultimo-puente--trolls-de-piedra",
+    "from": "ultimo-puente",
+    "to": "trolls-de-piedra",
+    "via": [
+      [784, 1080],
+      [800, 1086]
+    ]
+  },
+  {
+    "id": "trolls-de-piedra--vado-del-bruinen",
+    "from": "trolls-de-piedra",
+    "to": "vado-del-bruinen",
+    "via": [
+      [818, 1074],
+      [826, 1060]
+    ]
+  },
+  {
+    "id": "vado-del-bruinen--rivendel",
+    "from": "vado-del-bruinen",
+    "to": "rivendel",
+    "via": [[848, 1058]],
+    "roadId": "camino-del-este"
+  },
+  {
+    "id": "rivendel--acebeda",
+    "from": "rivendel",
+    "to": "acebeda",
+    "via": [
+      [856, 1030],
+      [862, 990],
+      [860, 955]
+    ]
+  },
+  {
+    "id": "acebeda--paso-del-caradhras",
+    "from": "acebeda",
+    "to": "paso-del-caradhras",
+    "via": [
+      [878, 926],
+      [898, 921]
+    ]
+  },
+  {
+    "id": "paso-del-caradhras--faldas-del-caradhras",
+    "from": "paso-del-caradhras",
+    "to": "faldas-del-caradhras",
+    "via": [[898, 916]]
+  },
+  {
+    "id": "faldas-del-caradhras--puertas-de-moria",
+    "from": "faldas-del-caradhras",
+    "to": "puertas-de-moria",
+    "via": [[886, 906]]
+  },
+  {
+    "id": "puertas-de-moria--sala-veintiuno",
+    "from": "puertas-de-moria",
+    "to": "sala-veintiuno",
+    "via": [
+      [898, 900],
+      [908, 899]
+    ]
+  },
+  {
+    "id": "sala-veintiuno--camara-de-mazarbul",
+    "from": "sala-veintiuno",
+    "to": "camara-de-mazarbul",
+    "via": []
+  },
+  {
+    "id": "camara-de-mazarbul--puente-de-khazad-dum",
+    "from": "camara-de-mazarbul",
+    "to": "puente-de-khazad-dum",
+    "via": [[917, 899]]
+  },
+  {
+    "id": "puente-de-khazad-dum--valle-del-arroyo-sombrio",
+    "from": "puente-de-khazad-dum",
+    "to": "valle-del-arroyo-sombrio",
+    "via": [[926, 901]]
+  },
+  {
+    "id": "valle-del-arroyo-sombrio--nimrodel",
+    "from": "valle-del-arroyo-sombrio",
+    "to": "nimrodel",
+    "via": [
+      [944, 906],
+      [955, 911]
+    ]
+  },
+  {
+    "id": "nimrodel--cerin-amroth",
+    "from": "nimrodel",
+    "to": "cerin-amroth",
+    "via": [[971, 909]]
+  },
+  {
+    "id": "cerin-amroth--caras-galadhon",
+    "from": "cerin-amroth",
+    "to": "caras-galadhon",
+    "via": [[990, 900]]
+  },
+  {
+    "id": "caras-galadhon--egladil",
+    "from": "caras-galadhon",
+    "to": "egladil",
+    "via": [[1009, 889]]
+  },
+  {
+    "id": "egladil--sarn-gebir",
+    "from": "egladil",
+    "to": "sarn-gebir",
+    "via": [
+      [1028, 870],
+      [1035, 820],
+      [1040, 780],
+      [1044, 750]
+    ]
+  },
+  {
+    "id": "sarn-gebir--argonath",
+    "from": "sarn-gebir",
+    "to": "argonath",
+    "via": [[1047, 720]]
+  },
+  {
+    "id": "argonath--parth-galen",
+    "from": "argonath",
+    "to": "parth-galen",
+    "via": [
+      [1051, 690],
+      [1050, 665]
+    ]
+  },
+  {
+    "id": "parth-galen--amon-hen",
+    "from": "parth-galen",
+    "to": "amon-hen",
+    "via": []
+  },
+  {
+    "id": "amon-hen--emyn-muil",
+    "from": "amon-hen",
+    "to": "emyn-muil",
+    "via": [
+      [1045, 651],
+      [1052, 652],
+      [1061, 656],
+      [1070, 652]
+    ]
+  },
+  {
+    "id": "parth-galen--emyn-muil",
+    "from": "parth-galen",
+    "to": "emyn-muil",
+    "via": [
+      [1052, 652],
+      [1061, 656],
+      [1070, 652]
+    ]
+  },
+  {
+    "id": "bolson-cerrado--vado-sarn",
+    "from": "bolson-cerrado",
+    "to": "vado-sarn",
+    "via": [
+      [378, 1040],
+      [405, 990]
+    ]
+  },
+  {
+    "id": "vado-sarn--bree",
+    "from": "vado-sarn",
+    "to": "bree",
+    "via": [
+      [446.5, 1000],
+      [463.5, 1035],
+      [469.9, 1062]
+    ]
+  },
+  {
+    "id": "bree--isengard",
+    "from": "bree",
+    "to": "isengard",
+    "via": [
+      [509.8, 1000],
+      [560, 930],
+      [610, 870],
+      [660, 820],
+      [700, 760],
+      [740, 700],
+      [770, 650],
+      [785, 615],
+      [792, 640]
+    ],
+    "roadId": "camino-verde"
+  },
+  {
+    "id": "isengard--edoras",
+    "from": "isengard",
+    "to": "edoras",
+    "via": [
+      [805, 640],
+      [840, 605],
+      [865, 580]
+    ]
+  },
+  {
+    "id": "edoras--vados-del-isen",
+    "from": "edoras",
+    "to": "vados-del-isen",
+    "via": [
+      [860, 580],
+      [825, 600]
+    ],
+    "roadId": "gran-camino-del-oeste"
+  },
+  {
+    "id": "vados-del-isen--tharbad",
+    "from": "vados-del-isen",
+    "to": "tharbad",
+    "via": [
+      [770, 650],
+      [740, 700],
+      [700, 760]
+    ],
+    "roadId": "camino-verde"
+  },
+  {
+    "id": "tharbad--vado-sarn",
+    "from": "tharbad",
+    "to": "vado-sarn",
+    "via": [
+      [600, 870],
+      [520, 920],
+      [460, 945]
+    ]
+  },
+  {
+    "id": "vado-sarn--hobbiton",
+    "from": "vado-sarn",
+    "to": "hobbiton",
+    "via": [
+      [405, 990],
+      [385, 1040]
+    ]
+  },
+  {
+    "id": "hobbiton--cricava",
+    "from": "hobbiton",
+    "to": "cricava",
+    "via": [
+      [392, 1086],
+      [410, 1083],
+      [418, 1072]
+    ],
+    "roadId": "camino-del-este"
+  },
+  {
+    "id": "cricava--bree",
+    "from": "cricava",
+    "to": "bree",
+    "via": [
+      [424, 1079],
+      [446.3, 1085],
+      [462.4, 1080]
+    ],
+    "roadId": "camino-del-este"
+  },
+  {
+    "id": "bree--cima-de-los-vientos",
+    "from": "bree",
+    "to": "cima-de-los-vientos",
+    "via": [
+      [508.0, 1077],
+      [551.2, 1088],
+      [588.3, 1078]
+    ],
+    "roadId": "camino-del-este"
+  },
+  {
+    "id": "cima-de-los-vientos--rivendel",
+    "from": "cima-de-los-vientos",
+    "to": "rivendel",
+    "via": [
+      [660, 1100],
+      [740, 1112],
+      [810, 1100],
+      [848, 1070]
+    ]
+  },
+  {
+    "id": "puente-de-khazad-dum--celebdil",
+    "from": "puente-de-khazad-dum",
+    "to": "celebdil",
+    "via": []
+  },
+  {
+    "id": "celebdil--caras-galadhon",
+    "from": "celebdil",
+    "to": "caras-galadhon",
+    "via": []
+  },
+  {
+    "id": "minas-tirith--edoras",
+    "from": "minas-tirith",
+    "to": "edoras",
+    "via": [
+      [1095, 430],
+      [1080, 466],
+      [1050, 502],
+      [1010, 528],
+      [970, 545],
+      [930, 556]
+    ],
+    "roadId": "gran-camino-del-oeste"
+  },
+  {
+    "id": "tharbad--rivendel",
+    "from": "tharbad",
+    "to": "rivendel",
+    "via": [
+      [700, 880],
+      [745, 950],
+      [790, 1010],
+      [828, 1048]
+    ]
+  },
+  {
+    "id": "estancias-de-thranduil--rivendel",
+    "from": "estancias-de-thranduil",
+    "to": "rivendel",
+    "via": [
+      [1230, 1086],
+      [1150, 1085],
+      [1070, 1082],
+      [987, 1080],
+      [918, 1078],
+      [890, 1072]
+    ],
+    "roadId": "camino-del-bosque-viejo"
+  },
+  {
+    "id": "erebor--rivendel",
+    "from": "erebor",
+    "to": "rivendel",
+    "via": [
+      [1345, 1180],
+      [1335, 1110],
+      [1300, 1085],
+      [1150, 1085],
+      [1070, 1082],
+      [987, 1080],
+      [918, 1078],
+      [890, 1072]
+    ],
+    "roadId": "camino-del-bosque-viejo"
+  },
+  {
+    "id": "estancias-de-thranduil--moria",
+    "from": "estancias-de-thranduil",
+    "to": "moria",
+    "via": [
+      [1180, 1110],
+      [1085, 1010],
+      [990, 960],
+      [940, 915]
+    ]
+  },
+  {
+    "id": "moria--nimrodel",
+    "from": "moria",
+    "to": "nimrodel",
+    "via": [
+      [926, 901],
+      [944, 906],
+      [955, 911]
+    ]
+  },
+  {
+    "id": "nimrodel--egladil",
+    "from": "nimrodel",
+    "to": "egladil",
+    "via": [
+      [985, 896],
+      [1009, 889]
+    ]
+  },
+  {
+    "id": "sarn-gebir--emyn-muil",
+    "from": "sarn-gebir",
+    "to": "emyn-muil",
+    "via": [
+      [1050, 720],
+      [1063, 695],
+      [1072, 668]
+    ]
+  }
+]

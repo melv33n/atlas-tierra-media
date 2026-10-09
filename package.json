@@ -13,7 +13,8 @@
     "validate": "node scripts/validate.ts",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "check": "npm run typecheck && npm run format:check && npm test && npm run validate && npm run build"
+    "check": "npm run typecheck && npm run format:check && npm test && npm run validate && npm run build",
+    "docs:inferences": "node scripts/inferences.ts && prettier --write docs/DATA_SOURCES.md"
   },
   "repository": {
     "type": "git",

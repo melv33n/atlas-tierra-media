@@ -1,7 +1,7 @@
 import L from 'leaflet';
 import type { GeoData } from '../data/geo.ts';
 import { isLine, isPoint, isPolygon } from '../data/geo.ts';
-import type { Place, XY } from '../data/types.ts';
+import type { DataBundle, XY } from '../data/types.ts';
 import { centroid, pointAt } from '../lib/geometry.ts';
 import { toLatLng } from '../lib/coords.ts';
 import { addBaseLayers, createPanes } from './baseLayers.ts';
@@ -10,6 +10,8 @@ import { LabelLayer, screenAngle, type LabelKind } from './labels.ts';
 import { PlaceLayer } from './places.ts';
 import { ReliefLayer } from './relief.ts';
 import { injectPatterns } from './patterns.ts';
+import { JourneyLayer } from './journeyLayer.ts';
+import { addLegend } from './legend.ts';
 import { shapeOf } from './shapes.ts';
 
 /** Zona con contenido (el resto del lienzo es margen): encuadre inicial. */
@@ -23,13 +25,14 @@ const CORE: XY = [760, 860];
 
 export interface AtlasMap {
   map: L.Map;
+  journeys: JourneyLayer;
 }
 
 /** Mapa no geográfico: 1 unidad = 1 milla; [lat, lng] = [y, x]. */
 export function createMap(
   el: HTMLElement,
   geo: GeoData,
-  places: Place[],
+  story: DataBundle,
   opts: { debug?: boolean } = {},
 ): AtlasMap {
   injectPatterns();
@@ -50,7 +53,10 @@ export function createMap(
   const renderers = createPanes(map);
   addBaseLayers(map, geo, renderers);
   new ReliefLayer(map, geo.mountains, renderers.relief);
-  const placeLayer = new PlaceLayer(map, places, renderers.places);
+  const { places } = story;
+  const journeys = new JourneyLayer(map, story, renderers.routes);
+  addLegend(map, story.characters, journeys);
+  const placeLayer = new PlaceLayer(map, places, renderers.places, story.events, story.characters);
 
   const labels = new LabelLayer(map, 'labels');
   labels.setObstacles(() => placeLayer.visiblePoints());
@@ -71,7 +77,7 @@ export function createMap(
   void document.fonts?.ready.then(() => labels.measure());
 
   if (opts.debug) enableDebug(map, renderers.grid);
-  return { map };
+  return { map, journeys };
 }
 
 /**

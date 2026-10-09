@@ -43,6 +43,8 @@ export type Role = 'main' | 'secondary';
 export interface Character {
   id: string;
   name: string;
+  /** Nombre corto para leyendas y tablas (Sam, Merry…). */
+  shortName?: string;
   altNames?: string[];
   race: string;
   color: string;
@@ -115,6 +117,8 @@ export const VOLUMES = {
   2: 'Las Dos Torres',
   3: 'El Retorno del Rey',
 } as const;
+
+export const shortNameOf = (c: Character): string => c.shortName ?? c.name;
 
 export function volumeOfBook(book: number): 1 | 2 | 3 {
   return book <= 2 ? 1 : book <= 4 ? 2 : 3;
