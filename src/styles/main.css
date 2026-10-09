@@ -6,6 +6,29 @@
   --sea: #c9d6d2;
   --bar: #2f2a24;
   --bar-ink: #f3ead8;
+  --land: #f1e6cf;
+  --land-ink: #6b5a43;
+  --coast-1: #8fa8a4;
+  --coast-2: #a9bfbb;
+  --coast-3: #bccdca;
+  --water: #b9cdc9;
+  --water-ink: #5c7d84;
+  --forest-bg: #dfe2c0;
+  --forest-ink: #8f9a68;
+  --forest-label: #4f5a2c;
+  --marsh-bg: #dfe0cc;
+  --marsh-ink: #7f8d79;
+  --relief-ink: #6a5640;
+  --relief-shade: #cdb998;
+  --relief-fire: #c4704f;
+  --road: #a1573c;
+  --border: #9a7b5a;
+  --label: #3b2f22;
+  --label-region: #8a6f52;
+  --label-water: #3f6a73;
+  --label-halo: rgba(241, 230, 207, 0.9);
+  --font-map: 'Alegreya', Georgia, serif;
+  --font-map-sc: 'Alegreya SC', 'Alegreya', Georgia, serif;
   --font-ui: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
   color-scheme: light;
 }
@@ -18,6 +41,27 @@
     --sea: #1d2a2c;
     --bar: #15130f;
     --bar-ink: #e9dfcc;
+    --land: #2f2a22;
+    --land-ink: #a8977c;
+    --coast-1: #3b5458;
+    --coast-2: #2c4145;
+    --coast-3: #233538;
+    --water: #1c2b2e;
+    --water-ink: #6e9aa2;
+    --forest-bg: #343826;
+    --forest-ink: #6f7c50;
+    --forest-label: #b4c28c;
+    --marsh-bg: #33362c;
+    --marsh-ink: #79876f;
+    --relief-ink: #c2ad8c;
+    --relief-shade: #4a3f31;
+    --relief-fire: #b05a3c;
+    --road: #c47a5a;
+    --border: #9b8263;
+    --label: #ece2cf;
+    --label-region: #b59d7d;
+    --label-water: #8fbac1;
+    --label-halo: rgba(47, 42, 34, 0.9);
     color-scheme: dark;
   }
 }
@@ -29,6 +73,27 @@
   --sea: #1d2a2c;
   --bar: #15130f;
   --bar-ink: #e9dfcc;
+  --land: #2f2a22;
+  --land-ink: #a8977c;
+  --coast-1: #3b5458;
+  --coast-2: #2c4145;
+  --coast-3: #233538;
+  --water: #1c2b2e;
+  --water-ink: #6e9aa2;
+  --forest-bg: #343826;
+  --forest-ink: #6f7c50;
+  --forest-label: #b4c28c;
+  --marsh-bg: #33362c;
+  --marsh-ink: #79876f;
+  --relief-ink: #c2ad8c;
+  --relief-shade: #4a3f31;
+  --relief-fire: #b05a3c;
+  --road: #c47a5a;
+  --border: #9b8263;
+  --label: #ece2cf;
+  --label-region: #b59d7d;
+  --label-water: #8fbac1;
+  --label-halo: rgba(47, 42, 34, 0.9);
   color-scheme: dark;
 }
 
@@ -70,4 +135,10 @@ body {
   flex: 1;
   min-height: 0;
   background: var(--sea);
+}
+
+@media (max-width: 480px) {
+  .topbar__note {
+    display: none;
+  }
 }

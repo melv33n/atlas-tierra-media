@@ -5,27 +5,80 @@
   "type": "object",
   "required": ["type", "features"],
   "properties": {
-    "type": { "const": "FeatureCollection" },
+    "type": {
+      "const": "FeatureCollection"
+    },
     "features": {
       "type": "array",
       "items": {
         "type": "object",
         "required": ["type", "properties", "geometry"],
         "properties": {
-          "type": { "const": "Feature" },
+          "type": {
+            "const": "Feature"
+          },
           "properties": {
             "type": "object",
             "additionalProperties": false,
             "required": ["id", "kind"],
             "properties": {
-              "id": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
-              "kind": { "type": "string" },
-              "name": { "type": "string" },
-              "altNames": { "type": "array", "items": { "type": "string" } },
-              "rank": { "type": "integer", "minimum": 1, "maximum": 5 },
-              "labelZoom": { "type": "integer", "minimum": -3, "maximum": 4 },
-              "smooth": { "type": "boolean" },
-              "note": { "type": "string" }
+              "id": {
+                "type": "string",
+                "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+              },
+              "kind": {
+                "enum": [
+                  "land",
+                  "island",
+                  "lake",
+                  "range",
+                  "hills",
+                  "peak",
+                  "river",
+                  "forest",
+                  "marsh",
+                  "road",
+                  "region",
+                  "border"
+                ]
+              },
+              "name": {
+                "type": "string"
+              },
+              "altNames": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "rank": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 5
+              },
+              "labelZoom": {
+                "type": "integer",
+                "minimum": -3,
+                "maximum": 4
+              },
+              "smooth": {
+                "type": "boolean"
+              },
+              "note": {
+                "type": "string"
+              },
+              "width": {
+                "type": "number",
+                "minimum": 1,
+                "maximum": 200,
+                "description": "Anchura de la banda de montañas, en millas."
+              },
+              "labelAt": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1,
+                "description": "Posición de la etiqueta a lo largo de la línea (0–1)."
+              }
             }
           },
           "geometry": {
@@ -35,7 +88,9 @@
               "type": {
                 "enum": ["Point", "LineString", "MultiLineString", "Polygon", "MultiPolygon"]
               },
-              "coordinates": { "type": "array" }
+              "coordinates": {
+                "type": "array"
+              }
             }
           }
         }

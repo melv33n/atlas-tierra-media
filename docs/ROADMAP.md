@@ -2,7 +2,7 @@
 
 Estado: ✅ hecho · 🚧 en curso · ⏳ pendiente
 
-## H0 — Esqueleto 🚧
+## H0 — Esqueleto ✅
 
 - [x] Vite + TypeScript estricto, Leaflet `CRS.Simple`, página mínima
 - [x] Schemas JSON (fecha, lugares, personajes, eventos, rutas, tramos, geo)
@@ -11,7 +11,7 @@ Estado: ✅ hecho · 🚧 en curso · ⏳ pendiente
 - [x] CI (typecheck, formato, tests, validate, build ×2)
 - [x] Workflow de Pages preparado (desactivado hasta `PAGES_ENABLED=true`)
 - [x] `CLAUDE.md` + docs de memoria
-- [ ] PR mergeado
+- [x] PR mergeado (#1)
 
 ## H1 — Mapa base ⏳
 
