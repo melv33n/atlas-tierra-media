@@ -1,0 +1,35 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://atlas-tierra-media.local/schemas/events.schema.json",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["id", "date", "placeId", "title", "summary", "characterIds", "ref"],
+    "properties": {
+      "id": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+      "date": { "$ref": "date.schema.json" },
+      "endDate": { "$ref": "date.schema.json" },
+      "placeId": { "type": "string" },
+      "title": { "type": "string", "minLength": 1, "maxLength": 80 },
+      "summary": {
+        "description": "1–2 frases con palabras propias; nunca citas del libro.",
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 320
+      },
+      "characterIds": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+      "ref": {
+        "type": "object",
+        "additionalProperties": false,
+        "minProperties": 1,
+        "properties": {
+          "book": { "type": "integer", "minimum": 1, "maximum": 6 },
+          "chapter": { "type": "integer", "minimum": 1, "maximum": 12 },
+          "appendix": { "enum": ["A", "B", "C", "D", "E", "F"] }
+        }
+      },
+      "tags": { "type": "array", "items": { "type": "string" }, "uniqueItems": true }
+    }
+  }
+}

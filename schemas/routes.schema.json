@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://atlas-tierra-media.local/schemas/routes.schema.json",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["id", "from", "to", "via"],
+    "properties": {
+      "id": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+      "from": { "type": "string" },
+      "to": { "type": "string" },
+      "via": { "type": "array", "items": { "$ref": "xy.schema.json" } },
+      "roadId": { "type": "string" }
+    }
+  }
+}
