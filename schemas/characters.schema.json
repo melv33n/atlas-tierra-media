@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://atlas-tierra-media.local/schemas/characters.schema.json",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["id", "name", "race", "color", "initials", "role"],
+    "properties": {
+      "id": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+      "name": { "type": "string", "minLength": 1 },
+      "altNames": { "type": "array", "items": { "type": "string" } },
+      "race": { "type": "string" },
+      "color": { "type": "string", "pattern": "^#[0-9a-fA-F]{6}$" },
+      "initials": { "type": "string", "minLength": 1, "maxLength": 3 },
+      "group": { "type": "string" },
+      "role": { "enum": ["main", "secondary"] }
+    }
+  }
+}

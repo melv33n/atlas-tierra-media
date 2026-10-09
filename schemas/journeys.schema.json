@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://atlas-tierra-media.local/schemas/journeys.schema.json",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["characterId", "legs"],
+    "properties": {
+      "characterId": { "type": "string" },
+      "legs": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["from", "to", "start", "end", "confidence"],
+          "properties": {
+            "from": { "type": "string" },
+            "to": { "type": "string" },
+            "start": { "$ref": "date.schema.json" },
+            "end": { "$ref": "date.schema.json" },
+            "routeId": { "type": "string" },
+            "via": { "type": "array", "items": { "$ref": "xy.schema.json" } },
+            "confidence": { "enum": ["canon", "inferred"] },
+            "note": { "type": "string" }
+          }
+        }
+      }
+    }
+  }
+}
