@@ -1,0 +1,13 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {"type":"Feature","properties":{"id":"camino-del-este","kind":"road","name":"Camino del Este","altNames":["Gran Camino del Este","East Road"],"labelZoom":1,"labelAt":0.62},"geometry":{"type":"LineString","coordinates":[[180,1080],[230,1082],[280,1076],[318,1072],[350,1078],[378,1083],[392,1086],[410,1083],[432,1081],[462,1085],[490,1080],[505,1075],[535,1077],[570,1088],[600,1078],[618,1072],[650,1066],[700,1068],[740,1070],[770,1070],[800,1066],[820,1060],[835,1055],[850,1058],[860,1060]]}},
+    {"type":"Feature","properties":{"id":"camino-verde","kind":"road","name":"Camino Verde","altNames":["Greenway","Camino del Norte y del Sur"],"labelZoom":1,"labelAt":0.6},"geometry":{"type":"LineString","coordinates":[[530,1220],[515,1150],[505,1075],[520,1000],[560,930],[610,870],[660,820],[700,760],[740,700],[770,650],[785,615]]}},
+    {"type":"Feature","properties":{"id":"gran-camino-del-oeste","kind":"road","name":"Gran Camino del Oeste","altNames":["Great West Road"],"labelZoom":1,"labelAt":0.4},"geometry":{"type":"LineString","coordinates":[[785,615],[825,600],[860,580],[882,570],[930,556],[970,545],[1010,528],[1050,502],[1080,466],[1095,430],[1092,398]]}},
+    {"type":"Feature","properties":{"id":"camino-del-bosque-viejo","kind":"road","name":"Camino del Bosque Viejo","altNames":["Old Forest Road","Men-i-Naugrim"],"labelZoom":1,"labelAt":0.6},"geometry":{"type":"LineString","coordinates":[[860,1060],[890,1072],[918,1078],[950,1080],[987,1080],[1030,1080],[1070,1082],[1150,1085],[1230,1086],[1300,1085],[1400,1080]]}},
+    {"type":"Feature","properties":{"id":"camino-de-morgul","kind":"road","name":"Camino de Morgul","labelZoom":2,"labelAt":0.8},"geometry":{"type":"LineString","coordinates":[[1092,398],[1100,400],[1110,402],[1125,400],[1140,398],[1152,400]]}},
+    {"type":"Feature","properties":{"id":"camino-de-ithilien","kind":"road","name":"Camino de Ithilien","altNames":["Camino del Sur","Harad Road"],"labelZoom":2,"labelAt":0.3},"geometry":{"type":"LineString","coordinates":[[1165,522],[1152,500],[1145,460],[1142,425],[1140,398],[1145,330],[1150,270],[1150,215],[1148,120],[1150,-40]]}},
+    {"type":"Feature","properties":{"id":"camino-de-barad-dur","kind":"road","name":"Camino de Barad-dûr","labelZoom":3},"geometry":{"type":"LineString","coordinates":[[1205,488],[1230,470],[1260,462],[1300,478]]}},
+    {"type":"Feature","properties":{"id":"camino-de-isengard","kind":"road","name":"Camino de Isengard","labelZoom":3},"geometry":{"type":"LineString","coordinates":[[785,615],[792,640],[795,668]]}}
+  ]
+}

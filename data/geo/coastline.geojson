@@ -1,0 +1,13 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {"type":"Feature","properties":{"id":"tierra-media","kind":"land","name":"Tierra Media","note":"Masa continental; el mar es el fondo."},"geometry":{"type":"Polygon","coordinates":[[[90,1520],[180,1575],[290,1590],[340,1500],[380,1462],[450,1452],[515,1475],[560,1585],[680,1620],[820,1665],[900,2000],[2700,2000],[2700,-500],[820,-500],[880,20],[930,60],[975,110],[1005,140],[1030,160],[1042,172],[1035,190],[1015,210],[990,232],[950,255],[930,268],[900,280],[870,292],[848,298],[830,296],[815,290],[805,298],[800,315],[780,330],[740,340],[690,338],[640,330],[595,335],[560,350],[545,375],[560,410],[585,455],[605,500],[630,540],[657,560],[640,580],[610,605],[580,640],[555,675],[540,695],[515,715],[480,740],[440,770],[400,800],[360,825],[310,860],[260,900],[210,945],[165,990],[130,1030],[125,1050],[150,1062],[170,1070],[185,1078],[172,1090],[150,1096],[120,1100],[90,1110],[70,1140],[60,1200],[55,1280],[45,1360],[40,1440],[90,1520]]]}},
+    {"type":"Feature","properties":{"id":"tolfalas","kind":"island","name":"Tolfalas","labelZoom":1},"geometry":{"type":"Polygon","coordinates":[[[985,190],[1000,183],[1010,195],[995,205],[985,190]]]}},
+    {"type":"Feature","properties":{"id":"lago-evendim","kind":"lake","name":"Lago Evendim","altNames":["Nenuial"],"labelZoom":0},"geometry":{"type":"Polygon","coordinates":[[[318,1225],[330,1212],[345,1218],[350,1240],[338,1255],[322,1248],[318,1225]]]}},
+    {"type":"Feature","properties":{"id":"nen-hithoel","kind":"lake","name":"Nen Hithoel","labelZoom":2},"geometry":{"type":"Polygon","coordinates":[[[1046,698],[1054,700],[1060,680],[1061,660],[1056,647],[1049,648],[1045,665],[1044,685],[1046,698]]]}},
+    {"type":"Feature","properties":{"id":"mar-de-rhun","kind":"lake","name":"Mar de Rhûn","labelZoom":-2},"geometry":{"type":"Polygon","coordinates":[[[1500,880],[1540,850],[1600,830],[1660,845],[1700,880],[1720,930],[1690,970],[1630,980],[1570,965],[1520,940],[1500,880]]]}},
+    {"type":"Feature","properties":{"id":"mar-de-nurnen","kind":"lake","name":"Mar de Núrnen","labelZoom":-1},"geometry":{"type":"Polygon","coordinates":[[[1330,310],[1380,295],[1440,300],[1455,330],[1420,350],[1360,345],[1330,310]]]}},
+    {"type":"Feature","properties":{"id":"lago-largo","kind":"lake","name":"Lago Largo","altNames":["Long Lake"],"labelZoom":2},"geometry":{"type":"Polygon","coordinates":[[[1352,1165],[1362,1162],[1366,1190],[1362,1210],[1354,1208],[1350,1185],[1352,1165]]]}},
+    {"type":"Feature","properties":{"id":"kheled-zaram","kind":"lake","name":"Kheled-zâram","altNames":["Espejo","Mirrormere"],"labelZoom":3},"geometry":{"type":"Polygon","coordinates":[[[930,896],[937,895],[938,901],[931,902],[930,896]]]}}
+  ]
+}

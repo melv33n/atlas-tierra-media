@@ -33,6 +33,8 @@ export interface Place {
   coords: XY;
   /** Zoom mínimo al que se muestra la etiqueta (el marcador puede verse antes). */
   zoomMin: number;
+  /** Isla o ciudad lacustre: exento de la comprobación de tierra firme. */
+  onWater?: boolean;
   note?: string;
 }
 

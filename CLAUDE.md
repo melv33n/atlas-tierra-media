@@ -31,7 +31,11 @@ properties (`erasableSyntaxOnly`).
 - `src/lib/coords.ts` — coordenadas propias `[x, y]` en **millas** (x este, y norte, origen SO);
   Leaflet `CRS.Simple` usa `[lat, lng] = [y, x]`.
 - `src/data/validate.ts` — comprobaciones semánticas puras; `scripts/validate.ts` las ejecuta.
-- `src/map/` — Leaflet. `docs/` — memoria del proyecto.
+- `src/map/` — Leaflet: `createMap.ts` (montaje y encuadre), `baseLayers.ts` (paneles y capas
+  vectoriales), `shapes.ts` (rugosidad + suavizado), `glyphs.ts`/`relief.ts` (relieve por zoom),
+  `labels.ts` (etiquetas con anticolisión), `places.ts` (marcadores), `debug.ts` (`?debug`).
+- `src/styles/` — tokens de color (claro/oscuro) en `main.css`, estilo cartográfico en `map.css`.
+- `docs/` — memoria del proyecto.
 
 ## Modelo de datos (resumen)
 

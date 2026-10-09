@@ -1,1 +1,940 @@
-[]
+[
+  {
+    "id": "hobbiton",
+    "name": "Hobbiton",
+    "type": "aldea",
+    "region": "La Comarca",
+    "coords": [370, 1088],
+    "zoomMin": -3
+  },
+  {
+    "id": "bolson-cerrado",
+    "name": "Bolsón Cerrado",
+    "altNames": ["Bag End"],
+    "type": "morada",
+    "region": "La Comarca",
+    "coords": [367, 1092],
+    "zoomMin": 3
+  },
+  {
+    "id": "delagua",
+    "name": "Delagua",
+    "altNames": ["Bywater"],
+    "type": "aldea",
+    "region": "La Comarca",
+    "coords": [379, 1084],
+    "zoomMin": 2
+  },
+  {
+    "id": "cavada-grande",
+    "name": "Cavada Grande",
+    "altNames": ["Michel Delving"],
+    "type": "aldea",
+    "region": "La Comarca",
+    "coords": [318, 1072],
+    "zoomMin": 0
+  },
+  {
+    "id": "alforzaburgo",
+    "name": "Alforzaburgo",
+    "altNames": ["Tuckborough"],
+    "type": "aldea",
+    "region": "La Comarca",
+    "coords": [342, 1058],
+    "zoomMin": 1
+  },
+  {
+    "id": "ranales",
+    "name": "Ranales",
+    "altNames": ["Frogmorton"],
+    "type": "aldea",
+    "region": "La Comarca",
+    "coords": [392, 1089],
+    "zoomMin": 2
+  },
+  {
+    "id": "surcos-blancos",
+    "name": "Surcos Blancos",
+    "altNames": ["Whitfurrows"],
+    "type": "aldea",
+    "region": "La Comarca",
+    "coords": [401, 1087],
+    "zoomMin": 3
+  },
+  {
+    "id": "casa-del-bosque",
+    "name": "Casa del Bosque",
+    "altNames": ["Woodhall"],
+    "type": "aldea",
+    "region": "La Comarca",
+    "coords": [398, 1072],
+    "zoomMin": 3
+  },
+  {
+    "id": "cepeda",
+    "name": "Cepeda",
+    "altNames": ["Stock"],
+    "type": "aldea",
+    "region": "La Comarca",
+    "coords": [406, 1063],
+    "zoomMin": 2
+  },
+  {
+    "id": "granja-de-maggot",
+    "name": "Granja de Maggot",
+    "altNames": ["Farmer Maggot's farm", "Bamfurlong"],
+    "type": "morada",
+    "region": "La Comarca",
+    "coords": [405, 1057],
+    "zoomMin": 3
+  },
+  {
+    "id": "balsadera-de-gamoburgo",
+    "name": "Balsadera de Gamoburgo",
+    "altNames": ["Bucklebury Ferry"],
+    "type": "vado",
+    "region": "Los Gamos",
+    "coords": [412, 1067],
+    "zoomMin": 3
+  },
+  {
+    "id": "gamoburgo",
+    "name": "Gamoburgo",
+    "altNames": ["Bucklebury"],
+    "type": "aldea",
+    "region": "Los Gamos",
+    "coords": [418, 1062],
+    "zoomMin": 2
+  },
+  {
+    "id": "casa-brandi",
+    "name": "Casa Brandi",
+    "altNames": ["Brandy Hall"],
+    "type": "morada",
+    "region": "Los Gamos",
+    "coords": [417, 1067],
+    "zoomMin": 3
+  },
+  {
+    "id": "cricava",
+    "name": "Cricava",
+    "altNames": ["Crickhollow"],
+    "type": "morada",
+    "region": "Los Gamos",
+    "coords": [421, 1058],
+    "zoomMin": 3
+  },
+  {
+    "id": "puente-del-brandivino",
+    "name": "Puente del Brandivino",
+    "altNames": ["Brandywine Bridge", "Puente de los Arcos de Piedra"],
+    "type": "puente",
+    "region": "La Comarca",
+    "coords": [410, 1083],
+    "zoomMin": 1
+  },
+  {
+    "id": "puerta-del-seto",
+    "name": "Puerta del Seto",
+    "altNames": ["Hay Gate", "Puerta de Los Gamos"],
+    "type": "puerta",
+    "region": "Los Gamos",
+    "coords": [424, 1079],
+    "zoomMin": 3
+  },
+  {
+    "id": "vado-sarn",
+    "name": "Vado Sarn",
+    "altNames": ["Sarn Ford"],
+    "type": "vado",
+    "region": "La Comarca",
+    "coords": [420, 952],
+    "zoomMin": 1
+  },
+  {
+    "id": "casa-de-tom-bombadil",
+    "name": "Casa de Tom Bombadil",
+    "altNames": ["Tom Bombadil's house"],
+    "type": "morada",
+    "region": "Bosque Viejo",
+    "coords": [487, 1051],
+    "zoomMin": 1
+  },
+  {
+    "id": "tumulos",
+    "name": "Túmulos",
+    "altNames": ["Barrow-downs", "Tyrn Gorthad"],
+    "type": "colina",
+    "region": "Quebradas de los Túmulos",
+    "coords": [493, 1060],
+    "zoomMin": 2
+  },
+  {
+    "id": "bree",
+    "name": "Bree",
+    "type": "aldea",
+    "region": "Tierra de Bree",
+    "coords": [505, 1075],
+    "zoomMin": -2
+  },
+  {
+    "id": "entibo",
+    "name": "Entibo",
+    "altNames": ["Staddle"],
+    "type": "aldea",
+    "region": "Tierra de Bree",
+    "coords": [512, 1069],
+    "zoomMin": 3
+  },
+  {
+    "id": "combe",
+    "name": "Combe",
+    "type": "aldea",
+    "region": "Tierra de Bree",
+    "coords": [517, 1077],
+    "zoomMin": 3
+  },
+  {
+    "id": "archet",
+    "name": "Archet",
+    "type": "aldea",
+    "region": "Tierra de Bree",
+    "coords": [523, 1085],
+    "zoomMin": 3
+  },
+  {
+    "id": "pantanos-de-moscagua",
+    "name": "Pantanos de Moscagua",
+    "altNames": ["Midgewater Marshes"],
+    "type": "lugar",
+    "region": "Eriador",
+    "coords": [578, 1073],
+    "zoomMin": 1
+  },
+  {
+    "id": "cima-de-los-vientos",
+    "name": "Cima de los Vientos",
+    "altNames": ["Amon Sûl", "Weathertop"],
+    "type": "colina",
+    "region": "Eriador",
+    "coords": [619, 1078],
+    "zoomMin": -1
+  },
+  {
+    "id": "ultimo-puente",
+    "name": "Último Puente",
+    "altNames": ["Last Bridge", "Puente de Mitheithel"],
+    "type": "puente",
+    "region": "Eriador",
+    "coords": [770, 1070],
+    "zoomMin": 0
+  },
+  {
+    "id": "trolls-de-piedra",
+    "name": "Trolls de piedra",
+    "altNames": ["Stone trolls"],
+    "type": "lugar",
+    "region": "Bosque de los Trolls",
+    "coords": [812, 1085],
+    "zoomMin": 2
+  },
+  {
+    "id": "vado-del-bruinen",
+    "name": "Vado del Bruinen",
+    "altNames": ["Ford of Bruinen", "Vado de Rivendel"],
+    "type": "vado",
+    "region": "Eriador",
+    "coords": [835, 1055],
+    "zoomMin": 0
+  },
+  {
+    "id": "rivendel",
+    "name": "Rivendel",
+    "altNames": ["Imladris", "Rivendell"],
+    "type": "morada",
+    "region": "Eriador",
+    "coords": [860, 1060],
+    "zoomMin": -3
+  },
+  {
+    "id": "acebeda",
+    "name": "Acebeda",
+    "altNames": ["Eregion", "Hollin"],
+    "type": "lugar",
+    "region": "Eriador",
+    "coords": [858, 932],
+    "zoomMin": 0
+  },
+  {
+    "id": "tharbad",
+    "name": "Tharbad",
+    "type": "ruina",
+    "region": "Eriador",
+    "coords": [660, 820],
+    "zoomMin": -1
+  },
+  {
+    "id": "fornost",
+    "name": "Fornost",
+    "altNames": ["Norburgo de los Reyes", "Deadmen’s Dike"],
+    "type": "ruina",
+    "region": "Eriador",
+    "coords": [530, 1222],
+    "zoomMin": -1
+  },
+  {
+    "id": "annuminas",
+    "name": "Annúminas",
+    "type": "ruina",
+    "region": "Eriador",
+    "coords": [314, 1238],
+    "zoomMin": 0
+  },
+  {
+    "id": "puertos-grises",
+    "name": "Puertos Grises",
+    "altNames": ["Mithlond", "Grey Havens"],
+    "type": "puerto",
+    "region": "Lindon",
+    "coords": [178, 1086],
+    "zoomMin": -2
+  },
+  {
+    "id": "torres-blancas",
+    "name": "Torres Blancas",
+    "altNames": ["Elostirion", "White Towers"],
+    "type": "torre",
+    "region": "Colinas de las Torres",
+    "coords": [229, 1083],
+    "zoomMin": 1
+  },
+  {
+    "id": "paso-alto",
+    "name": "Paso Alto",
+    "altNames": ["High Pass", "Cirith Forn en Andrath"],
+    "type": "paso",
+    "region": "Montañas Nubladas",
+    "coords": [916, 1076],
+    "zoomMin": 0
+  },
+  {
+    "id": "paso-del-caradhras",
+    "name": "Paso del Cuerno Rojo",
+    "altNames": ["Paso del Caradhras", "Redhorn Pass", "Puerta del Cuerno Rojo"],
+    "type": "paso",
+    "region": "Montañas Nubladas",
+    "coords": [912, 918],
+    "zoomMin": 1
+  },
+  {
+    "id": "puertas-de-moria",
+    "name": "Puertas de Durin",
+    "altNames": ["Puerta del Oeste de Moria", "West-gate", "Doors of Durin"],
+    "type": "puerta",
+    "region": "Moria",
+    "coords": [888, 900],
+    "zoomMin": 1
+  },
+  {
+    "id": "moria",
+    "name": "Moria",
+    "altNames": ["Khazad-dûm", "Minas de Moria"],
+    "type": "ciudad",
+    "region": "Montañas Nubladas",
+    "coords": [905, 899],
+    "zoomMin": -2
+  },
+  {
+    "id": "camara-de-mazarbul",
+    "name": "Cámara de Mazarbul",
+    "altNames": ["Chamber of Mazarbul", "Cámara de los Registros"],
+    "type": "lugar",
+    "region": "Moria",
+    "coords": [913, 900],
+    "zoomMin": 3
+  },
+  {
+    "id": "puente-de-khazad-dum",
+    "name": "Puente de Khazad-dûm",
+    "altNames": ["Bridge of Khazad-dûm", "Puente de Durin"],
+    "type": "puente",
+    "region": "Moria",
+    "coords": [920, 898],
+    "zoomMin": 2
+  },
+  {
+    "id": "valle-del-arroyo-sombrio",
+    "name": "Valle del Arroyo Sombrío",
+    "altNames": ["Azanulbizar", "Nanduhirion", "Dimrill Dale"],
+    "type": "valle",
+    "region": "Montañas Nubladas",
+    "coords": [933, 905],
+    "zoomMin": 1
+  },
+  {
+    "id": "gundabad",
+    "name": "Gundabad",
+    "altNames": ["Monte Gundabad"],
+    "type": "fortaleza",
+    "region": "Montañas Nubladas",
+    "coords": [960, 1375],
+    "zoomMin": 1
+  },
+  {
+    "id": "cerin-amroth",
+    "name": "Cerin Amroth",
+    "type": "colina",
+    "region": "Lothlórien",
+    "coords": [980, 906],
+    "zoomMin": 2
+  },
+  {
+    "id": "caras-galadhon",
+    "name": "Caras Galadhon",
+    "type": "ciudad",
+    "region": "Lothlórien",
+    "coords": [997, 893],
+    "zoomMin": -2
+  },
+  {
+    "id": "egladil",
+    "name": "Egladil",
+    "altNames": ["El Ángulo", "Naith de Lórien", "Tongue"],
+    "type": "lugar",
+    "region": "Lothlórien",
+    "coords": [1020, 886],
+    "zoomMin": 2
+  },
+  {
+    "id": "sarn-gebir",
+    "name": "Sarn Gebir",
+    "type": "cascada",
+    "region": "Anduin",
+    "coords": [1046, 735],
+    "zoomMin": 1
+  },
+  {
+    "id": "argonath",
+    "name": "Argonath",
+    "altNames": ["Pilares de los Reyes", "Pillars of the Kings"],
+    "type": "puerta",
+    "region": "Anduin",
+    "coords": [1049, 703],
+    "zoomMin": 0
+  },
+  {
+    "id": "tol-brandir",
+    "name": "Tol Brandir",
+    "altNames": ["Tindrock"],
+    "type": "monte",
+    "region": "Nen Hithoel",
+    "coords": [1053, 651],
+    "zoomMin": 2,
+    "onWater": true
+  },
+  {
+    "id": "parth-galen",
+    "name": "Parth Galen",
+    "type": "campo",
+    "region": "Nen Hithoel",
+    "coords": [1046, 649],
+    "zoomMin": 2
+  },
+  {
+    "id": "amon-hen",
+    "name": "Amon Hen",
+    "altNames": ["Colina del Ojo", "Hill of Sight"],
+    "type": "colina",
+    "region": "Emyn Muil",
+    "coords": [1040, 652],
+    "zoomMin": -2
+  },
+  {
+    "id": "amon-lhaw",
+    "name": "Amon Lhaw",
+    "altNames": ["Colina del Oído", "Hill of Hearing"],
+    "type": "colina",
+    "region": "Emyn Muil",
+    "coords": [1066, 655],
+    "zoomMin": 2
+  },
+  {
+    "id": "rauros",
+    "name": "Rauros",
+    "altNames": ["Saltos de Rauros"],
+    "type": "cascada",
+    "region": "Anduin",
+    "coords": [1055, 632],
+    "zoomMin": -1
+  },
+  {
+    "id": "carroca",
+    "name": "La Carroca",
+    "altNames": ["Carrock"],
+    "type": "monte",
+    "region": "Valles del Anduin",
+    "coords": [985, 1120],
+    "zoomMin": 0
+  },
+  {
+    "id": "casa-de-beorn",
+    "name": "Casa de Beorn",
+    "altNames": ["Beorn's house"],
+    "type": "morada",
+    "region": "Valles del Anduin",
+    "coords": [1003, 1108],
+    "zoomMin": 1
+  },
+  {
+    "id": "vado-viejo",
+    "name": "Vado Viejo",
+    "altNames": ["Old Ford"],
+    "type": "vado",
+    "region": "Valles del Anduin",
+    "coords": [987, 1080],
+    "zoomMin": 2
+  },
+  {
+    "id": "campos-gladios",
+    "name": "Campos Gladios",
+    "altNames": ["Gladden Fields"],
+    "type": "campo",
+    "region": "Valles del Anduin",
+    "coords": [994, 1002],
+    "zoomMin": 1
+  },
+  {
+    "id": "rhosgobel",
+    "name": "Rhosgobel",
+    "type": "morada",
+    "region": "Bosque Negro",
+    "coords": [1072, 1030],
+    "zoomMin": 1
+  },
+  {
+    "id": "dol-guldur",
+    "name": "Dol Guldur",
+    "altNames": ["Amon Lanc"],
+    "type": "fortaleza",
+    "region": "Bosque Negro",
+    "coords": [1095, 940],
+    "zoomMin": -1
+  },
+  {
+    "id": "estancias-de-thranduil",
+    "name": "Estancias de Thranduil",
+    "altNames": ["Thranduil's Halls", "Palacio del Rey Elfo"],
+    "type": "morada",
+    "region": "Bosque Negro",
+    "coords": [1268, 1214],
+    "zoomMin": 0
+  },
+  {
+    "id": "erebor",
+    "name": "Erebor",
+    "altNames": ["Montaña Solitaria", "Lonely Mountain"],
+    "type": "ciudad",
+    "region": "Rhovanion",
+    "coords": [1360, 1240],
+    "zoomMin": -2
+  },
+  {
+    "id": "valle",
+    "name": "Valle",
+    "altNames": ["Dale"],
+    "type": "ciudad",
+    "region": "Rhovanion",
+    "coords": [1356, 1226],
+    "zoomMin": 1
+  },
+  {
+    "id": "esgaroth",
+    "name": "Esgaroth",
+    "altNames": ["Ciudad del Lago", "Lake-town"],
+    "type": "ciudad",
+    "region": "Rhovanion",
+    "coords": [1358, 1188],
+    "zoomMin": 1,
+    "onWater": true
+  },
+  {
+    "id": "emnet-este",
+    "name": "Emnet Este",
+    "altNames": ["East Emnet"],
+    "type": "lugar",
+    "region": "Rohan",
+    "coords": [990, 668],
+    "zoomMin": 2
+  },
+  {
+    "id": "lindero-de-fangorn",
+    "name": "Lindero de Fangorn",
+    "altNames": ["Linde de Fangorn", "Fangorn eaves"],
+    "type": "lugar",
+    "region": "Rohan",
+    "coords": [918, 692],
+    "zoomMin": 1
+  },
+  {
+    "id": "colina-de-barbol",
+    "name": "Colina de Bárbol",
+    "altNames": ["Treebeard's Hill"],
+    "type": "colina",
+    "region": "Fangorn",
+    "coords": [902, 706],
+    "zoomMin": 2
+  },
+  {
+    "id": "wellinghall",
+    "name": "Wellinghall",
+    "type": "morada",
+    "region": "Fangorn",
+    "coords": [840, 728],
+    "zoomMin": 2
+  },
+  {
+    "id": "valle-de-los-ents",
+    "name": "Valle de los Ents",
+    "altNames": ["Derndingle"],
+    "type": "valle",
+    "region": "Fangorn",
+    "coords": [852, 700],
+    "zoomMin": 2
+  },
+  {
+    "id": "isengard",
+    "name": "Isengard",
+    "altNames": ["Angrenost", "Orthanc"],
+    "type": "fortaleza",
+    "region": "Rohan",
+    "coords": [795, 662],
+    "zoomMin": -2
+  },
+  {
+    "id": "dol-baran",
+    "name": "Dol Baran",
+    "type": "colina",
+    "region": "Rohan",
+    "coords": [809, 641],
+    "zoomMin": 2
+  },
+  {
+    "id": "vados-del-isen",
+    "name": "Vados del Isen",
+    "altNames": ["Fords of Isen"],
+    "type": "vado",
+    "region": "Rohan",
+    "coords": [785, 615],
+    "zoomMin": -1
+  },
+  {
+    "id": "abismo-de-helm",
+    "name": "Abismo de Helm",
+    "altNames": ["Helm's Deep", "Cuernavilla", "Hornburg"],
+    "type": "fortaleza",
+    "region": "Folde Oeste",
+    "coords": [808, 588],
+    "zoomMin": -2
+  },
+  {
+    "id": "edoras",
+    "name": "Edoras",
+    "altNames": ["Meduseld"],
+    "type": "ciudad",
+    "region": "Rohan",
+    "coords": [882, 572],
+    "zoomMin": -2
+  },
+  {
+    "id": "el-sagrario",
+    "name": "El Sagrario",
+    "altNames": ["Dunharrow", "Valle Sagrado"],
+    "type": "fortaleza",
+    "region": "Rohan",
+    "coords": [887, 551],
+    "zoomMin": 0
+  },
+  {
+    "id": "puerta-de-los-muertos",
+    "name": "Puerta Oscura",
+    "altNames": ["Puerta de los Muertos", "Dark Door", "Sendas de los Muertos"],
+    "type": "puerta",
+    "region": "Montañas Blancas",
+    "coords": [892, 540],
+    "zoomMin": 2
+  },
+  {
+    "id": "vado-del-entaguas",
+    "name": "Vado del Entaguas",
+    "altNames": ["Entwade"],
+    "type": "vado",
+    "region": "Rohan",
+    "coords": [955, 612],
+    "zoomMin": 2
+  },
+  {
+    "id": "aldburg",
+    "name": "Aldburg",
+    "type": "fortaleza",
+    "region": "Folde Este",
+    "coords": [960, 548],
+    "zoomMin": 3
+  },
+  {
+    "id": "erech",
+    "name": "Erech",
+    "altNames": ["Piedra de Erech"],
+    "type": "colina",
+    "region": "Gondor",
+    "coords": [856, 494],
+    "zoomMin": 0
+  },
+  {
+    "id": "calembel",
+    "name": "Calembel",
+    "type": "aldea",
+    "region": "Lamedon",
+    "coords": [885, 445],
+    "zoomMin": 1
+  },
+  {
+    "id": "linhir",
+    "name": "Linhir",
+    "type": "aldea",
+    "region": "Lebennin",
+    "coords": [932, 285],
+    "zoomMin": 1
+  },
+  {
+    "id": "pelargir",
+    "name": "Pelargir",
+    "type": "ciudad",
+    "region": "Lebennin",
+    "coords": [1080, 262],
+    "zoomMin": -1
+  },
+  {
+    "id": "dol-amroth",
+    "name": "Dol Amroth",
+    "type": "ciudad",
+    "region": "Belfalas",
+    "coords": [816, 306],
+    "zoomMin": -1
+  },
+  {
+    "id": "minas-tirith",
+    "name": "Minas Tirith",
+    "altNames": ["Mundburgo", "Torre de Guardia", "Minas Anor"],
+    "type": "ciudad",
+    "region": "Gondor",
+    "coords": [1092, 398],
+    "zoomMin": -3
+  },
+  {
+    "id": "harlond",
+    "name": "Harlond",
+    "type": "puerto",
+    "region": "Gondor",
+    "coords": [1104, 386],
+    "zoomMin": 2
+  },
+  {
+    "id": "campos-del-pelennor",
+    "name": "Campos del Pelennor",
+    "altNames": ["Pelennor Fields"],
+    "type": "campo",
+    "region": "Gondor",
+    "coords": [1100, 408],
+    "zoomMin": 1
+  },
+  {
+    "id": "osgiliath",
+    "name": "Osgiliath",
+    "type": "ruina",
+    "region": "Gondor",
+    "coords": [1110, 402],
+    "zoomMin": -1
+  },
+  {
+    "id": "cair-andros",
+    "name": "Cair Andros",
+    "type": "fortaleza",
+    "region": "Anduin",
+    "coords": [1085, 480],
+    "zoomMin": 0,
+    "onWater": true
+  },
+  {
+    "id": "amon-din",
+    "name": "Amon Dîn",
+    "type": "colina",
+    "region": "Anórien",
+    "coords": [1060, 473],
+    "zoomMin": 2
+  },
+  {
+    "id": "eilenach",
+    "name": "Eilenach",
+    "type": "colina",
+    "region": "Anórien",
+    "coords": [1044, 492],
+    "zoomMin": 3
+  },
+  {
+    "id": "nardol",
+    "name": "Nardol",
+    "type": "colina",
+    "region": "Anórien",
+    "coords": [1028, 506],
+    "zoomMin": 3
+  },
+  {
+    "id": "erelas",
+    "name": "Erelas",
+    "type": "colina",
+    "region": "Anórien",
+    "coords": [1008, 516],
+    "zoomMin": 3
+  },
+  {
+    "id": "min-rimmon",
+    "name": "Min-Rimmon",
+    "type": "colina",
+    "region": "Anórien",
+    "coords": [990, 522],
+    "zoomMin": 3
+  },
+  {
+    "id": "calenhad",
+    "name": "Calenhad",
+    "type": "colina",
+    "region": "Anórien",
+    "coords": [975, 527],
+    "zoomMin": 3
+  },
+  {
+    "id": "halifirien",
+    "name": "Halifirien",
+    "altNames": ["Amon Anwar"],
+    "type": "colina",
+    "region": "Anórien",
+    "coords": [962, 533],
+    "zoomMin": 2
+  },
+  {
+    "id": "henneth-annun",
+    "name": "Henneth Annûn",
+    "altNames": ["Ventana del Poniente", "Window of the Sunset"],
+    "type": "lugar",
+    "region": "Ithilien",
+    "coords": [1124, 456],
+    "zoomMin": 0
+  },
+  {
+    "id": "campo-de-cormallen",
+    "name": "Campo de Cormallen",
+    "altNames": ["Field of Cormallen"],
+    "type": "campo",
+    "region": "Ithilien",
+    "coords": [1103, 474],
+    "zoomMin": -1
+  },
+  {
+    "id": "encrucijada",
+    "name": "Encrucijada",
+    "altNames": ["Encrucijada del Rey Caído", "Cross-roads"],
+    "type": "lugar",
+    "region": "Ithilien",
+    "coords": [1140, 398],
+    "zoomMin": 1
+  },
+  {
+    "id": "minas-morgul",
+    "name": "Minas Morgul",
+    "altNames": ["Minas Ithil", "Torre de la Hechicería"],
+    "type": "fortaleza",
+    "region": "Ithilien",
+    "coords": [1151, 400],
+    "zoomMin": -1
+  },
+  {
+    "id": "escaleras-de-cirith-ungol",
+    "name": "Escaleras de Cirith Ungol",
+    "altNames": ["Stairs of Cirith Ungol"],
+    "type": "paso",
+    "region": "Montañas de la Sombra",
+    "coords": [1157, 411],
+    "zoomMin": 3
+  },
+  {
+    "id": "antro-de-ella-larana",
+    "name": "Antro de Ella-Laraña",
+    "altNames": ["Torech Ungol", "Shelob's Lair"],
+    "type": "lugar",
+    "region": "Montañas de la Sombra",
+    "coords": [1162, 408],
+    "zoomMin": 3
+  },
+  {
+    "id": "torre-de-cirith-ungol",
+    "name": "Torre de Cirith Ungol",
+    "altNames": ["Tower of Cirith Ungol"],
+    "type": "torre",
+    "region": "Mordor",
+    "coords": [1168, 404],
+    "zoomMin": 1
+  },
+  {
+    "id": "morannon",
+    "name": "Morannon",
+    "altNames": ["Puerta Negra", "Black Gate"],
+    "type": "puerta",
+    "region": "Mordor",
+    "coords": [1165, 522],
+    "zoomMin": -2
+  },
+  {
+    "id": "isenmouthe",
+    "name": "Isenmouthe",
+    "altNames": ["Carach Angren"],
+    "type": "paso",
+    "region": "Mordor",
+    "coords": [1205, 488],
+    "zoomMin": 2
+  },
+  {
+    "id": "monte-del-destino",
+    "name": "Monte del Destino",
+    "altNames": ["Orodruin", "Amon Amarth", "Sammath Naur", "Mount Doom"],
+    "type": "monte",
+    "region": "Mordor",
+    "coords": [1245, 430],
+    "zoomMin": -3
+  },
+  {
+    "id": "barad-dur",
+    "name": "Barad-dûr",
+    "altNames": ["Torre Oscura", "Dark Tower"],
+    "type": "fortaleza",
+    "region": "Mordor",
+    "coords": [1300, 478],
+    "zoomMin": -2
+  },
+  {
+    "id": "cienagas-de-los-muertos",
+    "name": "Ciénagas de los Muertos",
+    "altNames": ["Dead Marshes"],
+    "type": "lugar",
+    "region": "Dagorlad",
+    "coords": [1162, 562],
+    "zoomMin": 1
+  },
+  {
+    "id": "emyn-muil",
+    "name": "Emyn Muil",
+    "type": "colina",
+    "region": "Emyn Muil",
+    "coords": [1100, 625],
+    "zoomMin": 1
+  }
+]

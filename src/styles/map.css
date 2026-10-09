@@ -1,0 +1,363 @@
+/* Estilo cartográfico propio. Los colores salen de los tokens de main.css. */
+
+.map.leaflet-container {
+  background: var(--sea);
+  font-family: var(--font-map);
+}
+
+/* --- Tierra y costa (los halos quedan medio tapados por la tierra: oleaje) */
+.leaflet-pane path.coast-halo-3 {
+  fill: none;
+  stroke: var(--coast-3);
+  stroke-width: 22px;
+  stroke-linejoin: round;
+}
+.leaflet-pane path.coast-halo-2 {
+  fill: none;
+  stroke: var(--coast-2);
+  stroke-width: 12px;
+  stroke-linejoin: round;
+}
+.leaflet-pane path.coast-halo-1 {
+  fill: none;
+  stroke: var(--coast-1);
+  stroke-width: 4px;
+  stroke-linejoin: round;
+}
+.leaflet-pane path.land {
+  fill: var(--land);
+  fill-opacity: 1;
+  stroke: var(--land-ink);
+  stroke-width: 1.2px;
+  stroke-linejoin: round;
+}
+
+/* --- Agua */
+.leaflet-pane path.lake {
+  fill: var(--water);
+  fill-opacity: 1;
+  stroke: var(--water-ink);
+  stroke-width: 1px;
+}
+.leaflet-pane path.river {
+  fill: none;
+  stroke: var(--water-ink);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.river-r1.river-c1 {
+  stroke-width: 0.7px;
+}
+.river-r1.river-c2 {
+  stroke-width: 1px;
+}
+.river-r2.river-c1 {
+  stroke-width: 0.9px;
+}
+.river-r2.river-c2 {
+  stroke-width: 1.4px;
+}
+.river-r3.river-c0 {
+  stroke-width: 1px;
+}
+.river-r3.river-c1 {
+  stroke-width: 1.5px;
+}
+.river-r3.river-c2 {
+  stroke-width: 2px;
+}
+.river-r4.river-c0 {
+  stroke-width: 1.3px;
+}
+.river-r4.river-c1 {
+  stroke-width: 2px;
+}
+.river-r4.river-c2 {
+  stroke-width: 2.6px;
+}
+.river-r5.river-c0 {
+  stroke-width: 1.6px;
+}
+.river-r5.river-c1 {
+  stroke-width: 2.6px;
+}
+.river-r5.river-c2 {
+  stroke-width: 3.4px;
+}
+
+/* --- Vegetación */
+.leaflet-pane path.forest {
+  fill: url(#pat-forest);
+  fill-opacity: 1;
+  stroke: var(--forest-ink);
+  stroke-width: 0.8px;
+  stroke-dasharray: 2 2;
+}
+.leaflet-pane path.marsh {
+  fill: url(#pat-marsh);
+  fill-opacity: 1;
+  stroke: none;
+}
+.pat-forest-bg {
+  fill: var(--forest-bg);
+}
+.pat-marsh-bg {
+  fill: var(--marsh-bg);
+}
+.pat-tree circle {
+  fill: var(--forest-bg);
+  stroke: var(--forest-ink);
+  stroke-width: 1;
+}
+.pat-tree path {
+  stroke: var(--forest-ink);
+  stroke-width: 1;
+  fill: none;
+}
+.pat-reed path {
+  stroke: var(--marsh-ink);
+  stroke-width: 0.9;
+  fill: none;
+  stroke-linecap: round;
+}
+
+/* --- Relieve */
+.leaflet-pane path.relief-shadow {
+  fill: var(--relief-shade);
+  fill-opacity: 1;
+  stroke: none;
+}
+.leaflet-pane path.relief-fire {
+  fill: var(--relief-fire);
+  fill-opacity: 0.85;
+  stroke: none;
+}
+.leaflet-pane path.relief-line {
+  fill: none;
+  stroke: var(--relief-ink);
+  stroke-width: 1px;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+
+/* --- Caminos y fronteras */
+.leaflet-pane path.road {
+  fill: none;
+  stroke: var(--road);
+  stroke-width: 1.3px;
+  stroke-dasharray: 5 3;
+  stroke-linecap: round;
+  opacity: 0.85;
+}
+.leaflet-pane path.border {
+  fill: none;
+  stroke: var(--border);
+  stroke-width: 1px;
+  stroke-dasharray: 1 3 6 3;
+  opacity: 0.8;
+}
+
+/* --- Lugares */
+.leaflet-pane path.place {
+  stroke: var(--label);
+  stroke-width: 1.2px;
+  fill: var(--label);
+  fill-opacity: 1;
+}
+.leaflet-pane path.place--city {
+  fill: var(--land);
+  stroke-width: 1.8px;
+}
+.leaflet-pane path.place--fort {
+  fill: var(--label);
+}
+.leaflet-pane path.place--ruin {
+  fill: var(--land);
+  stroke-dasharray: 2 1.5;
+}
+.leaflet-pane path.place--dwelling {
+  fill: var(--land);
+}
+.leaflet-pane path.place-hit {
+  fill: transparent;
+  stroke: none;
+  cursor: pointer;
+}
+
+/* --- Etiquetas */
+.lbl-anchor {
+  width: 0 !important;
+  height: 0 !important;
+  overflow: visible;
+}
+.lbl {
+  position: absolute;
+  left: 0;
+  top: 0;
+  white-space: nowrap;
+  line-height: 1.1;
+  color: var(--label);
+  font-family: var(--font-map);
+  font-size: 12px;
+  text-shadow:
+    0 0 2px var(--label-halo),
+    0 0 3px var(--label-halo),
+    0 0 5px var(--label-halo);
+  pointer-events: none;
+  user-select: none;
+  transform-origin: center center;
+}
+.lbl[data-anchor='center'] {
+  transform: translate(-50%, -50%) rotate(var(--angle, 0deg));
+}
+.lbl[data-anchor='right'] {
+  transform: translate(6px, -50%);
+}
+.lbl[data-anchor='left'] {
+  transform: translate(calc(-100% - 6px), -50%);
+}
+.lbl[data-anchor='top'] {
+  transform: translate(-50%, calc(-100% - 6px));
+}
+.lbl[data-anchor='bottom'] {
+  transform: translate(-50%, 6px);
+}
+
+.lbl--place.lbl--r1 {
+  font-size: 14px;
+  font-weight: 400;
+}
+.lbl--place.lbl--r2 {
+  font-size: 12.5px;
+}
+.lbl--place.lbl--r3 {
+  font-size: 11.5px;
+}
+.lbl--place.lbl--ruina {
+  font-style: italic;
+}
+
+.lbl--region {
+  font-family: var(--font-map-sc);
+  font-weight: 500;
+  color: var(--label-region);
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+.lbl--region.lbl--r1 {
+  font-size: 17px;
+  letter-spacing: 0.35em;
+}
+.lbl--region.lbl--r2 {
+  font-size: 12.5px;
+}
+.lbl--region.lbl--r3 {
+  font-size: 10.5px;
+  letter-spacing: 0.16em;
+}
+
+.lbl--range,
+.lbl--peak {
+  font-family: var(--font-map-sc);
+  font-weight: 500;
+  color: var(--relief-ink);
+  letter-spacing: 0.08em;
+}
+.lbl--range.lbl--r1 {
+  font-size: 14px;
+  letter-spacing: 0.16em;
+}
+.lbl--range.lbl--r2 {
+  font-size: 12px;
+}
+.lbl--range.lbl--r3 {
+  font-size: 11px;
+}
+.lbl--peak {
+  font-size: 11px;
+}
+
+.lbl--river,
+.lbl--lake {
+  font-style: italic;
+  color: var(--label-water);
+}
+.lbl--river.lbl--r5 {
+  font-size: 14px;
+  letter-spacing: 0.12em;
+}
+.lbl--river.lbl--r4,
+.lbl--river.lbl--r3 {
+  font-size: 12px;
+}
+.lbl--river.lbl--r2,
+.lbl--river.lbl--r1 {
+  font-size: 11px;
+}
+.lbl--lake {
+  font-size: 12px;
+}
+
+.lbl--forest {
+  font-style: italic;
+  color: var(--forest-label);
+  font-size: 12px;
+  letter-spacing: 0.05em;
+}
+.lbl--road {
+  font-style: italic;
+  color: var(--road);
+  font-size: 10.5px;
+}
+
+/* --- Ficha emergente */
+.place-popup .leaflet-popup-content-wrapper,
+.place-popup .leaflet-popup-tip {
+  background: var(--land);
+  color: var(--label);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
+}
+.place-popup .leaflet-popup-content {
+  margin: 8px 12px;
+  font-family: var(--font-map);
+}
+.pp-name {
+  font-size: 15px;
+  font-weight: 600;
+}
+.pp-alt {
+  font-style: italic;
+  color: var(--label-region);
+  font-size: 12px;
+}
+.pp-meta {
+  margin-top: 2px;
+  font-family: var(--font-ui);
+  font-size: 11px;
+  color: var(--ink-soft);
+}
+
+/* --- Controles */
+.leaflet-bar a,
+.leaflet-bar a:hover {
+  background: var(--land);
+  color: var(--label);
+  border-color: var(--land-ink);
+}
+
+/* --- Debug */
+.leaflet-pane path.debug-grid {
+  stroke: #c0392b;
+  stroke-width: 0.6px;
+  opacity: 0.5;
+  fill: none;
+}
+.debug-readout {
+  background: var(--bar);
+  color: var(--bar-ink);
+  font:
+    12px ui-monospace,
+    monospace;
+  padding: 4px 8px;
+  border-radius: 4px;
+}

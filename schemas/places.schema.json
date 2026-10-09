@@ -7,9 +7,21 @@
     "additionalProperties": false,
     "required": ["id", "name", "type", "coords", "zoomMin"],
     "properties": {
-      "id": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
-      "name": { "type": "string", "minLength": 1 },
-      "altNames": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+      "id": {
+        "type": "string",
+        "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+      },
+      "name": {
+        "type": "string",
+        "minLength": 1
+      },
+      "altNames": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "uniqueItems": true
+      },
       "type": {
         "enum": [
           "ciudad",
@@ -33,10 +45,24 @@
           "lugar"
         ]
       },
-      "region": { "type": "string" },
-      "coords": { "$ref": "xy.schema.json" },
-      "zoomMin": { "type": "integer", "minimum": -3, "maximum": 4 },
-      "note": { "type": "string" }
+      "region": {
+        "type": "string"
+      },
+      "coords": {
+        "$ref": "xy.schema.json"
+      },
+      "zoomMin": {
+        "type": "integer",
+        "minimum": -3,
+        "maximum": 4
+      },
+      "note": {
+        "type": "string"
+      },
+      "onWater": {
+        "type": "boolean",
+        "description": "Lugar sobre agua (isla, ciudad lacustre): exento de la comprobación de tierra firme."
+      }
     }
   }
 }

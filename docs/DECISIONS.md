@@ -63,3 +63,46 @@ Formato: contexto → decisión → consecuencias. Las nuevas al final.
 - **Decisión** (del usuario): `pages.yml` preparado pero solo corre con la variable de repo
   `PAGES_ENABLED=true`, que se activará al hacer público el repo. Mientras tanto, cada hito se
   previsualiza como artifact single-file.
+
+## 009 · Cartografía generada a partir de puntos de control — 2026-10-09
+
+- **Contexto**: hace falta una geografía propia, legible y con aspecto de mapa dibujado, sin calcar
+  ninguno publicado.
+- **Decisión**: los GeoJSON guardan pocos puntos de control (fáciles de editar a mano). Al cargar,
+  `src/map/shapes.ts` aplica rugosidad determinista (desplazamiento de punto medio con semilla del
+  id) y suavizado de Chaikin. El relieve no se guarda como polígonos: cada cordillera es una cresta
+  (`LineString` + `width`) y `src/map/glyphs.ts` genera glifos «^»/«∩» por zoom, espaciados para no
+  solaparse, más altos en el eje y más bajos en las faldas.
+- **Consecuencias**: mismo dibujo en cada carga; editar una cordillera es mover 5–10 puntos. Al
+  zoom máximo las bandas se ven más estrechas que su `width` (se limita a 5 filas para no hacer un
+  tapiz).
+
+## 010 · Render en paneles SVG con estilo por CSS — 2026-10-09
+
+- **Decisión**: un panel de Leaflet (con su propio renderer SVG) por capa, en orden fijo de pintado;
+  colores y grosores en `src/styles/map.css` vía `className` y tokens CSS (modo claro/oscuro). Bosques
+  y marismas usan patrones SVG propios (`src/map/patterns.ts`). Los GeoJSON se importan con `?raw`
+  para que también entren en el build single-file.
+- **Consecuencias**: cambiar el estilo no toca TypeScript; el modo oscuro sale gratis.
+
+## 011 · Etiquetas: DOM + colisiones voraces — 2026-10-09
+
+- **Decisión**: etiquetas como `divIcon` en un panel propio. Tras cada zoom se ordenan por prioridad
+  (zoom mínimo, tipo, rango) y se oculta la que choca; los lugares prueban cuatro posiciones. Las
+  regiones son etiquetas puntuales (`kind: region`), no polígonos: solo la Comarca tiene frontera
+  dibujada. Si un elemento geográfico y un lugar se llaman igual, rotula el lugar.
+- **Consecuencias**: ~250 etiquetas sin librería extra; sin texto curvo a lo largo de los ríos (se
+  rotan según la tangente).
+
+## 012 · Tipografía: Alegreya (OFL) autoalojada — 2026-10-09
+
+- **Decisión**: `@fontsource/alegreya` (redonda y cursiva) y `@fontsource/alegreya-sc` (versalitas)
+  para el mapa; fuente del sistema para la UI. Solo el subconjunto latino.
+- **Consecuencias**: sin peticiones externas (funciona en el single-file y offline); nada de
+  tipografías asociadas a las películas.
+
+## 013 · `onWater` en lugares — 2026-10-09
+
+- **Decisión**: `npm run validate` exige que cada lugar caiga en tierra y fuera de lagos, y que cada
+  río desemboque en el mar, un lago u otro río. Las excepciones a propósito (Esgaroth, Tol Brandir,
+  Cair Andros) llevan `onWater: true`; los puertos pueden quedar hasta 8 millas fuera de la costa.
