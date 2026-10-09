@@ -337,5 +337,15 @@
     "initials": "Bá",
     "group": "ents",
     "role": "secondary"
+  },
+  {
+    "id": "arwen",
+    "name": "Arwen",
+    "altNames": ["Undómiel", "Estrella de la Tarde"],
+    "race": "medio elfo",
+    "color": "#6a5a9a",
+    "initials": "Ar",
+    "group": "elfos",
+    "role": "secondary"
   }
 ]

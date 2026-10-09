@@ -8,7 +8,7 @@
  *     DEPART de ese día (llegar a la Balsadera y luego a Cricava, en orden).
  * Entre movimientos el personaje está parado en el lugar de llegada.
  */
-import { toDayIndex } from '../lib/calendar.ts';
+import { toDayIndex, type ShireDate } from '../lib/calendar.ts';
 import { chaikin, polylineLength } from '../lib/geometry.ts';
 import { legShapes, type LegShape } from './legs.ts';
 import type { DataBundle, Leg, XY } from './types.ts';
@@ -84,15 +84,29 @@ export function buildTracks(data: DataBundle): Track[] {
     const start = toDayIndex(first.start);
     const end = toDayIndex(last.end) + 1;
 
-    // Paradas: los huecos entre movimientos.
+    // Paradas: los huecos entre movimientos. Un tramo `afterGap` corta la parada
+    // en curso (paradero desconocido) y la reanuda en su origen.
     const stops: Stop[] = [];
     let cursor = start;
     let here = first.from;
-    for (const m of moves) {
-      if (m.t0 > cursor) stops.push({ t0: cursor, t1: m.t0, placeId: here, xy: coords.get(here)! });
-      cursor = m.t1;
-      here = m.leg.to;
-    }
+    let mi = 0;
+    j.legs.forEach((leg, i) => {
+      if (i > 0 && leg.afterGap) {
+        const gapStart = toDayIndex(j.legs[i - 1]!.end) + 1;
+        if (gapStart > cursor)
+          stops.push({ t0: cursor, t1: gapStart, placeId: here, xy: coords.get(here)! });
+        cursor = toDayIndex(leg.start);
+        here = leg.from;
+      }
+      const m = moves[mi];
+      if (m && m.legIndex === i) {
+        if (m.t0 > cursor)
+          stops.push({ t0: cursor, t1: m.t0, placeId: here, xy: coords.get(here)! });
+        cursor = m.t1;
+        here = m.leg.to;
+        mi++;
+      }
+    });
     if (end > cursor) stops.push({ t0: cursor, t1: end, placeId: here, xy: coords.get(here)! });
 
     return { characterId: j.characterId, start, end, moves, stops };
@@ -183,6 +197,9 @@ export function trackSegments(track: Track, data: DataBundle): Segment[] {
   return segs.sort((a, b) => a.t0 - b.t0);
 }
 
+/** Margen tras una llegada para considerar que dos personajes se han reunido. */
+const AFTER = 0.05;
+
 function together(a: Track, b: Track, t: number): boolean {
   const pa = positionAt(a, t);
   const pb = positionAt(b, t);
@@ -213,9 +230,8 @@ export function convergences(tracks: Track[]): Convergence[] {
       const here: string[] = [track.characterId];
       for (const other of tracks) {
         if (other === track) continue;
-        const now = positionAt(other, t);
-        const atP = now?.placeId === p || (now?.move?.leg.to === p && now.move.t1 === t);
-        if (!atP) continue;
+        // Juntos justo después de la llegada (en el lugar o saliendo a la vez).
+        if (!together(track, other, t + AFTER)) continue;
         here.push(other.characterId);
         // Encuentro de verdad: separados al salir y también el día anterior (así no
         // cuenta volver a reunirse tras una escapada de unas horas).
@@ -237,4 +253,36 @@ export function convergences(tracks: Track[]): Convergence[] {
     }
   }
   return [...out.values()].sort((a, b) => a.t - b.t);
+}
+
+/**
+ * Instante del día de un evento en que más de sus personajes (con ruta) están en
+ * el lugar; a igualdad, el más cercano al mediodía. Así el mapa muestra a Frodo
+ * en el Sammath Naur y no ya volando hacia Cormallen.
+ */
+export function eventInstant(
+  e: { date: ShireDate; placeId: string; characterIds: string[] },
+  tracks: Track[],
+  coordsOf: Map<string, XY>,
+): number {
+  const d = toDayIndex(e.date);
+  const noon = d + 0.5;
+  const at = coordsOf.get(e.placeId);
+  if ((e.date.precision ?? 'day') !== 'day' || !at) return noon;
+  const mine = tracks.filter((t) => e.characterIds.includes(t.characterId));
+  if (!mine.length) return noon;
+  let best = noon;
+  let bestScore = -1;
+  for (let k = 1; k < 20; k++) {
+    const t = d + k / 20;
+    const score = mine.filter((tr) => {
+      const p = positionAt(tr, t);
+      return !!p && Math.hypot(p.xy[0] - at[0], p.xy[1] - at[1]) < 1.5;
+    }).length;
+    if (score > bestScore || (score === bestScore && Math.abs(t - noon) < Math.abs(best - noon))) {
+      best = t;
+      bestScore = score;
+    }
+  }
+  return best;
 }

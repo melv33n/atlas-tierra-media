@@ -1116,5 +1116,1543 @@
     "ref": {
       "appendix": "B"
     }
+  },
+  {
+    "id": "la-caza-empieza",
+    "date": {
+      "year": 3019,
+      "month": 2,
+      "day": 26
+    },
+    "placeId": "parth-galen",
+    "title": "Empieza la caza de los orcos",
+    "summary": "Aragorn decide no seguir a Frodo y corre con Legolas y Gimli tras los orcos que se llevan a Merry y a Pippin.",
+    "characterIds": ["aragorn", "legolas", "gimli"],
+    "ref": {
+      "book": 3,
+      "chapter": 1
+    }
+  },
+  {
+    "id": "eomer-sale",
+    "date": {
+      "year": 3019,
+      "month": 2,
+      "day": 27
+    },
+    "placeId": "aldburg",
+    "title": "Éomer sale a perseguir a los orcos",
+    "summary": "A medianoche, contra las órdenes del rey, Éomer parte del Folde Este con sus jinetes.",
+    "characterIds": ["eomer"],
+    "ref": {
+      "appendix": "B"
+    }
+  },
+  {
+    "id": "fin-de-los-orcos",
+    "date": {
+      "year": 3019,
+      "month": 2,
+      "day": 29
+    },
+    "placeId": "lindero-de-fangorn",
+    "title": "Los jinetes de Éomer destruyen a los orcos",
+    "summary": "Al amanecer los Rohirrim aniquilan la tropa en la linde de Fangorn; en la confusión, Merry y Pippin escapan al bosque.",
+    "characterIds": ["merry", "pippin", "eomer"],
+    "ref": {
+      "book": 3,
+      "chapter": 3
+    },
+    "tags": ["batalla"]
+  },
+  {
+    "id": "barbol",
+    "date": {
+      "year": 3019,
+      "month": 2,
+      "day": 29
+    },
+    "placeId": "colina-de-barbol",
+    "title": "Bárbol",
+    "summary": "Merry y Pippin conocen a Bárbol, que los lleva a su morada de Wellinghall.",
+    "characterIds": ["merry", "pippin", "barbol"],
+    "ref": {
+      "book": 3,
+      "chapter": 4
+    }
+  },
+  {
+    "id": "frodo-atrapa-a-gollum",
+    "date": {
+      "year": 3019,
+      "month": 2,
+      "day": 29
+    },
+    "placeId": "pie-emyn-muil",
+    "title": "Gollum, domado",
+    "summary": "Frodo y Sam bajan del acantilado y atrapan a Gollum; Frodo le hace jurar por el Anillo que los guiará.",
+    "characterIds": ["frodo", "sam", "gollum"],
+    "ref": {
+      "book": 4,
+      "chapter": 1
+    }
+  },
+  {
+    "id": "faramir-ve-la-barca",
+    "date": {
+      "year": 3019,
+      "month": 2,
+      "day": 29
+    },
+    "placeId": "osgiliath",
+    "title": "Faramir ve la barca de Boromir",
+    "summary": "Junto al río, Faramir ve pasar a la deriva la barca gris con el cuerpo de su hermano.",
+    "characterIds": ["faramir"],
+    "ref": {
+      "book": 4,
+      "chapter": 5
+    }
+  },
+  {
+    "id": "camara-de-los-ents",
+    "date": {
+      "year": 3019,
+      "month": 2,
+      "day": 30
+    },
+    "placeId": "valle-de-los-ents",
+    "title": "La Cámara de los Ents",
+    "summary": "Los ents se reúnen en el Valle Hondo para decidir qué hacer con Saruman.",
+    "characterIds": ["merry", "pippin", "barbol"],
+    "ref": {
+      "book": 3,
+      "chapter": 4
+    }
+  },
+  {
+    "id": "eomer-encuentra-a-aragorn",
+    "date": {
+      "year": 3019,
+      "month": 2,
+      "day": 30
+    },
+    "placeId": "emnet-este",
+    "title": "Encuentro con Éomer",
+    "summary": "Los cazadores se topan con los jinetes de Éomer, que les prestan caballos tras oír su historia.",
+    "characterIds": ["aragorn", "legolas", "gimli", "eomer"],
+    "ref": {
+      "book": 3,
+      "chapter": 2
+    }
+  },
+  {
+    "id": "cienagas",
+    "date": {
+      "year": 3019,
+      "month": 3,
+      "day": 1
+    },
+    "placeId": "cienagas-de-los-muertos",
+    "title": "Las Ciénagas de los Muertos",
+    "summary": "Gollum guía a los hobbits entre luces y rostros hundidos en el agua estancada.",
+    "characterIds": ["frodo", "sam", "gollum"],
+    "ref": {
+      "book": 4,
+      "chapter": 2
+    }
+  },
+  {
+    "id": "gandalf-el-blanco",
+    "date": {
+      "year": 3019,
+      "month": 3,
+      "day": 1
+    },
+    "placeId": "colina-de-barbol",
+    "title": "Gandalf el Blanco",
+    "summary": "En Fangorn, Aragorn, Legolas y Gimli reencuentran a Gandalf, vuelto de la muerte y vestido de blanco.",
+    "characterIds": ["aragorn", "legolas", "gimli", "gandalf"],
+    "ref": {
+      "book": 3,
+      "chapter": 5
+    }
+  },
+  {
+    "id": "faramir-parte",
+    "date": {
+      "year": 3019,
+      "month": 3,
+      "day": 1
+    },
+    "placeId": "minas-tirith",
+    "title": "Faramir parte hacia Ithilien",
+    "summary": "Denethor envía a Faramir en una misión a Ithilien.",
+    "characterIds": ["faramir", "denethor"],
+    "ref": {
+      "appendix": "B"
+    }
+  },
+  {
+    "id": "theoden-sanado",
+    "date": {
+      "year": 3019,
+      "month": 3,
+      "day": 2
+    },
+    "placeId": "edoras",
+    "title": "Gandalf libera a Théoden",
+    "summary": "En Meduseld, Gandalf rompe el influjo de Lengua de Serpiente y Théoden vuelve a empuñar la espada.",
+    "characterIds": ["aragorn", "legolas", "gimli", "gandalf", "theoden", "eomer", "eowyn"],
+    "ref": {
+      "book": 3,
+      "chapter": 6
+    }
+  },
+  {
+    "id": "segunda-batalla-vados",
+    "date": {
+      "year": 3019,
+      "month": 3,
+      "day": 2
+    },
+    "placeId": "vados-del-isen",
+    "title": "Segunda batalla de los Vados del Isen",
+    "summary": "Las huestes de Isengard derrotan a Erkenbrand en los vados.",
+    "characterIds": [],
+    "ref": {
+      "appendix": "B"
+    },
+    "tags": ["batalla"]
+  },
+  {
+    "id": "ents-en-isengard",
+    "date": {
+      "year": 3019,
+      "month": 3,
+      "day": 2
+    },
+    "placeId": "isengard",
+    "title": "Los ents marchan sobre Isengard",
+    "summary": "Los ents y los ucornos llegan de noche a Isengard.",
+    "characterIds": ["merry", "pippin", "barbol"],
+    "ref": {
+      "book": 3,
+      "chapter": 9
+    }
+  },
+  {
+    "id": "isengard-destruida",
+    "date": {
+      "year": 3019,
+      "month": 3,
+      "day": 3
+    },
+    "placeId": "isengard",
+    "title": "Caída de Isengard",
+    "summary": "Los ents derriban las murallas y desvían el Isen para inundar el círculo de Isengard.",
+    "characterIds": ["merry", "pippin", "barbol"],
+    "ref": {
+      "book": 3,
+      "chapter": 9
+    }
+  },
+  {
+    "id": "batalla-de-cuernavilla",
+    "date": {
+      "year": 3019,
+      "month": 3,
+      "day": 3
+    },
+    "placeId": "abismo-de-helm",
+    "title": "Batalla de Cuernavilla",
+    "summary": "Los Rohirrim resisten de noche el asalto de las huestes de Saruman en el Abismo de Helm.",
+    "characterIds": ["aragorn", "legolas", "gimli", "theoden", "eomer"],
+    "ref": {
+      "book": 3,
+      "chapter": 7
+    },
+    "tags": ["batalla"]
+  },
+  {
+    "id": "gandalf-y-erkenbrand",
+    "date": {
+      "year": 3019,
+      "month": 3,
+      "day": 4
+    },
+    "placeId": "abismo-de-helm",
+    "title": "Llegan Gandalf y Erkenbrand",
+    "summary": "Al amanecer, Gandalf llega con los hombres de Erkenbrand y el bosque de ucornos acaba con los orcos.",
+    "characterIds": ["aragorn", "legolas", "gimli", "gandalf", "theoden", "eomer"],
+    "ref": {
+      "book": 3,
+      "chapter": 7
+    },
+    "tags": ["batalla"]
+  },
+  {
+    "id": "escoriales",
+    "date": {
+      "year": 3019,
+      "month": 3,
+      "day": 4
+    },
+    "placeId": "escoriales-del-morannon",
+    "title": "La desolación del Morannon",
+    "summary": "Los hobbits y Gollum llegan a los montones de escoria ante las puertas de Mordor.",
+    "characterIds": ["frodo", "sam", "gollum"],
+    "ref": {
+      "book": 4,
+      "chapter": 3
+    }
+  },
+  {
+    "id": "parlamento-con-saruman",
+    "date": {
+      "year": 3019,
+      "month": 3,
+      "day": 5
+    },
+    "placeId": "isengard",
+    "title": "La voz de Saruman",
+    "summary": "Théoden y Gandalf parlamentan con Saruman en Orthanc; Gandalf rompe su vara y Lengua de Serpiente arroja una piedra.",
+    "characterIds": [
+      "merry",
+      "pippin",
+      "aragorn",
+      "legolas",
+      "gimli",
+      "gandalf",
+      "theoden",
+      "eomer",
+      "saruman",
+      "barbol"
+    ],
+    "ref": {
+      "book": 3,
+      "chapter": 10
+    }
+  },
+  {
+    "id": "palantir",
+    "date": {
+      "year": 3019,
+      "month": 3,
+      "day": 5
+    },
+    "placeId": "dol-baran",
+    "title": "El palantír",
+    "summary": "En el campamento de Dol Baran, Pippin mira en la piedra de Orthanc. Gandalf parte con él hacia Minas Tirith.",
+    "characterIds": ["pippin", "merry", "gandalf", "aragorn", "theoden"],
+    "ref": {
+      "book": 3,
+      "chapter": 11
+    }
+  },
+  {
+    "id": "puerta-negra-cerrada",
+    "date": {
+      "year": 3019,
+      "month": 3,
+      "day": 5
+    },
+    "placeId": "morannon",
+    "title": "La Puerta Negra está cerrada",
+    "summary": "Frodo renuncia a entrar por el Morannon y acepta que Gollum lo lleve por otro camino.",
+    "characterIds": ["frodo", "sam", "gollum"],
+    "ref": {
+      "book": 4,
+      "chapter": 3
+    }
+  },
+  {
+    "id": "aragorn-y-el-palantir",
+    "date": {
+      "year": 3019,
+      "month": 3,
+      "day": 6
+    },
+    "placeId": "abismo-de-helm",
+    "title": "Aragorn mira en el palantír",
+    "summary": "Ya con la Compañía Gris, Aragorn se enfrenta a Sauron a través de la piedra y decide tomar las Sendas de los Muertos.",
+    "characterIds": ["aragorn", "legolas", "gimli"],
+    "ref": {
+      "book": 5,
+      "chapter": 2
+    }
+  },
+  {
+    "id": "henneth-annun",
+    "date": {
+      "year": 3019,
+      "month": 3,
+      "day": 7
+    },
+    "placeId": "henneth-annun",
+    "title": "Henneth Annûn",
+    "summary": "Faramir captura a Frodo y a Sam en Ithilien y los lleva a su refugio tras una cascada.",
+    "characterIds": ["frodo", "sam", "faramir"],
+    "ref": {
+      "book": 4,
+      "chapter": 5
+    }
+  },
+  {
+    "id": "aragorn-en-el-sagrario",
+    "date": {
+      "year": 3019,
+      "month": 3,
+      "day": 7
+    },
+    "placeId": "el-sagrario",
+    "title": "Aragorn en El Sagrario",
+    "summary": "Aragorn llega de noche y Éowyn le ruega en vano que no tome las Sendas.",
+    "characterIds": ["aragorn", "legolas", "gimli", "eowyn"],
+    "ref": {
+      "book": 5,
+      "chapter": 2
+    }
+  },
+  {
+    "id": "piedra-de-erech",
+    "date": {
+      "year": 3019,
+      "month": 3,
+      "day": 8
+    },
+    "placeId": "erech",
+    "title": "La Piedra de Erech",
+    "summary": "Tras cruzar la montaña por las Sendas de los Muertos, Aragorn convoca a los perjuros en Erech a medianoche.",
+    "characterIds": ["aragorn", "legolas", "gimli"],
+    "ref": {
+      "book": 5,
+      "chapter": 2
+    }
+  },
+  {
+    "id": "estanque-vedado",
+    "date": {
+      "year": 3019,
+      "month": 3,
+      "day": 8
+    },
+    "placeId": "henneth-annun",
+    "title": "El Estanque Vedado",
+    "summary": "Faramir perdona la vida a Gollum por Frodo y deja partir a los tres hacia el sur.",
+    "characterIds": ["frodo", "sam", "gollum", "faramir"],
+    "ref": {
+      "book": 4,
+      "chapter": 6
+    }
+  },
+  {
+    "id": "gandalf-llega-a-minas-tirith",
+    "date": {
+      "year": 3019,
+      "month": 3,
+      "day": 9
+    },
+    "placeId": "minas-tirith",
+    "title": "Minas Tirith",
+    "summary": "Gandalf y Pippin llegan a la Ciudad; Pippin jura servir a Denethor.",
+    "characterIds": ["gandalf", "pippin", "denethor"],
+    "ref": {
+      "book": 5,
+      "chapter": 1
+    }
+  },
+  {
+    "id": "el-sagrario-muster",
+    "date": {
+      "year": 3019,
+      "month": 3,
+      "day": 10
+    },
+    "placeId": "el-sagrario",
+    "title": "La Cabalgata de los Rohirrim",
+    "summary": "En el Día sin Amanecer, la hueste de Rohan parte hacia Gondor; Merry va escondido con Dernhelm.",
+    "characterIds": ["merry", "theoden", "eowyn", "eomer"],
+    "ref": {
+      "book": 5,
+      "chapter": 3
+    }
+  },
+  {
+    "id": "faramir-rescatado",
+    "date": {
+      "year": 3019,
+      "month": 3,
+      "day": 10
+    },
+    "placeId": "minas-tirith",
+    "title": "Gandalf rescata a Faramir",
+    "summary": "Gandalf sale de la Ciudad y ahuyenta a los Nazgûl que acosan a Faramir en su retirada.",
+    "characterIds": ["gandalf", "pippin", "faramir"],
+    "ref": {
+      "book": 5,
+      "chapter": 4
+    }
+  },
+  {
+    "id": "encrucijada",
+    "date": {
+      "year": 3019,
+      "month": 3,
+      "day": 10
+    },
+    "placeId": "encrucijada",
+    "title": "La encrucijada",
+    "summary": "Junto a la estatua del rey caído, Frodo ve salir de Minas Morgul el ejército del Rey Brujo.",
+    "characterIds": ["frodo", "sam", "gollum"],
+    "ref": {
+      "book": 4,
+      "chapter": 7
+    }
+  },
+  {
+    "id": "cair-andros-cae",
+    "date": {
+      "year": 3019,
+      "month": 3,
+      "day": 10
+    },
+    "placeId": "cair-andros",
+    "title": "Cae Cair Andros",
+    "summary": "Un ejército del Morannon toma la isla y pasa a Anórien.",
+    "characterIds": [],
+    "ref": {
+      "appendix": "B"
+    },
+    "tags": ["batalla"]
+  },
+  {
+    "id": "gollum-casi-se-arrepiente",
+    "date": {
+      "year": 3019,
+      "month": 3,
+      "day": 11
+    },
+    "placeId": "escaleras-de-cirith-ungol",
+    "title": "Gollum casi se arrepiente",
+    "summary": "De vuelta de visitar a Ella-Laraña, Gollum ve a Frodo dormido y por un momento parece arrepentirse.",
+    "characterIds": ["frodo", "sam", "gollum"],
+    "ref": {
+      "book": 4,
+      "chapter": 8
+    }
+  },
+  {
+    "id": "asaltos-a-lorien",
+    "date": {
+      "year": 3019,
+      "month": 3,
+      "day": 11
+    },
+    "placeId": "caras-galadhon",
+    "title": "Asaltos a Lórien",
+    "summary": "Las fuerzas de Dol Guldur atacan Lórien tres veces sin lograr entrar.",
+    "characterIds": ["galadriel", "celeborn"],
+    "ref": {
+      "appendix": "B"
+    },
+    "tags": ["batalla"]
+  },
+  {
+    "id": "aragorn-en-linhir",
+    "date": {
+      "year": 3019,
+      "month": 3,
+      "day": 11
+    },
+    "placeId": "linhir",
+    "title": "Linhir",
+    "summary": "Aragorn alcanza Linhir y empuja al enemigo hacia Pelargir.",
+    "characterIds": ["aragorn", "legolas", "gimli"],
+    "ref": {
+      "book": 5,
+      "chapter": 9
+    }
+  },
+  {
+    "id": "faramir-a-osgiliath",
+    "date": {
+      "year": 3019,
+      "month": 3,
+      "day": 11
+    },
+    "placeId": "osgiliath",
+    "title": "Faramir defiende Osgiliath",
+    "summary": "Denethor manda a Faramir a defender el paso del río en Osgiliath.",
+    "characterIds": ["faramir"],
+    "ref": {
+      "appendix": "B"
+    }
+  },
+  {
+    "id": "antro",
+    "date": {
+      "year": 3019,
+      "month": 3,
+      "day": 12
+    },
+    "placeId": "antro-de-ella-larana",
+    "title": "El antro de Ella-Laraña",
+    "summary": "Gollum conduce a los hobbits al túnel de Ella-Laraña; la luz de Galadriel los salva por un momento.",
+    "characterIds": ["frodo", "sam", "gollum"],
+    "ref": {
+      "book": 4,
+      "chapter": 9
+    }
+  },
+  {
+    "id": "theoden-en-min-rimmon",
+    "date": {
+      "year": 3019,
+      "month": 3,
+      "day": 12
+    },
+    "placeId": "min-rimmon",
+    "title": "Bajo Min-Rimmon",
+    "summary": "La hueste de Rohan acampa bajo la almenara de Min-Rimmon.",
+    "characterIds": ["merry", "theoden", "eowyn", "eomer"],
+    "ref": {
+      "appendix": "B"
+    }
+  },
+  {
+    "id": "frodo-capturado",
+    "date": {
+      "year": 3019,
+      "month": 3,
+      "day": 13
+    },
+    "placeId": "torre-de-cirith-ungol",
+    "title": "Frodo, prisionero",
+    "summary": "Los orcos se llevan a la torre a Frodo, inconsciente tras la picadura.",
+    "characterIds": ["frodo"],
+    "ref": {
+      "book": 4,
+      "chapter": 10
+    }
+  },
+  {
+    "id": "decision-de-sam",
+    "date": {
+      "year": 3019,
+      "month": 3,
+      "day": 13
+    },
+    "placeId": "antro-de-ella-larana",
+    "title": "Las decisiones de Sam",
+    "summary": "Creyendo muerto a Frodo, Sam toma el Anillo; al oír que vive, decide rescatarlo.",
+    "characterIds": ["sam"],
+    "ref": {
+      "book": 4,
+      "chapter": 10
+    }
+  },
+  {
+    "id": "pelargir",
+    "date": {
+      "year": 3019,
+      "month": 3,
+      "day": 13
+    },
+    "placeId": "pelargir",
+    "title": "La flota de Pelargir",
+    "summary": "El Ejército de los Muertos pone en fuga a los Corsarios y Aragorn captura su flota.",
+    "characterIds": ["aragorn", "legolas", "gimli"],
+    "ref": {
+      "book": 5,
+      "chapter": 9
+    },
+    "tags": ["batalla"]
+  },
+  {
+    "id": "druadan",
+    "date": {
+      "year": 3019,
+      "month": 3,
+      "day": 13
+    },
+    "placeId": "bosque-de-druadan",
+    "title": "Los Hombres Salvajes",
+    "summary": "Ghân-buri-Ghân guía a los Rohirrim por el valle del Carro de Piedra, lejos del camino vigilado.",
+    "characterIds": ["merry", "theoden", "eowyn", "eomer"],
+    "ref": {
+      "book": 5,
+      "chapter": 5
+    }
+  },
+  {
+    "id": "faramir-herido",
+    "date": {
+      "year": 3019,
+      "month": 3,
+      "day": 13
+    },
+    "placeId": "campos-del-pelennor",
+    "title": "Faramir, herido",
+    "summary": "El Pelennor cae; Faramir regresa a la Ciudad herido por un dardo.",
+    "characterIds": ["faramir"],
+    "ref": {
+      "appendix": "B"
+    }
+  },
+  {
+    "id": "sam-encuentra-a-frodo",
+    "date": {
+      "year": 3019,
+      "month": 3,
+      "day": 14
+    },
+    "placeId": "torre-de-cirith-ungol",
+    "title": "La torre de Cirith Ungol",
+    "summary": "Sam entra en la torre, donde los orcos se han matado entre sí, y encuentra a Frodo.",
+    "characterIds": ["frodo", "sam"],
+    "ref": {
+      "book": 6,
+      "chapter": 1
+    }
+  },
+  {
+    "id": "asedio",
+    "date": {
+      "year": 3019,
+      "month": 3,
+      "day": 14
+    },
+    "placeId": "minas-tirith",
+    "title": "El sitio de Gondor",
+    "summary": "La Ciudad queda cercada y los ejércitos de Mordor la bombardean.",
+    "characterIds": ["gandalf", "pippin", "denethor"],
+    "ref": {
+      "book": 5,
+      "chapter": 4
+    },
+    "tags": ["batalla"]
+  },
+  {
+    "id": "bosque-gris",
+    "date": {
+      "year": 3019,
+      "month": 3,
+      "day": 14
+    },
+    "placeId": "bosque-gris",
+    "title": "En el Bosque Gris",
+    "summary": "Los Rohirrim llegan al Bosque Gris, a un paso del Rammas.",
+    "characterIds": ["merry", "theoden", "eowyn", "eomer"],
+    "ref": {
+      "appendix": "B"
+    }
+  },
+  {
+    "id": "puertas-rotas",
+    "date": {
+      "year": 3019,
+      "month": 3,
+      "day": 15
+    },
+    "placeId": "minas-tirith",
+    "title": "Las puertas rotas",
+    "summary": "De madrugada el Rey Brujo rompe la Puerta de la Ciudad; Gandalf le cierra el paso y suenan los cuernos de Rohan.",
+    "characterIds": ["gandalf", "pippin"],
+    "ref": {
+      "book": 5,
+      "chapter": 4
+    },
+    "tags": ["batalla"]
+  },
+  {
+    "id": "pira-de-denethor",
+    "date": {
+      "year": 3019,
+      "month": 3,
+      "day": 15
+    },
+    "placeId": "minas-tirith",
+    "title": "La pira de Denethor",
+    "summary": "Denethor se quema vivo; Pippin y Gandalf salvan a Faramir.",
+    "characterIds": ["denethor", "pippin", "gandalf", "faramir"],
+    "ref": {
+      "book": 5,
+      "chapter": 7
+    }
+  },
+  {
+    "id": "batalla-del-pelennor",
+    "date": {
+      "year": 3019,
+      "month": 3,
+      "day": 15
+    },
+    "placeId": "campos-del-pelennor",
+    "title": "Batalla de los Campos del Pelennor",
+    "summary": "Rohan carga contra los sitiadores, Éowyn y Merry vencen al Rey Brujo, muere Théoden y Aragorn llega por el río.",
+    "characterIds": ["merry", "aragorn", "legolas", "gimli", "theoden", "eowyn", "eomer"],
+    "ref": {
+      "book": 5,
+      "chapter": 6
+    },
+    "tags": ["batalla"]
+  },
+  {
+    "id": "casas-de-curacion",
+    "date": {
+      "year": 3019,
+      "month": 3,
+      "day": 15
+    },
+    "placeId": "minas-tirith",
+    "title": "Las Casas de Curación",
+    "summary": "Aragorn entra de noche en la Ciudad y cura a Faramir, Éowyn y Merry con hojas de athelas.",
+    "characterIds": ["aragorn", "gandalf", "pippin", "merry", "faramir", "eowyn"],
+    "ref": {
+      "book": 5,
+      "chapter": 8
+    }
+  },
+  {
+    "id": "huida-de-la-torre",
+    "date": {
+      "year": 3019,
+      "month": 3,
+      "day": 15
+    },
+    "placeId": "torre-de-cirith-ungol",
+    "title": "Huida de la torre",
+    "summary": "Disfrazados de orcos, Frodo y Sam salen de la torre y se adentran en Mordor.",
+    "characterIds": ["frodo", "sam"],
+    "ref": {
+      "book": 6,
+      "chapter": 1
+    }
+  },
+  {
+    "id": "batalla-del-bosque-negro",
+    "date": {
+      "year": 3019,
+      "month": 3,
+      "day": 15
+    },
+    "placeId": "estancias-de-thranduil",
+    "title": "Batalla bajo los árboles",
+    "summary": "Thranduil rechaza a las fuerzas de Dol Guldur en el Bosque Negro.",
+    "characterIds": [],
+    "ref": {
+      "appendix": "B"
+    },
+    "tags": ["batalla"]
+  },
+  {
+    "id": "debate-de-los-capitanes",
+    "date": {
+      "year": 3019,
+      "month": 3,
+      "day": 16
+    },
+    "placeId": "minas-tirith",
+    "title": "La última deliberación",
+    "summary": "Los capitanes deciden marchar contra el Morannon para distraer a Sauron del Portador.",
+    "characterIds": ["aragorn", "gandalf", "eomer", "legolas", "gimli"],
+    "ref": {
+      "book": 5,
+      "chapter": 9
+    }
+  },
+  {
+    "id": "desde-el-morgai",
+    "date": {
+      "year": 3019,
+      "month": 3,
+      "day": 16
+    },
+    "placeId": "morgai",
+    "title": "Desde el Morgai",
+    "summary": "Frodo y Sam miran desde la cresta del Morgai el llano de Gorgoroth y el Monte del Destino.",
+    "characterIds": ["frodo", "sam"],
+    "ref": {
+      "book": 6,
+      "chapter": 2
+    }
+  },
+  {
+    "id": "batalla-de-valle",
+    "date": {
+      "year": 3019,
+      "month": 3,
+      "day": 17
+    },
+    "placeId": "valle",
+    "title": "Batalla de Valle",
+    "summary": "Mueren el rey Brand y Dáin Pie de Hierro; enanos y hombres resisten sitiados en Erebor.",
+    "characterIds": [],
+    "ref": {
+      "appendix": "B"
+    },
+    "tags": ["batalla"]
+  },
+  {
+    "id": "la-hueste-parte",
+    "date": {
+      "year": 3019,
+      "month": 3,
+      "day": 18
+    },
+    "placeId": "minas-tirith",
+    "title": "La Hueste del Oeste parte",
+    "summary": "Siete mil soldados salen de la Ciudad hacia el norte; Pippin va con la Guardia.",
+    "characterIds": ["aragorn", "gandalf", "pippin", "legolas", "gimli", "eomer"],
+    "ref": {
+      "book": 5,
+      "chapter": 10
+    }
+  },
+  {
+    "id": "isenmouthe",
+    "date": {
+      "year": 3019,
+      "month": 3,
+      "day": 18
+    },
+    "placeId": "isenmouthe",
+    "title": "Arrastrados por los orcos",
+    "summary": "Una tropa de orcos los toma por desertores y los obliga a marchar hasta el Isenmouthe.",
+    "characterIds": ["frodo", "sam"],
+    "ref": {
+      "book": 6,
+      "chapter": 2
+    }
+  },
+  {
+    "id": "valle-de-morgul",
+    "date": {
+      "year": 3019,
+      "month": 3,
+      "day": 19
+    },
+    "placeId": "minas-morgul",
+    "title": "El valle de Morgul",
+    "summary": "La hueste pasa ante Minas Morgul y prende fuego a los campos del valle.",
+    "characterIds": ["aragorn", "gandalf", "pippin", "legolas", "gimli"],
+    "ref": {
+      "book": 5,
+      "chapter": 10
+    }
+  },
+  {
+    "id": "escapan-de-los-orcos",
+    "date": {
+      "year": 3019,
+      "month": 3,
+      "day": 19
+    },
+    "placeId": "isenmouthe",
+    "title": "Escapan de los orcos",
+    "summary": "Aprovechando una refriega, Frodo y Sam se escabullen y siguen el camino de Barad-dûr.",
+    "characterIds": ["frodo", "sam"],
+    "ref": {
+      "book": 6,
+      "chapter": 2
+    }
+  },
+  {
+    "id": "dejan-el-camino",
+    "date": {
+      "year": 3019,
+      "month": 3,
+      "day": 22
+    },
+    "placeId": "camino-de-barad-dur",
+    "title": "Hacia el Monte del Destino",
+    "summary": "Frodo y Sam dejan el camino y tuercen al sur, a campo abierto, hacia el Orodruin.",
+    "characterIds": ["frodo", "sam"],
+    "ref": {
+      "book": 6,
+      "chapter": 3
+    }
+  },
+  {
+    "id": "la-hueste-acampa",
+    "date": {
+      "year": 3019,
+      "month": 3,
+      "day": 24
+    },
+    "placeId": "escoriales-del-morannon",
+    "title": "Ante el Morannon",
+    "summary": "La hueste acampa en la desolación ante la Puerta Negra.",
+    "characterIds": ["aragorn", "gandalf", "pippin", "legolas", "gimli"],
+    "ref": {
+      "book": 5,
+      "chapter": 10
+    }
+  },
+  {
+    "id": "batalla-del-morannon",
+    "date": {
+      "year": 3019,
+      "month": 3,
+      "day": 25
+    },
+    "placeId": "escoriales-del-morannon",
+    "title": "Batalla ante la Puerta Negra",
+    "summary": "Rodeada en los escoriales, la hueste resiste; Pippin mata a un troll y queda sepultado bajo él.",
+    "characterIds": ["aragorn", "gandalf", "pippin", "legolas", "gimli", "eomer"],
+    "ref": {
+      "book": 5,
+      "chapter": 10
+    },
+    "tags": ["batalla"]
+  },
+  {
+    "id": "monte-del-destino",
+    "date": {
+      "year": 3019,
+      "month": 3,
+      "day": 25
+    },
+    "placeId": "monte-del-destino",
+    "title": "El Monte del Destino",
+    "summary": "En el Sammath Naur, Frodo reclama el Anillo; Gollum se lo arranca y cae con él al fuego. Barad-dûr se derrumba.",
+    "characterIds": ["frodo", "sam", "gollum"],
+    "ref": {
+      "book": 6,
+      "chapter": 3
+    },
+    "tags": ["anillo"]
+  },
+  {
+    "id": "aguilas",
+    "date": {
+      "year": 3019,
+      "month": 3,
+      "day": 25
+    },
+    "placeId": "monte-del-destino",
+    "title": "Llegan las águilas",
+    "summary": "Gwaihir y Gandalf rescatan a Frodo y a Sam entre la lava.",
+    "characterIds": ["frodo", "sam", "gandalf", "gwaihir"],
+    "ref": {
+      "book": 6,
+      "chapter": 4
+    }
+  },
+  {
+    "id": "dol-guldur-destruido",
+    "date": {
+      "year": 3019,
+      "month": 3,
+      "day": 28
+    },
+    "placeId": "dol-guldur",
+    "title": "Cae Dol Guldur",
+    "summary": "Celeborn cruza el Anduin y empieza a derribar la fortaleza.",
+    "characterIds": ["celeborn"],
+    "ref": {
+      "appendix": "B"
+    }
+  },
+  {
+    "id": "cormallen",
+    "date": {
+      "year": 3019,
+      "month": 4,
+      "day": 8
+    },
+    "placeId": "campo-de-cormallen",
+    "title": "El Campo de Cormallen",
+    "summary": "La hueste honra a los Portadores del Anillo y la Compañía se reúne de nuevo.",
+    "characterIds": ["frodo", "sam", "merry", "pippin", "aragorn", "legolas", "gimli", "gandalf"],
+    "ref": {
+      "book": 6,
+      "chapter": 4
+    }
+  },
+  {
+    "id": "coronacion",
+    "date": {
+      "year": 3019,
+      "month": 5,
+      "day": 1
+    },
+    "placeId": "minas-tirith",
+    "title": "Coronación del rey Elessar",
+    "summary": "Frodo entrega la corona a Gandalf, que la pone sobre la cabeza de Aragorn.",
+    "characterIds": [
+      "frodo",
+      "sam",
+      "merry",
+      "pippin",
+      "aragorn",
+      "legolas",
+      "gimli",
+      "gandalf",
+      "faramir"
+    ],
+    "ref": {
+      "book": 6,
+      "chapter": 5
+    }
+  },
+  {
+    "id": "arbol-blanco",
+    "date": {
+      "year": 3019,
+      "month": 6,
+      "day": 25
+    },
+    "placeId": "minas-tirith",
+    "title": "El retoño del Árbol Blanco",
+    "summary": "En las laderas del Mindolluin, Aragorn y Gandalf encuentran un retoño del Árbol Blanco.",
+    "characterIds": ["aragorn", "gandalf"],
+    "ref": {
+      "book": 6,
+      "chapter": 5
+    }
+  },
+  {
+    "id": "boda-de-aragorn",
+    "date": {
+      "year": 3019,
+      "special": "midyear"
+    },
+    "placeId": "minas-tirith",
+    "title": "Boda de Aragorn y Arwen",
+    "summary": "Llegan Elrond y Arwen, y el rey se casa con ella el Día del Medio Año.",
+    "characterIds": [
+      "frodo",
+      "sam",
+      "merry",
+      "pippin",
+      "aragorn",
+      "legolas",
+      "gimli",
+      "gandalf",
+      "arwen",
+      "elrond"
+    ],
+    "ref": {
+      "book": 6,
+      "chapter": 5
+    }
+  },
+  {
+    "id": "cortejo-funebre",
+    "date": {
+      "year": 3019,
+      "month": 7,
+      "day": 19
+    },
+    "placeId": "minas-tirith",
+    "title": "El cortejo de Théoden",
+    "summary": "Sale de la Ciudad la escolta que lleva el cuerpo de Théoden a Rohan.",
+    "characterIds": [
+      "frodo",
+      "sam",
+      "merry",
+      "pippin",
+      "aragorn",
+      "legolas",
+      "gimli",
+      "gandalf",
+      "eomer"
+    ],
+    "ref": {
+      "book": 6,
+      "chapter": 6
+    }
+  },
+  {
+    "id": "funeral-de-theoden",
+    "date": {
+      "year": 3019,
+      "month": 8,
+      "day": 10
+    },
+    "placeId": "edoras",
+    "title": "Funeral de Théoden",
+    "summary": "Théoden es enterrado junto a sus antepasados en Edoras; Éomer anuncia el compromiso de Éowyn y Faramir.",
+    "characterIds": [
+      "frodo",
+      "sam",
+      "merry",
+      "pippin",
+      "aragorn",
+      "legolas",
+      "gimli",
+      "gandalf",
+      "eomer",
+      "eowyn",
+      "faramir"
+    ],
+    "ref": {
+      "book": 6,
+      "chapter": 6
+    }
+  },
+  {
+    "id": "despedida-de-aragorn",
+    "date": {
+      "year": 3019,
+      "month": 8,
+      "day": 22
+    },
+    "placeId": "isengard",
+    "title": "Despedida de Aragorn",
+    "summary": "En Isengard, ahora un jardín de los ents, Aragorn se despide al atardecer.",
+    "characterIds": [
+      "frodo",
+      "sam",
+      "merry",
+      "pippin",
+      "aragorn",
+      "legolas",
+      "gimli",
+      "gandalf",
+      "barbol"
+    ],
+    "ref": {
+      "book": 6,
+      "chapter": 6
+    }
+  },
+  {
+    "id": "encuentro-con-saruman",
+    "date": {
+      "year": 3019,
+      "month": 8,
+      "day": 28
+    },
+    "placeId": "tierra-brunia",
+    "title": "Saruman, mendigo",
+    "summary": "La comitiva alcanza a Saruman y Lengua de Serpiente, que van harapientos camino del norte.",
+    "characterIds": [
+      "frodo",
+      "sam",
+      "merry",
+      "pippin",
+      "gandalf",
+      "saruman",
+      "galadriel",
+      "celeborn",
+      "elrond"
+    ],
+    "ref": {
+      "book": 6,
+      "chapter": 6
+    }
+  },
+  {
+    "id": "despedida-de-galadriel",
+    "date": {
+      "year": 3019,
+      "month": 9,
+      "day": 13
+    },
+    "placeId": "acebeda",
+    "title": "Despedida de Galadriel",
+    "summary": "Tras una semana de conversaciones, Celeborn y Galadriel vuelven a Lórien.",
+    "characterIds": [
+      "frodo",
+      "sam",
+      "merry",
+      "pippin",
+      "gandalf",
+      "galadriel",
+      "celeborn",
+      "elrond"
+    ],
+    "ref": {
+      "book": 6,
+      "chapter": 6
+    }
+  },
+  {
+    "id": "cumpleanos-de-bilbo",
+    "date": {
+      "year": 3019,
+      "month": 9,
+      "day": 22
+    },
+    "placeId": "rivendel",
+    "title": "Ciento veintinueve años",
+    "summary": "Los hobbits celebran en Rivendel el cumpleaños de Bilbo, que les regala sus libros y su oro.",
+    "characterIds": ["frodo", "sam", "merry", "pippin", "gandalf", "bilbo", "elrond"],
+    "ref": {
+      "book": 6,
+      "chapter": 6
+    }
+  },
+  {
+    "id": "saruman-en-la-comarca",
+    "date": {
+      "year": 3019,
+      "month": 9,
+      "day": 22
+    },
+    "placeId": "hobbiton",
+    "title": "Saruman llega a la Comarca",
+    "summary": "Saruman se instala en la Comarca y toma el control a través de Lotho.",
+    "characterIds": ["saruman"],
+    "ref": {
+      "appendix": "B"
+    }
+  },
+  {
+    "id": "salida-de-rivendel-3019",
+    "date": {
+      "year": 3019,
+      "month": 10,
+      "day": 5
+    },
+    "placeId": "rivendel",
+    "title": "Rumbo a casa",
+    "summary": "Gandalf y los hobbits dejan Rivendel camino de la Comarca.",
+    "characterIds": ["frodo", "sam", "merry", "pippin", "gandalf", "bilbo"],
+    "ref": {
+      "book": 6,
+      "chapter": 7
+    }
+  },
+  {
+    "id": "aniversario-del-vado",
+    "date": {
+      "year": 3019,
+      "month": 10,
+      "day": 6
+    },
+    "placeId": "vado-del-bruinen",
+    "title": "Un año después",
+    "summary": "Al cruzar el Bruinen, Frodo siente de nuevo el dolor de la herida de Cima de los Vientos.",
+    "characterIds": ["frodo", "sam", "merry", "pippin", "gandalf"],
+    "ref": {
+      "book": 6,
+      "chapter": 7
+    }
+  },
+  {
+    "id": "regreso-a-bree",
+    "date": {
+      "year": 3019,
+      "month": 10,
+      "day": 28
+    },
+    "placeId": "bree",
+    "title": "De vuelta en Bree",
+    "summary": "Mantecona les cuenta las penurias del país y la llegada de rufianes del sur.",
+    "characterIds": ["frodo", "sam", "merry", "pippin", "gandalf", "cebadilla-mantecona"],
+    "ref": {
+      "book": 6,
+      "chapter": 7
+    }
+  },
+  {
+    "id": "gandalf-se-despide",
+    "date": {
+      "year": 3019,
+      "month": 10,
+      "day": 30
+    },
+    "placeId": "bree",
+    "title": "Gandalf se despide",
+    "summary": "Gandalf deja que los hobbits arreglen solos los asuntos de la Comarca y se va a ver a Bombadil.",
+    "characterIds": ["frodo", "sam", "merry", "pippin", "gandalf"],
+    "ref": {
+      "book": 6,
+      "chapter": 7
+    }
+  },
+  {
+    "id": "puente-cerrado",
+    "date": {
+      "year": 3019,
+      "month": 10,
+      "day": 30
+    },
+    "placeId": "puente-del-brandivino",
+    "title": "El Puente cerrado",
+    "summary": "Encuentran el Puente del Brandivino cerrado con una verja y la Comarca llena de normas nuevas.",
+    "characterIds": ["frodo", "sam", "merry", "pippin"],
+    "ref": {
+      "book": 6,
+      "chapter": 8
+    }
+  },
+  {
+    "id": "arrestados",
+    "date": {
+      "year": 3019,
+      "month": 11,
+      "day": 1
+    },
+    "placeId": "ranales",
+    "title": "Arrestados en Ranales",
+    "summary": "Los alguaciles de la Comarca los detienen en Ranales.",
+    "characterIds": ["frodo", "sam", "merry", "pippin"],
+    "ref": {
+      "book": 6,
+      "chapter": 8
+    }
+  },
+  {
+    "id": "levantamiento",
+    "date": {
+      "year": 3019,
+      "month": 11,
+      "day": 2
+    },
+    "placeId": "delagua",
+    "title": "La Comarca se levanta",
+    "summary": "Merry toca el cuerno de Rohan y los hobbits de Delagua se alzan contra los rufianes.",
+    "characterIds": ["frodo", "sam", "merry", "pippin"],
+    "ref": {
+      "book": 6,
+      "chapter": 8
+    }
+  },
+  {
+    "id": "batalla-de-delagua",
+    "date": {
+      "year": 3019,
+      "month": 11,
+      "day": 3
+    },
+    "placeId": "delagua",
+    "title": "Batalla de Delagua",
+    "summary": "Los hobbits derrotan a los hombres de Saharkey; es la última batalla de la Guerra del Anillo.",
+    "characterIds": ["frodo", "sam", "merry", "pippin"],
+    "ref": {
+      "book": 6,
+      "chapter": 8
+    },
+    "tags": ["batalla"]
+  },
+  {
+    "id": "muerte-de-saruman",
+    "date": {
+      "year": 3019,
+      "month": 11,
+      "day": 3
+    },
+    "placeId": "bolson-cerrado",
+    "title": "Fin de Saruman",
+    "summary": "En la puerta de Bolsón Cerrado, Lengua de Serpiente mata a Saruman y cae abatido por las flechas.",
+    "characterIds": ["frodo", "sam", "merry", "pippin", "saruman"],
+    "ref": {
+      "book": 6,
+      "chapter": 8
+    }
+  },
+  {
+    "id": "enfermedad-de-frodo-3020",
+    "date": {
+      "year": 3020,
+      "month": 3,
+      "day": 13
+    },
+    "placeId": "bolson-cerrado",
+    "title": "Frodo enferma",
+    "summary": "En el aniversario del veneno de Ella-Laraña, Frodo cae enfermo.",
+    "characterIds": ["frodo"],
+    "ref": {
+      "appendix": "B"
+    }
+  },
+  {
+    "id": "boda-de-sam",
+    "date": {
+      "year": 3020,
+      "month": 5,
+      "day": 1
+    },
+    "placeId": "bolson-cerrado",
+    "title": "Sam se casa con Rosa Coto",
+    "summary": "Sam se casa con Rosa y se van a vivir a Bolsón Cerrado con Frodo.",
+    "characterIds": ["sam", "frodo"],
+    "ref": {
+      "appendix": "B"
+    },
+    "tags": ["lugar-aproximado"]
+  },
+  {
+    "id": "nace-elanor",
+    "date": {
+      "year": 3021,
+      "month": 3,
+      "day": 25
+    },
+    "placeId": "bolson-cerrado",
+    "title": "Nace Elanor",
+    "summary": "Nace Elanor la Bella, primera hija de Sam y Rosa.",
+    "characterIds": ["sam", "frodo"],
+    "ref": {
+      "appendix": "B"
+    }
+  },
+  {
+    "id": "frodo-y-sam-parten",
+    "date": {
+      "year": 3021,
+      "month": 9,
+      "day": 21
+    },
+    "placeId": "bolson-cerrado",
+    "title": "La última partida",
+    "summary": "Frodo y Sam salen a caballo de Bolsón Cerrado, Sam sin saber aún adónde van.",
+    "characterIds": ["frodo", "sam"],
+    "ref": {
+      "book": 6,
+      "chapter": 9
+    }
+  },
+  {
+    "id": "ultima-cabalgata",
+    "date": {
+      "year": 3021,
+      "month": 9,
+      "day": 22
+    },
+    "placeId": "bosque-cerrado",
+    "title": "La última cabalgata de los Guardianes",
+    "summary": "En el Bosque Cerrado se unen a Elrond, Galadriel y Bilbo, que van hacia el mar.",
+    "characterIds": ["frodo", "sam", "bilbo", "elrond", "galadriel"],
+    "ref": {
+      "book": 6,
+      "chapter": 9
+    }
+  },
+  {
+    "id": "puertos-grises",
+    "date": {
+      "year": 3021,
+      "month": 9,
+      "day": 29
+    },
+    "placeId": "puertos-grises",
+    "title": "Los Puertos Grises",
+    "summary": "Frodo, Bilbo y los Guardianes de los Anillos embarcan hacia el Oeste; Sam, Merry y Pippin los despiden.",
+    "characterIds": ["frodo", "sam", "merry", "pippin", "gandalf", "bilbo", "elrond", "galadriel"],
+    "ref": {
+      "book": 6,
+      "chapter": 9
+    }
+  },
+  {
+    "id": "sam-vuelve",
+    "date": {
+      "year": 3021,
+      "month": 10,
+      "day": 6
+    },
+    "placeId": "bolson-cerrado",
+    "title": "Sam vuelve a casa",
+    "summary": "Sam llega a Bolsón Cerrado, donde Rosa y Elanor lo esperan.",
+    "characterIds": ["sam"],
+    "ref": {
+      "book": 6,
+      "chapter": 9
+    }
   }
 ]

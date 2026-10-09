@@ -366,7 +366,7 @@
     "from": "bree",
     "to": "cima-de-los-vientos",
     "via": [
-      [508.0, 1077],
+      [508, 1077],
       [551.2, 1088],
       [588.3, 1078]
     ],
@@ -488,6 +488,538 @@
       [1050, 720],
       [1063, 695],
       [1072, 668]
+    ]
+  },
+  {
+    "id": "emyn-muil--pie-emyn-muil",
+    "from": "emyn-muil",
+    "to": "pie-emyn-muil",
+    "via": [
+      [1088, 640],
+      [1098, 622],
+      [1106, 608]
+    ]
+  },
+  {
+    "id": "pie-emyn-muil--cienagas-de-los-muertos",
+    "from": "pie-emyn-muil",
+    "to": "cienagas-de-los-muertos",
+    "via": [
+      [1125, 588],
+      [1140, 575]
+    ]
+  },
+  {
+    "id": "cienagas-de-los-muertos--escoriales-del-morannon",
+    "from": "cienagas-de-los-muertos",
+    "to": "escoriales-del-morannon",
+    "via": [[1175, 552]]
+  },
+  {
+    "id": "escoriales-del-morannon--morannon",
+    "from": "escoriales-del-morannon",
+    "to": "morannon",
+    "via": []
+  },
+  {
+    "id": "morannon--henneth-annun",
+    "from": "morannon",
+    "to": "henneth-annun",
+    "via": [
+      [1150, 505],
+      [1140, 480],
+      [1130, 465]
+    ]
+  },
+  {
+    "id": "henneth-annun--encrucijada",
+    "from": "henneth-annun",
+    "to": "encrucijada",
+    "via": [
+      [1132, 440],
+      [1138, 415]
+    ]
+  },
+  {
+    "id": "encrucijada--escaleras-de-cirith-ungol",
+    "from": "encrucijada",
+    "to": "escaleras-de-cirith-ungol",
+    "via": [
+      [1150, 401],
+      [1154, 406]
+    ]
+  },
+  {
+    "id": "escaleras-de-cirith-ungol--antro-de-ella-larana",
+    "from": "escaleras-de-cirith-ungol",
+    "to": "antro-de-ella-larana",
+    "via": []
+  },
+  {
+    "id": "antro-de-ella-larana--torre-de-cirith-ungol",
+    "from": "antro-de-ella-larana",
+    "to": "torre-de-cirith-ungol",
+    "via": []
+  },
+  {
+    "id": "torre-de-cirith-ungol--morgai",
+    "from": "torre-de-cirith-ungol",
+    "to": "morgai",
+    "via": [
+      [1180, 410],
+      [1188, 425]
+    ]
+  },
+  {
+    "id": "morgai--isenmouthe",
+    "from": "morgai",
+    "to": "isenmouthe",
+    "via": [
+      [1194, 460],
+      [1200, 478]
+    ]
+  },
+  {
+    "id": "isenmouthe--camino-de-barad-dur",
+    "from": "isenmouthe",
+    "to": "camino-de-barad-dur",
+    "via": [[1222, 474]],
+    "roadId": "camino-de-barad-dur"
+  },
+  {
+    "id": "camino-de-barad-dur--monte-del-destino",
+    "from": "camino-de-barad-dur",
+    "to": "monte-del-destino",
+    "via": [[1245, 450]]
+  },
+  {
+    "id": "antro-de-ella-larana--monte-del-destino",
+    "from": "antro-de-ella-larana",
+    "to": "monte-del-destino",
+    "via": [
+      [1180, 410],
+      [1192, 440],
+      [1215, 440]
+    ]
+  },
+  {
+    "id": "monte-del-destino--campo-de-cormallen",
+    "from": "monte-del-destino",
+    "to": "campo-de-cormallen",
+    "via": []
+  },
+  {
+    "id": "campo-de-cormallen--minas-tirith",
+    "from": "campo-de-cormallen",
+    "to": "minas-tirith",
+    "via": [
+      [1088, 470],
+      [1096, 440],
+      [1110, 402]
+    ]
+  },
+  {
+    "id": "edoras--abismo-de-helm",
+    "from": "edoras",
+    "to": "abismo-de-helm",
+    "via": [
+      [860, 580],
+      [830, 586]
+    ]
+  },
+  {
+    "id": "abismo-de-helm--isengard",
+    "from": "abismo-de-helm",
+    "to": "isengard",
+    "via": [
+      [796, 610],
+      [790, 640]
+    ]
+  },
+  {
+    "id": "vados-del-isen--abismo-de-helm",
+    "from": "vados-del-isen",
+    "to": "abismo-de-helm",
+    "via": [[796, 600]]
+  },
+  {
+    "id": "isengard--dol-baran",
+    "from": "isengard",
+    "to": "dol-baran",
+    "via": []
+  },
+  {
+    "id": "dol-baran--abismo-de-helm",
+    "from": "dol-baran",
+    "to": "abismo-de-helm",
+    "via": [[800, 615]]
+  },
+  {
+    "id": "isengard--tierra-brunia",
+    "from": "isengard",
+    "to": "tierra-brunia",
+    "via": [
+      [780, 680],
+      [760, 700]
+    ],
+    "roadId": "camino-verde"
+  },
+  {
+    "id": "tierra-brunia--acebeda",
+    "from": "tierra-brunia",
+    "to": "acebeda",
+    "via": [
+      [760, 780],
+      [800, 850],
+      [835, 900]
+    ]
+  },
+  {
+    "id": "vado-del-bruinen--bree",
+    "from": "vado-del-bruinen",
+    "to": "bree",
+    "via": [
+      [820, 1060],
+      [800, 1066],
+      [770, 1070],
+      [740, 1070],
+      [700, 1068],
+      [650, 1066],
+      [610.5, 1072],
+      [588.3, 1078],
+      [551.2, 1088],
+      [508, 1077]
+    ],
+    "roadId": "camino-del-este"
+  },
+  {
+    "id": "bree--puente-del-brandivino",
+    "from": "bree",
+    "to": "puente-del-brandivino",
+    "via": [
+      [462.4, 1080],
+      [446.3, 1085],
+      [429, 1081]
+    ],
+    "roadId": "camino-del-este"
+  },
+  {
+    "id": "puente-del-brandivino--ranales",
+    "from": "puente-del-brandivino",
+    "to": "ranales",
+    "via": []
+  },
+  {
+    "id": "ranales--delagua",
+    "from": "ranales",
+    "to": "delagua",
+    "via": []
+  },
+  {
+    "id": "delagua--bolson-cerrado",
+    "from": "delagua",
+    "to": "bolson-cerrado",
+    "via": [[372, 1088]]
+  },
+  {
+    "id": "bolson-cerrado--cricava",
+    "from": "bolson-cerrado",
+    "to": "cricava",
+    "via": [
+      [392, 1086],
+      [410, 1083],
+      [418, 1070]
+    ]
+  },
+  {
+    "id": "bosque-cerrado--puertos-grises",
+    "from": "bosque-cerrado",
+    "to": "puertos-grises",
+    "via": [
+      [375, 1078],
+      [340, 1075],
+      [318, 1072],
+      [280, 1076],
+      [230, 1082]
+    ]
+  },
+  {
+    "id": "puertos-grises--bolson-cerrado",
+    "from": "puertos-grises",
+    "to": "bolson-cerrado",
+    "via": [
+      [230, 1082],
+      [280, 1076],
+      [318, 1072],
+      [350, 1078]
+    ]
+  },
+  {
+    "id": "cricava--puertos-grises",
+    "from": "cricava",
+    "to": "puertos-grises",
+    "via": [
+      [410, 1083],
+      [392, 1086],
+      [378, 1083],
+      [350, 1078],
+      [318, 1072],
+      [280, 1076],
+      [230, 1082]
+    ]
+  },
+  {
+    "id": "bree--casa-de-tom-bombadil",
+    "from": "bree",
+    "to": "casa-de-tom-bombadil",
+    "via": [[466, 1068]]
+  },
+  {
+    "id": "parth-galen--lindero-de-fangorn",
+    "from": "parth-galen",
+    "to": "lindero-de-fangorn",
+    "via": [
+      [1030, 662],
+      [1005, 670],
+      [970, 682],
+      [940, 690]
+    ]
+  },
+  {
+    "id": "lindero-de-fangorn--colina-de-barbol",
+    "from": "lindero-de-fangorn",
+    "to": "colina-de-barbol",
+    "via": []
+  },
+  {
+    "id": "colina-de-barbol--wellinghall",
+    "from": "colina-de-barbol",
+    "to": "wellinghall",
+    "via": [
+      [875, 715],
+      [855, 725]
+    ]
+  },
+  {
+    "id": "wellinghall--valle-de-los-ents",
+    "from": "wellinghall",
+    "to": "valle-de-los-ents",
+    "via": []
+  },
+  {
+    "id": "valle-de-los-ents--isengard",
+    "from": "valle-de-los-ents",
+    "to": "isengard",
+    "via": [
+      [830, 690],
+      [810, 675]
+    ]
+  },
+  {
+    "id": "el-sagrario--min-rimmon",
+    "from": "el-sagrario",
+    "to": "min-rimmon",
+    "via": [
+      [885, 565],
+      [930, 556],
+      [970, 545]
+    ]
+  },
+  {
+    "id": "min-rimmon--bosque-de-druadan",
+    "from": "min-rimmon",
+    "to": "bosque-de-druadan",
+    "via": [[1010, 515]]
+  },
+  {
+    "id": "bosque-de-druadan--bosque-gris",
+    "from": "bosque-de-druadan",
+    "to": "bosque-gris",
+    "via": [[1052, 480]]
+  },
+  {
+    "id": "bosque-gris--campos-del-pelennor",
+    "from": "bosque-gris",
+    "to": "campos-del-pelennor",
+    "via": [
+      [1088, 440],
+      [1096, 420]
+    ]
+  },
+  {
+    "id": "campos-del-pelennor--minas-tirith",
+    "from": "campos-del-pelennor",
+    "to": "minas-tirith",
+    "via": []
+  },
+  {
+    "id": "dol-baran--minas-tirith",
+    "from": "dol-baran",
+    "to": "minas-tirith",
+    "via": [
+      [840, 610],
+      [880, 575],
+      [930, 556],
+      [970, 545],
+      [1010, 528],
+      [1050, 502],
+      [1080, 466],
+      [1095, 430]
+    ]
+  },
+  {
+    "id": "minas-tirith--minas-morgul",
+    "from": "minas-tirith",
+    "to": "minas-morgul",
+    "via": [
+      [1110, 402],
+      [1140, 398]
+    ],
+    "roadId": "camino-de-morgul"
+  },
+  {
+    "id": "minas-morgul--escoriales-del-morannon",
+    "from": "minas-morgul",
+    "to": "escoriales-del-morannon",
+    "via": [
+      [1140, 398],
+      [1142, 425],
+      [1145, 460],
+      [1152, 500],
+      [1165, 524]
+    ],
+    "roadId": "camino-de-ithilien"
+  },
+  {
+    "id": "escoriales-del-morannon--campo-de-cormallen",
+    "from": "escoriales-del-morannon",
+    "to": "campo-de-cormallen",
+    "via": [
+      [1152, 500],
+      [1140, 485]
+    ]
+  },
+  {
+    "id": "escoriales-del-morannon--monte-del-destino",
+    "from": "escoriales-del-morannon",
+    "to": "monte-del-destino",
+    "via": []
+  },
+  {
+    "id": "parth-galen--emnet-este",
+    "from": "parth-galen",
+    "to": "emnet-este",
+    "via": [
+      [1030, 662],
+      [1010, 672]
+    ]
+  },
+  {
+    "id": "emnet-este--lindero-de-fangorn",
+    "from": "emnet-este",
+    "to": "lindero-de-fangorn",
+    "via": [
+      [960, 682],
+      [935, 690]
+    ]
+  },
+  {
+    "id": "colina-de-barbol--edoras",
+    "from": "colina-de-barbol",
+    "to": "edoras",
+    "via": [
+      [910, 660],
+      [895, 620],
+      [885, 590]
+    ]
+  },
+  {
+    "id": "el-sagrario--erech",
+    "from": "el-sagrario",
+    "to": "erech",
+    "via": [
+      [892, 540],
+      [880, 520],
+      [865, 505]
+    ]
+  },
+  {
+    "id": "erech--calembel",
+    "from": "erech",
+    "to": "calembel",
+    "via": [[870, 470]]
+  },
+  {
+    "id": "calembel--linhir",
+    "from": "calembel",
+    "to": "linhir",
+    "via": [
+      [900, 400],
+      [915, 340],
+      [928, 300]
+    ]
+  },
+  {
+    "id": "linhir--pelargir",
+    "from": "linhir",
+    "to": "pelargir",
+    "via": [
+      [980, 280],
+      [1030, 270]
+    ]
+  },
+  {
+    "id": "pelargir--harlond",
+    "from": "pelargir",
+    "to": "harlond",
+    "via": [
+      [1090, 300],
+      [1100, 340],
+      [1106, 372]
+    ]
+  },
+  {
+    "id": "harlond--campos-del-pelennor",
+    "from": "harlond",
+    "to": "campos-del-pelennor",
+    "via": []
+  },
+  {
+    "id": "isengard--minas-tirith",
+    "from": "isengard",
+    "to": "minas-tirith",
+    "via": [
+      [792, 640],
+      [785, 615],
+      [825, 600],
+      [860, 580],
+      [882, 570],
+      [930, 556],
+      [970, 545],
+      [1010, 528],
+      [1050, 502],
+      [1080, 466],
+      [1095, 430]
+    ]
+  },
+  {
+    "id": "abismo-de-helm--el-sagrario",
+    "from": "abismo-de-helm",
+    "to": "el-sagrario",
+    "via": [
+      [830, 586],
+      [860, 578],
+      [885, 560]
+    ]
+  },
+  {
+    "id": "caras-galadhon--colina-de-barbol",
+    "from": "caras-galadhon",
+    "to": "colina-de-barbol",
+    "via": [
+      [990, 860],
+      [960, 800],
+      [925, 740]
     ]
   }
 ]

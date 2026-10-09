@@ -174,7 +174,7 @@
     "name": "Bree",
     "type": "aldea",
     "region": "Tierra de Bree",
-    "coords": [471.0, 1075],
+    "coords": [471, 1075],
     "zoomMin": -2
   },
   {
@@ -954,7 +954,7 @@
     "altNames": ["Old Man Willow"],
     "type": "lugar",
     "region": "Bosque Viejo",
-    "coords": [444.0, 1052],
+    "coords": [444, 1052],
     "zoomMin": 2
   },
   {
@@ -992,6 +992,71 @@
     "type": "monte",
     "region": "Montañas Nubladas",
     "coords": [922, 903],
+    "zoomMin": 1
+  },
+  {
+    "id": "pie-emyn-muil",
+    "name": "Pie de las Emyn Muil",
+    "altNames": ["East cliff of the Emyn Muil"],
+    "type": "colina",
+    "region": "Emyn Muil",
+    "coords": [1112, 598],
+    "zoomMin": 3,
+    "note": "Nombre descriptivo propio: donde Frodo y Sam bajan del acantilado oriental y atrapan a Gollum."
+  },
+  {
+    "id": "escoriales-del-morannon",
+    "name": "Escoriales del Morannon",
+    "altNames": ["Slag-hills", "Desolación del Morannon"],
+    "type": "colina",
+    "region": "Dagorlad",
+    "coords": [1172, 536],
+    "zoomMin": 2
+  },
+  {
+    "id": "morgai",
+    "name": "Morgai",
+    "type": "colina",
+    "region": "Mordor",
+    "coords": [1192, 440],
+    "zoomMin": 2
+  },
+  {
+    "id": "camino-de-barad-dur",
+    "name": "Camino de Barad-dûr",
+    "altNames": ["Road to Barad-dûr"],
+    "type": "lugar",
+    "region": "Mordor",
+    "coords": [1238, 462],
+    "zoomMin": 3,
+    "note": "Tramo del camino donde Frodo y Sam se separan de los orcos (posición aproximada)."
+  },
+  {
+    "id": "tierra-brunia",
+    "name": "Tierra Brunia",
+    "altNames": ["Dunland"],
+    "type": "lugar",
+    "region": "Dunland",
+    "coords": [735, 720],
+    "zoomMin": 1,
+    "note": "Punto aproximado del camino del norte donde la comitiva alcanza a Saruman."
+  },
+  {
+    "id": "bosque-gris",
+    "name": "Bosque Gris",
+    "altNames": ["Grey Wood"],
+    "type": "bosque",
+    "region": "Anórien",
+    "coords": [1068, 458],
+    "zoomMin": 2
+  },
+  {
+    "id": "bosque-de-druadan",
+    "name": "Bosque de Drúadan",
+    "altNames": ["Drúadan Forest", "Valle del Carro de Piedra"],
+    "type": "bosque",
+    "region": "Anórien",
+    "coords": [1036, 497],
     "zoomMin": 1
   }
 ]

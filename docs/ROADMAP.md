@@ -36,12 +36,18 @@ Estado: ✅ hecho · 🚧 en curso · ⏳ pendiente
 - [ ] Scrubber de fecha ↔ marcadores interpolados en el mapa
 - [ ] Rango de fechas filtra el mapa; panel de evento
 
-## H4 — La ruptura ⏳
+## H4 — La ruptura 🚧
 
-- [ ] Todas las líneas tras Amon Hen hasta los Puertos Grises
-- [ ] Convergencias (Edoras, Isengard, Minas Tirith, Cormallen…)
+- [x] Todas las líneas tras Amon Hen hasta los Puertos Grises (29-sep-3021) y el regreso de Sam
+- [x] 91 eventos nuevos (152 en total): Fangorn, Cuernavilla, Isengard, Sendas de los Muertos,
+      Pelennor, Cirith Ungol, Monte del Destino, Cormallen, coronación, limpieza de la Comarca, Puertos
+- [x] Encuentros detectados: Gandalf el Blanco, Isengard, la torre, Minas Tirith, Cormallen, Puertos
+- [x] Paradero desconocido (`afterGap`) y medio de viaje (`mode`) con límites de velocidad por medio
+- [ ] PR mergeado
 
-## H5 — Pulido ⏳
+## H5 — Controles y rediseño ⏳
+
+_El usuario prefiere abordar juntos los controles y el estilo temático tras H4._
 
 - [ ] Búsqueda, filtros, «¿dónde estaba cada uno el día X?»
 - [ ] Estado en URL, móvil, accesibilidad

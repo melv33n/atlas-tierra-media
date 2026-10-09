@@ -620,7 +620,8 @@
           "day": 16
         },
         "routeId": "caras-galadhon--egladil",
-        "confidence": "canon"
+        "confidence": "canon",
+        "mode": "barca"
       },
       {
         "from": "egladil",
@@ -636,7 +637,8 @@
           "day": 23
         },
         "routeId": "egladil--sarn-gebir",
-        "confidence": "canon"
+        "confidence": "canon",
+        "mode": "barca"
       },
       {
         "from": "sarn-gebir",
@@ -652,7 +654,8 @@
           "day": 25
         },
         "routeId": "sarn-gebir--argonath",
-        "confidence": "canon"
+        "confidence": "canon",
+        "mode": "barca"
       },
       {
         "from": "argonath",
@@ -668,7 +671,8 @@
           "day": 25
         },
         "routeId": "argonath--parth-galen",
-        "confidence": "canon"
+        "confidence": "canon",
+        "mode": "barca"
       },
       {
         "from": "parth-galen",
@@ -716,6 +720,660 @@
         },
         "routeId": "amon-hen--emyn-muil",
         "confidence": "canon"
+      },
+      {
+        "from": "emyn-muil",
+        "to": "pie-emyn-muil",
+        "start": {
+          "year": 3019,
+          "month": 2,
+          "day": 26
+        },
+        "end": {
+          "year": 3019,
+          "month": 2,
+          "day": 29
+        },
+        "routeId": "emyn-muil--pie-emyn-muil",
+        "confidence": "canon",
+        "note": "Perdidos tres días por las Emyn Muil; el trazado es aproximado."
+      },
+      {
+        "from": "pie-emyn-muil",
+        "to": "cienagas-de-los-muertos",
+        "start": {
+          "year": 3019,
+          "month": 2,
+          "day": 29
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 1
+        },
+        "routeId": "pie-emyn-muil--cienagas-de-los-muertos",
+        "confidence": "canon"
+      },
+      {
+        "from": "cienagas-de-los-muertos",
+        "to": "escoriales-del-morannon",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 1
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 4
+        },
+        "routeId": "cienagas-de-los-muertos--escoriales-del-morannon",
+        "confidence": "canon"
+      },
+      {
+        "from": "escoriales-del-morannon",
+        "to": "morannon",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 4
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 5
+        },
+        "routeId": "escoriales-del-morannon--morannon",
+        "confidence": "canon"
+      },
+      {
+        "from": "morannon",
+        "to": "henneth-annun",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 5
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 7
+        },
+        "routeId": "morannon--henneth-annun",
+        "confidence": "canon"
+      },
+      {
+        "from": "henneth-annun",
+        "to": "henneth-annun",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 7
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 8
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "henneth-annun",
+        "to": "encrucijada",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 8
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 10
+        },
+        "routeId": "henneth-annun--encrucijada",
+        "confidence": "canon"
+      },
+      {
+        "from": "encrucijada",
+        "to": "escaleras-de-cirith-ungol",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 10
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 11
+        },
+        "routeId": "encrucijada--escaleras-de-cirith-ungol",
+        "confidence": "inferred",
+        "note": "Suben las escaleras la noche del 10 al 11; la llegada arriba el 11 es deducción de la narración."
+      },
+      {
+        "from": "escaleras-de-cirith-ungol",
+        "to": "antro-de-ella-larana",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 11
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 12
+        },
+        "routeId": "escaleras-de-cirith-ungol--antro-de-ella-larana",
+        "confidence": "canon"
+      },
+      {
+        "from": "antro-de-ella-larana",
+        "to": "torre-de-cirith-ungol",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 12
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 13
+        },
+        "routeId": "antro-de-ella-larana--torre-de-cirith-ungol",
+        "confidence": "canon",
+        "note": "Picado por Ella-Laraña, los orcos lo llevan a la torre."
+      },
+      {
+        "from": "torre-de-cirith-ungol",
+        "to": "torre-de-cirith-ungol",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 13
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 15
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "torre-de-cirith-ungol",
+        "to": "morgai",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 15
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 16
+        },
+        "routeId": "torre-de-cirith-ungol--morgai",
+        "confidence": "canon"
+      },
+      {
+        "from": "morgai",
+        "to": "isenmouthe",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 16
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 18
+        },
+        "routeId": "morgai--isenmouthe",
+        "confidence": "canon"
+      },
+      {
+        "from": "isenmouthe",
+        "to": "isenmouthe",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 18
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 19
+        },
+        "confidence": "canon",
+        "note": "Obligados a marchar con una tropa de orcos."
+      },
+      {
+        "from": "isenmouthe",
+        "to": "camino-de-barad-dur",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 19
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 22
+        },
+        "routeId": "isenmouthe--camino-de-barad-dur",
+        "confidence": "canon"
+      },
+      {
+        "from": "camino-de-barad-dur",
+        "to": "monte-del-destino",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 22
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 25
+        },
+        "routeId": "camino-de-barad-dur--monte-del-destino",
+        "confidence": "canon"
+      },
+      {
+        "from": "monte-del-destino",
+        "to": "campo-de-cormallen",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 25
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 25
+        },
+        "routeId": "monte-del-destino--campo-de-cormallen",
+        "confidence": "canon",
+        "note": "Las águilas los rescatan de las laderas del Orodruin.",
+        "mode": "aguila"
+      },
+      {
+        "from": "campo-de-cormallen",
+        "to": "campo-de-cormallen",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 25
+        },
+        "end": {
+          "year": 3019,
+          "month": 4,
+          "day": 29
+        },
+        "confidence": "inferred",
+        "note": "La hueste descansa en Ithilien hasta finales de abril; el día de partida es estimado."
+      },
+      {
+        "from": "campo-de-cormallen",
+        "to": "minas-tirith",
+        "start": {
+          "year": 3019,
+          "month": 4,
+          "day": 29
+        },
+        "end": {
+          "year": 3019,
+          "month": 5,
+          "day": 1
+        },
+        "routeId": "campo-de-cormallen--minas-tirith",
+        "confidence": "inferred",
+        "note": "Bajan por el río hasta la Ciudad para la coronación del 1 de mayo; la salida es estimada.",
+        "mode": "barca"
+      },
+      {
+        "from": "minas-tirith",
+        "to": "minas-tirith",
+        "start": {
+          "year": 3019,
+          "month": 5,
+          "day": 1
+        },
+        "end": {
+          "year": 3019,
+          "month": 7,
+          "day": 19
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "minas-tirith",
+        "to": "edoras",
+        "start": {
+          "year": 3019,
+          "month": 7,
+          "day": 19
+        },
+        "end": {
+          "year": 3019,
+          "month": 8,
+          "day": 7
+        },
+        "routeId": "minas-tirith--edoras",
+        "confidence": "canon",
+        "note": "Cortejo fúnebre del rey Théoden.",
+        "mode": "caballo"
+      },
+      {
+        "from": "edoras",
+        "to": "edoras",
+        "start": {
+          "year": 3019,
+          "month": 8,
+          "day": 7
+        },
+        "end": {
+          "year": 3019,
+          "month": 8,
+          "day": 14
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "edoras",
+        "to": "abismo-de-helm",
+        "start": {
+          "year": 3019,
+          "month": 8,
+          "day": 14
+        },
+        "end": {
+          "year": 3019,
+          "month": 8,
+          "day": 18
+        },
+        "routeId": "edoras--abismo-de-helm",
+        "confidence": "canon",
+        "mode": "caballo"
+      },
+      {
+        "from": "abismo-de-helm",
+        "to": "isengard",
+        "start": {
+          "year": 3019,
+          "month": 8,
+          "day": 18
+        },
+        "end": {
+          "year": 3019,
+          "month": 8,
+          "day": 22
+        },
+        "routeId": "abismo-de-helm--isengard",
+        "confidence": "canon",
+        "mode": "caballo"
+      },
+      {
+        "from": "isengard",
+        "to": "tierra-brunia",
+        "start": {
+          "year": 3019,
+          "month": 8,
+          "day": 22
+        },
+        "end": {
+          "year": 3019,
+          "month": 8,
+          "day": 28
+        },
+        "routeId": "isengard--tierra-brunia",
+        "confidence": "inferred",
+        "note": "Alcanzan a Saruman el 28 de agosto (Apéndice B); el lugar, en el camino del norte por Tierra Brunia, es aproximado.",
+        "mode": "caballo"
+      },
+      {
+        "from": "tierra-brunia",
+        "to": "acebeda",
+        "start": {
+          "year": 3019,
+          "month": 8,
+          "day": 28
+        },
+        "end": {
+          "year": 3019,
+          "month": 9,
+          "day": 6
+        },
+        "routeId": "tierra-brunia--acebeda",
+        "confidence": "inferred",
+        "note": "El 6 de septiembre se detienen a la vista de las Montañas de Moria (Apéndice B); se sitúa en Acebeda.",
+        "mode": "caballo"
+      },
+      {
+        "from": "acebeda",
+        "to": "acebeda",
+        "start": {
+          "year": 3019,
+          "month": 9,
+          "day": 6
+        },
+        "end": {
+          "year": 3019,
+          "month": 9,
+          "day": 13
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "acebeda",
+        "to": "rivendel",
+        "start": {
+          "year": 3019,
+          "month": 9,
+          "day": 13
+        },
+        "end": {
+          "year": 3019,
+          "month": 9,
+          "day": 21
+        },
+        "routeId": "rivendel--acebeda",
+        "confidence": "canon",
+        "mode": "caballo"
+      },
+      {
+        "from": "rivendel",
+        "to": "rivendel",
+        "start": {
+          "year": 3019,
+          "month": 9,
+          "day": 21
+        },
+        "end": {
+          "year": 3019,
+          "month": 10,
+          "day": 5
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "rivendel",
+        "to": "vado-del-bruinen",
+        "start": {
+          "year": 3019,
+          "month": 10,
+          "day": 5
+        },
+        "end": {
+          "year": 3019,
+          "month": 10,
+          "day": 6
+        },
+        "routeId": "vado-del-bruinen--rivendel",
+        "confidence": "canon",
+        "mode": "caballo"
+      },
+      {
+        "from": "vado-del-bruinen",
+        "to": "bree",
+        "start": {
+          "year": 3019,
+          "month": 10,
+          "day": 6
+        },
+        "end": {
+          "year": 3019,
+          "month": 10,
+          "day": 28
+        },
+        "routeId": "vado-del-bruinen--bree",
+        "confidence": "canon",
+        "mode": "caballo"
+      },
+      {
+        "from": "bree",
+        "to": "bree",
+        "start": {
+          "year": 3019,
+          "month": 10,
+          "day": 28
+        },
+        "end": {
+          "year": 3019,
+          "month": 10,
+          "day": 30
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "bree",
+        "to": "puente-del-brandivino",
+        "start": {
+          "year": 3019,
+          "month": 10,
+          "day": 30
+        },
+        "end": {
+          "year": 3019,
+          "month": 10,
+          "day": 30
+        },
+        "routeId": "bree--puente-del-brandivino",
+        "confidence": "canon",
+        "mode": "caballo"
+      },
+      {
+        "from": "puente-del-brandivino",
+        "to": "ranales",
+        "start": {
+          "year": 3019,
+          "month": 10,
+          "day": 30
+        },
+        "end": {
+          "year": 3019,
+          "month": 11,
+          "day": 1
+        },
+        "routeId": "puente-del-brandivino--ranales",
+        "confidence": "canon"
+      },
+      {
+        "from": "ranales",
+        "to": "delagua",
+        "start": {
+          "year": 3019,
+          "month": 11,
+          "day": 1
+        },
+        "end": {
+          "year": 3019,
+          "month": 11,
+          "day": 2
+        },
+        "routeId": "ranales--delagua",
+        "confidence": "canon"
+      },
+      {
+        "from": "delagua",
+        "to": "delagua",
+        "start": {
+          "year": 3019,
+          "month": 11,
+          "day": 2
+        },
+        "end": {
+          "year": 3019,
+          "month": 11,
+          "day": 3
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "delagua",
+        "to": "bolson-cerrado",
+        "start": {
+          "year": 3019,
+          "month": 11,
+          "day": 3
+        },
+        "end": {
+          "year": 3019,
+          "month": 11,
+          "day": 3
+        },
+        "routeId": "delagua--bolson-cerrado",
+        "confidence": "canon"
+      },
+      {
+        "from": "bolson-cerrado",
+        "to": "bolson-cerrado",
+        "start": {
+          "year": 3019,
+          "month": 11,
+          "day": 3
+        },
+        "end": {
+          "year": 3021,
+          "month": 9,
+          "day": 21
+        },
+        "confidence": "inferred",
+        "note": "Tras la limpieza de la Comarca vive unos meses con los Coto y vuelve a Bolsón Cerrado en la primavera de 3020; sus estancias en Delagua no se distinguen."
+      },
+      {
+        "from": "bolson-cerrado",
+        "to": "bosque-cerrado",
+        "start": {
+          "year": 3021,
+          "month": 9,
+          "day": 21
+        },
+        "end": {
+          "year": 3021,
+          "month": 9,
+          "day": 22
+        },
+        "routeId": "bolson-cerrado--bosque-cerrado",
+        "confidence": "canon",
+        "mode": "caballo"
+      },
+      {
+        "from": "bosque-cerrado",
+        "to": "puertos-grises",
+        "start": {
+          "year": 3021,
+          "month": 9,
+          "day": 22
+        },
+        "end": {
+          "year": 3021,
+          "month": 9,
+          "day": 29
+        },
+        "routeId": "bosque-cerrado--puertos-grises",
+        "confidence": "canon",
+        "note": "Cabalga con la última comitiva de los Guardianes de los Anillos.",
+        "mode": "caballo"
       }
     ]
   },
@@ -1324,7 +1982,8 @@
           "day": 16
         },
         "routeId": "caras-galadhon--egladil",
-        "confidence": "canon"
+        "confidence": "canon",
+        "mode": "barca"
       },
       {
         "from": "egladil",
@@ -1340,7 +1999,8 @@
           "day": 23
         },
         "routeId": "egladil--sarn-gebir",
-        "confidence": "canon"
+        "confidence": "canon",
+        "mode": "barca"
       },
       {
         "from": "sarn-gebir",
@@ -1356,7 +2016,8 @@
           "day": 25
         },
         "routeId": "sarn-gebir--argonath",
-        "confidence": "canon"
+        "confidence": "canon",
+        "mode": "barca"
       },
       {
         "from": "argonath",
@@ -1372,7 +2033,8 @@
           "day": 25
         },
         "routeId": "argonath--parth-galen",
-        "confidence": "canon"
+        "confidence": "canon",
+        "mode": "barca"
       },
       {
         "from": "parth-galen",
@@ -1404,6 +2066,692 @@
         },
         "routeId": "parth-galen--emyn-muil",
         "confidence": "canon"
+      },
+      {
+        "from": "emyn-muil",
+        "to": "pie-emyn-muil",
+        "start": {
+          "year": 3019,
+          "month": 2,
+          "day": 26
+        },
+        "end": {
+          "year": 3019,
+          "month": 2,
+          "day": 29
+        },
+        "routeId": "emyn-muil--pie-emyn-muil",
+        "confidence": "canon",
+        "note": "Perdidos tres días por las Emyn Muil; el trazado es aproximado."
+      },
+      {
+        "from": "pie-emyn-muil",
+        "to": "cienagas-de-los-muertos",
+        "start": {
+          "year": 3019,
+          "month": 2,
+          "day": 29
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 1
+        },
+        "routeId": "pie-emyn-muil--cienagas-de-los-muertos",
+        "confidence": "canon"
+      },
+      {
+        "from": "cienagas-de-los-muertos",
+        "to": "escoriales-del-morannon",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 1
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 4
+        },
+        "routeId": "cienagas-de-los-muertos--escoriales-del-morannon",
+        "confidence": "canon"
+      },
+      {
+        "from": "escoriales-del-morannon",
+        "to": "morannon",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 4
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 5
+        },
+        "routeId": "escoriales-del-morannon--morannon",
+        "confidence": "canon"
+      },
+      {
+        "from": "morannon",
+        "to": "henneth-annun",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 5
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 7
+        },
+        "routeId": "morannon--henneth-annun",
+        "confidence": "canon"
+      },
+      {
+        "from": "henneth-annun",
+        "to": "henneth-annun",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 7
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 8
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "henneth-annun",
+        "to": "encrucijada",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 8
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 10
+        },
+        "routeId": "henneth-annun--encrucijada",
+        "confidence": "canon"
+      },
+      {
+        "from": "encrucijada",
+        "to": "escaleras-de-cirith-ungol",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 10
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 11
+        },
+        "routeId": "encrucijada--escaleras-de-cirith-ungol",
+        "confidence": "inferred",
+        "note": "Suben las escaleras la noche del 10 al 11; la llegada arriba el 11 es deducción de la narración."
+      },
+      {
+        "from": "escaleras-de-cirith-ungol",
+        "to": "antro-de-ella-larana",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 11
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 12
+        },
+        "routeId": "escaleras-de-cirith-ungol--antro-de-ella-larana",
+        "confidence": "canon"
+      },
+      {
+        "from": "antro-de-ella-larana",
+        "to": "antro-de-ella-larana",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 12
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 13
+        },
+        "confidence": "canon",
+        "note": "Cree muerto a Frodo, toma el Anillo y oye a los orcos llevárselo."
+      },
+      {
+        "from": "antro-de-ella-larana",
+        "to": "torre-de-cirith-ungol",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 13
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 14
+        },
+        "routeId": "antro-de-ella-larana--torre-de-cirith-ungol",
+        "confidence": "canon"
+      },
+      {
+        "from": "torre-de-cirith-ungol",
+        "to": "torre-de-cirith-ungol",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 14
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 15
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "torre-de-cirith-ungol",
+        "to": "morgai",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 15
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 16
+        },
+        "routeId": "torre-de-cirith-ungol--morgai",
+        "confidence": "canon"
+      },
+      {
+        "from": "morgai",
+        "to": "isenmouthe",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 16
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 18
+        },
+        "routeId": "morgai--isenmouthe",
+        "confidence": "canon"
+      },
+      {
+        "from": "isenmouthe",
+        "to": "isenmouthe",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 18
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 19
+        },
+        "confidence": "canon",
+        "note": "Obligados a marchar con una tropa de orcos."
+      },
+      {
+        "from": "isenmouthe",
+        "to": "camino-de-barad-dur",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 19
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 22
+        },
+        "routeId": "isenmouthe--camino-de-barad-dur",
+        "confidence": "canon"
+      },
+      {
+        "from": "camino-de-barad-dur",
+        "to": "monte-del-destino",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 22
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 25
+        },
+        "routeId": "camino-de-barad-dur--monte-del-destino",
+        "confidence": "canon"
+      },
+      {
+        "from": "monte-del-destino",
+        "to": "campo-de-cormallen",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 25
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 25
+        },
+        "routeId": "monte-del-destino--campo-de-cormallen",
+        "confidence": "canon",
+        "note": "Las águilas los rescatan de las laderas del Orodruin.",
+        "mode": "aguila"
+      },
+      {
+        "from": "campo-de-cormallen",
+        "to": "campo-de-cormallen",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 25
+        },
+        "end": {
+          "year": 3019,
+          "month": 4,
+          "day": 29
+        },
+        "confidence": "inferred",
+        "note": "La hueste descansa en Ithilien hasta finales de abril; el día de partida es estimado."
+      },
+      {
+        "from": "campo-de-cormallen",
+        "to": "minas-tirith",
+        "start": {
+          "year": 3019,
+          "month": 4,
+          "day": 29
+        },
+        "end": {
+          "year": 3019,
+          "month": 5,
+          "day": 1
+        },
+        "routeId": "campo-de-cormallen--minas-tirith",
+        "confidence": "inferred",
+        "note": "Bajan por el río hasta la Ciudad para la coronación del 1 de mayo; la salida es estimada.",
+        "mode": "barca"
+      },
+      {
+        "from": "minas-tirith",
+        "to": "minas-tirith",
+        "start": {
+          "year": 3019,
+          "month": 5,
+          "day": 1
+        },
+        "end": {
+          "year": 3019,
+          "month": 7,
+          "day": 19
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "minas-tirith",
+        "to": "edoras",
+        "start": {
+          "year": 3019,
+          "month": 7,
+          "day": 19
+        },
+        "end": {
+          "year": 3019,
+          "month": 8,
+          "day": 7
+        },
+        "routeId": "minas-tirith--edoras",
+        "confidence": "canon",
+        "note": "Cortejo fúnebre del rey Théoden.",
+        "mode": "caballo"
+      },
+      {
+        "from": "edoras",
+        "to": "edoras",
+        "start": {
+          "year": 3019,
+          "month": 8,
+          "day": 7
+        },
+        "end": {
+          "year": 3019,
+          "month": 8,
+          "day": 14
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "edoras",
+        "to": "abismo-de-helm",
+        "start": {
+          "year": 3019,
+          "month": 8,
+          "day": 14
+        },
+        "end": {
+          "year": 3019,
+          "month": 8,
+          "day": 18
+        },
+        "routeId": "edoras--abismo-de-helm",
+        "confidence": "canon",
+        "mode": "caballo"
+      },
+      {
+        "from": "abismo-de-helm",
+        "to": "isengard",
+        "start": {
+          "year": 3019,
+          "month": 8,
+          "day": 18
+        },
+        "end": {
+          "year": 3019,
+          "month": 8,
+          "day": 22
+        },
+        "routeId": "abismo-de-helm--isengard",
+        "confidence": "canon",
+        "mode": "caballo"
+      },
+      {
+        "from": "isengard",
+        "to": "tierra-brunia",
+        "start": {
+          "year": 3019,
+          "month": 8,
+          "day": 22
+        },
+        "end": {
+          "year": 3019,
+          "month": 8,
+          "day": 28
+        },
+        "routeId": "isengard--tierra-brunia",
+        "confidence": "inferred",
+        "note": "Alcanzan a Saruman el 28 de agosto (Apéndice B); el lugar, en el camino del norte por Tierra Brunia, es aproximado.",
+        "mode": "caballo"
+      },
+      {
+        "from": "tierra-brunia",
+        "to": "acebeda",
+        "start": {
+          "year": 3019,
+          "month": 8,
+          "day": 28
+        },
+        "end": {
+          "year": 3019,
+          "month": 9,
+          "day": 6
+        },
+        "routeId": "tierra-brunia--acebeda",
+        "confidence": "inferred",
+        "note": "El 6 de septiembre se detienen a la vista de las Montañas de Moria (Apéndice B); se sitúa en Acebeda.",
+        "mode": "caballo"
+      },
+      {
+        "from": "acebeda",
+        "to": "acebeda",
+        "start": {
+          "year": 3019,
+          "month": 9,
+          "day": 6
+        },
+        "end": {
+          "year": 3019,
+          "month": 9,
+          "day": 13
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "acebeda",
+        "to": "rivendel",
+        "start": {
+          "year": 3019,
+          "month": 9,
+          "day": 13
+        },
+        "end": {
+          "year": 3019,
+          "month": 9,
+          "day": 21
+        },
+        "routeId": "rivendel--acebeda",
+        "confidence": "canon",
+        "mode": "caballo"
+      },
+      {
+        "from": "rivendel",
+        "to": "rivendel",
+        "start": {
+          "year": 3019,
+          "month": 9,
+          "day": 21
+        },
+        "end": {
+          "year": 3019,
+          "month": 10,
+          "day": 5
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "rivendel",
+        "to": "vado-del-bruinen",
+        "start": {
+          "year": 3019,
+          "month": 10,
+          "day": 5
+        },
+        "end": {
+          "year": 3019,
+          "month": 10,
+          "day": 6
+        },
+        "routeId": "vado-del-bruinen--rivendel",
+        "confidence": "canon",
+        "mode": "caballo"
+      },
+      {
+        "from": "vado-del-bruinen",
+        "to": "bree",
+        "start": {
+          "year": 3019,
+          "month": 10,
+          "day": 6
+        },
+        "end": {
+          "year": 3019,
+          "month": 10,
+          "day": 28
+        },
+        "routeId": "vado-del-bruinen--bree",
+        "confidence": "canon",
+        "mode": "caballo"
+      },
+      {
+        "from": "bree",
+        "to": "bree",
+        "start": {
+          "year": 3019,
+          "month": 10,
+          "day": 28
+        },
+        "end": {
+          "year": 3019,
+          "month": 10,
+          "day": 30
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "bree",
+        "to": "puente-del-brandivino",
+        "start": {
+          "year": 3019,
+          "month": 10,
+          "day": 30
+        },
+        "end": {
+          "year": 3019,
+          "month": 10,
+          "day": 30
+        },
+        "routeId": "bree--puente-del-brandivino",
+        "confidence": "canon",
+        "mode": "caballo"
+      },
+      {
+        "from": "puente-del-brandivino",
+        "to": "ranales",
+        "start": {
+          "year": 3019,
+          "month": 10,
+          "day": 30
+        },
+        "end": {
+          "year": 3019,
+          "month": 11,
+          "day": 1
+        },
+        "routeId": "puente-del-brandivino--ranales",
+        "confidence": "canon"
+      },
+      {
+        "from": "ranales",
+        "to": "delagua",
+        "start": {
+          "year": 3019,
+          "month": 11,
+          "day": 1
+        },
+        "end": {
+          "year": 3019,
+          "month": 11,
+          "day": 2
+        },
+        "routeId": "ranales--delagua",
+        "confidence": "canon"
+      },
+      {
+        "from": "delagua",
+        "to": "delagua",
+        "start": {
+          "year": 3019,
+          "month": 11,
+          "day": 2
+        },
+        "end": {
+          "year": 3019,
+          "month": 11,
+          "day": 3
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "delagua",
+        "to": "bolson-cerrado",
+        "start": {
+          "year": 3019,
+          "month": 11,
+          "day": 3
+        },
+        "end": {
+          "year": 3019,
+          "month": 11,
+          "day": 3
+        },
+        "routeId": "delagua--bolson-cerrado",
+        "confidence": "canon"
+      },
+      {
+        "from": "bolson-cerrado",
+        "to": "bolson-cerrado",
+        "start": {
+          "year": 3019,
+          "month": 11,
+          "day": 3
+        },
+        "end": {
+          "year": 3021,
+          "month": 9,
+          "day": 21
+        },
+        "confidence": "inferred",
+        "note": "Recorre la Comarca replantando árboles y se casa con Rosa Coto en mayo de 3020; vive en Bolsón Cerrado con Frodo."
+      },
+      {
+        "from": "bolson-cerrado",
+        "to": "bosque-cerrado",
+        "start": {
+          "year": 3021,
+          "month": 9,
+          "day": 21
+        },
+        "end": {
+          "year": 3021,
+          "month": 9,
+          "day": 22
+        },
+        "routeId": "bolson-cerrado--bosque-cerrado",
+        "confidence": "canon",
+        "mode": "caballo"
+      },
+      {
+        "from": "bosque-cerrado",
+        "to": "puertos-grises",
+        "start": {
+          "year": 3021,
+          "month": 9,
+          "day": 22
+        },
+        "end": {
+          "year": 3021,
+          "month": 9,
+          "day": 29
+        },
+        "routeId": "bosque-cerrado--puertos-grises",
+        "confidence": "canon",
+        "mode": "caballo"
+      },
+      {
+        "from": "puertos-grises",
+        "to": "bolson-cerrado",
+        "start": {
+          "year": 3021,
+          "month": 9,
+          "day": 29
+        },
+        "end": {
+          "year": 3021,
+          "month": 10,
+          "day": 6
+        },
+        "routeId": "puertos-grises--bolson-cerrado",
+        "confidence": "canon",
+        "note": "Regresa con Merry y Pippin y llega a casa el 6 de octubre.",
+        "mode": "caballo"
       }
     ]
   },
@@ -1996,7 +3344,8 @@
           "day": 16
         },
         "routeId": "caras-galadhon--egladil",
-        "confidence": "canon"
+        "confidence": "canon",
+        "mode": "barca"
       },
       {
         "from": "egladil",
@@ -2012,7 +3361,8 @@
           "day": 23
         },
         "routeId": "egladil--sarn-gebir",
-        "confidence": "canon"
+        "confidence": "canon",
+        "mode": "barca"
       },
       {
         "from": "sarn-gebir",
@@ -2028,7 +3378,8 @@
           "day": 25
         },
         "routeId": "sarn-gebir--argonath",
-        "confidence": "canon"
+        "confidence": "canon",
+        "mode": "barca"
       },
       {
         "from": "argonath",
@@ -2044,7 +3395,8 @@
           "day": 25
         },
         "routeId": "argonath--parth-galen",
-        "confidence": "canon"
+        "confidence": "canon",
+        "mode": "barca"
       },
       {
         "from": "parth-galen",
@@ -2060,6 +3412,735 @@
           "day": 26
         },
         "confidence": "canon"
+      },
+      {
+        "from": "parth-galen",
+        "to": "lindero-de-fangorn",
+        "start": {
+          "year": 3019,
+          "month": 2,
+          "day": 26
+        },
+        "end": {
+          "year": 3019,
+          "month": 2,
+          "day": 29
+        },
+        "routeId": "parth-galen--lindero-de-fangorn",
+        "confidence": "canon",
+        "note": "Llevados a la carrera por los orcos de Saruman a través de Rohan."
+      },
+      {
+        "from": "lindero-de-fangorn",
+        "to": "colina-de-barbol",
+        "start": {
+          "year": 3019,
+          "month": 2,
+          "day": 29
+        },
+        "end": {
+          "year": 3019,
+          "month": 2,
+          "day": 29
+        },
+        "routeId": "lindero-de-fangorn--colina-de-barbol",
+        "confidence": "canon"
+      },
+      {
+        "from": "colina-de-barbol",
+        "to": "wellinghall",
+        "start": {
+          "year": 3019,
+          "month": 2,
+          "day": 29
+        },
+        "end": {
+          "year": 3019,
+          "month": 2,
+          "day": 29
+        },
+        "routeId": "colina-de-barbol--wellinghall",
+        "confidence": "canon"
+      },
+      {
+        "from": "wellinghall",
+        "to": "wellinghall",
+        "start": {
+          "year": 3019,
+          "month": 2,
+          "day": 29
+        },
+        "end": {
+          "year": 3019,
+          "month": 2,
+          "day": 30
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "wellinghall",
+        "to": "valle-de-los-ents",
+        "start": {
+          "year": 3019,
+          "month": 2,
+          "day": 30
+        },
+        "end": {
+          "year": 3019,
+          "month": 2,
+          "day": 30
+        },
+        "routeId": "wellinghall--valle-de-los-ents",
+        "confidence": "canon"
+      },
+      {
+        "from": "valle-de-los-ents",
+        "to": "valle-de-los-ents",
+        "start": {
+          "year": 3019,
+          "month": 2,
+          "day": 30
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 2
+        },
+        "confidence": "canon",
+        "note": "La Cámara de los Ents dura tres días."
+      },
+      {
+        "from": "valle-de-los-ents",
+        "to": "isengard",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 2
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 2
+        },
+        "routeId": "valle-de-los-ents--isengard",
+        "confidence": "canon",
+        "note": "Marchan con los ents y llegan a Isengard de noche."
+      },
+      {
+        "from": "isengard",
+        "to": "isengard",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 2
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 5
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "isengard",
+        "to": "dol-baran",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 5
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 5
+        },
+        "routeId": "isengard--dol-baran",
+        "confidence": "canon",
+        "mode": "caballo"
+      },
+      {
+        "from": "dol-baran",
+        "to": "abismo-de-helm",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 5
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 6
+        },
+        "routeId": "dol-baran--abismo-de-helm",
+        "confidence": "canon",
+        "note": "Con Théoden, de vuelta a Cuernavilla.",
+        "mode": "caballo"
+      },
+      {
+        "from": "abismo-de-helm",
+        "to": "el-sagrario",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 6
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 9
+        },
+        "routeId": "abismo-de-helm--el-sagrario",
+        "confidence": "canon",
+        "mode": "caballo"
+      },
+      {
+        "from": "el-sagrario",
+        "to": "el-sagrario",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 9
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 10
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "el-sagrario",
+        "to": "min-rimmon",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 10
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 12
+        },
+        "routeId": "el-sagrario--min-rimmon",
+        "confidence": "canon",
+        "note": "Cabalga escondido con Dernhelm en la hueste de Rohan.",
+        "mode": "caballo"
+      },
+      {
+        "from": "min-rimmon",
+        "to": "bosque-de-druadan",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 12
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 13
+        },
+        "routeId": "min-rimmon--bosque-de-druadan",
+        "confidence": "canon",
+        "mode": "caballo"
+      },
+      {
+        "from": "bosque-de-druadan",
+        "to": "bosque-gris",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 13
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 14
+        },
+        "routeId": "bosque-de-druadan--bosque-gris",
+        "confidence": "canon",
+        "mode": "caballo"
+      },
+      {
+        "from": "bosque-gris",
+        "to": "campos-del-pelennor",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 14
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 15
+        },
+        "routeId": "bosque-gris--campos-del-pelennor",
+        "confidence": "canon",
+        "mode": "caballo"
+      },
+      {
+        "from": "campos-del-pelennor",
+        "to": "minas-tirith",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 15
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 15
+        },
+        "routeId": "campos-del-pelennor--minas-tirith",
+        "confidence": "canon",
+        "note": "Herido tras golpear al Rey Brujo; lo llevan a las Casas de Curación."
+      },
+      {
+        "from": "minas-tirith",
+        "to": "minas-tirith",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 15
+        },
+        "end": {
+          "year": 3019,
+          "month": 4,
+          "day": 6
+        },
+        "confidence": "inferred",
+        "note": "Convalece en la Ciudad mientras la hueste marcha al Morannon; día de partida a Cormallen estimado."
+      },
+      {
+        "from": "minas-tirith",
+        "to": "campo-de-cormallen",
+        "start": {
+          "year": 3019,
+          "month": 4,
+          "day": 6
+        },
+        "end": {
+          "year": 3019,
+          "month": 4,
+          "day": 8
+        },
+        "routeId": "campo-de-cormallen--minas-tirith",
+        "confidence": "inferred",
+        "note": "Se reúne con los demás en Cormallen para la celebración (fecha de viaje estimada).",
+        "mode": "barca"
+      },
+      {
+        "from": "campo-de-cormallen",
+        "to": "campo-de-cormallen",
+        "start": {
+          "year": 3019,
+          "month": 4,
+          "day": 8
+        },
+        "end": {
+          "year": 3019,
+          "month": 4,
+          "day": 29
+        },
+        "confidence": "inferred",
+        "note": "La hueste descansa en Ithilien hasta finales de abril; el día de partida es estimado."
+      },
+      {
+        "from": "campo-de-cormallen",
+        "to": "minas-tirith",
+        "start": {
+          "year": 3019,
+          "month": 4,
+          "day": 29
+        },
+        "end": {
+          "year": 3019,
+          "month": 5,
+          "day": 1
+        },
+        "routeId": "campo-de-cormallen--minas-tirith",
+        "confidence": "inferred",
+        "note": "Bajan por el río hasta la Ciudad para la coronación del 1 de mayo; la salida es estimada.",
+        "mode": "barca"
+      },
+      {
+        "from": "minas-tirith",
+        "to": "minas-tirith",
+        "start": {
+          "year": 3019,
+          "month": 5,
+          "day": 1
+        },
+        "end": {
+          "year": 3019,
+          "month": 7,
+          "day": 19
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "minas-tirith",
+        "to": "edoras",
+        "start": {
+          "year": 3019,
+          "month": 7,
+          "day": 19
+        },
+        "end": {
+          "year": 3019,
+          "month": 8,
+          "day": 7
+        },
+        "routeId": "minas-tirith--edoras",
+        "confidence": "canon",
+        "note": "Cortejo fúnebre del rey Théoden.",
+        "mode": "caballo"
+      },
+      {
+        "from": "edoras",
+        "to": "edoras",
+        "start": {
+          "year": 3019,
+          "month": 8,
+          "day": 7
+        },
+        "end": {
+          "year": 3019,
+          "month": 8,
+          "day": 14
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "edoras",
+        "to": "abismo-de-helm",
+        "start": {
+          "year": 3019,
+          "month": 8,
+          "day": 14
+        },
+        "end": {
+          "year": 3019,
+          "month": 8,
+          "day": 18
+        },
+        "routeId": "edoras--abismo-de-helm",
+        "confidence": "canon",
+        "mode": "caballo"
+      },
+      {
+        "from": "abismo-de-helm",
+        "to": "isengard",
+        "start": {
+          "year": 3019,
+          "month": 8,
+          "day": 18
+        },
+        "end": {
+          "year": 3019,
+          "month": 8,
+          "day": 22
+        },
+        "routeId": "abismo-de-helm--isengard",
+        "confidence": "canon",
+        "mode": "caballo"
+      },
+      {
+        "from": "isengard",
+        "to": "tierra-brunia",
+        "start": {
+          "year": 3019,
+          "month": 8,
+          "day": 22
+        },
+        "end": {
+          "year": 3019,
+          "month": 8,
+          "day": 28
+        },
+        "routeId": "isengard--tierra-brunia",
+        "confidence": "inferred",
+        "note": "Alcanzan a Saruman el 28 de agosto (Apéndice B); el lugar, en el camino del norte por Tierra Brunia, es aproximado.",
+        "mode": "caballo"
+      },
+      {
+        "from": "tierra-brunia",
+        "to": "acebeda",
+        "start": {
+          "year": 3019,
+          "month": 8,
+          "day": 28
+        },
+        "end": {
+          "year": 3019,
+          "month": 9,
+          "day": 6
+        },
+        "routeId": "tierra-brunia--acebeda",
+        "confidence": "inferred",
+        "note": "El 6 de septiembre se detienen a la vista de las Montañas de Moria (Apéndice B); se sitúa en Acebeda.",
+        "mode": "caballo"
+      },
+      {
+        "from": "acebeda",
+        "to": "acebeda",
+        "start": {
+          "year": 3019,
+          "month": 9,
+          "day": 6
+        },
+        "end": {
+          "year": 3019,
+          "month": 9,
+          "day": 13
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "acebeda",
+        "to": "rivendel",
+        "start": {
+          "year": 3019,
+          "month": 9,
+          "day": 13
+        },
+        "end": {
+          "year": 3019,
+          "month": 9,
+          "day": 21
+        },
+        "routeId": "rivendel--acebeda",
+        "confidence": "canon",
+        "mode": "caballo"
+      },
+      {
+        "from": "rivendel",
+        "to": "rivendel",
+        "start": {
+          "year": 3019,
+          "month": 9,
+          "day": 21
+        },
+        "end": {
+          "year": 3019,
+          "month": 10,
+          "day": 5
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "rivendel",
+        "to": "vado-del-bruinen",
+        "start": {
+          "year": 3019,
+          "month": 10,
+          "day": 5
+        },
+        "end": {
+          "year": 3019,
+          "month": 10,
+          "day": 6
+        },
+        "routeId": "vado-del-bruinen--rivendel",
+        "confidence": "canon",
+        "mode": "caballo"
+      },
+      {
+        "from": "vado-del-bruinen",
+        "to": "bree",
+        "start": {
+          "year": 3019,
+          "month": 10,
+          "day": 6
+        },
+        "end": {
+          "year": 3019,
+          "month": 10,
+          "day": 28
+        },
+        "routeId": "vado-del-bruinen--bree",
+        "confidence": "canon",
+        "mode": "caballo"
+      },
+      {
+        "from": "bree",
+        "to": "bree",
+        "start": {
+          "year": 3019,
+          "month": 10,
+          "day": 28
+        },
+        "end": {
+          "year": 3019,
+          "month": 10,
+          "day": 30
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "bree",
+        "to": "puente-del-brandivino",
+        "start": {
+          "year": 3019,
+          "month": 10,
+          "day": 30
+        },
+        "end": {
+          "year": 3019,
+          "month": 10,
+          "day": 30
+        },
+        "routeId": "bree--puente-del-brandivino",
+        "confidence": "canon",
+        "mode": "caballo"
+      },
+      {
+        "from": "puente-del-brandivino",
+        "to": "ranales",
+        "start": {
+          "year": 3019,
+          "month": 10,
+          "day": 30
+        },
+        "end": {
+          "year": 3019,
+          "month": 11,
+          "day": 1
+        },
+        "routeId": "puente-del-brandivino--ranales",
+        "confidence": "canon"
+      },
+      {
+        "from": "ranales",
+        "to": "delagua",
+        "start": {
+          "year": 3019,
+          "month": 11,
+          "day": 1
+        },
+        "end": {
+          "year": 3019,
+          "month": 11,
+          "day": 2
+        },
+        "routeId": "ranales--delagua",
+        "confidence": "canon"
+      },
+      {
+        "from": "delagua",
+        "to": "delagua",
+        "start": {
+          "year": 3019,
+          "month": 11,
+          "day": 2
+        },
+        "end": {
+          "year": 3019,
+          "month": 11,
+          "day": 3
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "delagua",
+        "to": "bolson-cerrado",
+        "start": {
+          "year": 3019,
+          "month": 11,
+          "day": 3
+        },
+        "end": {
+          "year": 3019,
+          "month": 11,
+          "day": 3
+        },
+        "routeId": "delagua--bolson-cerrado",
+        "confidence": "canon"
+      },
+      {
+        "from": "bolson-cerrado",
+        "to": "bolson-cerrado",
+        "start": {
+          "year": 3019,
+          "month": 11,
+          "day": 3
+        },
+        "end": {
+          "year": 3019,
+          "month": 11,
+          "day": 4
+        },
+        "confidence": "inferred",
+        "note": "Tras la batalla de Delagua; día de partida a Los Gamos estimado."
+      },
+      {
+        "from": "bolson-cerrado",
+        "to": "cricava",
+        "start": {
+          "year": 3019,
+          "month": 11,
+          "day": 4
+        },
+        "end": {
+          "year": 3019,
+          "month": 11,
+          "day": 5
+        },
+        "routeId": "bolson-cerrado--cricava",
+        "confidence": "inferred",
+        "note": "Vuelta a Los Gamos (estimado).",
+        "mode": "caballo"
+      },
+      {
+        "from": "cricava",
+        "to": "cricava",
+        "start": {
+          "year": 3019,
+          "month": 11,
+          "day": 5
+        },
+        "end": {
+          "year": 3021,
+          "month": 9,
+          "day": 26
+        },
+        "confidence": "inferred",
+        "note": "Vive en Cricava; sus viajes por la Comarca no se registran."
+      },
+      {
+        "from": "cricava",
+        "to": "puertos-grises",
+        "start": {
+          "year": 3021,
+          "month": 9,
+          "day": 26
+        },
+        "end": {
+          "year": 3021,
+          "month": 9,
+          "day": 29
+        },
+        "routeId": "cricava--puertos-grises",
+        "confidence": "inferred",
+        "note": "Avisados por Gandalf, cabalgan deprisa a los Puertos y llegan el 29 de septiembre; la salida es estimada.",
+        "mode": "caballo"
+      },
+      {
+        "from": "puertos-grises",
+        "to": "cricava",
+        "start": {
+          "year": 3021,
+          "month": 9,
+          "day": 29
+        },
+        "end": {
+          "year": 3021,
+          "month": 10,
+          "day": 5
+        },
+        "routeId": "cricava--puertos-grises",
+        "confidence": "inferred",
+        "note": "Vuelven con Sam y siguen hasta Los Gamos (estimado).",
+        "mode": "caballo"
       }
     ]
   },
@@ -2668,7 +4749,8 @@
           "day": 16
         },
         "routeId": "caras-galadhon--egladil",
-        "confidence": "canon"
+        "confidence": "canon",
+        "mode": "barca"
       },
       {
         "from": "egladil",
@@ -2684,7 +4766,8 @@
           "day": 23
         },
         "routeId": "egladil--sarn-gebir",
-        "confidence": "canon"
+        "confidence": "canon",
+        "mode": "barca"
       },
       {
         "from": "sarn-gebir",
@@ -2700,7 +4783,8 @@
           "day": 25
         },
         "routeId": "sarn-gebir--argonath",
-        "confidence": "canon"
+        "confidence": "canon",
+        "mode": "barca"
       },
       {
         "from": "argonath",
@@ -2716,7 +4800,8 @@
           "day": 25
         },
         "routeId": "argonath--parth-galen",
-        "confidence": "canon"
+        "confidence": "canon",
+        "mode": "barca"
       },
       {
         "from": "parth-galen",
@@ -2732,6 +4817,667 @@
           "day": 26
         },
         "confidence": "canon"
+      },
+      {
+        "from": "parth-galen",
+        "to": "lindero-de-fangorn",
+        "start": {
+          "year": 3019,
+          "month": 2,
+          "day": 26
+        },
+        "end": {
+          "year": 3019,
+          "month": 2,
+          "day": 29
+        },
+        "routeId": "parth-galen--lindero-de-fangorn",
+        "confidence": "canon",
+        "note": "Llevados a la carrera por los orcos de Saruman a través de Rohan."
+      },
+      {
+        "from": "lindero-de-fangorn",
+        "to": "colina-de-barbol",
+        "start": {
+          "year": 3019,
+          "month": 2,
+          "day": 29
+        },
+        "end": {
+          "year": 3019,
+          "month": 2,
+          "day": 29
+        },
+        "routeId": "lindero-de-fangorn--colina-de-barbol",
+        "confidence": "canon"
+      },
+      {
+        "from": "colina-de-barbol",
+        "to": "wellinghall",
+        "start": {
+          "year": 3019,
+          "month": 2,
+          "day": 29
+        },
+        "end": {
+          "year": 3019,
+          "month": 2,
+          "day": 29
+        },
+        "routeId": "colina-de-barbol--wellinghall",
+        "confidence": "canon"
+      },
+      {
+        "from": "wellinghall",
+        "to": "wellinghall",
+        "start": {
+          "year": 3019,
+          "month": 2,
+          "day": 29
+        },
+        "end": {
+          "year": 3019,
+          "month": 2,
+          "day": 30
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "wellinghall",
+        "to": "valle-de-los-ents",
+        "start": {
+          "year": 3019,
+          "month": 2,
+          "day": 30
+        },
+        "end": {
+          "year": 3019,
+          "month": 2,
+          "day": 30
+        },
+        "routeId": "wellinghall--valle-de-los-ents",
+        "confidence": "canon"
+      },
+      {
+        "from": "valle-de-los-ents",
+        "to": "valle-de-los-ents",
+        "start": {
+          "year": 3019,
+          "month": 2,
+          "day": 30
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 2
+        },
+        "confidence": "canon",
+        "note": "La Cámara de los Ents dura tres días."
+      },
+      {
+        "from": "valle-de-los-ents",
+        "to": "isengard",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 2
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 2
+        },
+        "routeId": "valle-de-los-ents--isengard",
+        "confidence": "canon",
+        "note": "Marchan con los ents y llegan a Isengard de noche."
+      },
+      {
+        "from": "isengard",
+        "to": "isengard",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 2
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 5
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "isengard",
+        "to": "dol-baran",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 5
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 5
+        },
+        "routeId": "isengard--dol-baran",
+        "confidence": "canon",
+        "mode": "caballo"
+      },
+      {
+        "from": "dol-baran",
+        "to": "minas-tirith",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 5
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 9
+        },
+        "routeId": "dol-baran--minas-tirith",
+        "confidence": "canon",
+        "note": "A lomos de Sombragrís con Gandalf.",
+        "mode": "caballo"
+      },
+      {
+        "from": "minas-tirith",
+        "to": "minas-tirith",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 9
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 18
+        },
+        "confidence": "canon",
+        "note": "Entra al servicio de Denethor como soldado de la Ciudadela."
+      },
+      {
+        "from": "minas-tirith",
+        "to": "minas-morgul",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 18
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 19
+        },
+        "routeId": "minas-tirith--minas-morgul",
+        "confidence": "canon",
+        "mode": "caballo"
+      },
+      {
+        "from": "minas-morgul",
+        "to": "escoriales-del-morannon",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 19
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 24
+        },
+        "routeId": "minas-morgul--escoriales-del-morannon",
+        "confidence": "canon",
+        "note": "La Hueste del Oeste marcha hacia el norte por Ithilien.",
+        "mode": "caballo"
+      },
+      {
+        "from": "escoriales-del-morannon",
+        "to": "escoriales-del-morannon",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 24
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 25
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "escoriales-del-morannon",
+        "to": "campo-de-cormallen",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 25
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 27
+        },
+        "routeId": "escoriales-del-morannon--campo-de-cormallen",
+        "confidence": "inferred",
+        "note": "La hueste regresa a Ithilien; fechas estimadas.",
+        "mode": "caballo"
+      },
+      {
+        "from": "campo-de-cormallen",
+        "to": "campo-de-cormallen",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 27
+        },
+        "end": {
+          "year": 3019,
+          "month": 4,
+          "day": 29
+        },
+        "confidence": "inferred",
+        "note": "La hueste descansa en Ithilien hasta finales de abril; el día de partida es estimado."
+      },
+      {
+        "from": "campo-de-cormallen",
+        "to": "minas-tirith",
+        "start": {
+          "year": 3019,
+          "month": 4,
+          "day": 29
+        },
+        "end": {
+          "year": 3019,
+          "month": 5,
+          "day": 1
+        },
+        "routeId": "campo-de-cormallen--minas-tirith",
+        "confidence": "inferred",
+        "note": "Bajan por el río hasta la Ciudad para la coronación del 1 de mayo; la salida es estimada.",
+        "mode": "barca"
+      },
+      {
+        "from": "minas-tirith",
+        "to": "minas-tirith",
+        "start": {
+          "year": 3019,
+          "month": 5,
+          "day": 1
+        },
+        "end": {
+          "year": 3019,
+          "month": 7,
+          "day": 19
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "minas-tirith",
+        "to": "edoras",
+        "start": {
+          "year": 3019,
+          "month": 7,
+          "day": 19
+        },
+        "end": {
+          "year": 3019,
+          "month": 8,
+          "day": 7
+        },
+        "routeId": "minas-tirith--edoras",
+        "confidence": "canon",
+        "note": "Cortejo fúnebre del rey Théoden.",
+        "mode": "caballo"
+      },
+      {
+        "from": "edoras",
+        "to": "edoras",
+        "start": {
+          "year": 3019,
+          "month": 8,
+          "day": 7
+        },
+        "end": {
+          "year": 3019,
+          "month": 8,
+          "day": 14
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "edoras",
+        "to": "abismo-de-helm",
+        "start": {
+          "year": 3019,
+          "month": 8,
+          "day": 14
+        },
+        "end": {
+          "year": 3019,
+          "month": 8,
+          "day": 18
+        },
+        "routeId": "edoras--abismo-de-helm",
+        "confidence": "canon",
+        "mode": "caballo"
+      },
+      {
+        "from": "abismo-de-helm",
+        "to": "isengard",
+        "start": {
+          "year": 3019,
+          "month": 8,
+          "day": 18
+        },
+        "end": {
+          "year": 3019,
+          "month": 8,
+          "day": 22
+        },
+        "routeId": "abismo-de-helm--isengard",
+        "confidence": "canon",
+        "mode": "caballo"
+      },
+      {
+        "from": "isengard",
+        "to": "tierra-brunia",
+        "start": {
+          "year": 3019,
+          "month": 8,
+          "day": 22
+        },
+        "end": {
+          "year": 3019,
+          "month": 8,
+          "day": 28
+        },
+        "routeId": "isengard--tierra-brunia",
+        "confidence": "inferred",
+        "note": "Alcanzan a Saruman el 28 de agosto (Apéndice B); el lugar, en el camino del norte por Tierra Brunia, es aproximado.",
+        "mode": "caballo"
+      },
+      {
+        "from": "tierra-brunia",
+        "to": "acebeda",
+        "start": {
+          "year": 3019,
+          "month": 8,
+          "day": 28
+        },
+        "end": {
+          "year": 3019,
+          "month": 9,
+          "day": 6
+        },
+        "routeId": "tierra-brunia--acebeda",
+        "confidence": "inferred",
+        "note": "El 6 de septiembre se detienen a la vista de las Montañas de Moria (Apéndice B); se sitúa en Acebeda.",
+        "mode": "caballo"
+      },
+      {
+        "from": "acebeda",
+        "to": "acebeda",
+        "start": {
+          "year": 3019,
+          "month": 9,
+          "day": 6
+        },
+        "end": {
+          "year": 3019,
+          "month": 9,
+          "day": 13
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "acebeda",
+        "to": "rivendel",
+        "start": {
+          "year": 3019,
+          "month": 9,
+          "day": 13
+        },
+        "end": {
+          "year": 3019,
+          "month": 9,
+          "day": 21
+        },
+        "routeId": "rivendel--acebeda",
+        "confidence": "canon",
+        "mode": "caballo"
+      },
+      {
+        "from": "rivendel",
+        "to": "rivendel",
+        "start": {
+          "year": 3019,
+          "month": 9,
+          "day": 21
+        },
+        "end": {
+          "year": 3019,
+          "month": 10,
+          "day": 5
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "rivendel",
+        "to": "vado-del-bruinen",
+        "start": {
+          "year": 3019,
+          "month": 10,
+          "day": 5
+        },
+        "end": {
+          "year": 3019,
+          "month": 10,
+          "day": 6
+        },
+        "routeId": "vado-del-bruinen--rivendel",
+        "confidence": "canon",
+        "mode": "caballo"
+      },
+      {
+        "from": "vado-del-bruinen",
+        "to": "bree",
+        "start": {
+          "year": 3019,
+          "month": 10,
+          "day": 6
+        },
+        "end": {
+          "year": 3019,
+          "month": 10,
+          "day": 28
+        },
+        "routeId": "vado-del-bruinen--bree",
+        "confidence": "canon",
+        "mode": "caballo"
+      },
+      {
+        "from": "bree",
+        "to": "bree",
+        "start": {
+          "year": 3019,
+          "month": 10,
+          "day": 28
+        },
+        "end": {
+          "year": 3019,
+          "month": 10,
+          "day": 30
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "bree",
+        "to": "puente-del-brandivino",
+        "start": {
+          "year": 3019,
+          "month": 10,
+          "day": 30
+        },
+        "end": {
+          "year": 3019,
+          "month": 10,
+          "day": 30
+        },
+        "routeId": "bree--puente-del-brandivino",
+        "confidence": "canon",
+        "mode": "caballo"
+      },
+      {
+        "from": "puente-del-brandivino",
+        "to": "ranales",
+        "start": {
+          "year": 3019,
+          "month": 10,
+          "day": 30
+        },
+        "end": {
+          "year": 3019,
+          "month": 11,
+          "day": 1
+        },
+        "routeId": "puente-del-brandivino--ranales",
+        "confidence": "canon"
+      },
+      {
+        "from": "ranales",
+        "to": "delagua",
+        "start": {
+          "year": 3019,
+          "month": 11,
+          "day": 1
+        },
+        "end": {
+          "year": 3019,
+          "month": 11,
+          "day": 2
+        },
+        "routeId": "ranales--delagua",
+        "confidence": "canon"
+      },
+      {
+        "from": "delagua",
+        "to": "delagua",
+        "start": {
+          "year": 3019,
+          "month": 11,
+          "day": 2
+        },
+        "end": {
+          "year": 3019,
+          "month": 11,
+          "day": 3
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "delagua",
+        "to": "bolson-cerrado",
+        "start": {
+          "year": 3019,
+          "month": 11,
+          "day": 3
+        },
+        "end": {
+          "year": 3019,
+          "month": 11,
+          "day": 3
+        },
+        "routeId": "delagua--bolson-cerrado",
+        "confidence": "canon"
+      },
+      {
+        "from": "bolson-cerrado",
+        "to": "bolson-cerrado",
+        "start": {
+          "year": 3019,
+          "month": 11,
+          "day": 3
+        },
+        "end": {
+          "year": 3019,
+          "month": 11,
+          "day": 4
+        },
+        "confidence": "inferred",
+        "note": "Tras la batalla de Delagua; día de partida a Los Gamos estimado."
+      },
+      {
+        "from": "bolson-cerrado",
+        "to": "cricava",
+        "start": {
+          "year": 3019,
+          "month": 11,
+          "day": 4
+        },
+        "end": {
+          "year": 3019,
+          "month": 11,
+          "day": 5
+        },
+        "routeId": "bolson-cerrado--cricava",
+        "confidence": "inferred",
+        "note": "Vuelta a Los Gamos (estimado).",
+        "mode": "caballo"
+      },
+      {
+        "from": "cricava",
+        "to": "cricava",
+        "start": {
+          "year": 3019,
+          "month": 11,
+          "day": 5
+        },
+        "end": {
+          "year": 3021,
+          "month": 9,
+          "day": 26
+        },
+        "confidence": "inferred",
+        "note": "Pasa temporadas con Merry en Cricava y en Alforzaburgo; se simplifica en Cricava."
+      },
+      {
+        "from": "cricava",
+        "to": "puertos-grises",
+        "start": {
+          "year": 3021,
+          "month": 9,
+          "day": 26
+        },
+        "end": {
+          "year": 3021,
+          "month": 9,
+          "day": 29
+        },
+        "routeId": "cricava--puertos-grises",
+        "confidence": "inferred",
+        "note": "Avisados por Gandalf, cabalgan deprisa a los Puertos y llegan el 29 de septiembre; la salida es estimada.",
+        "mode": "caballo"
+      },
+      {
+        "from": "puertos-grises",
+        "to": "cricava",
+        "start": {
+          "year": 3021,
+          "month": 9,
+          "day": 29
+        },
+        "end": {
+          "year": 3021,
+          "month": 10,
+          "day": 5
+        },
+        "routeId": "cricava--puertos-grises",
+        "confidence": "inferred",
+        "note": "Vuelven con Sam y siguen hasta Los Gamos (estimado).",
+        "mode": "caballo"
       }
     ]
   },
@@ -3167,7 +5913,8 @@
           "day": 16
         },
         "routeId": "caras-galadhon--egladil",
-        "confidence": "canon"
+        "confidence": "canon",
+        "mode": "barca"
       },
       {
         "from": "egladil",
@@ -3183,7 +5930,8 @@
           "day": 23
         },
         "routeId": "egladil--sarn-gebir",
-        "confidence": "canon"
+        "confidence": "canon",
+        "mode": "barca"
       },
       {
         "from": "sarn-gebir",
@@ -3199,7 +5947,8 @@
           "day": 25
         },
         "routeId": "sarn-gebir--argonath",
-        "confidence": "canon"
+        "confidence": "canon",
+        "mode": "barca"
       },
       {
         "from": "argonath",
@@ -3215,7 +5964,8 @@
           "day": 25
         },
         "routeId": "argonath--parth-galen",
-        "confidence": "canon"
+        "confidence": "canon",
+        "mode": "barca"
       },
       {
         "from": "parth-galen",
@@ -3263,6 +6013,577 @@
         },
         "routeId": "parth-galen--amon-hen",
         "confidence": "canon"
+      },
+      {
+        "from": "parth-galen",
+        "to": "emnet-este",
+        "start": {
+          "year": 3019,
+          "month": 2,
+          "day": 26
+        },
+        "end": {
+          "year": 3019,
+          "month": 2,
+          "day": 30
+        },
+        "routeId": "parth-galen--emnet-este",
+        "confidence": "canon",
+        "note": "Persiguen a los orcos: el 27 llegan al acantilado oeste de las Emyn Muil y cruzan el Emnet corriendo."
+      },
+      {
+        "from": "emnet-este",
+        "to": "lindero-de-fangorn",
+        "start": {
+          "year": 3019,
+          "month": 2,
+          "day": 30
+        },
+        "end": {
+          "year": 3019,
+          "month": 2,
+          "day": 30
+        },
+        "routeId": "emnet-este--lindero-de-fangorn",
+        "confidence": "canon",
+        "mode": "caballo"
+      },
+      {
+        "from": "lindero-de-fangorn",
+        "to": "lindero-de-fangorn",
+        "start": {
+          "year": 3019,
+          "month": 2,
+          "day": 30
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 1
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "lindero-de-fangorn",
+        "to": "colina-de-barbol",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 1
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 1
+        },
+        "routeId": "lindero-de-fangorn--colina-de-barbol",
+        "confidence": "canon"
+      },
+      {
+        "from": "colina-de-barbol",
+        "to": "edoras",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 1
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 2
+        },
+        "routeId": "colina-de-barbol--edoras",
+        "confidence": "canon",
+        "mode": "caballo"
+      },
+      {
+        "from": "edoras",
+        "to": "vados-del-isen",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 2
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 3
+        },
+        "routeId": "edoras--vados-del-isen",
+        "confidence": "canon",
+        "note": "Cabalgan al oeste con Théoden contra Saruman.",
+        "mode": "caballo"
+      },
+      {
+        "from": "vados-del-isen",
+        "to": "abismo-de-helm",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 3
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 3
+        },
+        "routeId": "vados-del-isen--abismo-de-helm",
+        "confidence": "canon",
+        "note": "Al saber de la derrota en los vados, se repliegan al Abismo.",
+        "mode": "caballo"
+      },
+      {
+        "from": "abismo-de-helm",
+        "to": "abismo-de-helm",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 3
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 4
+        },
+        "confidence": "canon",
+        "note": "Batalla de Cuernavilla."
+      },
+      {
+        "from": "abismo-de-helm",
+        "to": "isengard",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 4
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 5
+        },
+        "routeId": "abismo-de-helm--isengard",
+        "confidence": "canon",
+        "mode": "caballo"
+      },
+      {
+        "from": "isengard",
+        "to": "dol-baran",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 5
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 5
+        },
+        "routeId": "isengard--dol-baran",
+        "confidence": "canon",
+        "mode": "caballo"
+      },
+      {
+        "from": "dol-baran",
+        "to": "abismo-de-helm",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 5
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 6
+        },
+        "routeId": "dol-baran--abismo-de-helm",
+        "confidence": "canon",
+        "note": "Los Dúnedain de la Compañía Gris los alcanzan de madrugada.",
+        "mode": "caballo"
+      },
+      {
+        "from": "abismo-de-helm",
+        "to": "el-sagrario",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 6
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 7
+        },
+        "routeId": "abismo-de-helm--el-sagrario",
+        "confidence": "canon",
+        "mode": "caballo"
+      },
+      {
+        "from": "el-sagrario",
+        "to": "el-sagrario",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 7
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 8
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "el-sagrario",
+        "to": "erech",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 8
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 8
+        },
+        "routeId": "el-sagrario--erech",
+        "confidence": "canon",
+        "note": "Por las Sendas de los Muertos, de la Puerta Oscura a Erech.",
+        "mode": "caballo"
+      },
+      {
+        "from": "erech",
+        "to": "erech",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 8
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 9
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "erech",
+        "to": "calembel",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 9
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 9
+        },
+        "routeId": "erech--calembel",
+        "confidence": "canon",
+        "mode": "caballo"
+      },
+      {
+        "from": "calembel",
+        "to": "linhir",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 9
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 11
+        },
+        "routeId": "calembel--linhir",
+        "confidence": "canon",
+        "note": "Cruzan el Ringló el 10.",
+        "mode": "caballo"
+      },
+      {
+        "from": "linhir",
+        "to": "pelargir",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 11
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 13
+        },
+        "routeId": "linhir--pelargir",
+        "confidence": "canon",
+        "mode": "caballo"
+      },
+      {
+        "from": "pelargir",
+        "to": "harlond",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 13
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 15
+        },
+        "routeId": "pelargir--harlond",
+        "confidence": "canon",
+        "note": "Remontan el Anduin en la flota capturada.",
+        "mode": "barca"
+      },
+      {
+        "from": "harlond",
+        "to": "campos-del-pelennor",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 15
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 15
+        },
+        "routeId": "harlond--campos-del-pelennor",
+        "confidence": "canon"
+      },
+      {
+        "from": "campos-del-pelennor",
+        "to": "minas-tirith",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 15
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 15
+        },
+        "routeId": "campos-del-pelennor--minas-tirith",
+        "confidence": "canon"
+      },
+      {
+        "from": "minas-tirith",
+        "to": "minas-tirith",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 15
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 18
+        },
+        "confidence": "canon",
+        "note": "Acampa fuera de la Ciudad y entra a curar en las Casas de Curación."
+      },
+      {
+        "from": "minas-tirith",
+        "to": "minas-morgul",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 18
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 19
+        },
+        "routeId": "minas-tirith--minas-morgul",
+        "confidence": "canon",
+        "mode": "caballo"
+      },
+      {
+        "from": "minas-morgul",
+        "to": "escoriales-del-morannon",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 19
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 24
+        },
+        "routeId": "minas-morgul--escoriales-del-morannon",
+        "confidence": "canon",
+        "note": "La Hueste del Oeste marcha hacia el norte por Ithilien.",
+        "mode": "caballo"
+      },
+      {
+        "from": "escoriales-del-morannon",
+        "to": "escoriales-del-morannon",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 24
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 25
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "escoriales-del-morannon",
+        "to": "campo-de-cormallen",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 25
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 27
+        },
+        "routeId": "escoriales-del-morannon--campo-de-cormallen",
+        "confidence": "inferred",
+        "note": "La hueste regresa a Ithilien; fechas estimadas.",
+        "mode": "caballo"
+      },
+      {
+        "from": "campo-de-cormallen",
+        "to": "campo-de-cormallen",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 27
+        },
+        "end": {
+          "year": 3019,
+          "month": 4,
+          "day": 29
+        },
+        "confidence": "inferred",
+        "note": "La hueste descansa en Ithilien hasta finales de abril; el día de partida es estimado."
+      },
+      {
+        "from": "campo-de-cormallen",
+        "to": "minas-tirith",
+        "start": {
+          "year": 3019,
+          "month": 4,
+          "day": 29
+        },
+        "end": {
+          "year": 3019,
+          "month": 5,
+          "day": 1
+        },
+        "routeId": "campo-de-cormallen--minas-tirith",
+        "confidence": "inferred",
+        "note": "Bajan por el río hasta la Ciudad para la coronación del 1 de mayo; la salida es estimada.",
+        "mode": "barca"
+      },
+      {
+        "from": "minas-tirith",
+        "to": "minas-tirith",
+        "start": {
+          "year": 3019,
+          "month": 5,
+          "day": 1
+        },
+        "end": {
+          "year": 3019,
+          "month": 7,
+          "day": 19
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "minas-tirith",
+        "to": "edoras",
+        "start": {
+          "year": 3019,
+          "month": 7,
+          "day": 19
+        },
+        "end": {
+          "year": 3019,
+          "month": 8,
+          "day": 7
+        },
+        "routeId": "minas-tirith--edoras",
+        "confidence": "canon",
+        "note": "Cortejo fúnebre del rey Théoden.",
+        "mode": "caballo"
+      },
+      {
+        "from": "edoras",
+        "to": "edoras",
+        "start": {
+          "year": 3019,
+          "month": 8,
+          "day": 7
+        },
+        "end": {
+          "year": 3019,
+          "month": 8,
+          "day": 14
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "edoras",
+        "to": "abismo-de-helm",
+        "start": {
+          "year": 3019,
+          "month": 8,
+          "day": 14
+        },
+        "end": {
+          "year": 3019,
+          "month": 8,
+          "day": 18
+        },
+        "routeId": "edoras--abismo-de-helm",
+        "confidence": "canon",
+        "mode": "caballo"
+      },
+      {
+        "from": "abismo-de-helm",
+        "to": "isengard",
+        "start": {
+          "year": 3019,
+          "month": 8,
+          "day": 18
+        },
+        "end": {
+          "year": 3019,
+          "month": 8,
+          "day": 22
+        },
+        "routeId": "abismo-de-helm--isengard",
+        "confidence": "canon",
+        "mode": "caballo"
+      },
+      {
+        "from": "isengard",
+        "to": "minas-tirith",
+        "start": {
+          "year": 3019,
+          "month": 8,
+          "day": 22
+        },
+        "end": {
+          "year": 3019,
+          "month": 9,
+          "day": 10
+        },
+        "routeId": "isengard--minas-tirith",
+        "confidence": "inferred",
+        "note": "Se despide en Isengard al atardecer del 22 de agosto y regresa a Gondor; la llegada es estimada.",
+        "mode": "caballo"
       }
     ]
   },
@@ -3584,7 +6905,8 @@
           "day": 16
         },
         "routeId": "caras-galadhon--egladil",
-        "confidence": "canon"
+        "confidence": "canon",
+        "mode": "barca"
       },
       {
         "from": "egladil",
@@ -3600,7 +6922,8 @@
           "day": 23
         },
         "routeId": "egladil--sarn-gebir",
-        "confidence": "canon"
+        "confidence": "canon",
+        "mode": "barca"
       },
       {
         "from": "sarn-gebir",
@@ -3616,7 +6939,8 @@
           "day": 25
         },
         "routeId": "sarn-gebir--argonath",
-        "confidence": "canon"
+        "confidence": "canon",
+        "mode": "barca"
       },
       {
         "from": "argonath",
@@ -3632,7 +6956,8 @@
           "day": 25
         },
         "routeId": "argonath--parth-galen",
-        "confidence": "canon"
+        "confidence": "canon",
+        "mode": "barca"
       },
       {
         "from": "parth-galen",
@@ -3648,6 +6973,558 @@
           "day": 26
         },
         "confidence": "canon"
+      },
+      {
+        "from": "parth-galen",
+        "to": "emnet-este",
+        "start": {
+          "year": 3019,
+          "month": 2,
+          "day": 26
+        },
+        "end": {
+          "year": 3019,
+          "month": 2,
+          "day": 30
+        },
+        "routeId": "parth-galen--emnet-este",
+        "confidence": "canon",
+        "note": "Persiguen a los orcos: el 27 llegan al acantilado oeste de las Emyn Muil y cruzan el Emnet corriendo."
+      },
+      {
+        "from": "emnet-este",
+        "to": "lindero-de-fangorn",
+        "start": {
+          "year": 3019,
+          "month": 2,
+          "day": 30
+        },
+        "end": {
+          "year": 3019,
+          "month": 2,
+          "day": 30
+        },
+        "routeId": "emnet-este--lindero-de-fangorn",
+        "confidence": "canon",
+        "mode": "caballo"
+      },
+      {
+        "from": "lindero-de-fangorn",
+        "to": "lindero-de-fangorn",
+        "start": {
+          "year": 3019,
+          "month": 2,
+          "day": 30
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 1
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "lindero-de-fangorn",
+        "to": "colina-de-barbol",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 1
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 1
+        },
+        "routeId": "lindero-de-fangorn--colina-de-barbol",
+        "confidence": "canon"
+      },
+      {
+        "from": "colina-de-barbol",
+        "to": "edoras",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 1
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 2
+        },
+        "routeId": "colina-de-barbol--edoras",
+        "confidence": "canon",
+        "mode": "caballo"
+      },
+      {
+        "from": "edoras",
+        "to": "vados-del-isen",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 2
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 3
+        },
+        "routeId": "edoras--vados-del-isen",
+        "confidence": "canon",
+        "note": "Cabalgan al oeste con Théoden contra Saruman.",
+        "mode": "caballo"
+      },
+      {
+        "from": "vados-del-isen",
+        "to": "abismo-de-helm",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 3
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 3
+        },
+        "routeId": "vados-del-isen--abismo-de-helm",
+        "confidence": "canon",
+        "note": "Al saber de la derrota en los vados, se repliegan al Abismo.",
+        "mode": "caballo"
+      },
+      {
+        "from": "abismo-de-helm",
+        "to": "abismo-de-helm",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 3
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 4
+        },
+        "confidence": "canon",
+        "note": "Batalla de Cuernavilla."
+      },
+      {
+        "from": "abismo-de-helm",
+        "to": "isengard",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 4
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 5
+        },
+        "routeId": "abismo-de-helm--isengard",
+        "confidence": "canon",
+        "mode": "caballo"
+      },
+      {
+        "from": "isengard",
+        "to": "dol-baran",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 5
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 5
+        },
+        "routeId": "isengard--dol-baran",
+        "confidence": "canon",
+        "mode": "caballo"
+      },
+      {
+        "from": "dol-baran",
+        "to": "abismo-de-helm",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 5
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 6
+        },
+        "routeId": "dol-baran--abismo-de-helm",
+        "confidence": "canon",
+        "note": "Los Dúnedain de la Compañía Gris los alcanzan de madrugada.",
+        "mode": "caballo"
+      },
+      {
+        "from": "abismo-de-helm",
+        "to": "el-sagrario",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 6
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 7
+        },
+        "routeId": "abismo-de-helm--el-sagrario",
+        "confidence": "canon",
+        "mode": "caballo"
+      },
+      {
+        "from": "el-sagrario",
+        "to": "el-sagrario",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 7
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 8
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "el-sagrario",
+        "to": "erech",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 8
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 8
+        },
+        "routeId": "el-sagrario--erech",
+        "confidence": "canon",
+        "note": "Por las Sendas de los Muertos, de la Puerta Oscura a Erech.",
+        "mode": "caballo"
+      },
+      {
+        "from": "erech",
+        "to": "erech",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 8
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 9
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "erech",
+        "to": "calembel",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 9
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 9
+        },
+        "routeId": "erech--calembel",
+        "confidence": "canon",
+        "mode": "caballo"
+      },
+      {
+        "from": "calembel",
+        "to": "linhir",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 9
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 11
+        },
+        "routeId": "calembel--linhir",
+        "confidence": "canon",
+        "note": "Cruzan el Ringló el 10.",
+        "mode": "caballo"
+      },
+      {
+        "from": "linhir",
+        "to": "pelargir",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 11
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 13
+        },
+        "routeId": "linhir--pelargir",
+        "confidence": "canon",
+        "mode": "caballo"
+      },
+      {
+        "from": "pelargir",
+        "to": "harlond",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 13
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 15
+        },
+        "routeId": "pelargir--harlond",
+        "confidence": "canon",
+        "note": "Remontan el Anduin en la flota capturada.",
+        "mode": "barca"
+      },
+      {
+        "from": "harlond",
+        "to": "campos-del-pelennor",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 15
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 15
+        },
+        "routeId": "harlond--campos-del-pelennor",
+        "confidence": "canon"
+      },
+      {
+        "from": "campos-del-pelennor",
+        "to": "minas-tirith",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 15
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 15
+        },
+        "routeId": "campos-del-pelennor--minas-tirith",
+        "confidence": "canon"
+      },
+      {
+        "from": "minas-tirith",
+        "to": "minas-tirith",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 15
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 18
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "minas-tirith",
+        "to": "minas-morgul",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 18
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 19
+        },
+        "routeId": "minas-tirith--minas-morgul",
+        "confidence": "canon",
+        "mode": "caballo"
+      },
+      {
+        "from": "minas-morgul",
+        "to": "escoriales-del-morannon",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 19
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 24
+        },
+        "routeId": "minas-morgul--escoriales-del-morannon",
+        "confidence": "canon",
+        "note": "La Hueste del Oeste marcha hacia el norte por Ithilien.",
+        "mode": "caballo"
+      },
+      {
+        "from": "escoriales-del-morannon",
+        "to": "escoriales-del-morannon",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 24
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 25
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "escoriales-del-morannon",
+        "to": "campo-de-cormallen",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 25
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 27
+        },
+        "routeId": "escoriales-del-morannon--campo-de-cormallen",
+        "confidence": "inferred",
+        "note": "La hueste regresa a Ithilien; fechas estimadas.",
+        "mode": "caballo"
+      },
+      {
+        "from": "campo-de-cormallen",
+        "to": "campo-de-cormallen",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 27
+        },
+        "end": {
+          "year": 3019,
+          "month": 4,
+          "day": 29
+        },
+        "confidence": "inferred",
+        "note": "La hueste descansa en Ithilien hasta finales de abril; el día de partida es estimado."
+      },
+      {
+        "from": "campo-de-cormallen",
+        "to": "minas-tirith",
+        "start": {
+          "year": 3019,
+          "month": 4,
+          "day": 29
+        },
+        "end": {
+          "year": 3019,
+          "month": 5,
+          "day": 1
+        },
+        "routeId": "campo-de-cormallen--minas-tirith",
+        "confidence": "inferred",
+        "note": "Bajan por el río hasta la Ciudad para la coronación del 1 de mayo; la salida es estimada.",
+        "mode": "barca"
+      },
+      {
+        "from": "minas-tirith",
+        "to": "minas-tirith",
+        "start": {
+          "year": 3019,
+          "month": 5,
+          "day": 1
+        },
+        "end": {
+          "year": 3019,
+          "month": 7,
+          "day": 19
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "minas-tirith",
+        "to": "edoras",
+        "start": {
+          "year": 3019,
+          "month": 7,
+          "day": 19
+        },
+        "end": {
+          "year": 3019,
+          "month": 8,
+          "day": 7
+        },
+        "routeId": "minas-tirith--edoras",
+        "confidence": "canon",
+        "note": "Cortejo fúnebre del rey Théoden.",
+        "mode": "caballo"
+      },
+      {
+        "from": "edoras",
+        "to": "edoras",
+        "start": {
+          "year": 3019,
+          "month": 8,
+          "day": 7
+        },
+        "end": {
+          "year": 3019,
+          "month": 8,
+          "day": 14
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "edoras",
+        "to": "abismo-de-helm",
+        "start": {
+          "year": 3019,
+          "month": 8,
+          "day": 14
+        },
+        "end": {
+          "year": 3019,
+          "month": 8,
+          "day": 18
+        },
+        "routeId": "edoras--abismo-de-helm",
+        "confidence": "canon",
+        "mode": "caballo"
+      },
+      {
+        "from": "abismo-de-helm",
+        "to": "isengard",
+        "start": {
+          "year": 3019,
+          "month": 8,
+          "day": 18
+        },
+        "end": {
+          "year": 3019,
+          "month": 8,
+          "day": 22
+        },
+        "routeId": "abismo-de-helm--isengard",
+        "confidence": "canon",
+        "mode": "caballo"
       }
     ]
   },
@@ -3969,7 +7846,8 @@
           "day": 16
         },
         "routeId": "caras-galadhon--egladil",
-        "confidence": "canon"
+        "confidence": "canon",
+        "mode": "barca"
       },
       {
         "from": "egladil",
@@ -3985,7 +7863,8 @@
           "day": 23
         },
         "routeId": "egladil--sarn-gebir",
-        "confidence": "canon"
+        "confidence": "canon",
+        "mode": "barca"
       },
       {
         "from": "sarn-gebir",
@@ -4001,7 +7880,8 @@
           "day": 25
         },
         "routeId": "sarn-gebir--argonath",
-        "confidence": "canon"
+        "confidence": "canon",
+        "mode": "barca"
       },
       {
         "from": "argonath",
@@ -4017,7 +7897,8 @@
           "day": 25
         },
         "routeId": "argonath--parth-galen",
-        "confidence": "canon"
+        "confidence": "canon",
+        "mode": "barca"
       },
       {
         "from": "parth-galen",
@@ -4033,6 +7914,558 @@
           "day": 26
         },
         "confidence": "canon"
+      },
+      {
+        "from": "parth-galen",
+        "to": "emnet-este",
+        "start": {
+          "year": 3019,
+          "month": 2,
+          "day": 26
+        },
+        "end": {
+          "year": 3019,
+          "month": 2,
+          "day": 30
+        },
+        "routeId": "parth-galen--emnet-este",
+        "confidence": "canon",
+        "note": "Persiguen a los orcos: el 27 llegan al acantilado oeste de las Emyn Muil y cruzan el Emnet corriendo."
+      },
+      {
+        "from": "emnet-este",
+        "to": "lindero-de-fangorn",
+        "start": {
+          "year": 3019,
+          "month": 2,
+          "day": 30
+        },
+        "end": {
+          "year": 3019,
+          "month": 2,
+          "day": 30
+        },
+        "routeId": "emnet-este--lindero-de-fangorn",
+        "confidence": "canon",
+        "mode": "caballo"
+      },
+      {
+        "from": "lindero-de-fangorn",
+        "to": "lindero-de-fangorn",
+        "start": {
+          "year": 3019,
+          "month": 2,
+          "day": 30
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 1
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "lindero-de-fangorn",
+        "to": "colina-de-barbol",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 1
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 1
+        },
+        "routeId": "lindero-de-fangorn--colina-de-barbol",
+        "confidence": "canon"
+      },
+      {
+        "from": "colina-de-barbol",
+        "to": "edoras",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 1
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 2
+        },
+        "routeId": "colina-de-barbol--edoras",
+        "confidence": "canon",
+        "mode": "caballo"
+      },
+      {
+        "from": "edoras",
+        "to": "vados-del-isen",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 2
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 3
+        },
+        "routeId": "edoras--vados-del-isen",
+        "confidence": "canon",
+        "note": "Cabalgan al oeste con Théoden contra Saruman.",
+        "mode": "caballo"
+      },
+      {
+        "from": "vados-del-isen",
+        "to": "abismo-de-helm",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 3
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 3
+        },
+        "routeId": "vados-del-isen--abismo-de-helm",
+        "confidence": "canon",
+        "note": "Al saber de la derrota en los vados, se repliegan al Abismo.",
+        "mode": "caballo"
+      },
+      {
+        "from": "abismo-de-helm",
+        "to": "abismo-de-helm",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 3
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 4
+        },
+        "confidence": "canon",
+        "note": "Batalla de Cuernavilla."
+      },
+      {
+        "from": "abismo-de-helm",
+        "to": "isengard",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 4
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 5
+        },
+        "routeId": "abismo-de-helm--isengard",
+        "confidence": "canon",
+        "mode": "caballo"
+      },
+      {
+        "from": "isengard",
+        "to": "dol-baran",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 5
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 5
+        },
+        "routeId": "isengard--dol-baran",
+        "confidence": "canon",
+        "mode": "caballo"
+      },
+      {
+        "from": "dol-baran",
+        "to": "abismo-de-helm",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 5
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 6
+        },
+        "routeId": "dol-baran--abismo-de-helm",
+        "confidence": "canon",
+        "note": "Los Dúnedain de la Compañía Gris los alcanzan de madrugada.",
+        "mode": "caballo"
+      },
+      {
+        "from": "abismo-de-helm",
+        "to": "el-sagrario",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 6
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 7
+        },
+        "routeId": "abismo-de-helm--el-sagrario",
+        "confidence": "canon",
+        "mode": "caballo"
+      },
+      {
+        "from": "el-sagrario",
+        "to": "el-sagrario",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 7
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 8
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "el-sagrario",
+        "to": "erech",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 8
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 8
+        },
+        "routeId": "el-sagrario--erech",
+        "confidence": "canon",
+        "note": "Por las Sendas de los Muertos, de la Puerta Oscura a Erech.",
+        "mode": "caballo"
+      },
+      {
+        "from": "erech",
+        "to": "erech",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 8
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 9
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "erech",
+        "to": "calembel",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 9
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 9
+        },
+        "routeId": "erech--calembel",
+        "confidence": "canon",
+        "mode": "caballo"
+      },
+      {
+        "from": "calembel",
+        "to": "linhir",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 9
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 11
+        },
+        "routeId": "calembel--linhir",
+        "confidence": "canon",
+        "note": "Cruzan el Ringló el 10.",
+        "mode": "caballo"
+      },
+      {
+        "from": "linhir",
+        "to": "pelargir",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 11
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 13
+        },
+        "routeId": "linhir--pelargir",
+        "confidence": "canon",
+        "mode": "caballo"
+      },
+      {
+        "from": "pelargir",
+        "to": "harlond",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 13
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 15
+        },
+        "routeId": "pelargir--harlond",
+        "confidence": "canon",
+        "note": "Remontan el Anduin en la flota capturada.",
+        "mode": "barca"
+      },
+      {
+        "from": "harlond",
+        "to": "campos-del-pelennor",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 15
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 15
+        },
+        "routeId": "harlond--campos-del-pelennor",
+        "confidence": "canon"
+      },
+      {
+        "from": "campos-del-pelennor",
+        "to": "minas-tirith",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 15
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 15
+        },
+        "routeId": "campos-del-pelennor--minas-tirith",
+        "confidence": "canon"
+      },
+      {
+        "from": "minas-tirith",
+        "to": "minas-tirith",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 15
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 18
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "minas-tirith",
+        "to": "minas-morgul",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 18
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 19
+        },
+        "routeId": "minas-tirith--minas-morgul",
+        "confidence": "canon",
+        "mode": "caballo"
+      },
+      {
+        "from": "minas-morgul",
+        "to": "escoriales-del-morannon",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 19
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 24
+        },
+        "routeId": "minas-morgul--escoriales-del-morannon",
+        "confidence": "canon",
+        "note": "La Hueste del Oeste marcha hacia el norte por Ithilien.",
+        "mode": "caballo"
+      },
+      {
+        "from": "escoriales-del-morannon",
+        "to": "escoriales-del-morannon",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 24
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 25
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "escoriales-del-morannon",
+        "to": "campo-de-cormallen",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 25
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 27
+        },
+        "routeId": "escoriales-del-morannon--campo-de-cormallen",
+        "confidence": "inferred",
+        "note": "La hueste regresa a Ithilien; fechas estimadas.",
+        "mode": "caballo"
+      },
+      {
+        "from": "campo-de-cormallen",
+        "to": "campo-de-cormallen",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 27
+        },
+        "end": {
+          "year": 3019,
+          "month": 4,
+          "day": 29
+        },
+        "confidence": "inferred",
+        "note": "La hueste descansa en Ithilien hasta finales de abril; el día de partida es estimado."
+      },
+      {
+        "from": "campo-de-cormallen",
+        "to": "minas-tirith",
+        "start": {
+          "year": 3019,
+          "month": 4,
+          "day": 29
+        },
+        "end": {
+          "year": 3019,
+          "month": 5,
+          "day": 1
+        },
+        "routeId": "campo-de-cormallen--minas-tirith",
+        "confidence": "inferred",
+        "note": "Bajan por el río hasta la Ciudad para la coronación del 1 de mayo; la salida es estimada.",
+        "mode": "barca"
+      },
+      {
+        "from": "minas-tirith",
+        "to": "minas-tirith",
+        "start": {
+          "year": 3019,
+          "month": 5,
+          "day": 1
+        },
+        "end": {
+          "year": 3019,
+          "month": 7,
+          "day": 19
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "minas-tirith",
+        "to": "edoras",
+        "start": {
+          "year": 3019,
+          "month": 7,
+          "day": 19
+        },
+        "end": {
+          "year": 3019,
+          "month": 8,
+          "day": 7
+        },
+        "routeId": "minas-tirith--edoras",
+        "confidence": "canon",
+        "note": "Cortejo fúnebre del rey Théoden.",
+        "mode": "caballo"
+      },
+      {
+        "from": "edoras",
+        "to": "edoras",
+        "start": {
+          "year": 3019,
+          "month": 8,
+          "day": 7
+        },
+        "end": {
+          "year": 3019,
+          "month": 8,
+          "day": 14
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "edoras",
+        "to": "abismo-de-helm",
+        "start": {
+          "year": 3019,
+          "month": 8,
+          "day": 14
+        },
+        "end": {
+          "year": 3019,
+          "month": 8,
+          "day": 18
+        },
+        "routeId": "edoras--abismo-de-helm",
+        "confidence": "canon",
+        "mode": "caballo"
+      },
+      {
+        "from": "abismo-de-helm",
+        "to": "isengard",
+        "start": {
+          "year": 3019,
+          "month": 8,
+          "day": 18
+        },
+        "end": {
+          "year": 3019,
+          "month": 8,
+          "day": 22
+        },
+        "routeId": "abismo-de-helm--isengard",
+        "confidence": "canon",
+        "mode": "caballo"
       }
     ]
   },
@@ -4085,7 +8518,8 @@
         },
         "routeId": "vado-sarn--bree",
         "confidence": "inferred",
-        "note": "Pasa por Bree y deja una carta para Frodo; día estimado."
+        "note": "Pasa por Bree y deja una carta para Frodo; día estimado.",
+        "mode": "caballo"
       },
       {
         "from": "bree",
@@ -4102,7 +8536,8 @@
         },
         "routeId": "bree--isengard",
         "confidence": "inferred",
-        "note": "Llega a Orthanc el 10 de julio (Apéndice B); la salida de Bree es estimada."
+        "note": "Llega a Orthanc el 10 de julio (Apéndice B); la salida de Bree es estimada.",
+        "mode": "caballo"
       },
       {
         "from": "isengard",
@@ -4135,7 +8570,8 @@
         },
         "routeId": "isengard--edoras",
         "confidence": "canon",
-        "note": "Gwaihir lo saca de Orthanc y lo deja cerca de Edoras."
+        "note": "Gwaihir lo saca de Orthanc y lo deja cerca de Edoras.",
+        "mode": "aguila"
       },
       {
         "from": "edoras",
@@ -4167,7 +8603,8 @@
         },
         "routeId": "edoras--vados-del-isen",
         "confidence": "canon",
-        "note": "Persigue y doma a Sombragrís por los campos de Rohan; cruza el Isen el 24."
+        "note": "Persigue y doma a Sombragrís por los campos de Rohan; cruza el Isen el 24.",
+        "mode": "caballo"
       },
       {
         "from": "vados-del-isen",
@@ -4183,7 +8620,8 @@
           "day": 27
         },
         "routeId": "vados-del-isen--tharbad",
-        "confidence": "canon"
+        "confidence": "canon",
+        "mode": "caballo"
       },
       {
         "from": "tharbad",
@@ -4200,7 +8638,8 @@
         },
         "routeId": "tharbad--vado-sarn",
         "confidence": "canon",
-        "note": "Cruza el Aguada Gris el 27 y llega al Vado Sarn el 28 (Apéndice B). A lomos de Sombragrís cubre en un día una distancia que en este mapa aproximado sale exagerada."
+        "note": "Cruza el Aguada Gris el 27 y llega al Vado Sarn el 28 (Apéndice B). A lomos de Sombragrís cubre en un día una distancia que en este mapa aproximado sale exagerada.",
+        "mode": "caballo"
       },
       {
         "from": "vado-sarn",
@@ -4216,7 +8655,8 @@
           "day": 29
         },
         "routeId": "vado-sarn--hobbiton",
-        "confidence": "canon"
+        "confidence": "canon",
+        "mode": "caballo"
       },
       {
         "from": "hobbiton",
@@ -4232,7 +8672,8 @@
           "day": 30
         },
         "routeId": "hobbiton--cricava",
-        "confidence": "canon"
+        "confidence": "canon",
+        "mode": "caballo"
       },
       {
         "from": "cricava",
@@ -4248,7 +8689,8 @@
           "day": 30
         },
         "routeId": "cricava--bree",
-        "confidence": "canon"
+        "confidence": "canon",
+        "mode": "caballo"
       },
       {
         "from": "bree",
@@ -4279,7 +8721,8 @@
           "day": 3
         },
         "routeId": "bree--cima-de-los-vientos",
-        "confidence": "canon"
+        "confidence": "canon",
+        "mode": "caballo"
       },
       {
         "from": "cima-de-los-vientos",
@@ -4312,7 +8755,8 @@
         },
         "routeId": "cima-de-los-vientos--rivendel",
         "confidence": "inferred",
-        "note": "Llega a Rivendel el 18 de octubre (Apéndice B) dando un rodeo por el norte; el trazado es estimado."
+        "note": "Llega a Rivendel el 18 de octubre (Apéndice B) dando un rodeo por el norte; el trazado es estimado.",
+        "mode": "caballo"
       },
       {
         "from": "rivendel",
@@ -4550,7 +8994,545 @@
         },
         "routeId": "celebdil--caras-galadhon",
         "confidence": "canon",
-        "note": "Gwaihir lo lleva a Lórien."
+        "note": "Gwaihir lo lleva a Lórien.",
+        "mode": "aguila"
+      },
+      {
+        "from": "caras-galadhon",
+        "to": "caras-galadhon",
+        "start": {
+          "year": 3019,
+          "month": 2,
+          "day": 17
+        },
+        "end": {
+          "year": 3019,
+          "month": 2,
+          "day": 25
+        },
+        "confidence": "inferred",
+        "note": "Descansa unos días en Lórien; la salida es estimada."
+      },
+      {
+        "from": "caras-galadhon",
+        "to": "colina-de-barbol",
+        "start": {
+          "year": 3019,
+          "month": 2,
+          "day": 25
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 1
+        },
+        "routeId": "caras-galadhon--colina-de-barbol",
+        "confidence": "inferred",
+        "note": "Viaja a Fangorn y habla con Bárbol antes de encontrarse con Aragorn el 1 de marzo; fechas y trazado estimados."
+      },
+      {
+        "from": "colina-de-barbol",
+        "to": "edoras",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 1
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 2
+        },
+        "routeId": "colina-de-barbol--edoras",
+        "confidence": "canon",
+        "note": "Llama a Sombragrís y cabalga a Edoras.",
+        "mode": "caballo"
+      },
+      {
+        "from": "edoras",
+        "to": "vados-del-isen",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 2
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 3
+        },
+        "routeId": "edoras--vados-del-isen",
+        "confidence": "canon",
+        "mode": "caballo"
+      },
+      {
+        "from": "vados-del-isen",
+        "to": "abismo-de-helm",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 3
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 4
+        },
+        "routeId": "vados-del-isen--abismo-de-helm",
+        "confidence": "inferred",
+        "note": "Se separa para reunir a los hombres de Erkenbrand y llega al Abismo al amanecer del 4; su trazado es estimado.",
+        "mode": "caballo"
+      },
+      {
+        "from": "abismo-de-helm",
+        "to": "isengard",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 4
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 5
+        },
+        "routeId": "abismo-de-helm--isengard",
+        "confidence": "canon",
+        "mode": "caballo"
+      },
+      {
+        "from": "isengard",
+        "to": "dol-baran",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 5
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 5
+        },
+        "routeId": "isengard--dol-baran",
+        "confidence": "canon",
+        "mode": "caballo"
+      },
+      {
+        "from": "dol-baran",
+        "to": "minas-tirith",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 5
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 9
+        },
+        "routeId": "dol-baran--minas-tirith",
+        "confidence": "canon",
+        "note": "Con Pippin, a lomos de Sombragrís.",
+        "mode": "caballo"
+      },
+      {
+        "from": "minas-tirith",
+        "to": "minas-tirith",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 9
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 18
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "minas-tirith",
+        "to": "minas-morgul",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 18
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 19
+        },
+        "routeId": "minas-tirith--minas-morgul",
+        "confidence": "canon",
+        "mode": "caballo"
+      },
+      {
+        "from": "minas-morgul",
+        "to": "escoriales-del-morannon",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 19
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 24
+        },
+        "routeId": "minas-morgul--escoriales-del-morannon",
+        "confidence": "canon",
+        "note": "La Hueste del Oeste marcha hacia el norte por Ithilien.",
+        "mode": "caballo"
+      },
+      {
+        "from": "escoriales-del-morannon",
+        "to": "escoriales-del-morannon",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 24
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 25
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "escoriales-del-morannon",
+        "to": "monte-del-destino",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 25
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 25
+        },
+        "routeId": "escoriales-del-morannon--monte-del-destino",
+        "confidence": "canon",
+        "note": "Vuela en Gwaihir a rescatar a Frodo y a Sam.",
+        "mode": "aguila"
+      },
+      {
+        "from": "monte-del-destino",
+        "to": "campo-de-cormallen",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 25
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 25
+        },
+        "routeId": "monte-del-destino--campo-de-cormallen",
+        "confidence": "canon",
+        "mode": "aguila"
+      },
+      {
+        "from": "campo-de-cormallen",
+        "to": "campo-de-cormallen",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 25
+        },
+        "end": {
+          "year": 3019,
+          "month": 4,
+          "day": 29
+        },
+        "confidence": "inferred",
+        "note": "La hueste descansa en Ithilien hasta finales de abril; el día de partida es estimado."
+      },
+      {
+        "from": "campo-de-cormallen",
+        "to": "minas-tirith",
+        "start": {
+          "year": 3019,
+          "month": 4,
+          "day": 29
+        },
+        "end": {
+          "year": 3019,
+          "month": 5,
+          "day": 1
+        },
+        "routeId": "campo-de-cormallen--minas-tirith",
+        "confidence": "inferred",
+        "note": "Bajan por el río hasta la Ciudad para la coronación del 1 de mayo; la salida es estimada.",
+        "mode": "barca"
+      },
+      {
+        "from": "minas-tirith",
+        "to": "minas-tirith",
+        "start": {
+          "year": 3019,
+          "month": 5,
+          "day": 1
+        },
+        "end": {
+          "year": 3019,
+          "month": 7,
+          "day": 19
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "minas-tirith",
+        "to": "edoras",
+        "start": {
+          "year": 3019,
+          "month": 7,
+          "day": 19
+        },
+        "end": {
+          "year": 3019,
+          "month": 8,
+          "day": 7
+        },
+        "routeId": "minas-tirith--edoras",
+        "confidence": "canon",
+        "note": "Cortejo fúnebre del rey Théoden.",
+        "mode": "caballo"
+      },
+      {
+        "from": "edoras",
+        "to": "edoras",
+        "start": {
+          "year": 3019,
+          "month": 8,
+          "day": 7
+        },
+        "end": {
+          "year": 3019,
+          "month": 8,
+          "day": 14
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "edoras",
+        "to": "abismo-de-helm",
+        "start": {
+          "year": 3019,
+          "month": 8,
+          "day": 14
+        },
+        "end": {
+          "year": 3019,
+          "month": 8,
+          "day": 18
+        },
+        "routeId": "edoras--abismo-de-helm",
+        "confidence": "canon",
+        "mode": "caballo"
+      },
+      {
+        "from": "abismo-de-helm",
+        "to": "isengard",
+        "start": {
+          "year": 3019,
+          "month": 8,
+          "day": 18
+        },
+        "end": {
+          "year": 3019,
+          "month": 8,
+          "day": 22
+        },
+        "routeId": "abismo-de-helm--isengard",
+        "confidence": "canon",
+        "mode": "caballo"
+      },
+      {
+        "from": "isengard",
+        "to": "tierra-brunia",
+        "start": {
+          "year": 3019,
+          "month": 8,
+          "day": 22
+        },
+        "end": {
+          "year": 3019,
+          "month": 8,
+          "day": 28
+        },
+        "routeId": "isengard--tierra-brunia",
+        "confidence": "inferred",
+        "note": "Alcanzan a Saruman el 28 de agosto (Apéndice B); el lugar, en el camino del norte por Tierra Brunia, es aproximado.",
+        "mode": "caballo"
+      },
+      {
+        "from": "tierra-brunia",
+        "to": "acebeda",
+        "start": {
+          "year": 3019,
+          "month": 8,
+          "day": 28
+        },
+        "end": {
+          "year": 3019,
+          "month": 9,
+          "day": 6
+        },
+        "routeId": "tierra-brunia--acebeda",
+        "confidence": "inferred",
+        "note": "El 6 de septiembre se detienen a la vista de las Montañas de Moria (Apéndice B); se sitúa en Acebeda.",
+        "mode": "caballo"
+      },
+      {
+        "from": "acebeda",
+        "to": "acebeda",
+        "start": {
+          "year": 3019,
+          "month": 9,
+          "day": 6
+        },
+        "end": {
+          "year": 3019,
+          "month": 9,
+          "day": 13
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "acebeda",
+        "to": "rivendel",
+        "start": {
+          "year": 3019,
+          "month": 9,
+          "day": 13
+        },
+        "end": {
+          "year": 3019,
+          "month": 9,
+          "day": 21
+        },
+        "routeId": "rivendel--acebeda",
+        "confidence": "canon",
+        "mode": "caballo"
+      },
+      {
+        "from": "rivendel",
+        "to": "rivendel",
+        "start": {
+          "year": 3019,
+          "month": 9,
+          "day": 21
+        },
+        "end": {
+          "year": 3019,
+          "month": 10,
+          "day": 5
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "rivendel",
+        "to": "vado-del-bruinen",
+        "start": {
+          "year": 3019,
+          "month": 10,
+          "day": 5
+        },
+        "end": {
+          "year": 3019,
+          "month": 10,
+          "day": 6
+        },
+        "routeId": "vado-del-bruinen--rivendel",
+        "confidence": "canon",
+        "mode": "caballo"
+      },
+      {
+        "from": "vado-del-bruinen",
+        "to": "bree",
+        "start": {
+          "year": 3019,
+          "month": 10,
+          "day": 6
+        },
+        "end": {
+          "year": 3019,
+          "month": 10,
+          "day": 28
+        },
+        "routeId": "vado-del-bruinen--bree",
+        "confidence": "canon",
+        "mode": "caballo"
+      },
+      {
+        "from": "bree",
+        "to": "bree",
+        "start": {
+          "year": 3019,
+          "month": 10,
+          "day": 28
+        },
+        "end": {
+          "year": 3019,
+          "month": 10,
+          "day": 30
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "bree",
+        "to": "casa-de-tom-bombadil",
+        "start": {
+          "year": 3019,
+          "month": 10,
+          "day": 30
+        },
+        "end": {
+          "year": 3019,
+          "month": 10,
+          "day": 30
+        },
+        "routeId": "bree--casa-de-tom-bombadil",
+        "confidence": "canon",
+        "note": "Deja a los hobbits para ir a hablar con Bombadil.",
+        "mode": "caballo"
+      },
+      {
+        "from": "casa-de-tom-bombadil",
+        "to": "casa-de-tom-bombadil",
+        "start": {
+          "year": 3019,
+          "month": 10,
+          "day": 30
+        },
+        "end": {
+          "year": 3019,
+          "month": 11,
+          "day": 30
+        },
+        "confidence": "inferred",
+        "note": "Larga conversación con Bombadil; después no consta dónde está hasta 3021."
+      },
+      {
+        "from": "puertos-grises",
+        "to": "puertos-grises",
+        "start": {
+          "year": 3021,
+          "month": 9,
+          "day": 29
+        },
+        "end": {
+          "year": 3021,
+          "month": 9,
+          "day": 29
+        },
+        "confidence": "canon",
+        "note": "Espera a los Portadores en los Puertos y parte con ellos.",
+        "afterGap": true
       }
     ]
   },
@@ -4572,7 +9554,8 @@
         },
         "routeId": "minas-tirith--edoras",
         "confidence": "inferred",
-        "note": "Sale de Minas Tirith el 4 de julio (Apéndice B); etapas intermedias estimadas."
+        "note": "Sale de Minas Tirith el 4 de julio (Apéndice B); etapas intermedias estimadas.",
+        "mode": "caballo"
       },
       {
         "from": "edoras",
@@ -4589,7 +9572,8 @@
         },
         "routeId": "edoras--vados-del-isen",
         "confidence": "inferred",
-        "note": "Etapa estimada."
+        "note": "Etapa estimada.",
+        "mode": "caballo"
       },
       {
         "from": "vados-del-isen",
@@ -4606,7 +9590,8 @@
         },
         "routeId": "vados-del-isen--tharbad",
         "confidence": "inferred",
-        "note": "Etapa estimada; en Tharbad pierde el caballo al cruzar el Aguada Gris."
+        "note": "Etapa estimada; en Tharbad pierde el caballo al cruzar el Aguada Gris.",
+        "mode": "caballo"
       },
       {
         "from": "tharbad",
@@ -4922,7 +9907,8 @@
           "day": 16
         },
         "routeId": "caras-galadhon--egladil",
-        "confidence": "canon"
+        "confidence": "canon",
+        "mode": "barca"
       },
       {
         "from": "egladil",
@@ -4938,7 +9924,8 @@
           "day": 23
         },
         "routeId": "egladil--sarn-gebir",
-        "confidence": "canon"
+        "confidence": "canon",
+        "mode": "barca"
       },
       {
         "from": "sarn-gebir",
@@ -4954,7 +9941,8 @@
           "day": 25
         },
         "routeId": "sarn-gebir--argonath",
-        "confidence": "canon"
+        "confidence": "canon",
+        "mode": "barca"
       },
       {
         "from": "argonath",
@@ -4970,7 +9958,8 @@
           "day": 25
         },
         "routeId": "argonath--parth-galen",
-        "confidence": "canon"
+        "confidence": "canon",
+        "mode": "barca"
       },
       {
         "from": "parth-galen",
@@ -5122,7 +10111,8 @@
         },
         "routeId": "egladil--sarn-gebir",
         "confidence": "inferred",
-        "note": "Sigue las barcas río abajo agarrado a un tronco."
+        "note": "Sigue las barcas río abajo agarrado a un tronco.",
+        "mode": "barca"
       },
       {
         "from": "sarn-gebir",
@@ -5140,6 +10130,170 @@
         "routeId": "sarn-gebir--emyn-muil",
         "confidence": "inferred",
         "note": "Rodea las cataratas y sigue a Frodo hacia las Emyn Muil."
+      },
+      {
+        "from": "emyn-muil",
+        "to": "pie-emyn-muil",
+        "start": {
+          "year": 3019,
+          "month": 2,
+          "day": 26
+        },
+        "end": {
+          "year": 3019,
+          "month": 2,
+          "day": 29
+        },
+        "routeId": "emyn-muil--pie-emyn-muil",
+        "confidence": "inferred",
+        "note": "Sigue a Frodo y Sam por las Emyn Muil hasta que lo atrapan."
+      },
+      {
+        "from": "pie-emyn-muil",
+        "to": "cienagas-de-los-muertos",
+        "start": {
+          "year": 3019,
+          "month": 2,
+          "day": 29
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 1
+        },
+        "routeId": "pie-emyn-muil--cienagas-de-los-muertos",
+        "confidence": "canon"
+      },
+      {
+        "from": "cienagas-de-los-muertos",
+        "to": "escoriales-del-morannon",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 1
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 4
+        },
+        "routeId": "cienagas-de-los-muertos--escoriales-del-morannon",
+        "confidence": "canon"
+      },
+      {
+        "from": "escoriales-del-morannon",
+        "to": "morannon",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 4
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 5
+        },
+        "routeId": "escoriales-del-morannon--morannon",
+        "confidence": "canon"
+      },
+      {
+        "from": "morannon",
+        "to": "henneth-annun",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 5
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 8
+        },
+        "routeId": "morannon--henneth-annun",
+        "confidence": "inferred",
+        "note": "Se esconde cuando Faramir captura a Frodo y ronda Henneth Annûn hasta que lo prenden en el Estanque Vedado el 8."
+      },
+      {
+        "from": "henneth-annun",
+        "to": "encrucijada",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 8
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 10
+        },
+        "routeId": "henneth-annun--encrucijada",
+        "confidence": "canon"
+      },
+      {
+        "from": "encrucijada",
+        "to": "escaleras-de-cirith-ungol",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 10
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 11
+        },
+        "routeId": "encrucijada--escaleras-de-cirith-ungol",
+        "confidence": "inferred",
+        "note": "Suben las escaleras la noche del 10 al 11; la llegada arriba el 11 es deducción de la narración."
+      },
+      {
+        "from": "escaleras-de-cirith-ungol",
+        "to": "antro-de-ella-larana",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 11
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 12
+        },
+        "routeId": "escaleras-de-cirith-ungol--antro-de-ella-larana",
+        "confidence": "canon"
+      },
+      {
+        "from": "antro-de-ella-larana",
+        "to": "monte-del-destino",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 12
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 24
+        },
+        "routeId": "antro-de-ella-larana--monte-del-destino",
+        "confidence": "inferred",
+        "note": "Tras el antro, sigue a escondidas a Frodo y Sam por Mordor; reaparece en las laderas del Orodruin."
+      },
+      {
+        "from": "monte-del-destino",
+        "to": "monte-del-destino",
+        "start": {
+          "year": 3019,
+          "month": 3,
+          "day": 24
+        },
+        "end": {
+          "year": 3019,
+          "month": 3,
+          "day": 25
+        },
+        "confidence": "canon",
+        "note": "Ataca a los hobbits en la subida y cae a las Grietas del Destino con el Anillo."
       }
     ]
   }

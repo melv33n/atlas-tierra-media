@@ -173,7 +173,9 @@ export function validateBundle(data: DataBundle): ValidationResult {
         return;
       }
       if (e < s) err('leg-reversed', `${where}: termina antes de empezar`);
-      if (prev) {
+      if (prev && leg.afterGap && s <= prev.end)
+        err('gap-overlap', `${where}: marcado afterGap pero no hay hueco tras el tramo anterior`);
+      if (prev && !leg.afterGap) {
         if (s < prev.end)
           err(
             'leg-overlap',

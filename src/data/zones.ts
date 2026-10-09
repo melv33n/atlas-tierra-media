@@ -30,6 +30,7 @@ export const ZONES: Zone[] = [
       'Tierra de Bree',
       'Eriador',
       'Bosque de los Trolls',
+      'Dunland',
     ],
   },
   {
