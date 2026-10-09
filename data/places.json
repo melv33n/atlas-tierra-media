@@ -157,7 +157,7 @@
     "altNames": ["Tom Bombadil's house"],
     "type": "morada",
     "region": "Bosque Viejo",
-    "coords": [487, 1051],
+    "coords": [460.6, 1051],
     "zoomMin": 1
   },
   {
@@ -166,7 +166,7 @@
     "altNames": ["Barrow-downs", "Tyrn Gorthad"],
     "type": "colina",
     "region": "Quebradas de los Túmulos",
-    "coords": [493, 1060],
+    "coords": [464.1, 1060],
     "zoomMin": 2
   },
   {
@@ -174,7 +174,7 @@
     "name": "Bree",
     "type": "aldea",
     "region": "Tierra de Bree",
-    "coords": [505, 1075],
+    "coords": [471.0, 1075],
     "zoomMin": -2
   },
   {
@@ -183,7 +183,7 @@
     "altNames": ["Staddle"],
     "type": "aldea",
     "region": "Tierra de Bree",
-    "coords": [512, 1069],
+    "coords": [479.6, 1069],
     "zoomMin": 3
   },
   {
@@ -191,7 +191,7 @@
     "name": "Combe",
     "type": "aldea",
     "region": "Tierra de Bree",
-    "coords": [517, 1077],
+    "coords": [485.8, 1077],
     "zoomMin": 3
   },
   {
@@ -199,7 +199,7 @@
     "name": "Archet",
     "type": "aldea",
     "region": "Tierra de Bree",
-    "coords": [523, 1085],
+    "coords": [493.2, 1085],
     "zoomMin": 3
   },
   {
@@ -208,7 +208,7 @@
     "altNames": ["Midgewater Marshes"],
     "type": "lugar",
     "region": "Eriador",
-    "coords": [578, 1073],
+    "coords": [561.1, 1073],
     "zoomMin": 1
   },
   {
@@ -217,7 +217,7 @@
     "altNames": ["Amon Sûl", "Weathertop"],
     "type": "colina",
     "region": "Eriador",
-    "coords": [619, 1078],
+    "coords": [611.7, 1078],
     "zoomMin": -1
   },
   {
@@ -934,7 +934,64 @@
     "name": "Emyn Muil",
     "type": "colina",
     "region": "Emyn Muil",
-    "coords": [1100, 625],
+    "coords": [1078, 646],
+    "zoomMin": 1,
+    "note": "Entrada a las Emyn Muil orientales desde la orilla este de Nen Hithoel."
+  },
+  {
+    "id": "bosque-cerrado",
+    "name": "Bosque Cerrado",
+    "altNames": ["Woody End"],
+    "type": "bosque",
+    "region": "La Comarca",
+    "coords": [392, 1067],
+    "zoomMin": 3,
+    "note": "Encuentro con Gildor; posición aproximada dentro del bosque."
+  },
+  {
+    "id": "viejo-hombre-sauce",
+    "name": "Viejo Hombre Sauce",
+    "altNames": ["Old Man Willow"],
+    "type": "lugar",
+    "region": "Bosque Viejo",
+    "coords": [444.0, 1052],
+    "zoomMin": 2
+  },
+  {
+    "id": "faldas-del-caradhras",
+    "name": "Faldas del Caradhras",
+    "altNames": ["Colina de los lobos"],
+    "type": "colina",
+    "region": "Montañas Nubladas",
+    "coords": [887, 913],
+    "zoomMin": 3,
+    "note": "Nombre descriptivo propio: colina donde acampa la Compañía al bajar del Caradhras y la atacan los lobos."
+  },
+  {
+    "id": "sala-veintiuno",
+    "name": "Sala Veintiuno",
+    "altNames": ["Twenty-first Hall"],
+    "type": "lugar",
+    "region": "Moria",
+    "coords": [916, 898],
+    "zoomMin": 3
+  },
+  {
+    "id": "nimrodel",
+    "name": "Nimrodel",
+    "altNames": ["Vado del Nimrodel"],
+    "type": "vado",
+    "region": "Lothlórien",
+    "coords": [962, 913],
+    "zoomMin": 1
+  },
+  {
+    "id": "celebdil",
+    "name": "Celebdil",
+    "altNames": ["Zirakzigil", "Cuerno de Plata", "Silvertine"],
+    "type": "monte",
+    "region": "Montañas Nubladas",
+    "coords": [922, 903],
     "zoomMin": 1
   }
 ]

@@ -15,6 +15,7 @@ export const PANES = {
   relief: 250,
   borders: 255,
   grid: 260,
+  routes: 300,
   places: 450,
   labels: 650,
 } as const;

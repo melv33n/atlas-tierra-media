@@ -106,3 +106,35 @@ Formato: contexto → decisión → consecuencias. Las nuevas al final.
 - **Decisión**: `npm run validate` exige que cada lugar caiga en tierra y fuera de lagos, y que cada
   río desemboque en el mar, un lago u otro río. Las excepciones a propósito (Esgaroth, Tol Brandir,
   Cair Andros) llevan `onWater: true`; los puertos pueden quedar hasta 8 millas fuera de la costa.
+
+## 014 · Rutas en carriles paralelos — 2026-10-09
+
+- **Contexto**: hay que ver de un vistazo quién viaja con quién.
+- **Decisión**: cada tramo se dibuja como polilínea del color del personaje sobre el trazado de
+  `routes.json` (en su sentido canónico). Los tramos con el mismo trazado y fechas solapadas forman
+  un grupo y cada personaje ocupa un carril, a 3,4 px del siguiente, en el orden de
+  `characters.json` (`src/data/legs.ts`). El desplazamiento se calcula en millas para el zoom actual
+  y se rehace en cada zoom. Inferido = discontinuo. Al ocultar personajes, los visibles se reparten
+  los carriles.
+- **Consecuencias**: la Compañía se ve como una cinta de nueve colores que se abre y se cierra; no
+  hace falta ningún plugin de Leaflet. En los cruces entre trazados con distinto número de carriles
+  hay pequeños saltos laterales.
+
+## 015 · Reglas nuevas del validador — 2026-10-09
+
+- Todo tramo `inferred` debe llevar `note` (es la fuente de la tabla de inferencias de
+  `DATA_SOURCES.md`, que genera `npm run docs:inferences` y `validate` comprueba que esté al día).
+- Los eventos fuera del periodo que cubre la ruta de un personaje no se comprueban (Gandalf en la
+  fiesta de 3001, antes de que empiece su ruta en 3018).
+- Personajes secundarios: «dos sitios el mismo día» solo es error si están a más de 100 millas
+  (`MAX_DAY_DISTANCE`), porque dentro de un día se viaja.
+- `shortName` opcional en personajes para leyendas y tablas.
+
+## 016 · Corrección de escala en Tierra de Bree — 2026-10-09
+
+- **Contexto**: con las rutas, las jornadas a pie entre Cricava, el Bosque Viejo, los Túmulos y Bree
+  salían de 60–100 millas.
+- **Decisión**: deformación suave hacia el oeste (máx. 34 millas, con caída gradual) de lugares,
+  bosques, colinas, ríos, caminos y trazados de esa zona. La costa no se toca.
+- **Consecuencias**: jornadas a pie ≤ ~45 millas. Un test comprueba que ningún tramo a pie o en barca
+  supere 70 millas/día (Gandalf a caballo o en águila queda fuera).

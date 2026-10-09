@@ -27,6 +27,7 @@
   --label-region: #8a6f52;
   --label-water: #3f6a73;
   --label-halo: rgba(241, 230, 207, 0.9);
+  --accent: #8a3b2a;
   --font-map: 'Alegreya', Georgia, serif;
   --font-map-sc: 'Alegreya SC', 'Alegreya', Georgia, serif;
   --font-ui: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
@@ -62,6 +63,8 @@
     --label-region: #b59d7d;
     --label-water: #8fbac1;
     --label-halo: rgba(47, 42, 34, 0.9);
+    --accent: #e09a6a;
+    --accent: #e09a6a;
     color-scheme: dark;
   }
 }

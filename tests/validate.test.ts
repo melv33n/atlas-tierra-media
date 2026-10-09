@@ -13,6 +13,7 @@ function base(): DataBundle {
       { id: 'hobbiton', name: 'Hobbiton', type: 'aldea', coords: [100, 100], zoomMin: 1 },
       { id: 'bree', name: 'Bree', type: 'aldea', coords: [200, 100], zoomMin: 1 },
       { id: 'rivendel', name: 'Rivendel', type: 'morada', coords: [400, 120], zoomMin: 1 },
+      { id: 'entibo', name: 'Entibo', type: 'aldea', coords: [210, 100], zoomMin: 1 },
     ],
     characters: [
       { id: 'frodo', name: 'Frodo', race: 'hobbit', color: '#aa3322', initials: 'F', role: 'main' },
@@ -39,7 +40,14 @@ function base(): DataBundle {
             confidence: 'canon',
           },
           { from: 'bree', to: 'bree', start: d(9, 29), end: d(9, 30), confidence: 'canon' },
-          { from: 'bree', to: 'rivendel', start: d(9, 30), end: d(10, 20), confidence: 'inferred' },
+          {
+            from: 'bree',
+            to: 'rivendel',
+            start: d(9, 30),
+            end: d(10, 20),
+            confidence: 'inferred',
+            note: 'Fechas intermedias estimadas.',
+          },
         ],
       },
     ],
@@ -112,6 +120,34 @@ describe('validateBundle', () => {
     const data = base();
     data.events[0]!.date = d(10, 5);
     expect(codes(data)).toContain('event-place-mismatch');
+  });
+
+  it('tramo inferido sin nota', () => {
+    const data = base();
+    delete leg(data, 2).note;
+    expect(codes(data)).toContain('inferred-without-note');
+  });
+
+  it('eventos fuera del periodo cubierto por la ruta no se comprueban', () => {
+    const data = base();
+    data.events[0]!.date = d(5, 1, 3001);
+    data.events[0]!.placeId = 'rivendel';
+    expect(validateBundle(data).issues).toEqual([]);
+  });
+
+  it('un secundario puede estar en dos sitios cercanos el mismo día', () => {
+    const data = base();
+    const ev = (id: string, placeId: string): StoryEvent => ({
+      id,
+      date: d(10, 25),
+      placeId,
+      title: id,
+      summary: '…',
+      characterIds: ['elrond'],
+      ref: { book: 2, chapter: 1 },
+    });
+    data.events.push(ev('a', 'bree'), ev('b', 'entibo'));
+    expect(codes(data)).not.toContain('ubiquity');
   });
 
   it('nadie en dos sitios el mismo día (personajes sin ruta)', () => {

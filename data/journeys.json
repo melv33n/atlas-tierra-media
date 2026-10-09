@@ -1,1 +1,5146 @@
-[]
+[
+  {
+    "characterId": "frodo",
+    "legs": [
+      {
+        "from": "bolson-cerrado",
+        "to": "bolson-cerrado",
+        "start": {
+          "year": 3001,
+          "month": 9,
+          "day": 22
+        },
+        "end": {
+          "year": 3018,
+          "month": 9,
+          "day": 23
+        },
+        "confidence": "inferred",
+        "note": "Frodo vive en Bolsón Cerrado desde la marcha de Bilbo; sus salidas por la Comarca no se registran."
+      },
+      {
+        "from": "bolson-cerrado",
+        "to": "bosque-cerrado",
+        "start": {
+          "year": 3018,
+          "month": 9,
+          "day": 23
+        },
+        "end": {
+          "year": 3018,
+          "month": 9,
+          "day": 24
+        },
+        "routeId": "bolson-cerrado--bosque-cerrado",
+        "confidence": "canon"
+      },
+      {
+        "from": "bosque-cerrado",
+        "to": "granja-de-maggot",
+        "start": {
+          "year": 3018,
+          "month": 9,
+          "day": 24
+        },
+        "end": {
+          "year": 3018,
+          "month": 9,
+          "day": 25
+        },
+        "routeId": "bosque-cerrado--granja-de-maggot",
+        "confidence": "canon"
+      },
+      {
+        "from": "granja-de-maggot",
+        "to": "balsadera-de-gamoburgo",
+        "start": {
+          "year": 3018,
+          "month": 9,
+          "day": 25
+        },
+        "end": {
+          "year": 3018,
+          "month": 9,
+          "day": 25
+        },
+        "routeId": "granja-de-maggot--balsadera-de-gamoburgo",
+        "confidence": "canon"
+      },
+      {
+        "from": "balsadera-de-gamoburgo",
+        "to": "cricava",
+        "start": {
+          "year": 3018,
+          "month": 9,
+          "day": 25
+        },
+        "end": {
+          "year": 3018,
+          "month": 9,
+          "day": 25
+        },
+        "routeId": "balsadera-de-gamoburgo--cricava",
+        "confidence": "canon"
+      },
+      {
+        "from": "cricava",
+        "to": "cricava",
+        "start": {
+          "year": 3018,
+          "month": 9,
+          "day": 25
+        },
+        "end": {
+          "year": 3018,
+          "month": 9,
+          "day": 26
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "cricava",
+        "to": "viejo-hombre-sauce",
+        "start": {
+          "year": 3018,
+          "month": 9,
+          "day": 26
+        },
+        "end": {
+          "year": 3018,
+          "month": 9,
+          "day": 26
+        },
+        "routeId": "cricava--viejo-hombre-sauce",
+        "confidence": "canon"
+      },
+      {
+        "from": "viejo-hombre-sauce",
+        "to": "casa-de-tom-bombadil",
+        "start": {
+          "year": 3018,
+          "month": 9,
+          "day": 26
+        },
+        "end": {
+          "year": 3018,
+          "month": 9,
+          "day": 26
+        },
+        "routeId": "viejo-hombre-sauce--casa-de-tom-bombadil",
+        "confidence": "canon"
+      },
+      {
+        "from": "casa-de-tom-bombadil",
+        "to": "casa-de-tom-bombadil",
+        "start": {
+          "year": 3018,
+          "month": 9,
+          "day": 26
+        },
+        "end": {
+          "year": 3018,
+          "month": 9,
+          "day": 28
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "casa-de-tom-bombadil",
+        "to": "tumulos",
+        "start": {
+          "year": 3018,
+          "month": 9,
+          "day": 28
+        },
+        "end": {
+          "year": 3018,
+          "month": 9,
+          "day": 28
+        },
+        "routeId": "casa-de-tom-bombadil--tumulos",
+        "confidence": "canon"
+      },
+      {
+        "from": "tumulos",
+        "to": "tumulos",
+        "start": {
+          "year": 3018,
+          "month": 9,
+          "day": 28
+        },
+        "end": {
+          "year": 3018,
+          "month": 9,
+          "day": 29
+        },
+        "confidence": "canon",
+        "note": "Capturados por un tumulario durante la noche."
+      },
+      {
+        "from": "tumulos",
+        "to": "bree",
+        "start": {
+          "year": 3018,
+          "month": 9,
+          "day": 29
+        },
+        "end": {
+          "year": 3018,
+          "month": 9,
+          "day": 29
+        },
+        "routeId": "tumulos--bree",
+        "confidence": "canon"
+      },
+      {
+        "from": "bree",
+        "to": "bree",
+        "start": {
+          "year": 3018,
+          "month": 9,
+          "day": 29
+        },
+        "end": {
+          "year": 3018,
+          "month": 9,
+          "day": 30
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "bree",
+        "to": "pantanos-de-moscagua",
+        "start": {
+          "year": 3018,
+          "month": 9,
+          "day": 30
+        },
+        "end": {
+          "year": 3018,
+          "month": 10,
+          "day": 2
+        },
+        "routeId": "bree--pantanos-de-moscagua",
+        "confidence": "inferred",
+        "note": "Salida de Bree el 30 de septiembre (Apéndice B); el día de entrada en los pantanos es estimado."
+      },
+      {
+        "from": "pantanos-de-moscagua",
+        "to": "cima-de-los-vientos",
+        "start": {
+          "year": 3018,
+          "month": 10,
+          "day": 2
+        },
+        "end": {
+          "year": 3018,
+          "month": 10,
+          "day": 6
+        },
+        "routeId": "pantanos-de-moscagua--cima-de-los-vientos",
+        "confidence": "inferred",
+        "note": "El ataque en la Cima es la noche del 6 de octubre (Apéndice B); la llegada ese mismo día es estimada."
+      },
+      {
+        "from": "cima-de-los-vientos",
+        "to": "cima-de-los-vientos",
+        "start": {
+          "year": 3018,
+          "month": 10,
+          "day": 6
+        },
+        "end": {
+          "year": 3018,
+          "month": 10,
+          "day": 7
+        },
+        "confidence": "inferred",
+        "note": "Salida a la mañana siguiente del ataque (estimado)."
+      },
+      {
+        "from": "cima-de-los-vientos",
+        "to": "ultimo-puente",
+        "start": {
+          "year": 3018,
+          "month": 10,
+          "day": 7
+        },
+        "end": {
+          "year": 3018,
+          "month": 10,
+          "day": 13
+        },
+        "routeId": "cima-de-los-vientos--ultimo-puente",
+        "confidence": "inferred",
+        "note": "Cruce del Último Puente el 13 de octubre (Apéndice B); salida de la Cima estimada."
+      },
+      {
+        "from": "ultimo-puente",
+        "to": "trolls-de-piedra",
+        "start": {
+          "year": 3018,
+          "month": 10,
+          "day": 13
+        },
+        "end": {
+          "year": 3018,
+          "month": 10,
+          "day": 18
+        },
+        "routeId": "ultimo-puente--trolls-de-piedra",
+        "confidence": "inferred",
+        "note": "El encuentro con Glorfindel es el 18 al anochecer (Apéndice B); que los trolls se encuentren ese mismo día es deducción de la narración."
+      },
+      {
+        "from": "trolls-de-piedra",
+        "to": "vado-del-bruinen",
+        "start": {
+          "year": 3018,
+          "month": 10,
+          "day": 18
+        },
+        "end": {
+          "year": 3018,
+          "month": 10,
+          "day": 20
+        },
+        "routeId": "trolls-de-piedra--vado-del-bruinen",
+        "confidence": "canon"
+      },
+      {
+        "from": "vado-del-bruinen",
+        "to": "rivendel",
+        "start": {
+          "year": 3018,
+          "month": 10,
+          "day": 20
+        },
+        "end": {
+          "year": 3018,
+          "month": 10,
+          "day": 20
+        },
+        "routeId": "vado-del-bruinen--rivendel",
+        "confidence": "canon"
+      },
+      {
+        "from": "rivendel",
+        "to": "rivendel",
+        "start": {
+          "year": 3018,
+          "month": 10,
+          "day": 20
+        },
+        "end": {
+          "year": 3018,
+          "month": 12,
+          "day": 25
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "rivendel",
+        "to": "acebeda",
+        "start": {
+          "year": 3018,
+          "month": 12,
+          "day": 25
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 8
+        },
+        "routeId": "rivendel--acebeda",
+        "confidence": "canon"
+      },
+      {
+        "from": "acebeda",
+        "to": "acebeda",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 8
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 9
+        },
+        "confidence": "inferred",
+        "note": "Descanso en Acebeda; la salida el día 9 es estimada."
+      },
+      {
+        "from": "acebeda",
+        "to": "paso-del-caradhras",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 9
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 11
+        },
+        "routeId": "acebeda--paso-del-caradhras",
+        "confidence": "inferred",
+        "note": "La nevada en el Caradhras es el 11–12 de enero (Apéndice B); el día de salida de Acebeda es estimado."
+      },
+      {
+        "from": "paso-del-caradhras",
+        "to": "paso-del-caradhras",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 11
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 12
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "paso-del-caradhras",
+        "to": "faldas-del-caradhras",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 12
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 12
+        },
+        "routeId": "paso-del-caradhras--faldas-del-caradhras",
+        "confidence": "canon"
+      },
+      {
+        "from": "faldas-del-caradhras",
+        "to": "faldas-del-caradhras",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 12
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 13
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "faldas-del-caradhras",
+        "to": "puertas-de-moria",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 13
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 13
+        },
+        "routeId": "faldas-del-caradhras--puertas-de-moria",
+        "confidence": "canon"
+      },
+      {
+        "from": "puertas-de-moria",
+        "to": "sala-veintiuno",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 13
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 14
+        },
+        "routeId": "puertas-de-moria--sala-veintiuno",
+        "confidence": "canon"
+      },
+      {
+        "from": "sala-veintiuno",
+        "to": "sala-veintiuno",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 14
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 15
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "sala-veintiuno",
+        "to": "camara-de-mazarbul",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 15
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 15
+        },
+        "routeId": "sala-veintiuno--camara-de-mazarbul",
+        "confidence": "canon"
+      },
+      {
+        "from": "camara-de-mazarbul",
+        "to": "puente-de-khazad-dum",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 15
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 15
+        },
+        "routeId": "camara-de-mazarbul--puente-de-khazad-dum",
+        "confidence": "canon"
+      },
+      {
+        "from": "puente-de-khazad-dum",
+        "to": "valle-del-arroyo-sombrio",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 15
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 15
+        },
+        "routeId": "puente-de-khazad-dum--valle-del-arroyo-sombrio",
+        "confidence": "canon"
+      },
+      {
+        "from": "valle-del-arroyo-sombrio",
+        "to": "nimrodel",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 15
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 15
+        },
+        "routeId": "valle-del-arroyo-sombrio--nimrodel",
+        "confidence": "canon"
+      },
+      {
+        "from": "nimrodel",
+        "to": "nimrodel",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 15
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 16
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "nimrodel",
+        "to": "cerin-amroth",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 16
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 17
+        },
+        "routeId": "nimrodel--cerin-amroth",
+        "confidence": "canon"
+      },
+      {
+        "from": "cerin-amroth",
+        "to": "caras-galadhon",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 17
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 17
+        },
+        "routeId": "cerin-amroth--caras-galadhon",
+        "confidence": "canon"
+      },
+      {
+        "from": "caras-galadhon",
+        "to": "caras-galadhon",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 17
+        },
+        "end": {
+          "year": 3019,
+          "month": 2,
+          "day": 16
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "caras-galadhon",
+        "to": "egladil",
+        "start": {
+          "year": 3019,
+          "month": 2,
+          "day": 16
+        },
+        "end": {
+          "year": 3019,
+          "month": 2,
+          "day": 16
+        },
+        "routeId": "caras-galadhon--egladil",
+        "confidence": "canon"
+      },
+      {
+        "from": "egladil",
+        "to": "sarn-gebir",
+        "start": {
+          "year": 3019,
+          "month": 2,
+          "day": 16
+        },
+        "end": {
+          "year": 3019,
+          "month": 2,
+          "day": 23
+        },
+        "routeId": "egladil--sarn-gebir",
+        "confidence": "canon"
+      },
+      {
+        "from": "sarn-gebir",
+        "to": "argonath",
+        "start": {
+          "year": 3019,
+          "month": 2,
+          "day": 23
+        },
+        "end": {
+          "year": 3019,
+          "month": 2,
+          "day": 25
+        },
+        "routeId": "sarn-gebir--argonath",
+        "confidence": "canon"
+      },
+      {
+        "from": "argonath",
+        "to": "parth-galen",
+        "start": {
+          "year": 3019,
+          "month": 2,
+          "day": 25
+        },
+        "end": {
+          "year": 3019,
+          "month": 2,
+          "day": 25
+        },
+        "routeId": "argonath--parth-galen",
+        "confidence": "canon"
+      },
+      {
+        "from": "parth-galen",
+        "to": "parth-galen",
+        "start": {
+          "year": 3019,
+          "month": 2,
+          "day": 25
+        },
+        "end": {
+          "year": 3019,
+          "month": 2,
+          "day": 26
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "parth-galen",
+        "to": "amon-hen",
+        "start": {
+          "year": 3019,
+          "month": 2,
+          "day": 26
+        },
+        "end": {
+          "year": 3019,
+          "month": 2,
+          "day": 26
+        },
+        "routeId": "parth-galen--amon-hen",
+        "confidence": "canon"
+      },
+      {
+        "from": "amon-hen",
+        "to": "emyn-muil",
+        "start": {
+          "year": 3019,
+          "month": 2,
+          "day": 26
+        },
+        "end": {
+          "year": 3019,
+          "month": 2,
+          "day": 26
+        },
+        "routeId": "amon-hen--emyn-muil",
+        "confidence": "canon"
+      }
+    ]
+  },
+  {
+    "characterId": "sam",
+    "legs": [
+      {
+        "from": "bolson-cerrado",
+        "to": "bosque-cerrado",
+        "start": {
+          "year": 3018,
+          "month": 9,
+          "day": 23
+        },
+        "end": {
+          "year": 3018,
+          "month": 9,
+          "day": 24
+        },
+        "routeId": "bolson-cerrado--bosque-cerrado",
+        "confidence": "canon"
+      },
+      {
+        "from": "bosque-cerrado",
+        "to": "granja-de-maggot",
+        "start": {
+          "year": 3018,
+          "month": 9,
+          "day": 24
+        },
+        "end": {
+          "year": 3018,
+          "month": 9,
+          "day": 25
+        },
+        "routeId": "bosque-cerrado--granja-de-maggot",
+        "confidence": "canon"
+      },
+      {
+        "from": "granja-de-maggot",
+        "to": "balsadera-de-gamoburgo",
+        "start": {
+          "year": 3018,
+          "month": 9,
+          "day": 25
+        },
+        "end": {
+          "year": 3018,
+          "month": 9,
+          "day": 25
+        },
+        "routeId": "granja-de-maggot--balsadera-de-gamoburgo",
+        "confidence": "canon"
+      },
+      {
+        "from": "balsadera-de-gamoburgo",
+        "to": "cricava",
+        "start": {
+          "year": 3018,
+          "month": 9,
+          "day": 25
+        },
+        "end": {
+          "year": 3018,
+          "month": 9,
+          "day": 25
+        },
+        "routeId": "balsadera-de-gamoburgo--cricava",
+        "confidence": "canon"
+      },
+      {
+        "from": "cricava",
+        "to": "cricava",
+        "start": {
+          "year": 3018,
+          "month": 9,
+          "day": 25
+        },
+        "end": {
+          "year": 3018,
+          "month": 9,
+          "day": 26
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "cricava",
+        "to": "viejo-hombre-sauce",
+        "start": {
+          "year": 3018,
+          "month": 9,
+          "day": 26
+        },
+        "end": {
+          "year": 3018,
+          "month": 9,
+          "day": 26
+        },
+        "routeId": "cricava--viejo-hombre-sauce",
+        "confidence": "canon"
+      },
+      {
+        "from": "viejo-hombre-sauce",
+        "to": "casa-de-tom-bombadil",
+        "start": {
+          "year": 3018,
+          "month": 9,
+          "day": 26
+        },
+        "end": {
+          "year": 3018,
+          "month": 9,
+          "day": 26
+        },
+        "routeId": "viejo-hombre-sauce--casa-de-tom-bombadil",
+        "confidence": "canon"
+      },
+      {
+        "from": "casa-de-tom-bombadil",
+        "to": "casa-de-tom-bombadil",
+        "start": {
+          "year": 3018,
+          "month": 9,
+          "day": 26
+        },
+        "end": {
+          "year": 3018,
+          "month": 9,
+          "day": 28
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "casa-de-tom-bombadil",
+        "to": "tumulos",
+        "start": {
+          "year": 3018,
+          "month": 9,
+          "day": 28
+        },
+        "end": {
+          "year": 3018,
+          "month": 9,
+          "day": 28
+        },
+        "routeId": "casa-de-tom-bombadil--tumulos",
+        "confidence": "canon"
+      },
+      {
+        "from": "tumulos",
+        "to": "tumulos",
+        "start": {
+          "year": 3018,
+          "month": 9,
+          "day": 28
+        },
+        "end": {
+          "year": 3018,
+          "month": 9,
+          "day": 29
+        },
+        "confidence": "canon",
+        "note": "Capturados por un tumulario durante la noche."
+      },
+      {
+        "from": "tumulos",
+        "to": "bree",
+        "start": {
+          "year": 3018,
+          "month": 9,
+          "day": 29
+        },
+        "end": {
+          "year": 3018,
+          "month": 9,
+          "day": 29
+        },
+        "routeId": "tumulos--bree",
+        "confidence": "canon"
+      },
+      {
+        "from": "bree",
+        "to": "bree",
+        "start": {
+          "year": 3018,
+          "month": 9,
+          "day": 29
+        },
+        "end": {
+          "year": 3018,
+          "month": 9,
+          "day": 30
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "bree",
+        "to": "pantanos-de-moscagua",
+        "start": {
+          "year": 3018,
+          "month": 9,
+          "day": 30
+        },
+        "end": {
+          "year": 3018,
+          "month": 10,
+          "day": 2
+        },
+        "routeId": "bree--pantanos-de-moscagua",
+        "confidence": "inferred",
+        "note": "Salida de Bree el 30 de septiembre (Apéndice B); el día de entrada en los pantanos es estimado."
+      },
+      {
+        "from": "pantanos-de-moscagua",
+        "to": "cima-de-los-vientos",
+        "start": {
+          "year": 3018,
+          "month": 10,
+          "day": 2
+        },
+        "end": {
+          "year": 3018,
+          "month": 10,
+          "day": 6
+        },
+        "routeId": "pantanos-de-moscagua--cima-de-los-vientos",
+        "confidence": "inferred",
+        "note": "El ataque en la Cima es la noche del 6 de octubre (Apéndice B); la llegada ese mismo día es estimada."
+      },
+      {
+        "from": "cima-de-los-vientos",
+        "to": "cima-de-los-vientos",
+        "start": {
+          "year": 3018,
+          "month": 10,
+          "day": 6
+        },
+        "end": {
+          "year": 3018,
+          "month": 10,
+          "day": 7
+        },
+        "confidence": "inferred",
+        "note": "Salida a la mañana siguiente del ataque (estimado)."
+      },
+      {
+        "from": "cima-de-los-vientos",
+        "to": "ultimo-puente",
+        "start": {
+          "year": 3018,
+          "month": 10,
+          "day": 7
+        },
+        "end": {
+          "year": 3018,
+          "month": 10,
+          "day": 13
+        },
+        "routeId": "cima-de-los-vientos--ultimo-puente",
+        "confidence": "inferred",
+        "note": "Cruce del Último Puente el 13 de octubre (Apéndice B); salida de la Cima estimada."
+      },
+      {
+        "from": "ultimo-puente",
+        "to": "trolls-de-piedra",
+        "start": {
+          "year": 3018,
+          "month": 10,
+          "day": 13
+        },
+        "end": {
+          "year": 3018,
+          "month": 10,
+          "day": 18
+        },
+        "routeId": "ultimo-puente--trolls-de-piedra",
+        "confidence": "inferred",
+        "note": "El encuentro con Glorfindel es el 18 al anochecer (Apéndice B); que los trolls se encuentren ese mismo día es deducción de la narración."
+      },
+      {
+        "from": "trolls-de-piedra",
+        "to": "vado-del-bruinen",
+        "start": {
+          "year": 3018,
+          "month": 10,
+          "day": 18
+        },
+        "end": {
+          "year": 3018,
+          "month": 10,
+          "day": 20
+        },
+        "routeId": "trolls-de-piedra--vado-del-bruinen",
+        "confidence": "canon"
+      },
+      {
+        "from": "vado-del-bruinen",
+        "to": "rivendel",
+        "start": {
+          "year": 3018,
+          "month": 10,
+          "day": 20
+        },
+        "end": {
+          "year": 3018,
+          "month": 10,
+          "day": 20
+        },
+        "routeId": "vado-del-bruinen--rivendel",
+        "confidence": "canon"
+      },
+      {
+        "from": "rivendel",
+        "to": "rivendel",
+        "start": {
+          "year": 3018,
+          "month": 10,
+          "day": 20
+        },
+        "end": {
+          "year": 3018,
+          "month": 12,
+          "day": 25
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "rivendel",
+        "to": "acebeda",
+        "start": {
+          "year": 3018,
+          "month": 12,
+          "day": 25
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 8
+        },
+        "routeId": "rivendel--acebeda",
+        "confidence": "canon"
+      },
+      {
+        "from": "acebeda",
+        "to": "acebeda",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 8
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 9
+        },
+        "confidence": "inferred",
+        "note": "Descanso en Acebeda; la salida el día 9 es estimada."
+      },
+      {
+        "from": "acebeda",
+        "to": "paso-del-caradhras",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 9
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 11
+        },
+        "routeId": "acebeda--paso-del-caradhras",
+        "confidence": "inferred",
+        "note": "La nevada en el Caradhras es el 11–12 de enero (Apéndice B); el día de salida de Acebeda es estimado."
+      },
+      {
+        "from": "paso-del-caradhras",
+        "to": "paso-del-caradhras",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 11
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 12
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "paso-del-caradhras",
+        "to": "faldas-del-caradhras",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 12
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 12
+        },
+        "routeId": "paso-del-caradhras--faldas-del-caradhras",
+        "confidence": "canon"
+      },
+      {
+        "from": "faldas-del-caradhras",
+        "to": "faldas-del-caradhras",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 12
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 13
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "faldas-del-caradhras",
+        "to": "puertas-de-moria",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 13
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 13
+        },
+        "routeId": "faldas-del-caradhras--puertas-de-moria",
+        "confidence": "canon"
+      },
+      {
+        "from": "puertas-de-moria",
+        "to": "sala-veintiuno",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 13
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 14
+        },
+        "routeId": "puertas-de-moria--sala-veintiuno",
+        "confidence": "canon"
+      },
+      {
+        "from": "sala-veintiuno",
+        "to": "sala-veintiuno",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 14
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 15
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "sala-veintiuno",
+        "to": "camara-de-mazarbul",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 15
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 15
+        },
+        "routeId": "sala-veintiuno--camara-de-mazarbul",
+        "confidence": "canon"
+      },
+      {
+        "from": "camara-de-mazarbul",
+        "to": "puente-de-khazad-dum",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 15
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 15
+        },
+        "routeId": "camara-de-mazarbul--puente-de-khazad-dum",
+        "confidence": "canon"
+      },
+      {
+        "from": "puente-de-khazad-dum",
+        "to": "valle-del-arroyo-sombrio",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 15
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 15
+        },
+        "routeId": "puente-de-khazad-dum--valle-del-arroyo-sombrio",
+        "confidence": "canon"
+      },
+      {
+        "from": "valle-del-arroyo-sombrio",
+        "to": "nimrodel",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 15
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 15
+        },
+        "routeId": "valle-del-arroyo-sombrio--nimrodel",
+        "confidence": "canon"
+      },
+      {
+        "from": "nimrodel",
+        "to": "nimrodel",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 15
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 16
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "nimrodel",
+        "to": "cerin-amroth",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 16
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 17
+        },
+        "routeId": "nimrodel--cerin-amroth",
+        "confidence": "canon"
+      },
+      {
+        "from": "cerin-amroth",
+        "to": "caras-galadhon",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 17
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 17
+        },
+        "routeId": "cerin-amroth--caras-galadhon",
+        "confidence": "canon"
+      },
+      {
+        "from": "caras-galadhon",
+        "to": "caras-galadhon",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 17
+        },
+        "end": {
+          "year": 3019,
+          "month": 2,
+          "day": 16
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "caras-galadhon",
+        "to": "egladil",
+        "start": {
+          "year": 3019,
+          "month": 2,
+          "day": 16
+        },
+        "end": {
+          "year": 3019,
+          "month": 2,
+          "day": 16
+        },
+        "routeId": "caras-galadhon--egladil",
+        "confidence": "canon"
+      },
+      {
+        "from": "egladil",
+        "to": "sarn-gebir",
+        "start": {
+          "year": 3019,
+          "month": 2,
+          "day": 16
+        },
+        "end": {
+          "year": 3019,
+          "month": 2,
+          "day": 23
+        },
+        "routeId": "egladil--sarn-gebir",
+        "confidence": "canon"
+      },
+      {
+        "from": "sarn-gebir",
+        "to": "argonath",
+        "start": {
+          "year": 3019,
+          "month": 2,
+          "day": 23
+        },
+        "end": {
+          "year": 3019,
+          "month": 2,
+          "day": 25
+        },
+        "routeId": "sarn-gebir--argonath",
+        "confidence": "canon"
+      },
+      {
+        "from": "argonath",
+        "to": "parth-galen",
+        "start": {
+          "year": 3019,
+          "month": 2,
+          "day": 25
+        },
+        "end": {
+          "year": 3019,
+          "month": 2,
+          "day": 25
+        },
+        "routeId": "argonath--parth-galen",
+        "confidence": "canon"
+      },
+      {
+        "from": "parth-galen",
+        "to": "parth-galen",
+        "start": {
+          "year": 3019,
+          "month": 2,
+          "day": 25
+        },
+        "end": {
+          "year": 3019,
+          "month": 2,
+          "day": 26
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "parth-galen",
+        "to": "emyn-muil",
+        "start": {
+          "year": 3019,
+          "month": 2,
+          "day": 26
+        },
+        "end": {
+          "year": 3019,
+          "month": 2,
+          "day": 26
+        },
+        "routeId": "parth-galen--emyn-muil",
+        "confidence": "canon"
+      }
+    ]
+  },
+  {
+    "characterId": "merry",
+    "legs": [
+      {
+        "from": "cricava",
+        "to": "cricava",
+        "start": {
+          "year": 3018,
+          "month": 9,
+          "day": 23
+        },
+        "end": {
+          "year": 3018,
+          "month": 9,
+          "day": 25
+        },
+        "confidence": "inferred",
+        "note": "Merry se adelanta a Cricava para preparar la casa; el día exacto de llegada no consta."
+      },
+      {
+        "from": "cricava",
+        "to": "balsadera-de-gamoburgo",
+        "start": {
+          "year": 3018,
+          "month": 9,
+          "day": 25
+        },
+        "end": {
+          "year": 3018,
+          "month": 9,
+          "day": 25
+        },
+        "routeId": "balsadera-de-gamoburgo--cricava",
+        "confidence": "canon"
+      },
+      {
+        "from": "balsadera-de-gamoburgo",
+        "to": "cricava",
+        "start": {
+          "year": 3018,
+          "month": 9,
+          "day": 25
+        },
+        "end": {
+          "year": 3018,
+          "month": 9,
+          "day": 25
+        },
+        "routeId": "balsadera-de-gamoburgo--cricava",
+        "confidence": "canon"
+      },
+      {
+        "from": "cricava",
+        "to": "cricava",
+        "start": {
+          "year": 3018,
+          "month": 9,
+          "day": 25
+        },
+        "end": {
+          "year": 3018,
+          "month": 9,
+          "day": 26
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "cricava",
+        "to": "viejo-hombre-sauce",
+        "start": {
+          "year": 3018,
+          "month": 9,
+          "day": 26
+        },
+        "end": {
+          "year": 3018,
+          "month": 9,
+          "day": 26
+        },
+        "routeId": "cricava--viejo-hombre-sauce",
+        "confidence": "canon"
+      },
+      {
+        "from": "viejo-hombre-sauce",
+        "to": "casa-de-tom-bombadil",
+        "start": {
+          "year": 3018,
+          "month": 9,
+          "day": 26
+        },
+        "end": {
+          "year": 3018,
+          "month": 9,
+          "day": 26
+        },
+        "routeId": "viejo-hombre-sauce--casa-de-tom-bombadil",
+        "confidence": "canon"
+      },
+      {
+        "from": "casa-de-tom-bombadil",
+        "to": "casa-de-tom-bombadil",
+        "start": {
+          "year": 3018,
+          "month": 9,
+          "day": 26
+        },
+        "end": {
+          "year": 3018,
+          "month": 9,
+          "day": 28
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "casa-de-tom-bombadil",
+        "to": "tumulos",
+        "start": {
+          "year": 3018,
+          "month": 9,
+          "day": 28
+        },
+        "end": {
+          "year": 3018,
+          "month": 9,
+          "day": 28
+        },
+        "routeId": "casa-de-tom-bombadil--tumulos",
+        "confidence": "canon"
+      },
+      {
+        "from": "tumulos",
+        "to": "tumulos",
+        "start": {
+          "year": 3018,
+          "month": 9,
+          "day": 28
+        },
+        "end": {
+          "year": 3018,
+          "month": 9,
+          "day": 29
+        },
+        "confidence": "canon",
+        "note": "Capturados por un tumulario durante la noche."
+      },
+      {
+        "from": "tumulos",
+        "to": "bree",
+        "start": {
+          "year": 3018,
+          "month": 9,
+          "day": 29
+        },
+        "end": {
+          "year": 3018,
+          "month": 9,
+          "day": 29
+        },
+        "routeId": "tumulos--bree",
+        "confidence": "canon"
+      },
+      {
+        "from": "bree",
+        "to": "bree",
+        "start": {
+          "year": 3018,
+          "month": 9,
+          "day": 29
+        },
+        "end": {
+          "year": 3018,
+          "month": 9,
+          "day": 30
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "bree",
+        "to": "pantanos-de-moscagua",
+        "start": {
+          "year": 3018,
+          "month": 9,
+          "day": 30
+        },
+        "end": {
+          "year": 3018,
+          "month": 10,
+          "day": 2
+        },
+        "routeId": "bree--pantanos-de-moscagua",
+        "confidence": "inferred",
+        "note": "Salida de Bree el 30 de septiembre (Apéndice B); el día de entrada en los pantanos es estimado."
+      },
+      {
+        "from": "pantanos-de-moscagua",
+        "to": "cima-de-los-vientos",
+        "start": {
+          "year": 3018,
+          "month": 10,
+          "day": 2
+        },
+        "end": {
+          "year": 3018,
+          "month": 10,
+          "day": 6
+        },
+        "routeId": "pantanos-de-moscagua--cima-de-los-vientos",
+        "confidence": "inferred",
+        "note": "El ataque en la Cima es la noche del 6 de octubre (Apéndice B); la llegada ese mismo día es estimada."
+      },
+      {
+        "from": "cima-de-los-vientos",
+        "to": "cima-de-los-vientos",
+        "start": {
+          "year": 3018,
+          "month": 10,
+          "day": 6
+        },
+        "end": {
+          "year": 3018,
+          "month": 10,
+          "day": 7
+        },
+        "confidence": "inferred",
+        "note": "Salida a la mañana siguiente del ataque (estimado)."
+      },
+      {
+        "from": "cima-de-los-vientos",
+        "to": "ultimo-puente",
+        "start": {
+          "year": 3018,
+          "month": 10,
+          "day": 7
+        },
+        "end": {
+          "year": 3018,
+          "month": 10,
+          "day": 13
+        },
+        "routeId": "cima-de-los-vientos--ultimo-puente",
+        "confidence": "inferred",
+        "note": "Cruce del Último Puente el 13 de octubre (Apéndice B); salida de la Cima estimada."
+      },
+      {
+        "from": "ultimo-puente",
+        "to": "trolls-de-piedra",
+        "start": {
+          "year": 3018,
+          "month": 10,
+          "day": 13
+        },
+        "end": {
+          "year": 3018,
+          "month": 10,
+          "day": 18
+        },
+        "routeId": "ultimo-puente--trolls-de-piedra",
+        "confidence": "inferred",
+        "note": "El encuentro con Glorfindel es el 18 al anochecer (Apéndice B); que los trolls se encuentren ese mismo día es deducción de la narración."
+      },
+      {
+        "from": "trolls-de-piedra",
+        "to": "vado-del-bruinen",
+        "start": {
+          "year": 3018,
+          "month": 10,
+          "day": 18
+        },
+        "end": {
+          "year": 3018,
+          "month": 10,
+          "day": 20
+        },
+        "routeId": "trolls-de-piedra--vado-del-bruinen",
+        "confidence": "canon"
+      },
+      {
+        "from": "vado-del-bruinen",
+        "to": "rivendel",
+        "start": {
+          "year": 3018,
+          "month": 10,
+          "day": 20
+        },
+        "end": {
+          "year": 3018,
+          "month": 10,
+          "day": 20
+        },
+        "routeId": "vado-del-bruinen--rivendel",
+        "confidence": "canon"
+      },
+      {
+        "from": "rivendel",
+        "to": "rivendel",
+        "start": {
+          "year": 3018,
+          "month": 10,
+          "day": 20
+        },
+        "end": {
+          "year": 3018,
+          "month": 12,
+          "day": 25
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "rivendel",
+        "to": "acebeda",
+        "start": {
+          "year": 3018,
+          "month": 12,
+          "day": 25
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 8
+        },
+        "routeId": "rivendel--acebeda",
+        "confidence": "canon"
+      },
+      {
+        "from": "acebeda",
+        "to": "acebeda",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 8
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 9
+        },
+        "confidence": "inferred",
+        "note": "Descanso en Acebeda; la salida el día 9 es estimada."
+      },
+      {
+        "from": "acebeda",
+        "to": "paso-del-caradhras",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 9
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 11
+        },
+        "routeId": "acebeda--paso-del-caradhras",
+        "confidence": "inferred",
+        "note": "La nevada en el Caradhras es el 11–12 de enero (Apéndice B); el día de salida de Acebeda es estimado."
+      },
+      {
+        "from": "paso-del-caradhras",
+        "to": "paso-del-caradhras",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 11
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 12
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "paso-del-caradhras",
+        "to": "faldas-del-caradhras",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 12
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 12
+        },
+        "routeId": "paso-del-caradhras--faldas-del-caradhras",
+        "confidence": "canon"
+      },
+      {
+        "from": "faldas-del-caradhras",
+        "to": "faldas-del-caradhras",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 12
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 13
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "faldas-del-caradhras",
+        "to": "puertas-de-moria",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 13
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 13
+        },
+        "routeId": "faldas-del-caradhras--puertas-de-moria",
+        "confidence": "canon"
+      },
+      {
+        "from": "puertas-de-moria",
+        "to": "sala-veintiuno",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 13
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 14
+        },
+        "routeId": "puertas-de-moria--sala-veintiuno",
+        "confidence": "canon"
+      },
+      {
+        "from": "sala-veintiuno",
+        "to": "sala-veintiuno",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 14
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 15
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "sala-veintiuno",
+        "to": "camara-de-mazarbul",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 15
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 15
+        },
+        "routeId": "sala-veintiuno--camara-de-mazarbul",
+        "confidence": "canon"
+      },
+      {
+        "from": "camara-de-mazarbul",
+        "to": "puente-de-khazad-dum",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 15
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 15
+        },
+        "routeId": "camara-de-mazarbul--puente-de-khazad-dum",
+        "confidence": "canon"
+      },
+      {
+        "from": "puente-de-khazad-dum",
+        "to": "valle-del-arroyo-sombrio",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 15
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 15
+        },
+        "routeId": "puente-de-khazad-dum--valle-del-arroyo-sombrio",
+        "confidence": "canon"
+      },
+      {
+        "from": "valle-del-arroyo-sombrio",
+        "to": "nimrodel",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 15
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 15
+        },
+        "routeId": "valle-del-arroyo-sombrio--nimrodel",
+        "confidence": "canon"
+      },
+      {
+        "from": "nimrodel",
+        "to": "nimrodel",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 15
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 16
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "nimrodel",
+        "to": "cerin-amroth",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 16
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 17
+        },
+        "routeId": "nimrodel--cerin-amroth",
+        "confidence": "canon"
+      },
+      {
+        "from": "cerin-amroth",
+        "to": "caras-galadhon",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 17
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 17
+        },
+        "routeId": "cerin-amroth--caras-galadhon",
+        "confidence": "canon"
+      },
+      {
+        "from": "caras-galadhon",
+        "to": "caras-galadhon",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 17
+        },
+        "end": {
+          "year": 3019,
+          "month": 2,
+          "day": 16
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "caras-galadhon",
+        "to": "egladil",
+        "start": {
+          "year": 3019,
+          "month": 2,
+          "day": 16
+        },
+        "end": {
+          "year": 3019,
+          "month": 2,
+          "day": 16
+        },
+        "routeId": "caras-galadhon--egladil",
+        "confidence": "canon"
+      },
+      {
+        "from": "egladil",
+        "to": "sarn-gebir",
+        "start": {
+          "year": 3019,
+          "month": 2,
+          "day": 16
+        },
+        "end": {
+          "year": 3019,
+          "month": 2,
+          "day": 23
+        },
+        "routeId": "egladil--sarn-gebir",
+        "confidence": "canon"
+      },
+      {
+        "from": "sarn-gebir",
+        "to": "argonath",
+        "start": {
+          "year": 3019,
+          "month": 2,
+          "day": 23
+        },
+        "end": {
+          "year": 3019,
+          "month": 2,
+          "day": 25
+        },
+        "routeId": "sarn-gebir--argonath",
+        "confidence": "canon"
+      },
+      {
+        "from": "argonath",
+        "to": "parth-galen",
+        "start": {
+          "year": 3019,
+          "month": 2,
+          "day": 25
+        },
+        "end": {
+          "year": 3019,
+          "month": 2,
+          "day": 25
+        },
+        "routeId": "argonath--parth-galen",
+        "confidence": "canon"
+      },
+      {
+        "from": "parth-galen",
+        "to": "parth-galen",
+        "start": {
+          "year": 3019,
+          "month": 2,
+          "day": 25
+        },
+        "end": {
+          "year": 3019,
+          "month": 2,
+          "day": 26
+        },
+        "confidence": "canon"
+      }
+    ]
+  },
+  {
+    "characterId": "pippin",
+    "legs": [
+      {
+        "from": "bolson-cerrado",
+        "to": "bosque-cerrado",
+        "start": {
+          "year": 3018,
+          "month": 9,
+          "day": 23
+        },
+        "end": {
+          "year": 3018,
+          "month": 9,
+          "day": 24
+        },
+        "routeId": "bolson-cerrado--bosque-cerrado",
+        "confidence": "canon"
+      },
+      {
+        "from": "bosque-cerrado",
+        "to": "granja-de-maggot",
+        "start": {
+          "year": 3018,
+          "month": 9,
+          "day": 24
+        },
+        "end": {
+          "year": 3018,
+          "month": 9,
+          "day": 25
+        },
+        "routeId": "bosque-cerrado--granja-de-maggot",
+        "confidence": "canon"
+      },
+      {
+        "from": "granja-de-maggot",
+        "to": "balsadera-de-gamoburgo",
+        "start": {
+          "year": 3018,
+          "month": 9,
+          "day": 25
+        },
+        "end": {
+          "year": 3018,
+          "month": 9,
+          "day": 25
+        },
+        "routeId": "granja-de-maggot--balsadera-de-gamoburgo",
+        "confidence": "canon"
+      },
+      {
+        "from": "balsadera-de-gamoburgo",
+        "to": "cricava",
+        "start": {
+          "year": 3018,
+          "month": 9,
+          "day": 25
+        },
+        "end": {
+          "year": 3018,
+          "month": 9,
+          "day": 25
+        },
+        "routeId": "balsadera-de-gamoburgo--cricava",
+        "confidence": "canon"
+      },
+      {
+        "from": "cricava",
+        "to": "cricava",
+        "start": {
+          "year": 3018,
+          "month": 9,
+          "day": 25
+        },
+        "end": {
+          "year": 3018,
+          "month": 9,
+          "day": 26
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "cricava",
+        "to": "viejo-hombre-sauce",
+        "start": {
+          "year": 3018,
+          "month": 9,
+          "day": 26
+        },
+        "end": {
+          "year": 3018,
+          "month": 9,
+          "day": 26
+        },
+        "routeId": "cricava--viejo-hombre-sauce",
+        "confidence": "canon"
+      },
+      {
+        "from": "viejo-hombre-sauce",
+        "to": "casa-de-tom-bombadil",
+        "start": {
+          "year": 3018,
+          "month": 9,
+          "day": 26
+        },
+        "end": {
+          "year": 3018,
+          "month": 9,
+          "day": 26
+        },
+        "routeId": "viejo-hombre-sauce--casa-de-tom-bombadil",
+        "confidence": "canon"
+      },
+      {
+        "from": "casa-de-tom-bombadil",
+        "to": "casa-de-tom-bombadil",
+        "start": {
+          "year": 3018,
+          "month": 9,
+          "day": 26
+        },
+        "end": {
+          "year": 3018,
+          "month": 9,
+          "day": 28
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "casa-de-tom-bombadil",
+        "to": "tumulos",
+        "start": {
+          "year": 3018,
+          "month": 9,
+          "day": 28
+        },
+        "end": {
+          "year": 3018,
+          "month": 9,
+          "day": 28
+        },
+        "routeId": "casa-de-tom-bombadil--tumulos",
+        "confidence": "canon"
+      },
+      {
+        "from": "tumulos",
+        "to": "tumulos",
+        "start": {
+          "year": 3018,
+          "month": 9,
+          "day": 28
+        },
+        "end": {
+          "year": 3018,
+          "month": 9,
+          "day": 29
+        },
+        "confidence": "canon",
+        "note": "Capturados por un tumulario durante la noche."
+      },
+      {
+        "from": "tumulos",
+        "to": "bree",
+        "start": {
+          "year": 3018,
+          "month": 9,
+          "day": 29
+        },
+        "end": {
+          "year": 3018,
+          "month": 9,
+          "day": 29
+        },
+        "routeId": "tumulos--bree",
+        "confidence": "canon"
+      },
+      {
+        "from": "bree",
+        "to": "bree",
+        "start": {
+          "year": 3018,
+          "month": 9,
+          "day": 29
+        },
+        "end": {
+          "year": 3018,
+          "month": 9,
+          "day": 30
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "bree",
+        "to": "pantanos-de-moscagua",
+        "start": {
+          "year": 3018,
+          "month": 9,
+          "day": 30
+        },
+        "end": {
+          "year": 3018,
+          "month": 10,
+          "day": 2
+        },
+        "routeId": "bree--pantanos-de-moscagua",
+        "confidence": "inferred",
+        "note": "Salida de Bree el 30 de septiembre (Apéndice B); el día de entrada en los pantanos es estimado."
+      },
+      {
+        "from": "pantanos-de-moscagua",
+        "to": "cima-de-los-vientos",
+        "start": {
+          "year": 3018,
+          "month": 10,
+          "day": 2
+        },
+        "end": {
+          "year": 3018,
+          "month": 10,
+          "day": 6
+        },
+        "routeId": "pantanos-de-moscagua--cima-de-los-vientos",
+        "confidence": "inferred",
+        "note": "El ataque en la Cima es la noche del 6 de octubre (Apéndice B); la llegada ese mismo día es estimada."
+      },
+      {
+        "from": "cima-de-los-vientos",
+        "to": "cima-de-los-vientos",
+        "start": {
+          "year": 3018,
+          "month": 10,
+          "day": 6
+        },
+        "end": {
+          "year": 3018,
+          "month": 10,
+          "day": 7
+        },
+        "confidence": "inferred",
+        "note": "Salida a la mañana siguiente del ataque (estimado)."
+      },
+      {
+        "from": "cima-de-los-vientos",
+        "to": "ultimo-puente",
+        "start": {
+          "year": 3018,
+          "month": 10,
+          "day": 7
+        },
+        "end": {
+          "year": 3018,
+          "month": 10,
+          "day": 13
+        },
+        "routeId": "cima-de-los-vientos--ultimo-puente",
+        "confidence": "inferred",
+        "note": "Cruce del Último Puente el 13 de octubre (Apéndice B); salida de la Cima estimada."
+      },
+      {
+        "from": "ultimo-puente",
+        "to": "trolls-de-piedra",
+        "start": {
+          "year": 3018,
+          "month": 10,
+          "day": 13
+        },
+        "end": {
+          "year": 3018,
+          "month": 10,
+          "day": 18
+        },
+        "routeId": "ultimo-puente--trolls-de-piedra",
+        "confidence": "inferred",
+        "note": "El encuentro con Glorfindel es el 18 al anochecer (Apéndice B); que los trolls se encuentren ese mismo día es deducción de la narración."
+      },
+      {
+        "from": "trolls-de-piedra",
+        "to": "vado-del-bruinen",
+        "start": {
+          "year": 3018,
+          "month": 10,
+          "day": 18
+        },
+        "end": {
+          "year": 3018,
+          "month": 10,
+          "day": 20
+        },
+        "routeId": "trolls-de-piedra--vado-del-bruinen",
+        "confidence": "canon"
+      },
+      {
+        "from": "vado-del-bruinen",
+        "to": "rivendel",
+        "start": {
+          "year": 3018,
+          "month": 10,
+          "day": 20
+        },
+        "end": {
+          "year": 3018,
+          "month": 10,
+          "day": 20
+        },
+        "routeId": "vado-del-bruinen--rivendel",
+        "confidence": "canon"
+      },
+      {
+        "from": "rivendel",
+        "to": "rivendel",
+        "start": {
+          "year": 3018,
+          "month": 10,
+          "day": 20
+        },
+        "end": {
+          "year": 3018,
+          "month": 12,
+          "day": 25
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "rivendel",
+        "to": "acebeda",
+        "start": {
+          "year": 3018,
+          "month": 12,
+          "day": 25
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 8
+        },
+        "routeId": "rivendel--acebeda",
+        "confidence": "canon"
+      },
+      {
+        "from": "acebeda",
+        "to": "acebeda",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 8
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 9
+        },
+        "confidence": "inferred",
+        "note": "Descanso en Acebeda; la salida el día 9 es estimada."
+      },
+      {
+        "from": "acebeda",
+        "to": "paso-del-caradhras",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 9
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 11
+        },
+        "routeId": "acebeda--paso-del-caradhras",
+        "confidence": "inferred",
+        "note": "La nevada en el Caradhras es el 11–12 de enero (Apéndice B); el día de salida de Acebeda es estimado."
+      },
+      {
+        "from": "paso-del-caradhras",
+        "to": "paso-del-caradhras",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 11
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 12
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "paso-del-caradhras",
+        "to": "faldas-del-caradhras",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 12
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 12
+        },
+        "routeId": "paso-del-caradhras--faldas-del-caradhras",
+        "confidence": "canon"
+      },
+      {
+        "from": "faldas-del-caradhras",
+        "to": "faldas-del-caradhras",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 12
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 13
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "faldas-del-caradhras",
+        "to": "puertas-de-moria",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 13
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 13
+        },
+        "routeId": "faldas-del-caradhras--puertas-de-moria",
+        "confidence": "canon"
+      },
+      {
+        "from": "puertas-de-moria",
+        "to": "sala-veintiuno",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 13
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 14
+        },
+        "routeId": "puertas-de-moria--sala-veintiuno",
+        "confidence": "canon"
+      },
+      {
+        "from": "sala-veintiuno",
+        "to": "sala-veintiuno",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 14
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 15
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "sala-veintiuno",
+        "to": "camara-de-mazarbul",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 15
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 15
+        },
+        "routeId": "sala-veintiuno--camara-de-mazarbul",
+        "confidence": "canon"
+      },
+      {
+        "from": "camara-de-mazarbul",
+        "to": "puente-de-khazad-dum",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 15
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 15
+        },
+        "routeId": "camara-de-mazarbul--puente-de-khazad-dum",
+        "confidence": "canon"
+      },
+      {
+        "from": "puente-de-khazad-dum",
+        "to": "valle-del-arroyo-sombrio",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 15
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 15
+        },
+        "routeId": "puente-de-khazad-dum--valle-del-arroyo-sombrio",
+        "confidence": "canon"
+      },
+      {
+        "from": "valle-del-arroyo-sombrio",
+        "to": "nimrodel",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 15
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 15
+        },
+        "routeId": "valle-del-arroyo-sombrio--nimrodel",
+        "confidence": "canon"
+      },
+      {
+        "from": "nimrodel",
+        "to": "nimrodel",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 15
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 16
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "nimrodel",
+        "to": "cerin-amroth",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 16
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 17
+        },
+        "routeId": "nimrodel--cerin-amroth",
+        "confidence": "canon"
+      },
+      {
+        "from": "cerin-amroth",
+        "to": "caras-galadhon",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 17
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 17
+        },
+        "routeId": "cerin-amroth--caras-galadhon",
+        "confidence": "canon"
+      },
+      {
+        "from": "caras-galadhon",
+        "to": "caras-galadhon",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 17
+        },
+        "end": {
+          "year": 3019,
+          "month": 2,
+          "day": 16
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "caras-galadhon",
+        "to": "egladil",
+        "start": {
+          "year": 3019,
+          "month": 2,
+          "day": 16
+        },
+        "end": {
+          "year": 3019,
+          "month": 2,
+          "day": 16
+        },
+        "routeId": "caras-galadhon--egladil",
+        "confidence": "canon"
+      },
+      {
+        "from": "egladil",
+        "to": "sarn-gebir",
+        "start": {
+          "year": 3019,
+          "month": 2,
+          "day": 16
+        },
+        "end": {
+          "year": 3019,
+          "month": 2,
+          "day": 23
+        },
+        "routeId": "egladil--sarn-gebir",
+        "confidence": "canon"
+      },
+      {
+        "from": "sarn-gebir",
+        "to": "argonath",
+        "start": {
+          "year": 3019,
+          "month": 2,
+          "day": 23
+        },
+        "end": {
+          "year": 3019,
+          "month": 2,
+          "day": 25
+        },
+        "routeId": "sarn-gebir--argonath",
+        "confidence": "canon"
+      },
+      {
+        "from": "argonath",
+        "to": "parth-galen",
+        "start": {
+          "year": 3019,
+          "month": 2,
+          "day": 25
+        },
+        "end": {
+          "year": 3019,
+          "month": 2,
+          "day": 25
+        },
+        "routeId": "argonath--parth-galen",
+        "confidence": "canon"
+      },
+      {
+        "from": "parth-galen",
+        "to": "parth-galen",
+        "start": {
+          "year": 3019,
+          "month": 2,
+          "day": 25
+        },
+        "end": {
+          "year": 3019,
+          "month": 2,
+          "day": 26
+        },
+        "confidence": "canon"
+      }
+    ]
+  },
+  {
+    "characterId": "aragorn",
+    "legs": [
+      {
+        "from": "bree",
+        "to": "bree",
+        "start": {
+          "year": 3018,
+          "month": 9,
+          "day": 29
+        },
+        "end": {
+          "year": 3018,
+          "month": 9,
+          "day": 30
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "bree",
+        "to": "pantanos-de-moscagua",
+        "start": {
+          "year": 3018,
+          "month": 9,
+          "day": 30
+        },
+        "end": {
+          "year": 3018,
+          "month": 10,
+          "day": 2
+        },
+        "routeId": "bree--pantanos-de-moscagua",
+        "confidence": "inferred",
+        "note": "Salida de Bree el 30 de septiembre (Apéndice B); el día de entrada en los pantanos es estimado."
+      },
+      {
+        "from": "pantanos-de-moscagua",
+        "to": "cima-de-los-vientos",
+        "start": {
+          "year": 3018,
+          "month": 10,
+          "day": 2
+        },
+        "end": {
+          "year": 3018,
+          "month": 10,
+          "day": 6
+        },
+        "routeId": "pantanos-de-moscagua--cima-de-los-vientos",
+        "confidence": "inferred",
+        "note": "El ataque en la Cima es la noche del 6 de octubre (Apéndice B); la llegada ese mismo día es estimada."
+      },
+      {
+        "from": "cima-de-los-vientos",
+        "to": "cima-de-los-vientos",
+        "start": {
+          "year": 3018,
+          "month": 10,
+          "day": 6
+        },
+        "end": {
+          "year": 3018,
+          "month": 10,
+          "day": 7
+        },
+        "confidence": "inferred",
+        "note": "Salida a la mañana siguiente del ataque (estimado)."
+      },
+      {
+        "from": "cima-de-los-vientos",
+        "to": "ultimo-puente",
+        "start": {
+          "year": 3018,
+          "month": 10,
+          "day": 7
+        },
+        "end": {
+          "year": 3018,
+          "month": 10,
+          "day": 13
+        },
+        "routeId": "cima-de-los-vientos--ultimo-puente",
+        "confidence": "inferred",
+        "note": "Cruce del Último Puente el 13 de octubre (Apéndice B); salida de la Cima estimada."
+      },
+      {
+        "from": "ultimo-puente",
+        "to": "trolls-de-piedra",
+        "start": {
+          "year": 3018,
+          "month": 10,
+          "day": 13
+        },
+        "end": {
+          "year": 3018,
+          "month": 10,
+          "day": 18
+        },
+        "routeId": "ultimo-puente--trolls-de-piedra",
+        "confidence": "inferred",
+        "note": "El encuentro con Glorfindel es el 18 al anochecer (Apéndice B); que los trolls se encuentren ese mismo día es deducción de la narración."
+      },
+      {
+        "from": "trolls-de-piedra",
+        "to": "vado-del-bruinen",
+        "start": {
+          "year": 3018,
+          "month": 10,
+          "day": 18
+        },
+        "end": {
+          "year": 3018,
+          "month": 10,
+          "day": 20
+        },
+        "routeId": "trolls-de-piedra--vado-del-bruinen",
+        "confidence": "canon"
+      },
+      {
+        "from": "vado-del-bruinen",
+        "to": "rivendel",
+        "start": {
+          "year": 3018,
+          "month": 10,
+          "day": 20
+        },
+        "end": {
+          "year": 3018,
+          "month": 10,
+          "day": 20
+        },
+        "routeId": "vado-del-bruinen--rivendel",
+        "confidence": "canon"
+      },
+      {
+        "from": "rivendel",
+        "to": "rivendel",
+        "start": {
+          "year": 3018,
+          "month": 10,
+          "day": 20
+        },
+        "end": {
+          "year": 3018,
+          "month": 12,
+          "day": 25
+        },
+        "confidence": "inferred",
+        "note": "Aragorn pasa estos meses en Rivendel o en sus cercanías: tras el Concilio salen exploradores y no consta cuánto se ausenta."
+      },
+      {
+        "from": "rivendel",
+        "to": "acebeda",
+        "start": {
+          "year": 3018,
+          "month": 12,
+          "day": 25
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 8
+        },
+        "routeId": "rivendel--acebeda",
+        "confidence": "canon"
+      },
+      {
+        "from": "acebeda",
+        "to": "acebeda",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 8
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 9
+        },
+        "confidence": "inferred",
+        "note": "Descanso en Acebeda; la salida el día 9 es estimada."
+      },
+      {
+        "from": "acebeda",
+        "to": "paso-del-caradhras",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 9
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 11
+        },
+        "routeId": "acebeda--paso-del-caradhras",
+        "confidence": "inferred",
+        "note": "La nevada en el Caradhras es el 11–12 de enero (Apéndice B); el día de salida de Acebeda es estimado."
+      },
+      {
+        "from": "paso-del-caradhras",
+        "to": "paso-del-caradhras",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 11
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 12
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "paso-del-caradhras",
+        "to": "faldas-del-caradhras",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 12
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 12
+        },
+        "routeId": "paso-del-caradhras--faldas-del-caradhras",
+        "confidence": "canon"
+      },
+      {
+        "from": "faldas-del-caradhras",
+        "to": "faldas-del-caradhras",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 12
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 13
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "faldas-del-caradhras",
+        "to": "puertas-de-moria",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 13
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 13
+        },
+        "routeId": "faldas-del-caradhras--puertas-de-moria",
+        "confidence": "canon"
+      },
+      {
+        "from": "puertas-de-moria",
+        "to": "sala-veintiuno",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 13
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 14
+        },
+        "routeId": "puertas-de-moria--sala-veintiuno",
+        "confidence": "canon"
+      },
+      {
+        "from": "sala-veintiuno",
+        "to": "sala-veintiuno",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 14
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 15
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "sala-veintiuno",
+        "to": "camara-de-mazarbul",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 15
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 15
+        },
+        "routeId": "sala-veintiuno--camara-de-mazarbul",
+        "confidence": "canon"
+      },
+      {
+        "from": "camara-de-mazarbul",
+        "to": "puente-de-khazad-dum",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 15
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 15
+        },
+        "routeId": "camara-de-mazarbul--puente-de-khazad-dum",
+        "confidence": "canon"
+      },
+      {
+        "from": "puente-de-khazad-dum",
+        "to": "valle-del-arroyo-sombrio",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 15
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 15
+        },
+        "routeId": "puente-de-khazad-dum--valle-del-arroyo-sombrio",
+        "confidence": "canon"
+      },
+      {
+        "from": "valle-del-arroyo-sombrio",
+        "to": "nimrodel",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 15
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 15
+        },
+        "routeId": "valle-del-arroyo-sombrio--nimrodel",
+        "confidence": "canon"
+      },
+      {
+        "from": "nimrodel",
+        "to": "nimrodel",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 15
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 16
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "nimrodel",
+        "to": "cerin-amroth",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 16
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 17
+        },
+        "routeId": "nimrodel--cerin-amroth",
+        "confidence": "canon"
+      },
+      {
+        "from": "cerin-amroth",
+        "to": "caras-galadhon",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 17
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 17
+        },
+        "routeId": "cerin-amroth--caras-galadhon",
+        "confidence": "canon"
+      },
+      {
+        "from": "caras-galadhon",
+        "to": "caras-galadhon",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 17
+        },
+        "end": {
+          "year": 3019,
+          "month": 2,
+          "day": 16
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "caras-galadhon",
+        "to": "egladil",
+        "start": {
+          "year": 3019,
+          "month": 2,
+          "day": 16
+        },
+        "end": {
+          "year": 3019,
+          "month": 2,
+          "day": 16
+        },
+        "routeId": "caras-galadhon--egladil",
+        "confidence": "canon"
+      },
+      {
+        "from": "egladil",
+        "to": "sarn-gebir",
+        "start": {
+          "year": 3019,
+          "month": 2,
+          "day": 16
+        },
+        "end": {
+          "year": 3019,
+          "month": 2,
+          "day": 23
+        },
+        "routeId": "egladil--sarn-gebir",
+        "confidence": "canon"
+      },
+      {
+        "from": "sarn-gebir",
+        "to": "argonath",
+        "start": {
+          "year": 3019,
+          "month": 2,
+          "day": 23
+        },
+        "end": {
+          "year": 3019,
+          "month": 2,
+          "day": 25
+        },
+        "routeId": "sarn-gebir--argonath",
+        "confidence": "canon"
+      },
+      {
+        "from": "argonath",
+        "to": "parth-galen",
+        "start": {
+          "year": 3019,
+          "month": 2,
+          "day": 25
+        },
+        "end": {
+          "year": 3019,
+          "month": 2,
+          "day": 25
+        },
+        "routeId": "argonath--parth-galen",
+        "confidence": "canon"
+      },
+      {
+        "from": "parth-galen",
+        "to": "parth-galen",
+        "start": {
+          "year": 3019,
+          "month": 2,
+          "day": 25
+        },
+        "end": {
+          "year": 3019,
+          "month": 2,
+          "day": 26
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "parth-galen",
+        "to": "amon-hen",
+        "start": {
+          "year": 3019,
+          "month": 2,
+          "day": 26
+        },
+        "end": {
+          "year": 3019,
+          "month": 2,
+          "day": 26
+        },
+        "routeId": "parth-galen--amon-hen",
+        "confidence": "canon"
+      },
+      {
+        "from": "amon-hen",
+        "to": "parth-galen",
+        "start": {
+          "year": 3019,
+          "month": 2,
+          "day": 26
+        },
+        "end": {
+          "year": 3019,
+          "month": 2,
+          "day": 26
+        },
+        "routeId": "parth-galen--amon-hen",
+        "confidence": "canon"
+      }
+    ]
+  },
+  {
+    "characterId": "legolas",
+    "legs": [
+      {
+        "from": "estancias-de-thranduil",
+        "to": "rivendel",
+        "start": {
+          "year": 3018,
+          "month": 10,
+          "day": 1
+        },
+        "end": {
+          "year": 3018,
+          "month": 10,
+          "day": 24
+        },
+        "routeId": "estancias-de-thranduil--rivendel",
+        "confidence": "inferred",
+        "note": "Llega como mensajero de Thranduil antes del Concilio (25 de octubre); salida y ruta estimadas."
+      },
+      {
+        "from": "rivendel",
+        "to": "rivendel",
+        "start": {
+          "year": 3018,
+          "month": 10,
+          "day": 24
+        },
+        "end": {
+          "year": 3018,
+          "month": 12,
+          "day": 25
+        },
+        "confidence": "inferred",
+        "note": "Llegada a Rivendel estimada (antes del Concilio)."
+      },
+      {
+        "from": "rivendel",
+        "to": "acebeda",
+        "start": {
+          "year": 3018,
+          "month": 12,
+          "day": 25
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 8
+        },
+        "routeId": "rivendel--acebeda",
+        "confidence": "canon"
+      },
+      {
+        "from": "acebeda",
+        "to": "acebeda",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 8
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 9
+        },
+        "confidence": "inferred",
+        "note": "Descanso en Acebeda; la salida el día 9 es estimada."
+      },
+      {
+        "from": "acebeda",
+        "to": "paso-del-caradhras",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 9
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 11
+        },
+        "routeId": "acebeda--paso-del-caradhras",
+        "confidence": "inferred",
+        "note": "La nevada en el Caradhras es el 11–12 de enero (Apéndice B); el día de salida de Acebeda es estimado."
+      },
+      {
+        "from": "paso-del-caradhras",
+        "to": "paso-del-caradhras",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 11
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 12
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "paso-del-caradhras",
+        "to": "faldas-del-caradhras",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 12
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 12
+        },
+        "routeId": "paso-del-caradhras--faldas-del-caradhras",
+        "confidence": "canon"
+      },
+      {
+        "from": "faldas-del-caradhras",
+        "to": "faldas-del-caradhras",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 12
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 13
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "faldas-del-caradhras",
+        "to": "puertas-de-moria",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 13
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 13
+        },
+        "routeId": "faldas-del-caradhras--puertas-de-moria",
+        "confidence": "canon"
+      },
+      {
+        "from": "puertas-de-moria",
+        "to": "sala-veintiuno",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 13
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 14
+        },
+        "routeId": "puertas-de-moria--sala-veintiuno",
+        "confidence": "canon"
+      },
+      {
+        "from": "sala-veintiuno",
+        "to": "sala-veintiuno",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 14
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 15
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "sala-veintiuno",
+        "to": "camara-de-mazarbul",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 15
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 15
+        },
+        "routeId": "sala-veintiuno--camara-de-mazarbul",
+        "confidence": "canon"
+      },
+      {
+        "from": "camara-de-mazarbul",
+        "to": "puente-de-khazad-dum",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 15
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 15
+        },
+        "routeId": "camara-de-mazarbul--puente-de-khazad-dum",
+        "confidence": "canon"
+      },
+      {
+        "from": "puente-de-khazad-dum",
+        "to": "valle-del-arroyo-sombrio",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 15
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 15
+        },
+        "routeId": "puente-de-khazad-dum--valle-del-arroyo-sombrio",
+        "confidence": "canon"
+      },
+      {
+        "from": "valle-del-arroyo-sombrio",
+        "to": "nimrodel",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 15
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 15
+        },
+        "routeId": "valle-del-arroyo-sombrio--nimrodel",
+        "confidence": "canon"
+      },
+      {
+        "from": "nimrodel",
+        "to": "nimrodel",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 15
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 16
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "nimrodel",
+        "to": "cerin-amroth",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 16
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 17
+        },
+        "routeId": "nimrodel--cerin-amroth",
+        "confidence": "canon"
+      },
+      {
+        "from": "cerin-amroth",
+        "to": "caras-galadhon",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 17
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 17
+        },
+        "routeId": "cerin-amroth--caras-galadhon",
+        "confidence": "canon"
+      },
+      {
+        "from": "caras-galadhon",
+        "to": "caras-galadhon",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 17
+        },
+        "end": {
+          "year": 3019,
+          "month": 2,
+          "day": 16
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "caras-galadhon",
+        "to": "egladil",
+        "start": {
+          "year": 3019,
+          "month": 2,
+          "day": 16
+        },
+        "end": {
+          "year": 3019,
+          "month": 2,
+          "day": 16
+        },
+        "routeId": "caras-galadhon--egladil",
+        "confidence": "canon"
+      },
+      {
+        "from": "egladil",
+        "to": "sarn-gebir",
+        "start": {
+          "year": 3019,
+          "month": 2,
+          "day": 16
+        },
+        "end": {
+          "year": 3019,
+          "month": 2,
+          "day": 23
+        },
+        "routeId": "egladil--sarn-gebir",
+        "confidence": "canon"
+      },
+      {
+        "from": "sarn-gebir",
+        "to": "argonath",
+        "start": {
+          "year": 3019,
+          "month": 2,
+          "day": 23
+        },
+        "end": {
+          "year": 3019,
+          "month": 2,
+          "day": 25
+        },
+        "routeId": "sarn-gebir--argonath",
+        "confidence": "canon"
+      },
+      {
+        "from": "argonath",
+        "to": "parth-galen",
+        "start": {
+          "year": 3019,
+          "month": 2,
+          "day": 25
+        },
+        "end": {
+          "year": 3019,
+          "month": 2,
+          "day": 25
+        },
+        "routeId": "argonath--parth-galen",
+        "confidence": "canon"
+      },
+      {
+        "from": "parth-galen",
+        "to": "parth-galen",
+        "start": {
+          "year": 3019,
+          "month": 2,
+          "day": 25
+        },
+        "end": {
+          "year": 3019,
+          "month": 2,
+          "day": 26
+        },
+        "confidence": "canon"
+      }
+    ]
+  },
+  {
+    "characterId": "gimli",
+    "legs": [
+      {
+        "from": "erebor",
+        "to": "rivendel",
+        "start": {
+          "year": 3018,
+          "month": 9,
+          "day": 25
+        },
+        "end": {
+          "year": 3018,
+          "month": 10,
+          "day": 24
+        },
+        "routeId": "erebor--rivendel",
+        "confidence": "inferred",
+        "note": "Viaja con su padre Glóin desde Erebor para el Concilio; fechas y ruta estimadas."
+      },
+      {
+        "from": "rivendel",
+        "to": "rivendel",
+        "start": {
+          "year": 3018,
+          "month": 10,
+          "day": 24
+        },
+        "end": {
+          "year": 3018,
+          "month": 12,
+          "day": 25
+        },
+        "confidence": "inferred",
+        "note": "Llegada a Rivendel estimada (antes del Concilio)."
+      },
+      {
+        "from": "rivendel",
+        "to": "acebeda",
+        "start": {
+          "year": 3018,
+          "month": 12,
+          "day": 25
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 8
+        },
+        "routeId": "rivendel--acebeda",
+        "confidence": "canon"
+      },
+      {
+        "from": "acebeda",
+        "to": "acebeda",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 8
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 9
+        },
+        "confidence": "inferred",
+        "note": "Descanso en Acebeda; la salida el día 9 es estimada."
+      },
+      {
+        "from": "acebeda",
+        "to": "paso-del-caradhras",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 9
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 11
+        },
+        "routeId": "acebeda--paso-del-caradhras",
+        "confidence": "inferred",
+        "note": "La nevada en el Caradhras es el 11–12 de enero (Apéndice B); el día de salida de Acebeda es estimado."
+      },
+      {
+        "from": "paso-del-caradhras",
+        "to": "paso-del-caradhras",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 11
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 12
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "paso-del-caradhras",
+        "to": "faldas-del-caradhras",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 12
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 12
+        },
+        "routeId": "paso-del-caradhras--faldas-del-caradhras",
+        "confidence": "canon"
+      },
+      {
+        "from": "faldas-del-caradhras",
+        "to": "faldas-del-caradhras",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 12
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 13
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "faldas-del-caradhras",
+        "to": "puertas-de-moria",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 13
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 13
+        },
+        "routeId": "faldas-del-caradhras--puertas-de-moria",
+        "confidence": "canon"
+      },
+      {
+        "from": "puertas-de-moria",
+        "to": "sala-veintiuno",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 13
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 14
+        },
+        "routeId": "puertas-de-moria--sala-veintiuno",
+        "confidence": "canon"
+      },
+      {
+        "from": "sala-veintiuno",
+        "to": "sala-veintiuno",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 14
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 15
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "sala-veintiuno",
+        "to": "camara-de-mazarbul",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 15
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 15
+        },
+        "routeId": "sala-veintiuno--camara-de-mazarbul",
+        "confidence": "canon"
+      },
+      {
+        "from": "camara-de-mazarbul",
+        "to": "puente-de-khazad-dum",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 15
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 15
+        },
+        "routeId": "camara-de-mazarbul--puente-de-khazad-dum",
+        "confidence": "canon"
+      },
+      {
+        "from": "puente-de-khazad-dum",
+        "to": "valle-del-arroyo-sombrio",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 15
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 15
+        },
+        "routeId": "puente-de-khazad-dum--valle-del-arroyo-sombrio",
+        "confidence": "canon"
+      },
+      {
+        "from": "valle-del-arroyo-sombrio",
+        "to": "nimrodel",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 15
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 15
+        },
+        "routeId": "valle-del-arroyo-sombrio--nimrodel",
+        "confidence": "canon"
+      },
+      {
+        "from": "nimrodel",
+        "to": "nimrodel",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 15
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 16
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "nimrodel",
+        "to": "cerin-amroth",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 16
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 17
+        },
+        "routeId": "nimrodel--cerin-amroth",
+        "confidence": "canon"
+      },
+      {
+        "from": "cerin-amroth",
+        "to": "caras-galadhon",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 17
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 17
+        },
+        "routeId": "cerin-amroth--caras-galadhon",
+        "confidence": "canon"
+      },
+      {
+        "from": "caras-galadhon",
+        "to": "caras-galadhon",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 17
+        },
+        "end": {
+          "year": 3019,
+          "month": 2,
+          "day": 16
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "caras-galadhon",
+        "to": "egladil",
+        "start": {
+          "year": 3019,
+          "month": 2,
+          "day": 16
+        },
+        "end": {
+          "year": 3019,
+          "month": 2,
+          "day": 16
+        },
+        "routeId": "caras-galadhon--egladil",
+        "confidence": "canon"
+      },
+      {
+        "from": "egladil",
+        "to": "sarn-gebir",
+        "start": {
+          "year": 3019,
+          "month": 2,
+          "day": 16
+        },
+        "end": {
+          "year": 3019,
+          "month": 2,
+          "day": 23
+        },
+        "routeId": "egladil--sarn-gebir",
+        "confidence": "canon"
+      },
+      {
+        "from": "sarn-gebir",
+        "to": "argonath",
+        "start": {
+          "year": 3019,
+          "month": 2,
+          "day": 23
+        },
+        "end": {
+          "year": 3019,
+          "month": 2,
+          "day": 25
+        },
+        "routeId": "sarn-gebir--argonath",
+        "confidence": "canon"
+      },
+      {
+        "from": "argonath",
+        "to": "parth-galen",
+        "start": {
+          "year": 3019,
+          "month": 2,
+          "day": 25
+        },
+        "end": {
+          "year": 3019,
+          "month": 2,
+          "day": 25
+        },
+        "routeId": "argonath--parth-galen",
+        "confidence": "canon"
+      },
+      {
+        "from": "parth-galen",
+        "to": "parth-galen",
+        "start": {
+          "year": 3019,
+          "month": 2,
+          "day": 25
+        },
+        "end": {
+          "year": 3019,
+          "month": 2,
+          "day": 26
+        },
+        "confidence": "canon"
+      }
+    ]
+  },
+  {
+    "characterId": "gandalf",
+    "legs": [
+      {
+        "from": "bolson-cerrado",
+        "to": "bolson-cerrado",
+        "start": {
+          "year": 3018,
+          "month": 4,
+          "day": 12
+        },
+        "end": {
+          "year": 3018,
+          "month": 6,
+          "day": 28
+        },
+        "confidence": "inferred",
+        "note": "Llega el 12 de abril (Apéndice B) y se queda en la Comarca unos dos meses; la salida es estimada."
+      },
+      {
+        "from": "bolson-cerrado",
+        "to": "vado-sarn",
+        "start": {
+          "year": 3018,
+          "month": 6,
+          "day": 28
+        },
+        "end": {
+          "year": 3018,
+          "special": "midyear"
+        },
+        "routeId": "bolson-cerrado--vado-sarn",
+        "confidence": "inferred",
+        "note": "Se encuentra con Radagast en Medio Año en la frontera sur de la Comarca; el lugar exacto no consta."
+      },
+      {
+        "from": "vado-sarn",
+        "to": "bree",
+        "start": {
+          "year": 3018,
+          "special": "midyear"
+        },
+        "end": {
+          "year": 3018,
+          "month": 7,
+          "day": 1
+        },
+        "routeId": "vado-sarn--bree",
+        "confidence": "inferred",
+        "note": "Pasa por Bree y deja una carta para Frodo; día estimado."
+      },
+      {
+        "from": "bree",
+        "to": "isengard",
+        "start": {
+          "year": 3018,
+          "month": 7,
+          "day": 1
+        },
+        "end": {
+          "year": 3018,
+          "month": 7,
+          "day": 10
+        },
+        "routeId": "bree--isengard",
+        "confidence": "inferred",
+        "note": "Llega a Orthanc el 10 de julio (Apéndice B); la salida de Bree es estimada."
+      },
+      {
+        "from": "isengard",
+        "to": "isengard",
+        "start": {
+          "year": 3018,
+          "month": 7,
+          "day": 10
+        },
+        "end": {
+          "year": 3018,
+          "month": 9,
+          "day": 18
+        },
+        "confidence": "canon",
+        "note": "Preso en lo alto de Orthanc."
+      },
+      {
+        "from": "isengard",
+        "to": "edoras",
+        "start": {
+          "year": 3018,
+          "month": 9,
+          "day": 18
+        },
+        "end": {
+          "year": 3018,
+          "month": 9,
+          "day": 19
+        },
+        "routeId": "isengard--edoras",
+        "confidence": "canon",
+        "note": "Gwaihir lo saca de Orthanc y lo deja cerca de Edoras."
+      },
+      {
+        "from": "edoras",
+        "to": "edoras",
+        "start": {
+          "year": 3018,
+          "month": 9,
+          "day": 19
+        },
+        "end": {
+          "year": 3018,
+          "month": 9,
+          "day": 21
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "edoras",
+        "to": "vados-del-isen",
+        "start": {
+          "year": 3018,
+          "month": 9,
+          "day": 21
+        },
+        "end": {
+          "year": 3018,
+          "month": 9,
+          "day": 24
+        },
+        "routeId": "edoras--vados-del-isen",
+        "confidence": "canon",
+        "note": "Persigue y doma a Sombragrís por los campos de Rohan; cruza el Isen el 24."
+      },
+      {
+        "from": "vados-del-isen",
+        "to": "tharbad",
+        "start": {
+          "year": 3018,
+          "month": 9,
+          "day": 24
+        },
+        "end": {
+          "year": 3018,
+          "month": 9,
+          "day": 27
+        },
+        "routeId": "vados-del-isen--tharbad",
+        "confidence": "canon"
+      },
+      {
+        "from": "tharbad",
+        "to": "vado-sarn",
+        "start": {
+          "year": 3018,
+          "month": 9,
+          "day": 27
+        },
+        "end": {
+          "year": 3018,
+          "month": 9,
+          "day": 28
+        },
+        "routeId": "tharbad--vado-sarn",
+        "confidence": "canon",
+        "note": "Cruza el Aguada Gris el 27 y llega al Vado Sarn el 28 (Apéndice B). A lomos de Sombragrís cubre en un día una distancia que en este mapa aproximado sale exagerada."
+      },
+      {
+        "from": "vado-sarn",
+        "to": "hobbiton",
+        "start": {
+          "year": 3018,
+          "month": 9,
+          "day": 28
+        },
+        "end": {
+          "year": 3018,
+          "month": 9,
+          "day": 29
+        },
+        "routeId": "vado-sarn--hobbiton",
+        "confidence": "canon"
+      },
+      {
+        "from": "hobbiton",
+        "to": "cricava",
+        "start": {
+          "year": 3018,
+          "month": 9,
+          "day": 29
+        },
+        "end": {
+          "year": 3018,
+          "month": 9,
+          "day": 30
+        },
+        "routeId": "hobbiton--cricava",
+        "confidence": "canon"
+      },
+      {
+        "from": "cricava",
+        "to": "bree",
+        "start": {
+          "year": 3018,
+          "month": 9,
+          "day": 30
+        },
+        "end": {
+          "year": 3018,
+          "month": 9,
+          "day": 30
+        },
+        "routeId": "cricava--bree",
+        "confidence": "canon"
+      },
+      {
+        "from": "bree",
+        "to": "bree",
+        "start": {
+          "year": 3018,
+          "month": 9,
+          "day": 30
+        },
+        "end": {
+          "year": 3018,
+          "month": 10,
+          "day": 1
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "bree",
+        "to": "cima-de-los-vientos",
+        "start": {
+          "year": 3018,
+          "month": 10,
+          "day": 1
+        },
+        "end": {
+          "year": 3018,
+          "month": 10,
+          "day": 3
+        },
+        "routeId": "bree--cima-de-los-vientos",
+        "confidence": "canon"
+      },
+      {
+        "from": "cima-de-los-vientos",
+        "to": "cima-de-los-vientos",
+        "start": {
+          "year": 3018,
+          "month": 10,
+          "day": 3
+        },
+        "end": {
+          "year": 3018,
+          "month": 10,
+          "day": 4
+        },
+        "confidence": "inferred",
+        "note": "Resiste el ataque nocturno y sale al amanecer (estimado)."
+      },
+      {
+        "from": "cima-de-los-vientos",
+        "to": "rivendel",
+        "start": {
+          "year": 3018,
+          "month": 10,
+          "day": 4
+        },
+        "end": {
+          "year": 3018,
+          "month": 10,
+          "day": 18
+        },
+        "routeId": "cima-de-los-vientos--rivendel",
+        "confidence": "inferred",
+        "note": "Llega a Rivendel el 18 de octubre (Apéndice B) dando un rodeo por el norte; el trazado es estimado."
+      },
+      {
+        "from": "rivendel",
+        "to": "rivendel",
+        "start": {
+          "year": 3018,
+          "month": 10,
+          "day": 18
+        },
+        "end": {
+          "year": 3018,
+          "month": 12,
+          "day": 25
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "rivendel",
+        "to": "acebeda",
+        "start": {
+          "year": 3018,
+          "month": 12,
+          "day": 25
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 8
+        },
+        "routeId": "rivendel--acebeda",
+        "confidence": "canon"
+      },
+      {
+        "from": "acebeda",
+        "to": "acebeda",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 8
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 9
+        },
+        "confidence": "inferred",
+        "note": "Descanso en Acebeda; la salida el día 9 es estimada."
+      },
+      {
+        "from": "acebeda",
+        "to": "paso-del-caradhras",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 9
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 11
+        },
+        "routeId": "acebeda--paso-del-caradhras",
+        "confidence": "inferred",
+        "note": "La nevada en el Caradhras es el 11–12 de enero (Apéndice B); el día de salida de Acebeda es estimado."
+      },
+      {
+        "from": "paso-del-caradhras",
+        "to": "paso-del-caradhras",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 11
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 12
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "paso-del-caradhras",
+        "to": "faldas-del-caradhras",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 12
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 12
+        },
+        "routeId": "paso-del-caradhras--faldas-del-caradhras",
+        "confidence": "canon"
+      },
+      {
+        "from": "faldas-del-caradhras",
+        "to": "faldas-del-caradhras",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 12
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 13
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "faldas-del-caradhras",
+        "to": "puertas-de-moria",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 13
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 13
+        },
+        "routeId": "faldas-del-caradhras--puertas-de-moria",
+        "confidence": "canon"
+      },
+      {
+        "from": "puertas-de-moria",
+        "to": "sala-veintiuno",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 13
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 14
+        },
+        "routeId": "puertas-de-moria--sala-veintiuno",
+        "confidence": "canon"
+      },
+      {
+        "from": "sala-veintiuno",
+        "to": "sala-veintiuno",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 14
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 15
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "sala-veintiuno",
+        "to": "camara-de-mazarbul",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 15
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 15
+        },
+        "routeId": "sala-veintiuno--camara-de-mazarbul",
+        "confidence": "canon"
+      },
+      {
+        "from": "camara-de-mazarbul",
+        "to": "puente-de-khazad-dum",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 15
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 15
+        },
+        "routeId": "camara-de-mazarbul--puente-de-khazad-dum",
+        "confidence": "canon"
+      },
+      {
+        "from": "puente-de-khazad-dum",
+        "to": "celebdil",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 15
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 23
+        },
+        "routeId": "puente-de-khazad-dum--celebdil",
+        "confidence": "canon",
+        "note": "Cae con el Balrog y lo persigue desde los abismos hasta la cima por la Escalera Interminable."
+      },
+      {
+        "from": "celebdil",
+        "to": "celebdil",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 23
+        },
+        "end": {
+          "year": 3019,
+          "month": 2,
+          "day": 17
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "celebdil",
+        "to": "caras-galadhon",
+        "start": {
+          "year": 3019,
+          "month": 2,
+          "day": 17
+        },
+        "end": {
+          "year": 3019,
+          "month": 2,
+          "day": 17
+        },
+        "routeId": "celebdil--caras-galadhon",
+        "confidence": "canon",
+        "note": "Gwaihir lo lleva a Lórien."
+      }
+    ]
+  },
+  {
+    "characterId": "boromir",
+    "legs": [
+      {
+        "from": "minas-tirith",
+        "to": "edoras",
+        "start": {
+          "year": 3018,
+          "month": 7,
+          "day": 4
+        },
+        "end": {
+          "year": 3018,
+          "month": 7,
+          "day": 16
+        },
+        "routeId": "minas-tirith--edoras",
+        "confidence": "inferred",
+        "note": "Sale de Minas Tirith el 4 de julio (Apéndice B); etapas intermedias estimadas."
+      },
+      {
+        "from": "edoras",
+        "to": "vados-del-isen",
+        "start": {
+          "year": 3018,
+          "month": 7,
+          "day": 16
+        },
+        "end": {
+          "year": 3018,
+          "month": 7,
+          "day": 20
+        },
+        "routeId": "edoras--vados-del-isen",
+        "confidence": "inferred",
+        "note": "Etapa estimada."
+      },
+      {
+        "from": "vados-del-isen",
+        "to": "tharbad",
+        "start": {
+          "year": 3018,
+          "month": 7,
+          "day": 20
+        },
+        "end": {
+          "year": 3018,
+          "month": 8,
+          "day": 1
+        },
+        "routeId": "vados-del-isen--tharbad",
+        "confidence": "inferred",
+        "note": "Etapa estimada; en Tharbad pierde el caballo al cruzar el Aguada Gris."
+      },
+      {
+        "from": "tharbad",
+        "to": "rivendel",
+        "start": {
+          "year": 3018,
+          "month": 8,
+          "day": 1
+        },
+        "end": {
+          "year": 3018,
+          "month": 10,
+          "day": 24
+        },
+        "routeId": "tharbad--rivendel",
+        "confidence": "inferred",
+        "note": "Busca Imladris a pie durante meses; llega el 24 de octubre (Apéndice B). Trazado estimado."
+      },
+      {
+        "from": "rivendel",
+        "to": "rivendel",
+        "start": {
+          "year": 3018,
+          "month": 10,
+          "day": 24
+        },
+        "end": {
+          "year": 3018,
+          "month": 12,
+          "day": 25
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "rivendel",
+        "to": "acebeda",
+        "start": {
+          "year": 3018,
+          "month": 12,
+          "day": 25
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 8
+        },
+        "routeId": "rivendel--acebeda",
+        "confidence": "canon"
+      },
+      {
+        "from": "acebeda",
+        "to": "acebeda",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 8
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 9
+        },
+        "confidence": "inferred",
+        "note": "Descanso en Acebeda; la salida el día 9 es estimada."
+      },
+      {
+        "from": "acebeda",
+        "to": "paso-del-caradhras",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 9
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 11
+        },
+        "routeId": "acebeda--paso-del-caradhras",
+        "confidence": "inferred",
+        "note": "La nevada en el Caradhras es el 11–12 de enero (Apéndice B); el día de salida de Acebeda es estimado."
+      },
+      {
+        "from": "paso-del-caradhras",
+        "to": "paso-del-caradhras",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 11
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 12
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "paso-del-caradhras",
+        "to": "faldas-del-caradhras",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 12
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 12
+        },
+        "routeId": "paso-del-caradhras--faldas-del-caradhras",
+        "confidence": "canon"
+      },
+      {
+        "from": "faldas-del-caradhras",
+        "to": "faldas-del-caradhras",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 12
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 13
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "faldas-del-caradhras",
+        "to": "puertas-de-moria",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 13
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 13
+        },
+        "routeId": "faldas-del-caradhras--puertas-de-moria",
+        "confidence": "canon"
+      },
+      {
+        "from": "puertas-de-moria",
+        "to": "sala-veintiuno",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 13
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 14
+        },
+        "routeId": "puertas-de-moria--sala-veintiuno",
+        "confidence": "canon"
+      },
+      {
+        "from": "sala-veintiuno",
+        "to": "sala-veintiuno",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 14
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 15
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "sala-veintiuno",
+        "to": "camara-de-mazarbul",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 15
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 15
+        },
+        "routeId": "sala-veintiuno--camara-de-mazarbul",
+        "confidence": "canon"
+      },
+      {
+        "from": "camara-de-mazarbul",
+        "to": "puente-de-khazad-dum",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 15
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 15
+        },
+        "routeId": "camara-de-mazarbul--puente-de-khazad-dum",
+        "confidence": "canon"
+      },
+      {
+        "from": "puente-de-khazad-dum",
+        "to": "valle-del-arroyo-sombrio",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 15
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 15
+        },
+        "routeId": "puente-de-khazad-dum--valle-del-arroyo-sombrio",
+        "confidence": "canon"
+      },
+      {
+        "from": "valle-del-arroyo-sombrio",
+        "to": "nimrodel",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 15
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 15
+        },
+        "routeId": "valle-del-arroyo-sombrio--nimrodel",
+        "confidence": "canon"
+      },
+      {
+        "from": "nimrodel",
+        "to": "nimrodel",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 15
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 16
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "nimrodel",
+        "to": "cerin-amroth",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 16
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 17
+        },
+        "routeId": "nimrodel--cerin-amroth",
+        "confidence": "canon"
+      },
+      {
+        "from": "cerin-amroth",
+        "to": "caras-galadhon",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 17
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 17
+        },
+        "routeId": "cerin-amroth--caras-galadhon",
+        "confidence": "canon"
+      },
+      {
+        "from": "caras-galadhon",
+        "to": "caras-galadhon",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 17
+        },
+        "end": {
+          "year": 3019,
+          "month": 2,
+          "day": 16
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "caras-galadhon",
+        "to": "egladil",
+        "start": {
+          "year": 3019,
+          "month": 2,
+          "day": 16
+        },
+        "end": {
+          "year": 3019,
+          "month": 2,
+          "day": 16
+        },
+        "routeId": "caras-galadhon--egladil",
+        "confidence": "canon"
+      },
+      {
+        "from": "egladil",
+        "to": "sarn-gebir",
+        "start": {
+          "year": 3019,
+          "month": 2,
+          "day": 16
+        },
+        "end": {
+          "year": 3019,
+          "month": 2,
+          "day": 23
+        },
+        "routeId": "egladil--sarn-gebir",
+        "confidence": "canon"
+      },
+      {
+        "from": "sarn-gebir",
+        "to": "argonath",
+        "start": {
+          "year": 3019,
+          "month": 2,
+          "day": 23
+        },
+        "end": {
+          "year": 3019,
+          "month": 2,
+          "day": 25
+        },
+        "routeId": "sarn-gebir--argonath",
+        "confidence": "canon"
+      },
+      {
+        "from": "argonath",
+        "to": "parth-galen",
+        "start": {
+          "year": 3019,
+          "month": 2,
+          "day": 25
+        },
+        "end": {
+          "year": 3019,
+          "month": 2,
+          "day": 25
+        },
+        "routeId": "argonath--parth-galen",
+        "confidence": "canon"
+      },
+      {
+        "from": "parth-galen",
+        "to": "parth-galen",
+        "start": {
+          "year": 3019,
+          "month": 2,
+          "day": 25
+        },
+        "end": {
+          "year": 3019,
+          "month": 2,
+          "day": 26
+        },
+        "confidence": "canon"
+      },
+      {
+        "from": "parth-galen",
+        "to": "amon-hen",
+        "start": {
+          "year": 3019,
+          "month": 2,
+          "day": 26
+        },
+        "end": {
+          "year": 3019,
+          "month": 2,
+          "day": 26
+        },
+        "routeId": "parth-galen--amon-hen",
+        "confidence": "canon"
+      },
+      {
+        "from": "amon-hen",
+        "to": "parth-galen",
+        "start": {
+          "year": 3019,
+          "month": 2,
+          "day": 26
+        },
+        "end": {
+          "year": 3019,
+          "month": 2,
+          "day": 26
+        },
+        "routeId": "parth-galen--amon-hen",
+        "confidence": "canon"
+      }
+    ]
+  },
+  {
+    "characterId": "gollum",
+    "legs": [
+      {
+        "from": "estancias-de-thranduil",
+        "to": "moria",
+        "start": {
+          "year": 3018,
+          "month": 6,
+          "day": 20
+        },
+        "end": {
+          "year": 3018,
+          "month": 8,
+          "day": 15
+        },
+        "routeId": "estancias-de-thranduil--moria",
+        "confidence": "inferred",
+        "note": "Escapa de los elfos hacia el 20 de junio y en agosto se le pierde el rastro; se cree que se refugió en Moria. Ruta y fechas estimadas."
+      },
+      {
+        "from": "moria",
+        "to": "moria",
+        "start": {
+          "year": 3018,
+          "month": 8,
+          "day": 15
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 13
+        },
+        "confidence": "inferred",
+        "note": "Atrapado en Moria sin dar con la salida del oeste."
+      },
+      {
+        "from": "moria",
+        "to": "nimrodel",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 13
+        },
+        "end": {
+          "year": 3019,
+          "month": 1,
+          "day": 15
+        },
+        "routeId": "moria--nimrodel",
+        "confidence": "inferred",
+        "note": "Sigue a la Compañía por Moria desde el 13 de enero (Apéndice B) hasta las lindes de Lórien."
+      },
+      {
+        "from": "nimrodel",
+        "to": "nimrodel",
+        "start": {
+          "year": 3019,
+          "month": 1,
+          "day": 15
+        },
+        "end": {
+          "year": 3019,
+          "month": 2,
+          "day": 16
+        },
+        "confidence": "inferred",
+        "note": "Merodea por los bordes de Lórien sin poder entrar."
+      },
+      {
+        "from": "nimrodel",
+        "to": "egladil",
+        "start": {
+          "year": 3019,
+          "month": 2,
+          "day": 16
+        },
+        "end": {
+          "year": 3019,
+          "month": 2,
+          "day": 16
+        },
+        "routeId": "nimrodel--egladil",
+        "confidence": "inferred",
+        "note": "Observa la partida desde la orilla oeste (Apéndice B); punto exacto estimado."
+      },
+      {
+        "from": "egladil",
+        "to": "sarn-gebir",
+        "start": {
+          "year": 3019,
+          "month": 2,
+          "day": 16
+        },
+        "end": {
+          "year": 3019,
+          "month": 2,
+          "day": 23
+        },
+        "routeId": "egladil--sarn-gebir",
+        "confidence": "inferred",
+        "note": "Sigue las barcas río abajo agarrado a un tronco."
+      },
+      {
+        "from": "sarn-gebir",
+        "to": "emyn-muil",
+        "start": {
+          "year": 3019,
+          "month": 2,
+          "day": 23
+        },
+        "end": {
+          "year": 3019,
+          "month": 2,
+          "day": 26
+        },
+        "routeId": "sarn-gebir--emyn-muil",
+        "confidence": "inferred",
+        "note": "Rodea las cataratas y sigue a Frodo hacia las Emyn Muil."
+      }
+    ]
+  }
+]

@@ -9,15 +9,16 @@ con una línea temporal de swimlanes. **Fuente canónica: los libros** (Apéndic
 
 ## Comandos
 
-| Comando                          | Qué hace                                                                                 |
-| -------------------------------- | ---------------------------------------------------------------------------------------- |
-| `npm run dev`                    | Servidor de desarrollo (Vite). `?debug` activa la herramienta de autoría de coordenadas. |
-| `npm run typecheck`              | `tsc --noEmit` (TS estricto).                                                            |
-| `npm test`                       | Vitest (`tests/**/*.test.ts`).                                                           |
-| `npm run validate`               | Schemas + integridad + cronología + coherencia eventos/rutas + cobertura.                |
-| `npm run build` / `build:single` | `dist/` para Pages / `dist-single/index.html` autocontenido para previews.               |
-| `npm run format`                 | Prettier. CI ejecuta `format:check`.                                                     |
-| `npm run check`                  | Todo lo anterior en orden (lo que corre CI).                                             |
+| Comando                          | Qué hace                                                                                     |
+| -------------------------------- | -------------------------------------------------------------------------------------------- |
+| `npm run dev`                    | Servidor de desarrollo (Vite). `?debug` activa la herramienta de autoría de coordenadas.     |
+| `npm run typecheck`              | `tsc --noEmit` (TS estricto).                                                                |
+| `npm test`                       | Vitest (`tests/**/*.test.ts`).                                                               |
+| `npm run validate`               | Schemas + integridad + cronología + eventos/rutas + geografía + cobertura.                   |
+| `npm run docs:inferences`        | Regenera la tabla de inferencias de `docs/DATA_SOURCES.md` (validate exige que esté al día). |
+| `npm run build` / `build:single` | `dist/` para Pages / `dist-single/index.html` autocontenido para previews.                   |
+| `npm run format`                 | Prettier. CI ejecuta `format:check`.                                                         |
+| `npm run check`                  | Todo lo anterior en orden (lo que corre CI).                                                 |
 
 Node ≥ 22.18: los scripts `.ts` se ejecutan con el type-stripping nativo de Node (sin `tsx`).
 Por eso: imports relativos **con extensión `.ts`**, y nada de `enum`/`namespace`/parameter
@@ -31,9 +32,11 @@ properties (`erasableSyntaxOnly`).
 - `src/lib/coords.ts` — coordenadas propias `[x, y]` en **millas** (x este, y norte, origen SO);
   Leaflet `CRS.Simple` usa `[lat, lng] = [y, x]`.
 - `src/data/validate.ts` — comprobaciones semánticas puras; `scripts/validate.ts` las ejecuta.
+- `src/data/legs.ts` — geometría de los tramos, carriles paralelos y desplazamiento de polilíneas.
 - `src/map/` — Leaflet: `createMap.ts` (montaje y encuadre), `baseLayers.ts` (paneles y capas
   vectoriales), `shapes.ts` (rugosidad + suavizado), `glyphs.ts`/`relief.ts` (relieve por zoom),
-  `labels.ts` (etiquetas con anticolisión), `places.ts` (marcadores), `debug.ts` (`?debug`).
+  `labels.ts` (etiquetas con anticolisión), `places.ts` + `popup.ts` (marcadores y ficha con eventos),
+  `journeyLayer.ts` + `legend.ts` (rutas y leyenda), `debug.ts` (`?debug`).
 - `src/styles/` — tokens de color (claro/oscuro) en `main.css`, estilo cartográfico en `map.css`.
 - `docs/` — memoria del proyecto.
 
@@ -44,6 +47,7 @@ properties (`erasableSyntaxOnly`).
 - Tramo `[start, end]` inclusive: el día `start` está en `from`, el día `end` en `to`, entre
   medias «de camino». Estancia = `from == to`. Los tramos de un personaje son contiguos
   (`next.start == prev.end`, `next.from == prev.to`).
+- Todo tramo `inferred` lleva `note` con el motivo.
 - Los lugares de los eventos deben ser extremos de tramo: si algo pasa a mitad de camino
   (p.ej. Cima de los Vientos), se parte el tramo ahí.
 - `routes.json` guarda geometrías compartidas; quien comparte `routeId` en fechas solapadas «va

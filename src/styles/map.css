@@ -361,3 +361,210 @@
   padding: 4px 8px;
   border-radius: 4px;
 }
+
+/* --- Rutas de los personajes (el color va en línea, por personaje) */
+.leaflet-pane path.journey {
+  fill: none;
+  cursor: pointer;
+}
+.leaflet-pane path.journey:hover {
+  stroke-width: 4.5px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) .leaflet-routes-pane {
+    filter: brightness(1.35) saturate(1.1);
+  }
+}
+:root[data-theme='dark'] .leaflet-routes-pane {
+  filter: brightness(1.35) saturate(1.1);
+}
+.leaflet-pane path.place--events {
+  stroke: var(--accent);
+  stroke-width: 2px;
+}
+
+.journey-tip {
+  background: var(--land);
+  color: var(--label);
+  border: 1px solid var(--land-ink);
+  font-family: var(--font-map);
+  font-size: 13px;
+  max-width: 280px;
+  white-space: normal;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+.journey-tip::before {
+  display: none;
+}
+.jt-who {
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.jt-who::before {
+  content: '';
+  width: 14px;
+  height: 3px;
+  border-radius: 2px;
+  background: var(--c);
+}
+.jt-dates {
+  font-family: var(--font-ui);
+  font-size: 11.5px;
+  color: var(--ink-soft);
+  font-variant-numeric: tabular-nums;
+}
+.jt-note {
+  margin-top: 4px;
+  font-size: 12px;
+  font-style: italic;
+}
+
+/* --- Fichas de personaje (iniciales sobre su color) */
+.chip {
+  display: inline-grid;
+  place-items: center;
+  min-width: 20px;
+  height: 20px;
+  padding: 0 4px;
+  border-radius: 10px;
+  background: var(--c);
+  color: var(--ink, #fff);
+  font: 600 10.5px/1 var(--font-ui);
+  letter-spacing: 0.02em;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+/* --- Leyenda */
+.legend {
+  background: var(--land);
+  color: var(--label);
+  border: 1px solid var(--land-ink);
+  border-radius: 6px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.18);
+  font-family: var(--font-ui);
+  font-size: 13px;
+  min-width: 150px;
+}
+.legend summary {
+  cursor: pointer;
+  padding: 7px 10px;
+  font-family: var(--font-map-sc);
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  list-style-position: inside;
+}
+.legend__list {
+  list-style: none;
+  margin: 0;
+  padding: 0 10px;
+  display: grid;
+  gap: 2px;
+}
+.legend__item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 3px 0;
+  cursor: pointer;
+}
+.legend__item input {
+  margin: 0;
+  accent-color: var(--accent);
+}
+.legend__item .chip {
+  color: #fff;
+}
+.legend__item input:not(:checked) ~ .chip {
+  opacity: 0.35;
+}
+.legend__item input:not(:checked) ~ .legend__name {
+  color: var(--ink-soft);
+  text-decoration: line-through;
+}
+.legend__actions {
+  display: flex;
+  gap: 6px;
+  padding: 8px 10px 4px;
+}
+.legend__actions button {
+  font: inherit;
+  font-size: 12px;
+  padding: 3px 8px;
+  border-radius: 4px;
+  border: 1px solid var(--land-ink);
+  background: transparent;
+  color: var(--label);
+  cursor: pointer;
+}
+.legend__actions button:focus-visible,
+.legend summary:focus-visible,
+.legend__item input:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+.legend__key {
+  margin: 4px 10px 9px;
+  font-size: 11px;
+  color: var(--ink-soft);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+.key-line {
+  display: inline-block;
+  width: 18px;
+  height: 0;
+  border-top: 2.5px solid var(--label);
+}
+.key-line--dashed {
+  border-top-style: dashed;
+  margin-left: 6px;
+}
+
+/* --- Eventos en la ficha del lugar */
+.pp-events {
+  list-style: none;
+  margin: 8px 0 0;
+  padding: 8px 0 0;
+  border-top: 1px solid var(--land-ink);
+  max-height: min(320px, 45vh);
+  overflow-y: auto;
+  display: grid;
+  gap: 10px;
+}
+.pe-date {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  color: var(--ink-soft);
+  font-variant-numeric: tabular-nums;
+}
+.pe-title {
+  font-weight: 600;
+  font-size: 14px;
+}
+.pe-who {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3px;
+  margin: 3px 0;
+}
+.place-popup .pe-summary {
+  margin: 2px 0;
+  font-size: 13px;
+  line-height: 1.35;
+}
+.pe-ref {
+  font-family: var(--font-ui);
+  font-size: 10.5px;
+  color: var(--ink-soft);
+}
