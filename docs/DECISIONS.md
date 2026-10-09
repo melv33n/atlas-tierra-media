@@ -138,3 +138,44 @@ Formato: contexto → decisión → consecuencias. Las nuevas al final.
   bosques, colinas, ríos, caminos y trazados de esa zona. La costa no se toca.
 - **Consecuencias**: jornadas a pie ≤ ~45 millas. Un test comprueba que ningún tramo a pie o en barca
   supere 70 millas/día (Gandalf a caballo o en águila queda fuera).
+
+## 017 · Modelo temporal continuo — 2026-10-09
+
+- **Contexto**: el cursor de fecha tiene que mover a cada personaje por su ruta, también dentro de
+  un día (la Balsadera y Cricava el mismo 25 de septiembre).
+- **Decisión**: `t` = índice de día con decimales. Un viaje de varios días sale a las 0,7 del día de
+  salida y llega a las 0,3 del de llegada; los viajes del mismo día se encadenan entre 0,3 y 0,7. La
+  posición se interpola por longitud de camino (`src/data/timeline.ts`). Un **encuentro** es una
+  llegada a un lugar donde hay otro principal del que se estaba separado al salir y el día anterior.
+- **Consecuencias**: el mapa y la línea temporal comparten el mismo modelo; los encuentros salen de
+  los datos, no se anotan a mano.
+
+## 018 · Sin framework de UI: estado con suscriptores — 2026-10-09
+
+- **Contexto**: H3 introduce estado compartido (fecha, rango, ocultos, evento abierto).
+- **Decisión**: un `store` mínimo (`src/state/store.ts`, ~40 líneas) con `get/set/subscribe`. Mapa,
+  línea temporal, leyenda y panel de evento se suscriben. Preact no compensa todavía; se reconsidera
+  si H5 (búsqueda, filtros, URL) complica la UI.
+
+## 019 · Paleta de zonas validada — 2026-10-09
+
+- **Decisión**: la línea temporal colorea por zona (8 zonas; Rhovanion se funde con el valle del
+  Anduin para no pasar de 8 categorías). Colores de la paleta de referencia de la skill de
+  visualización, en un orden que pasa todas las comprobaciones de daltonismo y separación en claro
+  (sobre `#f3ead8`) y en oscuro (sobre `#2a2620`): Comarca verde, Eriador naranja, Nubladas violeta,
+  Lórien amarillo, Anduin azul, Rohan aguamarina, Gondor magenta, Mordor rojo.
+- **Consecuencias**: cuatro colores quedan por debajo de 3:1 de contraste en claro; se compensa con
+  rótulos directos en las paradas, leyenda de zonas y tooltip. Lo inferido lleva rayado además de
+  color.
+
+## 020 · D3 modular — 2026-10-09
+
+| Paquete        | Por qué                                                       |
+| -------------- | ------------------------------------------------------------- |
+| `d3-scale`     | Escala tiempo → píxeles.                                      |
+| `d3-selection` | Data join del SVG de la línea temporal.                       |
+| `d3-zoom`      | Zoom y desplazamiento con rueda, arrastre y pellizco (móvil). |
+| `d3-brush`     | Selección de rango sobre el eje.                              |
+
+- **Descartado**: el paquete `d3` completo (no hacen falta ejes, formas ni tiempo gregoriano: el
+  calendario es propio).

@@ -1,10 +1,10 @@
 /** Leyenda de personajes con interruptores para mostrar u ocultar sus rutas. */
 import L from 'leaflet';
 import { shortNameOf, type Character } from '../data/types.ts';
-import type { JourneyLayer } from './journeyLayer.ts';
 import { escapeHtml } from './journeyLayer.ts';
+import type { Store } from '../state/store.ts';
 
-export function addLegend(map: L.Map, characters: Character[], journeys: JourneyLayer): void {
+export function addLegend(map: L.Map, characters: Character[], store: Store): void {
   const main = characters.filter((c) => c.role === 'main');
   const Legend = L.Control.extend({
     onAdd() {
@@ -30,15 +30,23 @@ export function addLegend(map: L.Map, characters: Character[], journeys: Journey
       L.DomEvent.disableScrollPropagation(el);
       el.addEventListener('change', (e) => {
         const input = e.target as HTMLInputElement;
-        if (input.dataset.id) journeys.setVisible(input.dataset.id, input.checked);
+        const id = input.dataset.id;
+        if (!id) return;
+        const hidden = new Set(store.get().hidden);
+        if (input.checked) hidden.delete(id);
+        else hidden.add(id);
+        store.set({ hidden });
       });
       el.addEventListener('click', (e) => {
         const btn = (e.target as HTMLElement).closest('button');
         if (!btn) return;
-        const on = btn.dataset.all === '1';
+        store.set({ hidden: btn.dataset.all === '1' ? new Set() : new Set(main.map((c) => c.id)) });
+      });
+      // Reflejar cambios hechos desde la línea temporal.
+      store.subscribe((s, prev) => {
+        if (s.hidden === prev.hidden) return;
         el.querySelectorAll<HTMLInputElement>('input[data-id]').forEach((input) => {
-          input.checked = on;
-          journeys.setVisible(input.dataset.id!, on);
+          input.checked = !s.hidden.has(input.dataset.id!);
         });
       });
       return el;

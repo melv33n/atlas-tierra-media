@@ -66,7 +66,7 @@ export function placePopupHtml(
         .filter((c): c is Character => !!c)
         .map((c) => `${chipHtml(c)}<span class="sr-only">${escapeHtml(shortNameOf(c))}</span>`)
         .join('');
-      return `<li class="pe">
+      return `<li class="pe" data-event-id="${e.id}" tabindex="0" role="button">
   <div class="pe-date">${formatDate(e.date)}</div>
   <div class="pe-title">${escapeHtml(e.title)}</div>
   ${who ? `<div class="pe-who">${who}</div>` : ''}

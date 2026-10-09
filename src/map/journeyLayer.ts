@@ -10,6 +10,7 @@ import { shortNameOf, type Character, type DataBundle } from '../data/types.ts';
 import { formatDate } from '../lib/calendar.ts';
 import { toLatLng } from '../lib/coords.ts';
 import { chaikin } from '../lib/geometry.ts';
+import { DEPART } from '../data/timeline.ts';
 
 /** Separación entre carriles (px). */
 const LANE_PX = 3.4;
@@ -107,6 +108,27 @@ export class JourneyLayer {
 
   isVisible(characterId: string): boolean {
     return !this.hidden.has(characterId);
+  }
+
+  /** Sincroniza los personajes ocultos con el estado global. */
+  setHidden(hidden: ReadonlySet<string>): void {
+    for (const id of this.groups.keys()) {
+      if (hidden.has(id) !== this.hidden.has(id)) this.setVisible(id, !hidden.has(id));
+    }
+  }
+
+  /**
+   * Atenúa lo que aún no ha ocurrido en el instante `t` y, si hay rango, casi
+   * oculta lo que cae fuera de él.
+   */
+  setTime(t: number, range: [number, number] | null): void {
+    for (const d of this.drawn) {
+      const { startDay, endDay } = d.shape;
+      const out = range && (endDay + 1 < range[0] || startDay > range[1]);
+      const future = startDay + DEPART > t;
+      const opacity = out ? 0.06 : future ? 0.2 : 0.95;
+      if (d.line.options.opacity !== opacity) d.line.setStyle({ opacity });
+    }
   }
 }
 
