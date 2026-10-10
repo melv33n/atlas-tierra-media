@@ -1,71 +1,8 @@
-/* Línea temporal de calles y panel de evento. Colores: tokens de main.css. */
+/* Línea temporal de calles (dentro de la hoja inferior). Tokens en main.css. */
 
 .timeline {
-  flex: none;
-  background: var(--paper);
-  border-top: 1px solid var(--land-ink);
-  font-family: var(--font-ui);
-  color: var(--label);
-  padding-bottom: env(safe-area-inset-bottom, 0px);
+  color: var(--ink);
 }
-
-.tl-bar {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 6px 14px;
-  padding: 6px 10px 2px;
-}
-.tl-nav,
-.tl-range,
-.tl-views {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-}
-.tl-views {
-  margin-left: auto;
-}
-.tl-date {
-  min-width: 12.5em;
-  text-align: center;
-  font-family: var(--font-map);
-  font-size: 15px;
-  font-weight: 600;
-  font-variant-numeric: tabular-nums;
-}
-.tl-btn {
-  font: inherit;
-  font-size: 13px;
-  line-height: 1;
-  min-width: 30px;
-  height: 28px;
-  padding: 0 6px;
-  border: 1px solid var(--land-ink);
-  border-radius: 5px;
-  background: var(--land);
-  color: var(--label);
-  cursor: pointer;
-}
-.tl-btn--text {
-  padding: 0 9px;
-}
-.tl-btn:hover {
-  border-color: var(--accent);
-}
-.tl-btn:focus-visible,
-.tl-label:focus-visible,
-.tl-mark:focus-visible,
-.tl-cursor-handle:focus-visible {
-  outline: 2px solid var(--accent);
-  outline-offset: 2px;
-}
-.tl-range__label {
-  font-size: 12px;
-  color: var(--ink-soft);
-  font-variant-numeric: tabular-nums;
-}
-
 .tl-body {
   position: relative;
   overflow: hidden;
@@ -75,34 +12,40 @@
   display: block;
   user-select: none;
   font-size: 11px;
+  font-family: var(--font-ui);
 }
 
 /* Calles */
 .tl-lane-bg {
-  fill: var(--paper);
+  fill: transparent;
 }
 .tl-lane-bg--odd {
-  fill: var(--land);
+  fill: rgba(255, 255, 255, 0.025);
 }
 .tl-label {
   cursor: pointer;
 }
 .tl-label-bg {
-  fill: var(--paper);
+  fill: transparent;
+}
+.tl-chip {
+  fill: #10151b;
+  stroke-width: 2px;
 }
 .tl-chip-text {
-  font: 600 9.5px var(--font-ui);
+  fill: #fff;
+  font: 700 8.5px var(--font-cond);
   text-anchor: middle;
   dominant-baseline: central;
   pointer-events: none;
 }
 .tl-name {
-  fill: var(--label);
-  font: 12.5px var(--font-ui);
+  fill: var(--ink);
+  font: 600 12.5px var(--font-ui);
   dominant-baseline: central;
 }
 .tl-label.is-hidden {
-  opacity: 0.4;
+  opacity: 0.35;
 }
 .tl-label.is-hidden .tl-name {
   text-decoration: line-through;
@@ -110,52 +53,54 @@
 
 /* Eje */
 .tl-tick line {
-  stroke: var(--land-ink);
-  stroke-opacity: 0.18;
+  stroke: #fff;
+  stroke-opacity: 0.06;
 }
 .tl-tick.is-major line {
-  stroke-opacity: 0.45;
+  stroke-opacity: 0.18;
 }
 .tl-tick text {
   fill: var(--ink-soft);
   font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
   font-variant-numeric: tabular-nums;
 }
 .tl-tick.is-major text {
-  fill: var(--label);
-  font-weight: 600;
+  fill: var(--ink);
 }
 .tl-brush .overlay {
-  fill: var(--land-ink);
-  fill-opacity: 0.06;
+  fill: #fff;
+  fill-opacity: 0.03;
   cursor: col-resize;
 }
 .tl-brush .selection {
-  fill: var(--accent);
-  fill-opacity: 0.22;
-  stroke: var(--accent);
+  fill: var(--gold);
+  fill-opacity: 0.16;
+  stroke: var(--gold-hi);
 }
 
 /* Segmentos: paradas a toda altura, viajes a media altura */
 .tl-seg-fill {
-  fill-opacity: 0.85;
+  fill-opacity: 0.95;
 }
 .tl-seg.is-move .tl-seg-fill {
-  fill-opacity: 0.6;
+  fill-opacity: 0.7;
 }
 .tl-hatch {
-  fill: var(--paper);
-  fill-opacity: 0.75;
+  fill: #0b0f13;
+  fill-opacity: 0.55;
 }
 .tl-seg-hatch {
   fill: url(#tl-hatch);
 }
 .tl-seg-label {
-  fill: var(--label);
-  font: 10.5px var(--font-ui);
+  fill: #fff;
+  font: 600 10.5px var(--font-ui);
   dominant-baseline: central;
   paint-order: stroke;
-  stroke: var(--paper);
+  stroke: rgba(11, 15, 19, 0.85);
   stroke-width: 3px;
   stroke-linejoin: round;
   pointer-events: none;
@@ -171,40 +116,44 @@
 
 /* Encuentros */
 .tl-meet line {
-  stroke: var(--label);
+  stroke: #fff;
+  stroke-opacity: 0.8;
   stroke-width: 1.5px;
   stroke-dasharray: 2 2;
 }
 .tl-meet circle {
-  fill: var(--paper);
-  stroke: var(--label);
+  fill: var(--panel-solid);
+  stroke: #fff;
   stroke-width: 1.5px;
 }
 
-/* Eventos */
+/* Sucesos */
 .tl-mark {
-  fill: var(--label);
-  stroke: var(--paper);
+  fill: var(--ink);
+  stroke: var(--panel-solid);
   stroke-width: 1.5px;
   cursor: pointer;
 }
 .tl-mark.is-row {
-  fill: var(--accent);
+  fill: var(--gold);
 }
 .tl-mark.is-selected {
-  fill: var(--accent);
-  stroke: var(--label);
+  fill: var(--gold-hi);
+  stroke: #fff;
   stroke-width: 2px;
 }
 
 /* Cursor de fecha */
 .tl-cursor-line {
-  stroke: var(--accent);
+  stroke: var(--gold-hi);
   stroke-width: 2px;
   pointer-events: none;
+  filter: drop-shadow(0 0 4px rgba(230, 194, 127, 0.7));
 }
 .tl-cursor-handle {
-  fill: var(--accent);
+  fill: var(--gold-hi);
+  stroke: var(--panel-solid);
+  stroke-width: 1.5px;
   cursor: ew-resize;
 }
 
@@ -212,12 +161,12 @@
   position: absolute;
   z-index: 5;
   max-width: 240px;
-  padding: 6px 9px;
-  border: 1px solid var(--land-ink);
-  border-radius: 6px;
-  background: var(--land);
-  color: var(--label);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
+  padding: 7px 10px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--panel-solid);
+  color: var(--ink);
+  box-shadow: var(--shadow);
   font-size: 12.5px;
   line-height: 1.35;
   pointer-events: none;
@@ -231,191 +180,25 @@
 .tl-zones {
   display: flex;
   flex-wrap: wrap;
-  gap: 2px 12px;
+  gap: 2px 14px;
   margin: 0;
-  padding: 2px 10px 6px;
+  padding: 4px 16px 8px;
   list-style: none;
-  font-size: 11px;
+  font-size: 11.5px;
   color: var(--ink-soft);
 }
 .tl-zones li {
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 6px;
 }
 .tl-zone-swatch {
   width: 12px;
   height: 8px;
   border-radius: 2px;
 }
-
-/* Panel de evento */
-.event-card {
-  position: absolute;
-  z-index: 1000;
-  left: 12px;
-  bottom: 12px;
-  width: min(360px, calc(100% - 24px));
-  max-height: calc(100% - 90px);
-  overflow-y: auto;
-  padding: 10px 14px 10px;
-  border: 1px solid var(--land-ink);
-  border-radius: 8px;
-  background: var(--land);
-  color: var(--label);
-  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.22);
-  font-family: var(--font-map);
-}
-.ec-head {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-}
-.ec-date {
-  font-family: var(--font-ui);
-  font-size: 12px;
-  color: var(--ink-soft);
-  font-variant-numeric: tabular-nums;
-}
-.ec-close {
-  border: 0;
-  background: none;
-  color: var(--label);
-  font-size: 22px;
-  line-height: 1;
-  cursor: pointer;
-  padding: 0 2px;
-}
-.ec-title {
-  margin: 2px 0 2px;
-  font-size: 19px;
-  font-weight: 600;
-  text-wrap: balance;
-}
-.ec-place {
-  border: 0;
-  padding: 0;
-  background: none;
-  color: var(--accent);
-  font: italic 14px var(--font-map);
-  cursor: pointer;
-  text-decoration: underline;
-  text-underline-offset: 2px;
-}
-.ec-summary {
-  margin: 6px 0;
-  font-size: 15px;
-  line-height: 1.4;
-}
-.ec-who {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 4px 10px;
-  margin: 6px 0;
-  padding: 0;
-  list-style: none;
-  font: 12.5px var(--font-ui);
-}
-.ec-who li {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-}
-.ec-foot {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  gap: 6px;
-  margin-top: 6px;
-  font: 12px var(--font-ui);
-  color: var(--ink-soft);
-}
-.ec-nav {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-}
-.ec-nav button {
-  font: inherit;
-  padding: 4px 8px;
-  border: 1px solid var(--land-ink);
-  border-radius: 4px;
-  background: transparent;
-  color: var(--label);
-  cursor: pointer;
-}
-.ec-nav button:disabled {
-  opacity: 0.35;
-  cursor: default;
-}
-.ec-count {
-  font-variant-numeric: tabular-nums;
-}
-.ec-close:focus-visible,
-.ec-place:focus-visible,
-.ec-nav button:focus-visible {
-  outline: 2px solid var(--accent);
-  outline-offset: 2px;
-}
-
-/* Marcadores de personajes en el mapa */
-.char-marker {
-  width: 0 !important;
-  height: 0 !important;
-}
-.char-chip {
-  position: absolute;
-  left: 0;
-  top: 0;
-  transform: translate(calc(-50% + var(--dx, 0px)), calc(-50% + var(--dy, 0px)));
-  display: grid;
-  place-items: center;
-  min-width: 20px;
-  height: 20px;
-  padding: 0 3px;
-  border-radius: 10px;
-  background: var(--c);
-  color: var(--ink);
-  border: 2px solid var(--land);
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.35);
-  font: 700 10px/1 var(--font-ui);
-  transition: transform 0.15s;
-}
-.char-tip {
-  font-family: var(--font-ui);
-  font-size: 12px;
-}
-.pp-events .pe {
-  cursor: pointer;
-  border-radius: 4px;
-}
-.pp-events .pe:hover {
-  background: var(--paper);
-}
-
-@media (max-width: 600px) {
-  .tl-date {
-    min-width: 0;
-    font-size: 14px;
-  }
-  .tl-views {
-    margin-left: 0;
-  }
+@media (max-width: 899px) {
   .tl-zones {
     display: none;
-  }
-  .event-card {
-    left: 8px;
-    right: 8px;
-    bottom: 8px;
-    width: auto;
-    max-height: 55%;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .char-chip {
-    transition: none;
   }
 }

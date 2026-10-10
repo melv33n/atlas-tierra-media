@@ -10,7 +10,7 @@ import {
 } from '../src/data/timeline.ts';
 import { ZONES, zoneOf } from '../src/data/zones.ts';
 import { timeTicks } from '../src/timeline/ticks.ts';
-import { createStore } from '../src/state/store.ts';
+import { createStore, initialState } from '../src/state/store.ts';
 import { toDayIndex, type ShireDate } from '../src/lib/calendar.ts';
 import type { DataBundle, Leg } from '../src/data/types.ts';
 import { loadRepo } from '../scripts/lib/repo.ts';
@@ -176,7 +176,7 @@ describe('marcas del eje', () => {
 
 describe('store', () => {
   it('notifica solo cuando algo cambia', () => {
-    const store = createStore({ t: 1, range: null, hidden: new Set(), eventId: null });
+    const store = createStore(initialState({ t: 1 }));
     let calls = 0;
     store.subscribe(() => calls++);
     store.set({ t: 1 });

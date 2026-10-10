@@ -12,7 +12,6 @@ import { PlaceLayer } from './places.ts';
 import { ReliefLayer } from './relief.ts';
 import { injectPatterns } from './patterns.ts';
 import { JourneyLayer } from './journeyLayer.ts';
-import { addLegend } from './legend.ts';
 import { CharacterMarkers } from './markers.ts';
 import type { Store } from '../state/store.ts';
 import type { Track } from '../data/timeline.ts';
@@ -32,7 +31,16 @@ export interface AtlasMap {
   journeys: JourneyLayer;
   /** Centra el mapa en un lugar (sin alejar si ya está más cerca). */
   focusPlace(placeId: string): void;
+  /** Centra el mapa en un lugar y abre su ficha. */
+  openPlace(placeId: string): void;
+  /** Centra el mapa en la ficha de un personaje; false si no está en el mapa. */
+  focusCharacter(id: string): boolean;
+  /** Vuelve al encuadre general. */
+  home(): void;
 }
+
+/** Margen que ocupan los paneles sobre el mapa (px). */
+export type InsetsFn = () => { top: number; right: number; bottom: number; left: number };
 
 /** Mapa no geográfico: 1 unidad = 1 milla; [lat, lng] = [y, x]. */
 export function createMap(
@@ -41,7 +49,11 @@ export function createMap(
   story: DataBundle,
   store: Store,
   tracks: Track[],
-  opts: { debug?: boolean; eventTime?: (e: DataBundle['events'][number]) => number } = {},
+  opts: {
+    debug?: boolean;
+    eventTime?: (e: DataBundle['events'][number]) => number;
+    insets?: InsetsFn;
+  } = {},
 ): AtlasMap {
   injectPatterns();
   const map = L.map(el, {
@@ -54,7 +66,7 @@ export function createMap(
     maxBounds: L.latLngBounds(toLatLng([-250, -150]), toLatLng([2250, 1650])),
     maxBoundsViscosity: 0.8,
     attributionControl: false,
-    zoomControl: true,
+    zoomControl: false,
   });
   fitHome(map);
 
@@ -62,8 +74,8 @@ export function createMap(
   addBaseLayers(map, geo, renderers);
   new ReliefLayer(map, geo.mountains, renderers.relief);
   const { places } = story;
+  const coords = new Map(places.map((p) => [p.id, p]));
   const journeys = new JourneyLayer(map, story, renderers.routes);
-  addLegend(map, story.characters, store);
   map.createPane('characters').style.zIndex = '660';
   const markers = new CharacterMarkers(map, story, tracks, 'characters');
   const placeLayer = new PlaceLayer(map, places, renderers.places, story.events, story.characters);
@@ -88,17 +100,49 @@ export function createMap(
 
   if (opts.debug) enableDebug(map, renderers.grid);
 
+  // Marcador del suceso abierto: rombo dorado con un pulso.
+  const pin = L.marker([0, 0], {
+    pane: 'characters',
+    interactive: false,
+    keyboard: false,
+    icon: L.divIcon({
+      className: 'event-pin',
+      html: '<span class="event-pin__ring"></span><span class="event-pin__dot"></span>',
+      iconSize: [0, 0],
+    }),
+  });
+  const eventsById = new Map(story.events.map((e) => [e.id, e]));
+
   // Estado → mapa.
   const sync = () => {
-    const { t, range, hidden } = store.get();
+    const { t, range, hidden, eventId } = store.get();
+    const e = eventId ? eventsById.get(eventId) : undefined;
     journeys.setHidden(hidden);
     journeys.setTime(t, range);
-    markers.update(t, hidden);
+    markers.update(t, hidden, new Set(e?.characterIds ?? []));
+  };
+  const syncPin = () => {
+    const e = store.get().eventId ? eventsById.get(store.get().eventId!) : undefined;
+    const p = e ? coords.get(e.placeId) : undefined;
+    if (p) pin.setLatLng(toLatLng(p.coords)).addTo(map);
+    else pin.remove();
+  };
+  const syncLayers = () => {
+    const { layers } = store.get();
+    journeys.setLayers(layers);
+    el.classList.toggle('hide-minor-labels', !layers.minor);
   };
   store.subscribe((s, prev) => {
-    if (s.t !== prev.t || s.range !== prev.range || s.hidden !== prev.hidden) sync();
+    if (
+      s.t !== prev.t ||
+      s.range !== prev.range ||
+      s.hidden !== prev.hidden ||
+      s.eventId !== prev.eventId
+    )
+      sync();
+    if (s.eventId !== prev.eventId) syncPin();
+    if (s.layers !== prev.layers) syncLayers();
   });
-  sync();
 
   // Clic en un evento de la ficha de un lugar → abrir el panel del evento.
   el.addEventListener('click', (ev) => {
@@ -108,18 +152,60 @@ export function createMap(
     if (e) store.set({ eventId: e.id, t: opts.eventTime?.(e) ?? toDayIndex(e.date) + 0.5 });
   });
 
-  const coords = new Map(places.map((p) => [p.id, p]));
+  /**
+   * Lleva `ll` al centro del hueco libre entre paneles. Si ya se ve holgadamente y
+   * el zoom no cambia, no se mueve (al reproducir, la cámara no da tirones); si el
+   * zoom no cambia, desplaza en vez de volar.
+   */
+  const flyFree = (ll: L.LatLngExpression, zoom: number) => {
+    const ins = opts.insets?.() ?? { top: 0, right: 0, bottom: 0, left: 0 };
+    const size = map.getSize();
+    const p = map.latLngToContainerPoint(ll);
+    const free = { x0: ins.left, x1: size.x - ins.right, y0: ins.top, y1: size.y - ins.bottom };
+    const mx = (free.x1 - free.x0) * 0.22;
+    const my = (free.y1 - free.y0) * 0.22;
+    const sameZoom = Math.abs(zoom - map.getZoom()) < 0.01;
+    if (
+      sameZoom &&
+      p.x > free.x0 + mx &&
+      p.x < free.x1 - mx &&
+      p.y > free.y0 + my &&
+      p.y < free.y1 - my
+    )
+      return;
+    const shift = L.point((ins.right - ins.left) / 2, (ins.bottom - ins.top) / 2);
+    const target = map.unproject(map.project(L.latLng(ll), zoom).add(shift), zoom);
+    if (sameZoom) map.panTo(target, { animate: true, duration: 0.8 });
+    else map.flyTo(target, zoom, { duration: 0.9 });
+  };
   const focusPlace = (placeId: string) => {
     const p = coords.get(placeId);
     if (!p) return;
-    const zoom = Math.max(map.getZoom(), Math.min(2, p.zoomMin + 0.5));
-    // En pantallas estrechas el panel del evento ocupa la mitad inferior: el lugar
-    // se coloca en la mitad de arriba.
-    const shift = map.getSize().x < 600 ? map.getSize().y * 0.22 : 0;
-    const target = map.unproject(map.project(toLatLng(p.coords), zoom).add([0, shift]), zoom);
-    map.flyTo(target, zoom, { duration: 0.8 });
+    flyFree(toLatLng(p.coords), Math.max(map.getZoom(), Math.min(2, p.zoomMin + 0.5)));
   };
-  return { map, journeys, focusPlace };
+  const openPlace = (placeId: string) => {
+    focusPlace(placeId);
+    map.once('moveend', () => placeLayer.openPopup(placeId));
+  };
+  const focusCharacter = (id: string) => {
+    const ll = markers.positionOf(id);
+    if (!ll) return false;
+    flyFree(ll, Math.max(map.getZoom(), 1));
+    return true;
+  };
+  const home = () => {
+    const [[x0, y0], [x1, y1]] = HOME;
+    map.flyToBounds(L.latLngBounds(toLatLng([x0, y0]), toLatLng([x1, y1])), { duration: 0.9 });
+  };
+
+  // Encuadre inicial centrado en el hueco libre entre paneles.
+  const ins = opts.insets?.();
+  if (ins) map.panBy([(ins.right - ins.left) / 2, (ins.bottom - ins.top) / 2], { animate: false });
+
+  sync();
+  syncPin();
+  syncLayers();
+  return { map, journeys, focusPlace, openPlace, focusCharacter, home };
 }
 
 /**

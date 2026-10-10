@@ -17,24 +17,37 @@ export interface Glyph {
   outline: XY[];
   /** Sombra (polígono) o null. */
   shadow: XY[] | null;
+  /** Cara iluminada (polígono, luz del oeste) o, en colinas, el relleno. */
+  light: XY[];
+  /** Nieve en la cumbre (cordilleras principales y picos). */
+  snow?: XY[];
   volcano?: boolean;
 }
 
+const lerp = (a: XY, b: XY, k: number): XY => [a[0] + (b[0] - a[0]) * k, a[1] + (b[1] - a[1]) * k];
+
 /** Anchura en píxeles de un glifo según tipo y rango. */
 function glyphPx(kind: string, rank: number, zoom: number): number {
-  const base = kind === 'hills' ? 9 : rank <= 1 ? 12 : rank === 2 ? 10.5 : 9;
+  const base = kind === 'hills' ? 10 : rank <= 1 ? 14 : rank === 2 ? 12.5 : 10.5;
   return base * (1 + 0.45 * Math.max(0, zoom));
 }
 
 /** Filas máximas: al acercarse, la banda no debe convertirse en un tapiz. */
 const MAX_ROWS = { range: 5, hills: 3 } as const;
 
-function mountainGlyph(p: XY, w: number, h: number, skew: number): Glyph {
+function mountainGlyph(p: XY, w: number, h: number, skew: number, snowy = false): Glyph {
   const peak: XY = [p[0] + skew * w, p[1] + h];
   const left: XY = [p[0] - w / 2, p[1]];
   const right: XY = [p[0] + w / 2, p[1]];
   const foot: XY = [p[0] + skew * w * 0.4 + w * 0.06, p[1]];
-  return { outline: [left, peak, right], shadow: [peak, right, foot] };
+  return {
+    outline: [left, peak, right],
+    shadow: [peak, right, foot],
+    light: [left, peak, foot],
+    snow: snowy
+      ? [lerp(peak, left, 0.32), peak, lerp(peak, right, 0.3), lerp(peak, foot, 0.34)]
+      : undefined,
+  };
 }
 
 function hillGlyph(p: XY, w: number, h: number): Glyph {
@@ -43,7 +56,7 @@ function hillGlyph(p: XY, w: number, h: number): Glyph {
     const a = Math.PI - (k * Math.PI) / 6;
     outline.push([p[0] + (w / 2) * Math.cos(a), p[1] + h * Math.sin(a)]);
   }
-  return { outline, shadow: null };
+  return { outline, shadow: null, light: outline };
 }
 
 /** Genera los glifos de una cordillera o colinas para un zoom dado (millas). */
@@ -85,7 +98,13 @@ export function ridgeGlyphs(feature: GeoFeature, zoom: number): Glyph[] {
       glyphs.push(
         kind === 'hills'
           ? hillGlyph(p, w * scale, h * scale)
-          : mountainGlyph(p, w * scale, h * scale, (rand() - 0.5) * 0.18),
+          : mountainGlyph(
+              p,
+              w * scale,
+              h * scale,
+              (rand() - 0.5) * 0.18,
+              rank <= 1 && centrality > 0.5,
+            ),
       );
     }
   }
@@ -96,6 +115,7 @@ export function peakGlyph(feature: GeoFeature, zoom: number): Glyph {
   const p = feature.geometry.coordinates as XY;
   const mpp = 1 / 2 ** zoom;
   const w = glyphPx('range', 1, zoom) * 1.45 * mpp;
-  const g = mountainGlyph([p[0], p[1] - w * 0.3], w, w * 0.95, 0);
-  return { ...g, volcano: feature.properties.id === 'orodruin' };
+  const volcano = feature.properties.id === 'orodruin';
+  const g = mountainGlyph([p[0], p[1] - w * 0.3], w, w * 0.95, 0, !volcano);
+  return { ...g, volcano };
 }

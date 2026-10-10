@@ -26,6 +26,8 @@ export class JourneyLayer {
   private groups = new Map<string, L.LayerGroup>();
   private drawn: Drawn[] = [];
   private hidden = new Set<string>();
+  private layers = { pending: true, inferred: true };
+  private last: { t: number; range: [number, number] | null } = { t: 0, range: null };
   private map: L.Map;
 
   constructor(map: L.Map, data: DataBundle, renderer: L.Renderer) {
@@ -47,7 +49,7 @@ export class JourneyLayer {
       const inferred = shape.leg.confidence === 'inferred';
       const line = L.polyline([], {
         renderer,
-        color: char.color,
+        color: lighten(char.color),
         weight: 2.6,
         opacity: 0.95,
         dashArray: inferred ? '6 5' : undefined,
@@ -117,19 +119,34 @@ export class JourneyLayer {
     }
   }
 
+  /** Capas opcionales: camino por recorrer y tramos deducidos. */
+  setLayers(layers: RouteLayers): void {
+    this.layers = { pending: layers.pending, inferred: layers.inferred };
+    this.setTime(this.last.t, this.last.range);
+  }
+
   /**
    * Atenúa lo que aún no ha ocurrido en el instante `t` y, si hay rango, casi
    * oculta lo que cae fuera de él.
    */
   setTime(t: number, range: [number, number] | null): void {
+    this.last = { t, range };
     for (const d of this.drawn) {
       const { startDay, endDay } = d.shape;
       const out = range && (endDay + 1 < range[0] || startDay > range[1]);
       const future = startDay + DEPART > t;
-      const opacity = out ? 0.06 : future ? 0.2 : 0.95;
+      const off =
+        (future && !this.layers.pending) ||
+        (!this.layers.inferred && d.shape.leg.confidence === 'inferred');
+      const opacity = off ? 0 : out ? 0.06 : future ? 0.22 : 0.95;
       if (d.line.options.opacity !== opacity) d.line.setStyle({ opacity });
     }
   }
+}
+
+export interface RouteLayers {
+  pending: boolean;
+  inferred: boolean;
 }
 
 function tooltipHtml(char: Character, shape: LegShape, placeName: Map<string, string>): string {
@@ -149,6 +166,20 @@ function tooltipHtml(char: Character, shape: LegShape, placeName: Map<string, st
   return `<div class="jt-who" style="--c:${char.color}">${escapeHtml(shortNameOf(char))}</div>
 <div class="jt-path">${escapeHtml(from)} → ${escapeHtml(to)}</div>
 <div class="jt-dates">${dates}</div>${note}`;
+}
+
+/**
+ * Color de ruta sobre el mapa oscuro: el del personaje mezclado con blanco. Se
+ * calcula aquí y no con un filtro CSS, que obligaría a re-rasterizar la capa entera
+ * en cada fotograma de la reproducción.
+ */
+export function lighten(hex: string, k = 0.3): string {
+  const n = parseInt(hex.slice(1), 16);
+  const mix = (c: number) =>
+    Math.round(c + (255 - c) * k)
+      .toString(16)
+      .padStart(2, '0');
+  return `#${mix(n >> 16)}${mix((n >> 8) & 255)}${mix(n & 255)}`;
 }
 
 export function escapeHtml(s: string): string {
