@@ -198,3 +198,26 @@ Formato: contexto → decisión → consecuencias. Las nuevas al final.
   Isengard).
 - **Decisión**: hay encuentro si, al llegar, los dos personajes siguen juntos un instante después
   (en el lugar o saliendo a la vez por el mismo camino) y estaban separados al salir y el día anterior.
+
+## 023 · Rediseño: interfaz de juego, solo oscuro, móvil primero — 2026-10-10
+
+- **Contexto**: la interfaz de H0–H4 era plana y poco práctica en el móvil. Se exploró en un lienzo
+  de diseño un estilo de pergamino y otro de juego de fantasía moderno; el usuario eligió el segundo.
+- **Decisión**: un único tema oscuro con paneles translúcidos y filetes dorados; mapa con relieve
+  sombreado, nieve en las cumbres, bosques en masa, ríos con brillo y tintes por región. Móvil
+  primero: barra de búsqueda arriba, hoja inferior con el suceso, las calles y el reproductor, y
+  pestañas (Mapa, Compañía, Sucesos, Buscar). A partir de 900 px la misma interfaz se reorganiza en
+  paneles flotantes. Reproductor con tres ritmos y cámara que sigue la historia.
+- **Descartado**: tema claro y app instalable (PWA), aplazados (ver IDEAS). Pergamino clásico.
+- **Consecuencias**: la paleta de zonas pasa a una única variante para fondo oscuro, revalidada.
+
+## 024 · Tipografías: Cinzel y Barlow — 2026-10-10
+
+| Dependencia                         | Para qué                                                                        |
+| ----------------------------------- | ------------------------------------------------------------------------------- |
+| `@fontsource/cinzel`                | Títulos y nombres de región: capitales romanas, sin relación con las películas. |
+| `@fontsource/barlow`                | Texto de interfaz y etiquetas: muy legible en pantallas pequeñas.               |
+| `@fontsource/barlow-semi-condensed` | Títulos de suceso, fechas y cifras: caben más en el móvil.                      |
+
+- Todas OFL y autoalojadas (sin peticiones a terceros). Sustituyen a Alegreya / Alegreya SC, que se
+  retiran.
