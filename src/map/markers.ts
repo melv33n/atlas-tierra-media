@@ -15,7 +15,8 @@ const CLUSTER_PX = 22;
 const SPACING_PX = 27;
 
 export class CharacterMarkers {
-  private items: { c: Character; track: Track; marker: L.Marker; shown: boolean }[] = [];
+  private items: { c: Character; track: Track; marker: L.Marker; shown: boolean; tip?: string }[] =
+    [];
   private map: L.Map;
   private placeName: Map<string, string>;
 
@@ -54,9 +55,8 @@ export class CharacterMarkers {
       const where = pos.placeId
         ? `en ${this.placeName.get(pos.placeId) ?? pos.placeId}`
         : `de camino a ${this.placeName.get(pos.move!.leg.to) ?? pos.move!.leg.to}`;
-      it.marker.setTooltipContent(
-        `<strong>${escapeHtml(shortNameOf(it.c))}</strong> ${escapeHtml(where)}`,
-      );
+      const tip = `<strong>${escapeHtml(shortNameOf(it.c))}</strong> ${escapeHtml(where)}`;
+      if (tip !== it.tip) it.marker.setTooltipContent((it.tip = tip));
       if (!it.shown) {
         it.marker.addTo(this.map);
         it.marker

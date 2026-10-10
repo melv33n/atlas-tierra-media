@@ -31,8 +31,6 @@
 .glass {
   background: var(--panel);
   border: 1px solid var(--line);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
 }
 .icon-btn,
 .hud-btn,
@@ -46,10 +44,8 @@
   min-height: var(--tap);
   border-radius: 14px;
   border: 1px solid var(--line);
-  background: rgba(15, 20, 26, 0.86);
+  background: rgba(15, 20, 26, 0.92);
   color: var(--ink);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
 }
 .icon-btn {
@@ -159,10 +155,8 @@
   height: 32px;
   padding: 0 12px 0 10px;
   border-radius: 16px;
-  background: rgba(15, 20, 26, 0.8);
+  background: rgba(15, 20, 26, 0.9);
   border: 1px solid var(--line-gold);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
   color: var(--gold);
   font: 600 14.5px var(--font-cond);
   letter-spacing: 0.02em;
@@ -203,11 +197,9 @@
   right: 0;
   bottom: var(--tabs-h);
   padding-bottom: 4px;
-  background: rgba(13, 17, 22, 0.93);
+  background: rgba(13, 17, 22, 0.96);
   border-top: 1px solid var(--line-gold);
   border-radius: 22px 22px 0 0;
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
   box-shadow: 0 -12px 32px rgba(0, 0, 0, 0.45);
 }
 .dock__grab,
@@ -394,12 +386,10 @@
   bottom: var(--tabs-h);
   display: none;
   flex-direction: column;
-  background: rgba(13, 17, 22, 0.97);
+  background: var(--panel-solid);
   border-top: 1px solid var(--line-gold);
   border-radius: 22px 22px 0 0;
   box-shadow: 0 -12px 32px rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
 }
 body[data-panel='company'] .panel--company,
 body[data-panel='event'] .panel--event,
@@ -1055,10 +1045,8 @@ body:not([data-panel='none']) .dock {
     height: 56px;
     padding: 0 18px 0 12px;
     border-radius: 14px;
-    background: rgba(15, 20, 26, 0.88);
+    background: rgba(15, 20, 26, 0.93);
     border: 1px solid var(--line-gold);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
   }
   .brand__mark {
     color: var(--gold);
@@ -1091,10 +1079,8 @@ body:not([data-panel='none']) .dock {
     margin-left: auto;
     padding: 4px;
     border-radius: 14px;
-    background: rgba(15, 20, 26, 0.88);
+    background: rgba(15, 20, 26, 0.93);
     border: 1px solid var(--line);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
   }
   .books-quick button {
     min-width: 38px;
@@ -1183,7 +1169,7 @@ body:not([data-panel='none']) .dock {
     border: 1px solid var(--line);
     border-top-color: var(--line-gold);
     border-radius: var(--radius);
-    background: rgba(13, 17, 22, 0.93);
+    background: var(--panel-solid);
     box-shadow: var(--shadow);
     max-height: calc(100% - 88px - var(--dock-h, 260px) - 28px);
   }
@@ -1216,7 +1202,6 @@ body:not([data-panel='none']) .dock {
     width: 460px;
     padding-top: 0;
     border-radius: var(--radius);
-    background: rgba(13, 17, 22, 0.97);
     z-index: 40;
     max-height: calc(100% - 96px);
   }

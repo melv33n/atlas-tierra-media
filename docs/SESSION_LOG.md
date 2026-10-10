@@ -33,3 +33,11 @@
 - H4: rutas completas tras Amon Hen hasta los Puertos Grises (3021) y el regreso de Sam; 152 eventos; 7 lugares nuevos.
 - Modelo: `afterGap` (paradero desconocido) y `mode` (medio de viaje) con límites de velocidad; regla de encuentros revisada (sin falsos «encuentros» al cruzarse).
 - Siguiente: según el usuario, controles y rediseño temático (H5).
+
+## 2026-10-10 · Sesión 1 (H5)
+
+- H4 mergeado (#5). Diseño explorado en un lienzo (pergamino → interfaz de juego); el usuario elige juego, solo oscuro, móvil primero y un único PR.
+- H5: mapa con relieve sombreado, nieve, bosques en masa, tintes por región y ríos con brillo; interfaz con hoja inferior, pestañas, reproductor con cámara que sigue la historia, «¿dónde está cada uno?», búsqueda, filtros (libros, personajes, capas) y estado en la URL.
+- Rendimiento: sin filtros CSS sobre las rutas ni desenfoques tras los paneles (×3 fotogramas al reproducir).
+- Paleta de zonas reasignada para el fondo oscuro (validada). Fuentes: Cinzel + Barlow.
+- Siguiente: revisar en un móvil real; ideas aplazadas (PWA, tema claro).

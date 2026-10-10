@@ -53,12 +53,13 @@ Estado: ✅ hecho · 🚧 en curso · ⏳ pendiente
 _Dirección aprobada en el lienzo de diseño: interfaz de juego de fantasía moderno, solo tema
 oscuro, móvil primero con su versión de escritorio (ADR 023). Un único PR._
 
-- [ ] Mapa con estilo de juego: relieve sombreado, nieve, bosques en masa, ríos con brillo, tintes
+- [x] Mapa con estilo de juego: relieve sombreado, nieve, bosques en masa, ríos con brillo, tintes
       por región, etiquetas con halo
-- [ ] Interfaz móvil: barra de búsqueda, hoja inferior (suceso + calles + reproductor), pestañas
-- [ ] Escritorio: paneles flotantes (Compañía, ficha del suceso, línea temporal)
-- [ ] Reproductor (play/pausa, ritmos) y cámara que sigue la historia
-- [ ] «¿Dónde está cada uno?» agrupado por lugar
-- [ ] Búsqueda (lugares, sucesos, personajes) y filtros (libros, fechas, personajes, capas)
-- [ ] Estado en la URL y botón de compartir
-- [ ] Accesibilidad (teclado, foco, áreas táctiles ≥ 44 px), capturas y preview
+- [x] Interfaz móvil: barra de búsqueda, hoja inferior (suceso + calles + reproductor), pestañas
+- [x] Escritorio: paneles flotantes (Compañía, ficha del suceso, línea temporal)
+- [x] Reproductor (play/pausa, ritmos) y cámara que sigue la historia
+- [x] «¿Dónde está cada uno?» agrupado por lugar
+- [x] Búsqueda (lugares, sucesos, personajes) y filtros (libros, fechas, personajes, capas)
+- [x] Estado en la URL y botón de compartir
+- [x] Accesibilidad (teclado, foco, áreas táctiles ≥ 44 px), capturas y preview
+- [ ] PR mergeado

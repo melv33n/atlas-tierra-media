@@ -49,7 +49,7 @@ export class JourneyLayer {
       const inferred = shape.leg.confidence === 'inferred';
       const line = L.polyline([], {
         renderer,
-        color: char.color,
+        color: lighten(char.color),
         weight: 2.6,
         opacity: 0.95,
         dashArray: inferred ? '6 5' : undefined,
@@ -166,6 +166,20 @@ function tooltipHtml(char: Character, shape: LegShape, placeName: Map<string, st
   return `<div class="jt-who" style="--c:${char.color}">${escapeHtml(shortNameOf(char))}</div>
 <div class="jt-path">${escapeHtml(from)} → ${escapeHtml(to)}</div>
 <div class="jt-dates">${dates}</div>${note}`;
+}
+
+/**
+ * Color de ruta sobre el mapa oscuro: el del personaje mezclado con blanco. Se
+ * calcula aquí y no con un filtro CSS, que obligaría a re-rasterizar la capa entera
+ * en cada fotograma de la reproducción.
+ */
+export function lighten(hex: string, k = 0.3): string {
+  const n = parseInt(hex.slice(1), 16);
+  const mix = (c: number) =>
+    Math.round(c + (255 - c) * k)
+      .toString(16)
+      .padStart(2, '0');
+  return `#${mix(n >> 16)}${mix((n >> 8) & 255)}${mix(n & 255)}`;
 }
 
 export function escapeHtml(s: string): string {

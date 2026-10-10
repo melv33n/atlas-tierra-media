@@ -463,10 +463,7 @@
   min-height: 32px;
 }
 
-/* --- Rutas de los personajes (el color va en línea, por personaje) */
-.leaflet-routes-pane svg {
-  filter: drop-shadow(0 0 1.2px rgba(0, 0, 0, 0.95)) brightness(1.3) saturate(1.1);
-}
+/* --- Rutas de los personajes (el color, aclarado para el fondo oscuro, va en línea) */
 .leaflet-pane path.journey {
   fill: none;
   cursor: pointer;

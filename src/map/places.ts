@@ -47,8 +47,9 @@ export class PlaceLayer {
         // En móvil, más estrecha y sin quedar bajo los controles de zoom y leyenda.
         maxWidth: Math.min(320, window.innerWidth - 90),
         minWidth: Math.min(220, window.innerWidth - 90),
-        autoPanPaddingTopLeft: [60, 60],
-        autoPanPaddingBottomRight: [16, 16],
+        // Que la ficha no quede bajo la barra superior ni la hoja inferior (móvil).
+        autoPanPaddingTopLeft: [16, window.innerWidth < 900 ? 130 : 96],
+        autoPanPaddingBottomRight: [16, window.innerWidth < 900 ? 380 : 300],
       });
       this.items.push({ place, layer: L.layerGroup([mark, hit]), hit, shown: false });
     }

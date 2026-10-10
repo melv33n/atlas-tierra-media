@@ -17,7 +17,7 @@ import { createStore, initialState } from './state/store.ts';
 import { decodeUrlState, encodeUrlState } from './state/url.ts';
 import { createTimeline } from './timeline/timeline.ts';
 import { createEventCard } from './ui/eventCard.ts';
-import { createShell } from './ui/shell.ts';
+import { createShell, isDesktop } from './ui/shell.ts';
 import { createPlayer } from './ui/player.ts';
 import { createCompany } from './ui/company.ts';
 import { createSearch } from './ui/searchPanel.ts';
@@ -101,6 +101,13 @@ createPlayer(story, timeline, store, {
   home: () => atlas.home(),
   'zoom-in': () => atlas.map.zoomIn(0.5),
   'zoom-out': () => atlas.map.zoomOut(0.5),
+});
+
+// Al abrir una hoja en el móvil cambia el hueco libre: recolocar el suceso abierto.
+store.subscribe((s, prev) => {
+  if (s.panel === prev.panel || isDesktop() || s.panel !== 'event' || !s.eventId) return;
+  const e = story.events.find((x) => x.id === s.eventId);
+  if (e) requestAnimationFrame(() => atlas.focusPlace(e.placeId));
 });
 
 // Elegir rango a mano (en el eje) desmarca los libros si ya no coinciden.

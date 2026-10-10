@@ -570,6 +570,7 @@ export function createTimeline(root: HTMLElement, data: DataBundle, store: Store
   // En el móvil, unas semanas alrededor del instante inicial; en escritorio, el viaje.
   if (width < 600) showWindow(store.get().t - 12, store.get().t + 40);
   else showWindow(focus[0], focus[1]);
+  ensureVisible(store.get().t);
   render();
   new ResizeObserver(() => {
     const keep = x.domain() as [number, number];
@@ -581,7 +582,10 @@ export function createTimeline(root: HTMLElement, data: DataBundle, store: Store
       // Reproduciendo, el cursor se queda en el centro y las calles se desplazan.
       if (s.playing) {
         const [a, b] = x.domain() as [number, number];
+        // El zoom ya vuelve a dibujar: no hace falta un segundo render.
         showWindow(s.t - (b - a) / 2, s.t + (b - a) / 2);
+        if (s.range === prev.range && s.hidden === prev.hidden && s.eventId === prev.eventId)
+          return;
       } else ensureVisible(s.t);
     }
     if (s.range !== prev.range && s.range && !prev.range) {
