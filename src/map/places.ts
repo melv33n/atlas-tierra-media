@@ -14,7 +14,7 @@ const SYMBOL: Partial<Record<PlaceType, string>> = {
 };
 
 export class PlaceLayer {
-  private items: { place: Place; layer: L.LayerGroup; shown: boolean }[] = [];
+  private items: { place: Place; layer: L.LayerGroup; hit: L.CircleMarker; shown: boolean }[] = [];
   private map: L.Map;
 
   constructor(
@@ -50,7 +50,7 @@ export class PlaceLayer {
         autoPanPaddingTopLeft: [60, 60],
         autoPanPaddingBottomRight: [16, 16],
       });
-      this.items.push({ place, layer: L.layerGroup([mark, hit]), shown: false });
+      this.items.push({ place, layer: L.layerGroup([mark, hit]), hit, shown: false });
     }
     map.on('zoomend', () => this.update());
     this.update();
@@ -64,6 +64,17 @@ export class PlaceLayer {
       if (!show && it.shown) it.layer.remove();
       it.shown = show;
     }
+  }
+
+  /** Abre la ficha de un lugar (mostrándolo aunque el zoom aún no lo incluya). */
+  openPopup(placeId: string): void {
+    const it = this.items.find((x) => x.place.id === placeId);
+    if (!it) return;
+    if (!it.shown) {
+      it.layer.addTo(this.map);
+      it.shown = true;
+    }
+    it.hit.openPopup();
   }
 
   /** Posiciones en pantalla (capa) de los marcadores visibles: obstáculos para las etiquetas. */

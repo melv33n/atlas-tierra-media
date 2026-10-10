@@ -209,7 +209,12 @@ Formato: contexto → decisión → consecuencias. Las nuevas al final.
   pestañas (Mapa, Compañía, Sucesos, Buscar). A partir de 900 px la misma interfaz se reorganiza en
   paneles flotantes. Reproductor con tres ritmos y cámara que sigue la historia.
 - **Descartado**: tema claro y app instalable (PWA), aplazados (ver IDEAS). Pergamino clásico.
-- **Consecuencias**: la paleta de zonas pasa a una única variante para fondo oscuro, revalidada.
+- **Consecuencias**: la paleta de zonas pasa a la variante oscura de la skill de visualización,
+  revalidada sobre `#0f141a`. El orden narrativo de ADR 019 fallaba en daltonismo (Rohan↔Gondor) en
+  este fondo; se reasignan los colores a las zonas (búsqueda exhaustiva de permutaciones que pasan
+  todas las comprobaciones): Comarca aguamarina, Eriador naranja, Nubladas violeta, Lórien amarillo,
+  Anduin magenta, Rohan verde, Gondor azul, Mordor rojo. Los lapsos de cada libro para el filtro
+  (`src/data/books.ts`) son fechas del Apéndice B: del arranque al cierre del hilo de cada libro.
 
 ## 024 · Tipografías: Cinzel y Barlow — 2026-10-10
 

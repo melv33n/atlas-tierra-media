@@ -35,15 +35,21 @@ properties (`erasableSyntaxOnly`).
 - `src/data/legs.ts` — geometría de los tramos, carriles paralelos y desplazamiento de polilíneas.
 - `src/data/timeline.ts` — modelo temporal continuo: posición de cada personaje en cualquier
   instante, segmentos para las calles y detección de encuentros. `zones.ts`: 8 zonas de color.
-- `src/state/store.ts` — estado compartido (fecha, rango, ocultos, evento abierto).
-- `src/timeline/` — línea temporal D3 (calles, eje, cursor, rango). `src/ui/eventCard.ts` — panel
-  de evento.
+- `src/data/books.ts` (lapso de cada libro), `search.ts` (búsqueda sin acentos), `whereabouts.ts`
+  («¿dónde está cada uno?»).
+- `src/state/store.ts` — estado compartido (fecha, rango, ocultos, suceso, reproducción, cámara,
+  libros, capas, panel abierto). `url.ts` — estado ↔ URL compartible.
+- `src/timeline/` — línea temporal D3 (calles, eje, cursor, rango).
+- `src/ui/` — interfaz (ADR 023): `shell.ts` (paneles, pestañas, teclado, hueco libre del mapa),
+  `player.ts` (reproductor y hoja inferior), `eventCard.ts`, `company.ts`, `searchPanel.ts`,
+  `filters.ts`. Móvil primero; desde 900 px, paneles flotantes.
 - `src/map/` — Leaflet: `createMap.ts` (montaje y encuadre), `baseLayers.ts` (paneles y capas
   vectoriales), `shapes.ts` (rugosidad + suavizado), `glyphs.ts`/`relief.ts` (relieve por zoom),
   `labels.ts` (etiquetas con anticolisión), `places.ts` + `popup.ts` (marcadores y ficha con eventos),
-  `journeyLayer.ts` + `legend.ts` (rutas y leyenda), `markers.ts` (fichas de personaje en el
-  instante actual), `debug.ts` (`?debug`; expone `window.atlas` y `window.store`).
-- `src/styles/` — tokens de color (claro/oscuro) en `main.css`, estilo cartográfico en `map.css`.
+  `journeyLayer.ts` (rutas), `markers.ts` (fichas de personaje en el instante actual),
+  `patterns.ts` (textura, copas, tintes), `debug.ts` (`?debug`; expone `window.atlas` y `window.store`).
+- `src/styles/` — tokens (solo tema oscuro) en `main.css`, mapa en `map.css`, calles en
+  `timeline.css`, interfaz en `app.css`.
 - `docs/` — memoria del proyecto.
 
 ## Modelo de datos (resumen)

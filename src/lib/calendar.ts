@@ -149,6 +149,12 @@ export function formatDate(date: ShireDate): string {
   return `${approx}${date.day} de ${month} de ${date.year}`;
 }
 
+/** Versión corta para espacios estrechos: «25 mar 3019» (los días especiales, completos). */
+export function formatDateShort(date: ShireDate): string {
+  if (date.special || date.month === undefined || date.day === undefined) return formatDate(date);
+  return `${date.day} ${MONTHS_ES[date.month - 1]!.slice(0, 3)} ${date.year}`;
+}
+
 export function compareDates(a: ShireDate, b: ShireDate): number {
   return toDayIndex(a) - toDayIndex(b);
 }

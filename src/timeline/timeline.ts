@@ -21,7 +21,6 @@ import {
 } from '../data/timeline.ts';
 import { formatDate, fromDayIndex, toDayIndex } from '../lib/calendar.ts';
 import type { Store } from '../state/store.ts';
-import { chipInk } from '../map/popup.ts';
 import { escapeHtml } from '../map/journeyLayer.ts';
 import { timeTicks } from './ticks.ts';
 import { ZONES } from '../data/zones.ts';
@@ -29,8 +28,6 @@ import { ZONES } from '../data/zones.ts';
 type SVG = Selection<SVGSVGElement, unknown, null, undefined>;
 type G = Selection<SVGGElement, unknown, null, undefined>;
 
-const AXIS_H = 34;
-const EVENTS_H = 18;
 const PAD_R = 10;
 
 export interface TimelineApi {
@@ -39,6 +36,10 @@ export interface TimelineApi {
   /** Eventos ordenados cronológicamente. */
   orderedEvents: StoryEvent[];
   tracks: Track[];
+  /** Órdenes del reproductor: prev/next-event, prev/next-day, clear-range, view-focus, view-all. */
+  command(act: string): void;
+  /** Primer y último instante con datos. */
+  span: [number, number];
 }
 
 export function createTimeline(root: HTMLElement, data: DataBundle, store: Store): TimelineApi {
@@ -68,23 +69,6 @@ export function createTimeline(root: HTMLElement, data: DataBundle, store: Store
 
   // --- Estructura DOM -------------------------------------------------------
   root.innerHTML = `
-<div class="tl-bar">
-  <div class="tl-nav" role="group" aria-label="Navegar por la línea temporal">
-    <button type="button" class="tl-btn" data-act="prev-event" title="Evento anterior" aria-label="Evento anterior">⏮</button>
-    <button type="button" class="tl-btn" data-act="prev-day" title="Día anterior" aria-label="Día anterior">◀</button>
-    <output class="tl-date" aria-live="polite"></output>
-    <button type="button" class="tl-btn" data-act="next-day" title="Día siguiente" aria-label="Día siguiente">▶</button>
-    <button type="button" class="tl-btn" data-act="next-event" title="Evento siguiente" aria-label="Evento siguiente">⏭</button>
-  </div>
-  <div class="tl-range" hidden>
-    <span class="tl-range__label"></span>
-    <button type="button" class="tl-btn tl-btn--text" data-act="clear-range">Quitar rango</button>
-  </div>
-  <div class="tl-views" role="group" aria-label="Encuadre">
-    <button type="button" class="tl-btn tl-btn--text" data-act="view-focus">3018–3019</button>
-    <button type="button" class="tl-btn tl-btn--text" data-act="view-all">Todo</button>
-  </div>
-</div>
 <div class="tl-body">
   <svg class="tl-svg" role="img" aria-label="Calles de la línea temporal por personaje"></svg>
   <div class="tl-tip" role="tooltip" hidden></div>
@@ -96,8 +80,6 @@ export function createTimeline(root: HTMLElement, data: DataBundle, store: Store
 
   const body = root.querySelector<HTMLDivElement>('.tl-body')!;
   const tip = root.querySelector<HTMLDivElement>('.tl-tip')!;
-  const dateOut = root.querySelector<HTMLOutputElement>('.tl-date')!;
-  const rangeBox = root.querySelector<HTMLDivElement>('.tl-range')!;
   const svg: SVG = select(root.querySelector<SVGSVGElement>('.tl-svg')!);
 
   const defs = svg.append('defs');
@@ -127,6 +109,8 @@ export function createTimeline(root: HTMLElement, data: DataBundle, store: Store
   const gLabels = svg.append('g').attr('class', 'tl-labels');
 
   let width = 0;
+  let AXIS_H = 34;
+  let EVENTS_H = 18;
   let laneH = 20;
   let labelW = 104;
   let height = 0;
@@ -165,8 +149,10 @@ export function createTimeline(root: HTMLElement, data: DataBundle, store: Store
   function layout(): void {
     width = Math.max(320, body.clientWidth);
     const narrow = width < 600;
-    labelW = narrow ? 34 : 104;
-    laneH = narrow ? 17 : 20;
+    labelW = narrow ? 30 : 112;
+    laneH = narrow ? 11 : 15;
+    AXIS_H = narrow ? 24 : 28;
+    EVENTS_H = narrow ? 10 : 14;
     height = AXIS_H + EVENTS_H + main.length * laneH + 6;
     svg.attr('width', width).attr('height', height).attr('viewBox', `0 0 ${width} ${height}`);
     clipRect
@@ -244,13 +230,13 @@ export function createTimeline(root: HTMLElement, data: DataBundle, store: Store
       .select('.tl-chip')
       .attr('cx', 15)
       .attr('cy', laneH / 2)
-      .attr('r', laneH / 2 - 2)
-      .attr('fill', (c) => c.color);
+      .attr('r', laneH / 2 - 1.5)
+      .style('stroke', (c) => `color-mix(in srgb, ${c.color} 62%, white)`);
     labels
       .select('.tl-chip-text')
       .attr('x', 15)
       .attr('y', laneH / 2)
-      .attr('fill', (c) => chipInk(c.color))
+      .attr('display', laneH >= 14 ? null : 'none')
       .text((c) => c.initials);
     labels
       .select('.tl-name')
@@ -323,7 +309,7 @@ export function createTimeline(root: HTMLElement, data: DataBundle, store: Store
       .attr('x', (s) => Math.max(segX(s), labelW) + 9)
       .attr('y', (s) => segY(s) + segH(s) / 2)
       .text((s) => {
-        if (s.kind !== 'stay') return '';
+        if (s.kind !== 'stay' || laneH < 14) return '';
         const name = placeName.get(s.placeId) ?? '';
         const room = x(Math.min(s.t1, d1)) - Math.max(segX(s), labelW) - 14;
         return room > name.length * 5.6 ? name : '';
@@ -488,8 +474,7 @@ export function createTimeline(root: HTMLElement, data: DataBundle, store: Store
     ev.preventDefault();
   });
 
-  root.querySelector('.tl-bar')!.addEventListener('click', (ev) => {
-    const act = (ev.target as HTMLElement).closest<HTMLButtonElement>('button')?.dataset.act;
+  function command(act: string): void {
     const { t } = store.get();
     switch (act) {
       case 'prev-day':
@@ -513,13 +498,13 @@ export function createTimeline(root: HTMLElement, data: DataBundle, store: Store
         return;
       }
       case 'clear-range':
-        return store.set({ range: null });
+        return store.set({ range: null, books: new Set() });
       case 'view-focus':
         return showWindow(focus[0], focus[1]);
       case 'view-all':
         return showWindow(allStart, allEnd);
     }
-  });
+  }
 
   /** Encuadra [a, b] a lo ancho: x(t) = k·x0(t) + tx. */
   function showWindow(a: number, b: number): void {
@@ -581,18 +566,10 @@ export function createTimeline(root: HTMLElement, data: DataBundle, store: Store
   }
 
   // --- Ciclo de vida --------------------------------------------------------
-  function updateHeader(): void {
-    const { t, range } = store.get();
-    dateOut.textContent = formatDate(fromDayIndex(Math.floor(t)));
-    rangeBox.hidden = !range;
-    if (range)
-      root.querySelector('.tl-range__label')!.textContent =
-        `Rango: ${span(range[0], range[1] + 1)}`;
-  }
-
   layout();
-  showWindow(focus[0], focus[1]);
-  updateHeader();
+  // En el móvil, unas semanas alrededor del instante inicial; en escritorio, el viaje.
+  if (width < 600) showWindow(store.get().t - 12, store.get().t + 40);
+  else showWindow(focus[0], focus[1]);
   render();
   new ResizeObserver(() => {
     const keep = x.domain() as [number, number];
@@ -600,10 +577,19 @@ export function createTimeline(root: HTMLElement, data: DataBundle, store: Store
     showWindow(keep[0], keep[1]);
   }).observe(body);
   store.subscribe((s, prev) => {
-    if (s.t !== prev.t) ensureVisible(s.t);
-    updateHeader();
+    if (s.t !== prev.t) {
+      // Reproduciendo, el cursor se queda en el centro y las calles se desplazan.
+      if (s.playing) {
+        const [a, b] = x.domain() as [number, number];
+        showWindow(s.t - (b - a) / 2, s.t + (b - a) / 2);
+      } else ensureVisible(s.t);
+    }
+    if (s.range !== prev.range && s.range && !prev.range) {
+      const pad = (s.range[1] - s.range[0]) * 0.05;
+      showWindow(s.range[0] - pad, s.range[1] + pad);
+    }
     render();
   });
 
-  return { eventTime, orderedEvents, tracks };
+  return { eventTime, orderedEvents, tracks, command, span: [allStart, allEnd] };
 }

@@ -26,6 +26,8 @@ export class JourneyLayer {
   private groups = new Map<string, L.LayerGroup>();
   private drawn: Drawn[] = [];
   private hidden = new Set<string>();
+  private layers = { pending: true, inferred: true };
+  private last: { t: number; range: [number, number] | null } = { t: 0, range: null };
   private map: L.Map;
 
   constructor(map: L.Map, data: DataBundle, renderer: L.Renderer) {
@@ -117,19 +119,34 @@ export class JourneyLayer {
     }
   }
 
+  /** Capas opcionales: camino por recorrer y tramos deducidos. */
+  setLayers(layers: RouteLayers): void {
+    this.layers = { pending: layers.pending, inferred: layers.inferred };
+    this.setTime(this.last.t, this.last.range);
+  }
+
   /**
    * Atenúa lo que aún no ha ocurrido en el instante `t` y, si hay rango, casi
    * oculta lo que cae fuera de él.
    */
   setTime(t: number, range: [number, number] | null): void {
+    this.last = { t, range };
     for (const d of this.drawn) {
       const { startDay, endDay } = d.shape;
       const out = range && (endDay + 1 < range[0] || startDay > range[1]);
       const future = startDay + DEPART > t;
-      const opacity = out ? 0.06 : future ? 0.2 : 0.95;
+      const off =
+        (future && !this.layers.pending) ||
+        (!this.layers.inferred && d.shape.leg.confidence === 'inferred');
+      const opacity = off ? 0 : out ? 0.06 : future ? 0.22 : 0.95;
       if (d.line.options.opacity !== opacity) d.line.setStyle({ opacity });
     }
   }
+}
+
+export interface RouteLayers {
+  pending: boolean;
+  inferred: boolean;
 }
 
 function tooltipHtml(char: Character, shape: LegShape, placeName: Map<string, string>): string {

@@ -1,34 +1,50 @@
-/* Estilo cartográfico propio. Los colores salen de los tokens de main.css. */
+/* Estilo cartográfico «de juego»: tokens en main.css. */
 
 .map.leaflet-container {
-  background: var(--sea);
-  font-family: var(--font-map);
+  background: radial-gradient(ellipse at 55% 45%, var(--sea) 0%, var(--sea-deep) 85%);
+  font-family: var(--font-ui);
+  outline: none;
 }
 
-/* --- Tierra y costa (los halos quedan medio tapados por la tierra: oleaje) */
+/* --- Costa: resplandor del agua somera bajo la tierra */
 .leaflet-pane path.coast-halo-3 {
   fill: none;
   stroke: var(--coast-3);
-  stroke-width: 22px;
+  stroke-width: 44px;
   stroke-linejoin: round;
 }
 .leaflet-pane path.coast-halo-2 {
   fill: none;
   stroke: var(--coast-2);
-  stroke-width: 12px;
+  stroke-width: 22px;
   stroke-linejoin: round;
 }
 .leaflet-pane path.coast-halo-1 {
   fill: none;
   stroke: var(--coast-1);
-  stroke-width: 4px;
+  stroke-width: 7px;
   stroke-linejoin: round;
 }
 .leaflet-pane path.land {
-  fill: var(--land);
+  fill: url(#pat-terrain);
   fill-opacity: 1;
+  stroke: none;
+}
+.pat-land {
+  fill: var(--land);
+}
+.leaflet-pane path.land-edge {
+  fill: none;
   stroke: var(--land-ink);
-  stroke-width: 1.2px;
+  stroke-opacity: 0.85;
+  stroke-width: 1.4px;
+  stroke-linejoin: round;
+}
+.leaflet-pane path.range-shade {
+  fill: none;
+  stroke: #14120c;
+  stroke-opacity: 0.16;
+  stroke-linecap: round;
   stroke-linejoin: round;
 }
 
@@ -37,105 +53,138 @@
   fill: var(--water);
   fill-opacity: 1;
   stroke: var(--water-ink);
-  stroke-width: 1px;
+  stroke-opacity: 0.7;
+  stroke-width: 1.1px;
 }
-.leaflet-pane path.river {
+.leaflet-pane path.river,
+.leaflet-pane path.river-glow {
   fill: none;
   stroke: var(--water-ink);
   stroke-linecap: round;
   stroke-linejoin: round;
 }
+.leaflet-pane path.river-glow {
+  stroke: var(--water-glow);
+  stroke-width: 6px;
+}
+.leaflet-pane path.river-glow.river-r1,
+.leaflet-pane path.river-glow.river-r2 {
+  stroke-width: 4px;
+}
 .river-r1.river-c1 {
-  stroke-width: 0.7px;
+  stroke-width: 0.8px;
 }
 .river-r1.river-c2 {
-  stroke-width: 1px;
+  stroke-width: 1.1px;
 }
 .river-r2.river-c1 {
-  stroke-width: 0.9px;
-}
-.river-r2.river-c2 {
-  stroke-width: 1.4px;
-}
-.river-r3.river-c0 {
   stroke-width: 1px;
 }
-.river-r3.river-c1 {
+.river-r2.river-c2 {
   stroke-width: 1.5px;
 }
-.river-r3.river-c2 {
-  stroke-width: 2px;
+.river-r3.river-c0 {
+  stroke-width: 1.1px;
 }
-.river-r4.river-c0 {
-  stroke-width: 1.3px;
-}
-.river-r4.river-c1 {
-  stroke-width: 2px;
-}
-.river-r4.river-c2 {
-  stroke-width: 2.6px;
-}
-.river-r5.river-c0 {
+.river-r3.river-c1 {
   stroke-width: 1.6px;
 }
+.river-r3.river-c2 {
+  stroke-width: 2.1px;
+}
+.river-r4.river-c0 {
+  stroke-width: 1.4px;
+}
+.river-r4.river-c1 {
+  stroke-width: 2.1px;
+}
+.river-r4.river-c2 {
+  stroke-width: 2.7px;
+}
+.river-r5.river-c0 {
+  stroke-width: 1.7px;
+}
 .river-r5.river-c1 {
-  stroke-width: 2.6px;
+  stroke-width: 2.7px;
 }
 .river-r5.river-c2 {
-  stroke-width: 3.4px;
+  stroke-width: 3.5px;
 }
 
-/* --- Vegetación */
+/* --- Vegetación: masa de copas con sombra */
+.leaflet-pane path.forest-shadow {
+  fill: #0c120b;
+  fill-opacity: 0.55;
+  stroke: none;
+  transform: translate(2px, 3px);
+}
 .leaflet-pane path.forest {
   fill: url(#pat-forest);
   fill-opacity: 1;
   stroke: var(--forest-ink);
-  stroke-width: 0.8px;
-  stroke-dasharray: 2 2;
+  stroke-opacity: 0.6;
+  stroke-width: 1px;
 }
 .leaflet-pane path.marsh {
   fill: url(#pat-marsh);
-  fill-opacity: 1;
+  fill-opacity: 0.85;
   stroke: none;
 }
 .pat-forest-bg {
   fill: var(--forest-bg);
 }
+.pat-crown-a {
+  fill: var(--forest-mid);
+}
+.pat-crown-b {
+  fill: var(--forest-light);
+}
+.pat-crown-c {
+  fill: var(--forest-dark);
+}
 .pat-marsh-bg {
   fill: var(--marsh-bg);
 }
-.pat-tree circle {
-  fill: var(--forest-bg);
-  stroke: var(--forest-ink);
-  stroke-width: 1;
-}
-.pat-tree path {
-  stroke: var(--forest-ink);
-  stroke-width: 1;
-  fill: none;
-}
 .pat-reed path {
   stroke: var(--marsh-ink);
+  stroke-opacity: 0.7;
   stroke-width: 0.9;
   fill: none;
   stroke-linecap: round;
 }
 
-/* --- Relieve */
+/* --- Relieve: luz del oeste, sombra al este, nieve en lo alto */
+.leaflet-pane path.relief-hill {
+  fill: #7b7658;
+  fill-opacity: 1;
+  stroke: none;
+}
+.leaflet-pane path.relief-light {
+  fill: var(--relief-light);
+  fill-opacity: 1;
+  stroke: none;
+}
 .leaflet-pane path.relief-shadow {
   fill: var(--relief-shade);
   fill-opacity: 1;
   stroke: none;
 }
+.leaflet-pane path.relief-snow {
+  fill: var(--relief-snow);
+  fill-opacity: 0.95;
+  stroke: none;
+}
 .leaflet-pane path.relief-fire {
   fill: var(--relief-fire);
-  fill-opacity: 0.85;
+  fill-opacity: 1;
   stroke: none;
+  filter: drop-shadow(0 0 4px rgba(255, 90, 31, 0.9));
 }
 .leaflet-pane path.relief-line {
   fill: none;
   stroke: var(--relief-ink);
-  stroke-width: 1px;
+  stroke-opacity: 0.85;
+  stroke-width: 0.8px;
   stroke-linejoin: round;
   stroke-linecap: round;
 }
@@ -144,39 +193,44 @@
 .leaflet-pane path.road {
   fill: none;
   stroke: var(--road);
-  stroke-width: 1.3px;
-  stroke-dasharray: 5 3;
+  stroke-opacity: 0.55;
+  stroke-width: 1.2px;
+  stroke-dasharray: 5 4;
   stroke-linecap: round;
-  opacity: 0.85;
 }
 .leaflet-pane path.border {
   fill: none;
   stroke: var(--border);
-  stroke-width: 1px;
-  stroke-dasharray: 1 3 6 3;
-  opacity: 0.8;
+  stroke-opacity: 0.75;
+  stroke-width: 1.3px;
+  stroke-dasharray: 1 4;
+  stroke-linecap: round;
 }
 
 /* --- Lugares */
 .leaflet-pane path.place {
-  stroke: var(--label);
-  stroke-width: 1.2px;
-  fill: var(--label);
+  stroke: var(--bg);
+  stroke-width: 1.4px;
+  fill: var(--ink);
   fill-opacity: 1;
 }
 .leaflet-pane path.place--city {
-  fill: var(--land);
-  stroke-width: 1.8px;
+  fill: var(--gold);
+  stroke-width: 1.6px;
 }
 .leaflet-pane path.place--fort {
-  fill: var(--label);
+  fill: var(--gold-hi);
 }
 .leaflet-pane path.place--ruin {
-  fill: var(--land);
+  fill: var(--ink-soft);
   stroke-dasharray: 2 1.5;
 }
 .leaflet-pane path.place--dwelling {
-  fill: var(--land);
+  fill: var(--ink);
+}
+.leaflet-pane path.place--events {
+  stroke: var(--gold-hi);
+  stroke-width: 1.8px;
 }
 .leaflet-pane path.place-hit {
   fill: transparent;
@@ -184,7 +238,7 @@
   cursor: pointer;
 }
 
-/* --- Etiquetas */
+/* --- Etiquetas (texto claro con halo oscuro) */
 .lbl-anchor {
   width: 0 !important;
   height: 0 !important;
@@ -197,12 +251,13 @@
   white-space: nowrap;
   line-height: 1.1;
   color: var(--label);
-  font-family: var(--font-map);
-  font-size: 12px;
+  font-family: var(--font-ui);
+  font-weight: 600;
+  font-size: 12.5px;
   text-shadow:
     0 0 2px var(--label-halo),
     0 0 3px var(--label-halo),
-    0 0 5px var(--label-halo);
+    0 1px 4px var(--label-halo);
   pointer-events: none;
   user-select: none;
   transform-origin: center center;
@@ -211,60 +266,66 @@
   transform: translate(-50%, -50%) rotate(var(--angle, 0deg));
 }
 .lbl[data-anchor='right'] {
-  transform: translate(6px, -50%);
+  transform: translate(7px, -50%);
 }
 .lbl[data-anchor='left'] {
-  transform: translate(calc(-100% - 6px), -50%);
+  transform: translate(calc(-100% - 7px), -50%);
 }
 .lbl[data-anchor='top'] {
-  transform: translate(-50%, calc(-100% - 6px));
+  transform: translate(-50%, calc(-100% - 7px));
 }
 .lbl[data-anchor='bottom'] {
-  transform: translate(-50%, 6px);
+  transform: translate(-50%, 7px);
 }
-
 .lbl--place.lbl--r1 {
   font-size: 14px;
-  font-weight: 400;
 }
 .lbl--place.lbl--r2 {
-  font-size: 12.5px;
+  font-size: 13px;
 }
 .lbl--place.lbl--r3 {
-  font-size: 11.5px;
+  font-size: 12px;
+  font-weight: 500;
+}
+.lbl--place.lbl--ciudad,
+.lbl--place.lbl--fortaleza {
+  font-family: var(--font-cond);
+  font-weight: 700;
+  letter-spacing: 0.02em;
 }
 .lbl--place.lbl--ruina {
   font-style: italic;
+  font-weight: 500;
 }
 
 .lbl--region {
-  font-family: var(--font-map-sc);
-  font-weight: 500;
+  font-family: var(--font-display);
+  font-weight: 700;
   color: var(--label-region);
-  letter-spacing: 0.22em;
+  opacity: 0.85;
+  letter-spacing: 0.24em;
   text-transform: uppercase;
 }
 .lbl--region.lbl--r1 {
-  font-size: 17px;
-  letter-spacing: 0.35em;
+  font-size: 16px;
+  letter-spacing: 0.32em;
 }
 .lbl--region.lbl--r2 {
-  font-size: 12.5px;
+  font-size: 12px;
 }
 .lbl--region.lbl--r3 {
   font-size: 10.5px;
   letter-spacing: 0.16em;
 }
-
 .lbl--range,
 .lbl--peak {
-  font-family: var(--font-map-sc);
+  color: var(--label-relief);
+  font-style: italic;
   font-weight: 500;
-  color: var(--relief-ink);
   letter-spacing: 0.08em;
 }
 .lbl--range.lbl--r1 {
-  font-size: 14px;
+  font-size: 13.5px;
   letter-spacing: 0.16em;
 }
 .lbl--range.lbl--r2 {
@@ -274,16 +335,18 @@
   font-size: 11px;
 }
 .lbl--peak {
-  font-size: 11px;
+  font-size: 11.5px;
+  font-style: normal;
+  font-weight: 600;
 }
-
 .lbl--river,
 .lbl--lake {
   font-style: italic;
+  font-weight: 500;
   color: var(--label-water);
 }
 .lbl--river.lbl--r5 {
-  font-size: 14px;
+  font-size: 13.5px;
   letter-spacing: 0.12em;
 }
 .lbl--river.lbl--r4,
@@ -297,107 +360,139 @@
 .lbl--lake {
   font-size: 12px;
 }
-
 .lbl--forest {
   font-style: italic;
+  font-weight: 500;
   color: var(--forest-label);
   font-size: 12px;
   letter-spacing: 0.05em;
 }
 .lbl--road {
   font-style: italic;
+  font-weight: 500;
   color: var(--road);
   font-size: 10.5px;
 }
+.map.hide-minor-labels .lbl--r3,
+.map.hide-minor-labels .lbl--road {
+  display: none;
+}
 
-/* --- Ficha emergente */
+/* --- Ficha emergente de lugar */
 .place-popup .leaflet-popup-content-wrapper,
 .place-popup .leaflet-popup-tip {
-  background: var(--land);
-  color: var(--label);
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
+  background: var(--panel-solid);
+  color: var(--ink);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+}
+.place-popup .leaflet-popup-content-wrapper {
+  border-top-color: var(--line-gold);
+  border-radius: 14px;
 }
 .place-popup .leaflet-popup-content {
-  margin: 8px 12px;
-  font-family: var(--font-map);
+  margin: 10px 14px;
+  font-family: var(--font-ui);
+}
+.place-popup a.leaflet-popup-close-button {
+  color: var(--ink-soft);
+  width: 32px;
+  height: 32px;
+  font-size: 22px;
+  line-height: 30px;
 }
 .pp-name {
-  font-size: 15px;
-  font-weight: 600;
+  font-family: var(--font-cond);
+  font-size: 18px;
+  font-weight: 700;
 }
 .pp-alt {
   font-style: italic;
-  color: var(--label-region);
-  font-size: 12px;
+  color: var(--ink-soft);
+  font-size: 12.5px;
 }
 .pp-meta {
   margin-top: 2px;
-  font-family: var(--font-ui);
-  font-size: 11px;
+  font-size: 12px;
   color: var(--ink-soft);
 }
-
-/* --- Controles */
-.leaflet-bar a,
-.leaflet-bar a:hover {
-  background: var(--land);
-  color: var(--label);
-  border-color: var(--land-ink);
+.pp-events {
+  list-style: none;
+  margin: 8px 0 0;
+  padding: 8px 0 0;
+  border-top: 1px solid var(--line);
+  max-height: min(320px, 45vh);
+  overflow-y: auto;
+  display: grid;
+  gap: 10px;
 }
-
-/* --- Debug */
-.leaflet-pane path.debug-grid {
-  stroke: #c0392b;
-  stroke-width: 0.6px;
-  opacity: 0.5;
-  fill: none;
+.pe-date {
+  font-size: 12px;
+  color: var(--gold-hi);
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
 }
-.debug-readout {
-  background: var(--bar);
-  color: var(--bar-ink);
-  font:
-    12px ui-monospace,
-    monospace;
-  padding: 4px 8px;
-  border-radius: 4px;
+.pe-title {
+  font-weight: 700;
+  font-size: 14.5px;
+}
+.pe-who {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3px;
+  margin: 3px 0;
+}
+.place-popup .pe-summary {
+  margin: 2px 0;
+  font-size: 13.5px;
+  line-height: 1.4;
+  color: #dfe4e9;
+}
+.pe-ref {
+  font-size: 11.5px;
+  color: var(--ink-soft);
+}
+.pe-open {
+  margin-top: 4px;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--gold-hi);
+  font-weight: 600;
+  font-size: 13px;
+  min-height: 32px;
 }
 
 /* --- Rutas de los personajes (el color va en línea, por personaje) */
+.leaflet-routes-pane svg {
+  filter: drop-shadow(0 0 1.2px rgba(0, 0, 0, 0.95)) brightness(1.3) saturate(1.1);
+}
 .leaflet-pane path.journey {
   fill: none;
   cursor: pointer;
+  transition: opacity 0.4s;
 }
 .leaflet-pane path.journey:hover {
   stroke-width: 4.5px;
 }
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme='light']) .leaflet-routes-pane {
-    filter: brightness(1.35) saturate(1.1);
-  }
-}
-:root[data-theme='dark'] .leaflet-routes-pane {
-  filter: brightness(1.35) saturate(1.1);
-}
-.leaflet-pane path.place--events {
-  stroke: var(--accent);
-  stroke-width: 2px;
-}
-
-.journey-tip {
-  background: var(--land);
-  color: var(--label);
-  border: 1px solid var(--land-ink);
-  font-family: var(--font-map);
+.journey-tip,
+.char-tip {
+  background: var(--panel-solid);
+  color: var(--ink);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  font-family: var(--font-ui);
   font-size: 13px;
   max-width: 280px;
   white-space: normal;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: var(--shadow);
 }
-.journey-tip::before {
+.journey-tip::before,
+.char-tip::before {
   display: none;
 }
 .jt-who {
-  font-weight: 600;
+  font-weight: 700;
   display: flex;
   align-items: center;
   gap: 6px;
@@ -410,161 +505,108 @@
   background: var(--c);
 }
 .jt-dates {
-  font-family: var(--font-ui);
-  font-size: 11.5px;
+  font-size: 12px;
   color: var(--ink-soft);
   font-variant-numeric: tabular-nums;
 }
 .jt-note {
   margin-top: 4px;
-  font-size: 12px;
+  font-size: 12.5px;
   font-style: italic;
+  color: #dfe4e9;
 }
 
-/* --- Fichas de personaje (iniciales sobre su color) */
+/* --- Fichas de personaje en el mapa: disco oscuro con aro de color */
+.char-marker {
+  overflow: visible;
+}
+.char-chip {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 26px;
+  height: 26px;
+  margin: -13px 0 0 -13px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #10151b;
+  border: 2.5px solid color-mix(in srgb, var(--c) 62%, white);
+  color: #fff;
+  font: 700 11px/1 var(--font-cond);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+  transform: translate(var(--dx, 0px), var(--dy, 0px));
+  transition: transform 0.3s;
+}
+.char-chip.is-active {
+  box-shadow:
+    0 0 0 2px #10151b,
+    0 0 0 3.5px var(--gold-hi),
+    0 0 12px rgba(230, 194, 127, 0.6);
+}
+
+/* Ficha pequeña en listas (iniciales sobre aro de color). */
 .chip {
   display: inline-grid;
   place-items: center;
-  min-width: 20px;
-  height: 20px;
+  min-width: 22px;
+  height: 22px;
   padding: 0 4px;
-  border-radius: 10px;
-  background: var(--c);
-  color: var(--ink, #fff);
-  font: 600 10.5px/1 var(--font-ui);
-  letter-spacing: 0.02em;
-}
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  white-space: nowrap;
-}
-
-/* --- Leyenda */
-.legend {
-  background: var(--land);
-  color: var(--label);
-  border: 1px solid var(--land-ink);
-  border-radius: 6px;
-  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.18);
-  font-family: var(--font-ui);
-  font-size: 13px;
-  min-width: 150px;
-}
-.legend summary {
-  cursor: pointer;
-  padding: 7px 10px;
-  font-family: var(--font-map-sc);
-  font-weight: 500;
-  letter-spacing: 0.08em;
-  list-style-position: inside;
-}
-.legend__list {
-  list-style: none;
-  margin: 0;
-  padding: 0 10px;
-  display: grid;
-  gap: 2px;
-}
-.legend__item {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  padding: 3px 0;
-  cursor: pointer;
-}
-.legend__item input {
-  margin: 0;
-  accent-color: var(--accent);
-}
-.legend__item .chip {
+  border-radius: 11px;
+  background: #10151b;
+  border: 2px solid color-mix(in srgb, var(--c) 62%, white);
   color: #fff;
-}
-.legend__item input:not(:checked) ~ .chip {
-  opacity: 0.35;
-}
-.legend__item input:not(:checked) ~ .legend__name {
-  color: var(--ink-soft);
-  text-decoration: line-through;
-}
-.legend__actions {
-  display: flex;
-  gap: 6px;
-  padding: 8px 10px 4px;
-}
-.legend__actions button {
-  font: inherit;
-  font-size: 12px;
-  padding: 3px 8px;
-  border-radius: 4px;
-  border: 1px solid var(--land-ink);
-  background: transparent;
-  color: var(--label);
-  cursor: pointer;
-}
-.legend__actions button:focus-visible,
-.legend summary:focus-visible,
-.legend__item input:focus-visible {
-  outline: 2px solid var(--accent);
-  outline-offset: 2px;
-}
-.legend__key {
-  margin: 4px 10px 9px;
-  font-size: 11px;
-  color: var(--ink-soft);
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  flex-wrap: wrap;
-}
-.key-line {
-  display: inline-block;
-  width: 18px;
-  height: 0;
-  border-top: 2.5px solid var(--label);
-}
-.key-line--dashed {
-  border-top-style: dashed;
-  margin-left: 6px;
+  font: 700 10px/1 var(--font-cond);
 }
 
-/* --- Eventos en la ficha del lugar */
-.pp-events {
-  list-style: none;
-  margin: 8px 0 0;
-  padding: 8px 0 0;
-  border-top: 1px solid var(--land-ink);
-  max-height: min(320px, 45vh);
-  overflow-y: auto;
-  display: grid;
-  gap: 10px;
+/* --- Marcador del suceso abierto */
+.event-pin {
+  overflow: visible;
 }
-.pe-date {
-  font-family: var(--font-ui);
-  font-size: 11px;
-  color: var(--ink-soft);
-  font-variant-numeric: tabular-nums;
+.event-pin__dot {
+  position: absolute;
+  left: -7px;
+  top: -7px;
+  width: 14px;
+  height: 14px;
+  transform: rotate(45deg);
+  background: var(--gold-hi);
+  border: 2px solid var(--bg);
 }
-.pe-title {
-  font-weight: 600;
-  font-size: 14px;
+.event-pin__ring {
+  position: absolute;
+  left: -10px;
+  top: -10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid var(--gold-hi);
+  animation: pin-pulse 2s ease-out infinite;
 }
-.pe-who {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 3px;
-  margin: 3px 0;
+@keyframes pin-pulse {
+  from {
+    transform: scale(0.6);
+    opacity: 0.9;
+  }
+  to {
+    transform: scale(2.6);
+    opacity: 0;
+  }
 }
-.place-popup .pe-summary {
-  margin: 2px 0;
-  font-size: 13px;
-  line-height: 1.35;
+
+/* --- Debug */
+.leaflet-pane path.debug-grid {
+  stroke: #ff6b6b;
+  stroke-width: 0.6px;
+  opacity: 0.5;
+  fill: none;
 }
-.pe-ref {
-  font-family: var(--font-ui);
-  font-size: 10.5px;
-  color: var(--ink-soft);
+.debug-readout {
+  background: var(--panel-solid);
+  color: var(--ink);
+  font:
+    12px ui-monospace,
+    monospace;
+  padding: 4px 8px;
+  border-radius: 4px;
 }

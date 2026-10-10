@@ -4,6 +4,7 @@ import type { GeoCollection, GeoFeature } from '../data/geo.ts';
 import { isLine, isPoint } from '../data/geo.ts';
 import { toLatLng } from '../lib/coords.ts';
 import { peakGlyph, ridgeGlyphs, type Glyph } from './glyphs.ts';
+import type { XY } from '../data/types.ts';
 
 /** Capa de relieve que se regenera al cambiar el zoom o salir del área dibujada. */
 export class ReliefLayer {
@@ -39,15 +40,39 @@ export class ReliefLayer {
     const visible = glyphs.filter((g) => area.contains(toLatLng(g.outline[0]!)));
 
     const opts = { interactive: false, renderer: this.renderer, smoothFactor: 0 };
+    const poly = (rings: XY[][], className: string) => {
+      if (rings.length)
+        this.group.addLayer(
+          L.polygon(
+            rings.map((r) => r.map(toLatLng)),
+            { ...opts, className },
+          ),
+        );
+    };
     this.group.clearLayers();
-    const shadows = visible
-      .filter((g) => g.shadow && !g.volcano)
-      .map((g) => g.shadow!.map(toLatLng));
-    const fire = visible.filter((g) => g.volcano).map((g) => g.shadow!.map(toLatLng));
+    const peaks = visible.filter((g) => g.shadow);
+    // Caras iluminadas y en sombra (luz del oeste), nieve, lava y el contorno encima.
+    poly(
+      visible.filter((g) => !g.shadow).map((g) => g.light),
+      'relief-hill',
+    );
+    poly(
+      peaks.map((g) => g.light),
+      'relief-light',
+    );
+    poly(
+      peaks.filter((g) => !g.volcano).map((g) => g.shadow!),
+      'relief-shadow',
+    );
+    poly(
+      peaks.filter((g) => g.volcano).map((g) => g.shadow!),
+      'relief-fire',
+    );
+    poly(
+      visible.filter((g) => g.snow).map((g) => g.snow!),
+      'relief-snow',
+    );
     const outlines = visible.map((g) => g.outline.map(toLatLng));
-    if (shadows.length)
-      this.group.addLayer(L.polygon(shadows, { ...opts, className: 'relief-shadow' }));
-    if (fire.length) this.group.addLayer(L.polygon(fire, { ...opts, className: 'relief-fire' }));
     if (outlines.length)
       this.group.addLayer(L.polyline(outlines, { ...opts, className: 'relief-line' }));
   }
